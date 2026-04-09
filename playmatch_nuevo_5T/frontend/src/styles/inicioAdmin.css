@@ -4,29 +4,15 @@
   min-height: 100vh;
 }
 
-.sidebar {
-  width: 250px;
-  height: 100vh;
-  background-color: #2e2e2e;
-  position: fixed;
-  left: 0;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  z-index: 999;
-}
 
 #main-view {
-  display: block;
-  flex: 1;
-  margin-left: 250px; 
-
+  margin-left: 250px;
   width: calc(100% - 250px);
   padding: 20px;
-  background-color: #f8f9fa;
+  background-color: #0f172a; /* oscuro elegante */
   min-height: 100vh;
-  box-sizing: border-box;
 }
+
 .content {
   margin-left: 250px; 
   padding: 20px;
@@ -35,29 +21,78 @@
   background-color: #f8f9fa;
 }
 
-.sidebar-link {
-  color: white;
-  padding: 12px 20px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-}
 
-.sidebar-link:hover {
-  background-color: #495057;
-}
-
-.brand-title {
-  color: white;
-  font-size: 22px;
-  font-weight: bold;
-  padding: 20px;
-}
 
 .category-title {
   color: #adb5bd;
   font-size: 12px;
   padding: 10px 20px;
   text-transform: uppercase;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background: linear-gradient(180deg, #1f1f1f, #111);
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* 👈 empuja el footer abajo */
+  z-index: 999;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+/* LINKS */
+.sidebar-link {
+  color: #e4e4e4;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.sidebar-link:hover {
+  background-color: #343a40;
+  padding-left: 25px;
+}
+
+/* TITULO */
+.brand-title {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 20px;
+  border-bottom: 1px solid #333;
+}
+
+/* FOOTER */
+.sidebar-footer {
+  padding: 20px;
+}
+
+/* BOTÓN CERRAR SESIÓN 🔥 */
+.sidebar-footer button {
+  width: 100%;
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.sidebar-footer button:hover {
+  background: #b91c1c;
+  transform: scale(1.05);
 }

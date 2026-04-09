@@ -1,64 +1,93 @@
 .tabla-container {
   width: 95%;
   margin: 40px auto;
-  background: white;
+  background: #1e293b; /* fondo oscuro */
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-  box-sizing: border-box; 
-  overflow-x: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  color: #e5e7eb;
 }
 
-.tabla-header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
-}
-
+/* HEADER */
 .tabla-header input {
   padding: 8px;
   border-radius: 6px;
-  border: 1px solid #ccc;
+  border: none;
+  background: #334155;
+  color: white;
+  display: flex;
 }
 
+.tabla-header input::placeholder {
+  color: #94a3b8;
+}
+
+/* BOTÓN AGREGAR */
 .btn-add {
   background: #22c55e;
   color: white;
   border: none;
-  padding: 8px 15px;
+  padding: 6px 12px;
   border-radius: 6px;
   cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  margin-left: 180px;
 }
 
+.btn-add:hover {
+  background: #16a34a;
+}
+
+/* TABLA */
 table {
   width: 100%;
   border-collapse: collapse;
 }
 
-th, td {
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
-  text-align: left;
-}
-
 th {
-  background: #f3f4f6;
+  background: #334155;
+  color: #f1f5f9;
 }
 
+td {
+  color: #cbd5f5;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #475569;
+}
+
+/* HOVER FILAS */
+tr:hover {
+  background: #2c3a4f;
+}
+
+/* BOTONES */
 .btn-edit {
-  background: orange;
+  background: #f59e0b;
   border: none;
   padding: 5px 10px;
   margin-right: 5px;
   border-radius: 5px;
   cursor: pointer;
+  color: black;
 }
 
 .btn-delete {
-  background: red;
+  background: #ef4444;
   color: white;
   border: none;
   padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.btn-edit:hover {
+  background: #d97706;
+}
+
+.btn-delete:hover {
+  background: #dc2626;
 }
