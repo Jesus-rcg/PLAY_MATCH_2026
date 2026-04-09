@@ -27,17 +27,27 @@ db.connect(err => {
 app.post("/login", (req, res) => {
   const { correo, password } = req.body;
 
-  const sql = "SELECT * FROM usuarios WHERE email = ? AND password = ?";
+  const sql = "SELECT * FROM usuarios WHERE email = ?";
 
-  db.query(sql, [correo, password], (err, result) => {
+  db.query(sql, [correo], async (err, result) => {
     if (err) {
       return res.status(500).json({ message: "Error del servidor" });
     }
 
-    if (result.length > 0) {
+    if (result.length === 0) {
+      return res.status(401).json({
+        message: "Correo o contraseña incorrectos"
+      });
+    }
+
+    const usuario = result[0];
+
+    const coincide = await bcrypt.compare(password, usuario.password);
+
+    if (coincide) {
       res.json({
         message: "Login exitoso",
-        usuario: result[0]
+        usuario
       });
     } else {
       res.status(401).json({
@@ -46,7 +56,6 @@ app.post("/login", (req, res) => {
     }
   });
 });
-
 
 app.get('/usuarios', (req, res) => {
     const sql = 'SELECT id_usuario, nombre, email, rol, activo, fecha_actualizado FROM usuarios';
@@ -74,17 +83,20 @@ app.post('/usuarios/agregar', async (req, res) => {
 app.put('/usuarios/editar/:id', async (req, res) => {
     const { nombre, email, password, rol, activo } = req.body;
 
+    let sql;
+    let params;
     let passwordHash = password;
 
     if (password) {
         passwordHash = await bcrypt.hash(password, 10);
+
+        sql = 'UPDATE usuarios SET nombre = ?, email = ?, password = ?, rol = ?, activo = ? WHERE id_usuario = ?';
+        params = [nombre, email, passwordHash, rol, activo, req.params.id];
+    }else{
+        sql = 'UPDATE usuarios SET nombre = ?, email = ?, rol = ?, activo = ? WHERE id_usuario = ?';
+        params = [nombre, email, rol, activo, req.params.id];
     }
-
-    if (!password) {
-   }
-
-    const sql = 'UPDATE usuarios SET nombre = ?, email = ?, password = ?, rol = ?, activo = ? WHERE id_usuario = ?';
-    db.query(sql, [nombre, email, passwordHash, rol, activo, req.params.id], (err, results) => {
+    db.query(sql, params, (err, results) => {
         if (err) return res.status(500).send(err);
         res.json({ message: 'Usuario actualizado' });
     });
