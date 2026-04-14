@@ -25,7 +25,7 @@ function InicioAdmin() {
     <div className="layout-container">
   
       <aside className="sidebar">
-        <div className="brand-title">🏆 Play Match</div>
+        <div className="brand-title">🏆 Playmatch</div>
         
         <div className="sidebar-content">
           <Link to="/usuarios" className="sidebar-link">
@@ -44,6 +44,14 @@ function InicioAdmin() {
 
           <Link to="/jugadores" className="sidebar-link">
             <i className="fas fa-chart-line"></i> Jugadores
+          </Link>
+
+          <Link to="/encuentros" className="sidebar-link">
+            <i className="fas fa-chart-line"></i> Encuentros
+          </Link>
+
+          <Link to="/resultados" className="sidebar-link">
+            <i className="fas fa-chart-line"></i> Resultados
           </Link>
         </div>
 

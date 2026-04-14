@@ -28,6 +28,16 @@ import CrearJugadores from "./pages/Jugadores/jugadoresCrear";
 import EditarJugadores from "./pages/Jugadores/jugadoresEditar";
 import EliminarJugadores from "./pages/Jugadores/jugadoresEliminar";
 
+import MostrarEncuentros from "./pages/Encuentros/encuentrosMostrar";
+import CrearEncuentros from "./pages/Encuentros/encuentrosCrear";
+import EditarEncuentros from "./pages/Encuentros/encuentrosEditar";
+import EliminarEncuentros from "./pages/Encuentros/encuentrosEliminar";
+
+import MostrarResultados from "./pages/Resultados/resultadosMostrar";
+import CrearResultados from "./pages/Resultados/resultadosCrear";
+import EditarResultados from "./pages/Resultados/resultadosEditar";
+import EliminarResultados from "./pages/Resultados/resultadosEliminar";
+
 function App() {
   return (
     <BrowserRouter>
@@ -61,7 +71,17 @@ function App() {
           <Route path="/jugadores/agregar" element={<CrearJugadores />} />
           <Route path="/jugadores/editar/:id" element={<EditarJugadores />} />
           <Route path="/jugadores/eliminar/:id" element={<EliminarJugadores/>} />
-        
+
+          <Route path="/encuentros" element={<MostrarEncuentros />} />
+          <Route path="/encuentros/agregar" element={<CrearEncuentros />} />
+          <Route path="/encuentros/editar/:id" element={<EditarEncuentros />} />
+          <Route path="/encuentros/eliminar/:id" element={<EliminarEncuentros/>} />
+
+          <Route path="/resultados" element={<MostrarResultados />} />
+          <Route path="/resultados/agregar" element={<CrearResultados />} />
+          <Route path="/resultados/editar/:id" element={<EditarResultados />} />
+          <Route path="/resultados/eliminar/:id" element={<EliminarResultados/>} />
+          
         </Route>
       </Routes>
     </BrowserRouter>

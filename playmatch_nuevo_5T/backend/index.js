@@ -27,7 +27,6 @@ db.connect(err => {
 app.post("/login", (req, res) => {
   const { correo, password } = req.body;
 
-  
   const sql = "SELECT * FROM usuarios WHERE email = ?";
 
   db.query(sql, [correo], async (err, result) => {
@@ -463,4 +462,296 @@ app.delete("/jugadores/eliminar/:id",  (req, res) => {
 
 app.listen(3000, () => {
    console.log('Servidor corriendo en el puerto 3000');
+});
+
+app.get('/encuentros', (req, res) => {
+    const sql = `
+    SELECT
+      en.id_encuentro, 
+      en.id_torneo,
+      en.id_equipo_local,
+      en.id_equipo_visitante,
+
+      t.nombre AS torneo, 
+      eLocal.nombre AS equipo_local, 
+      eVisitante.nombre AS equipo_visitante, 
+
+      en.fecha, 
+      en.lugar, 
+      en.jornada, 
+      en.id_arbitro,
+
+      u.nombre AS arbitro,
+
+      en.estado 
+     FROM encuentros en
+     JOIN torneos t ON en.id_torneo = t.id_torneo
+     JOIN equipos eLocal ON en.id_equipo_local = eLocal.id_equipo
+     JOIN equipos eVisitante ON en.id_equipo_visitante = eVisitante.id_equipo
+     JOIN usuarios u ON en.id_arbitro = u.id_usuario`;
+    db.query(sql, (err, results) => {
+        if (err) {
+         console.log(err);
+         return res.status(500).send(err);
+        }
+        res.json(results);
+    });
+});
+
+
+app.post('/encuentros/agregar', (req, res) => {
+  const {
+    id_torneo,
+    id_equipo_local,
+    id_equipo_visitante,
+    fecha,
+    lugar,
+    jornada,
+    id_arbitro,
+    estado
+  } = req.body;
+
+  const sql = `
+    INSERT INTO encuentros (id_torneo, id_equipo_local, id_equipo_visitante, fecha, lugar, jornada, id_arbitro, estado) 
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?)`;
+  db.query(sql, [id_torneo, id_equipo_local, id_equipo_visitante, fecha, lugar, jornada, id_arbitro, estado],
+    (err, result) => {
+      if (err) return res.status(500).send(err);
+      res.json({ message: "Encuentro creado" });
+    });
+});
+
+
+app.put('/encuentros/editar/:id', (req, res) => {
+
+  const { id } = req.params;
+
+  const {
+    id_torneo,
+    id_equipo_local,
+    id_equipo_visitante,
+    fecha,
+    lugar,
+    jornada,
+    id_arbitro,
+    estado
+  } = req.body;
+
+  const sql = `
+    UPDATE encuentros SET
+    id_torneo = ?,
+    id_equipo_local = ?,
+    id_equipo_visitante = ?,
+    fecha = ?,
+    lugar = ?,
+    jornada = ?,
+    id_arbitro = ?,
+    estado = ?
+    WHERE id_encuentro = ?
+  `;
+
+  db.query(sql, [
+    id_torneo,
+    id_equipo_local,
+    id_equipo_visitante,
+    fecha,
+    lugar,
+    jornada,
+    id_arbitro,
+    estado,
+    id
+  ], (err, result) => {
+
+    if (err) {
+      console.log(err);
+      return res.status(500).json({ error: "Error al actualizar" });
+    }
+
+    if (result.affectedRows === 0) {
+      return res.status(404).json({ message: "Encuentro no encontrado" });
+    }
+
+    return res.status(200).json({
+      message: "Encuentro actualizado correctamente"
+    });
+  });
+});
+
+
+
+app.delete('/encuentros/eliminar/:id', (req, res) => {
+    const sql = 'DELETE FROM encuentros WHERE id_encuentro = ?';
+    db.query(sql, [req.params.id], (err, results) => {
+    
+    if (err) {
+      console.log(err);
+      return res.status(500).json({
+        error: "Error al eliminar el encuentro"
+      });
+    }
+
+    if (results.affectedRows === 0) {
+      return res.status(404).json({
+        message: "Encuentro no encontrado"
+      });
+    }
+
+    return res.status(200).json({
+      success: true,
+      message: "Encuentro eliminado correctamente"
+    });
+    });
+});
+
+app.get('/resultados', (req, res) => {
+    const sql = `
+    SELECT
+      r.id_resultado, 
+      r.id_encuentro,
+      r.goles_local,
+      r.goles_visitante,
+      r.faltas_local,
+      r.faltas_visitante,
+      r.tarjetas_amarillas,
+      r.tarjetas_rojas,
+      r.observaciones,
+      r.id_created_by,
+
+      u.nombre AS creador,
+
+      r.created_at
+
+     FROM resultados r
+     JOIN usuarios u ON r.id_created_by = u.id_usuario`;
+    db.query(sql, (err, results) => {
+       
+      if (err) {
+        console.log(err);
+        return res.status(500).json({
+          error: "Error al obtener los encuentros"
+        });
+      }
+
+      return res.status(200).json(results);
+
+    });
+});
+
+app.post('/resultados/agregar', (req, res) => {
+  const {
+    id_encuentro,
+    goles_local,
+    goles_visitante,
+    faltas_local,
+    faltas_visitante,
+    tarjetas_amarillas,
+    tarjetas_rojas,
+    observaciones,
+    id_created_by,
+  } = req.body;
+
+  const sql = `
+    INSERT INTO resultados (id_encuentro, goles_local, goles_visitante, faltas_local, faltas_visitante, tarjetas_amarillas, tarjetas_rojas, observaciones, id_created_by) 
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`;
+  db.query(sql, [id_encuentro, goles_local, goles_visitante, faltas_local, faltas_visitante, tarjetas_amarillas, tarjetas_rojas, observaciones, id_created_by],
+    (err, result) => {
+      if (err) {
+      console.log(err);
+      return res.status(500).json({
+        error: "Error al crear el encuentro"
+      });
+    }
+
+    if (result.affectedRows === 0) {
+      return res.status(400).json({
+        message: "No se pudo crear el encuentro"
+      });
+    }
+
+    return res.status(201).json({
+      message: "Encuentro creado correctamente",
+      id: result.insertId
+    });
+    });
+});
+
+app.put('/resultados/editar/:id', (req, res) => {
+
+  const { id } = req.params;
+
+  const {
+    id_encuentro,
+    goles_local,
+    goles_visitante,
+    faltas_local,
+    faltas_visitante,
+    tarjetas_amarillas,
+    tarjetas_rojas,
+    observaciones,
+    id_created_by
+  } = req.body;
+
+  const sql = `
+    UPDATE resultados SET
+    id_encuentro = ?,
+    goles_local = ?,
+    goles_visitante = ?,
+    faltas_local = ?,
+    faltas_visitante = ?,
+    tarjetas_amarillas = ?,
+    tarjetas_rojas = ?,
+    observaciones = ?,
+    id_created_by = ?
+    WHERE id_resultado = ?
+  `;
+
+  db.query(sql, [
+    id_encuentro,
+    goles_local,
+    goles_visitante,
+    faltas_local,
+    faltas_visitante,
+    tarjetas_amarillas,
+    tarjetas_rojas,
+    observaciones,
+    id_created_by,
+    id
+  ], (err, result) => {
+
+    if (err) {
+      console.log(err);
+      return res.status(500).json({ error: "Error al actualizar" });
+    }
+
+    if (result.affectedRows === 0) {
+      return res.status(404).json({ message: "Resultado no encontrado" });
+    }
+
+    return res.status(200).json({
+      message: "Resultado actualizado correctamente"
+    });
+  });
+});
+
+app.delete('/resultados/eliminar/:id', (req, res) => {
+    const sql = 'DELETE FROM resultados WHERE id_resultado = ?';
+    db.query(sql, [req.params.id], (err, results) => {
+    
+    if (err) {
+      console.log(err);
+      return res.status(500).json({
+        error: "Error al eliminar el resultado"
+      });
+    }
+
+    if (results.affectedRows === 0) {
+      return res.status(404).json({
+        message: "Resultado no encontrado"
+      });
+    }
+
+    return res.status(200).json({
+      message: "Resultado eliminado correctamente"
+    });
+    });
 });

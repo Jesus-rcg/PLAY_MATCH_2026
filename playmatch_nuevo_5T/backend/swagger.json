@@ -13,7 +13,7 @@
   "paths": {
     "/login": {
       "post": {
-        "description": "Inicio de sesion",
+        "description": "",
         "parameters": [
           {
             "name": "body",
@@ -639,6 +639,299 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/encuentros": {
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/encuentros/agregar": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id_torneo": {
+                  "example": "any"
+                },
+                "id_equipo_local": {
+                  "example": "any"
+                },
+                "id_equipo_visitante": {
+                  "example": "any"
+                },
+                "fecha": {
+                  "example": "any"
+                },
+                "lugar": {
+                  "example": "any"
+                },
+                "jornada": {
+                  "example": "any"
+                },
+                "id_arbitro": {
+                  "example": "any"
+                },
+                "estado": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/encuentros/editar/{id}": {
+      "put": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id_torneo": {
+                  "example": "any"
+                },
+                "id_equipo_local": {
+                  "example": "any"
+                },
+                "id_equipo_visitante": {
+                  "example": "any"
+                },
+                "fecha": {
+                  "example": "any"
+                },
+                "lugar": {
+                  "example": "any"
+                },
+                "jornada": {
+                  "example": "any"
+                },
+                "id_arbitro": {
+                  "example": "any"
+                },
+                "estado": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/encuentros/eliminar/{id}": {
+      "delete": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/resultados": {
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/resultados/agregar": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id_encuentro": {
+                  "example": "any"
+                },
+                "goles_local": {
+                  "example": "any"
+                },
+                "goles_visitante": {
+                  "example": "any"
+                },
+                "faltas_local": {
+                  "example": "any"
+                },
+                "faltas_visitante": {
+                  "example": "any"
+                },
+                "tarjetas_amarillas": {
+                  "example": "any"
+                },
+                "tarjetas_rojas": {
+                  "example": "any"
+                },
+                "observaciones": {
+                  "example": "any"
+                },
+                "id_created_by": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/resultados/editar/{id}": {
+      "put": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id_encuentro": {
+                  "example": "any"
+                },
+                "goles_local": {
+                  "example": "any"
+                },
+                "goles_visitante": {
+                  "example": "any"
+                },
+                "faltas_local": {
+                  "example": "any"
+                },
+                "faltas_visitante": {
+                  "example": "any"
+                },
+                "tarjetas_amarillas": {
+                  "example": "any"
+                },
+                "tarjetas_rojas": {
+                  "example": "any"
+                },
+                "observaciones": {
+                  "example": "any"
+                },
+                "id_created_by": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/resultados/eliminar/{id}": {
+      "delete": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
           },
           "500": {
             "description": "Internal Server Error"

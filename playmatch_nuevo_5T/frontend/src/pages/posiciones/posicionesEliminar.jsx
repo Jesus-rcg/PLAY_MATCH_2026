@@ -21,7 +21,7 @@ function EliminarPosicion() {
         <h2>Eliminar posicion</h2>
         <p>¿Estás seguro de que deseas eliminar esta posición?</p>
         <button type='button' onClick={eliminar}>Eliminar</button>
-        <button type='button' onClick={() => navigate("/posicion")}>Cancelar</button>
+        <button type='button' onClick={() => navigate("/posiciones")}>Cancelar</button>
       </div>
     </div>
   );
