@@ -60,8 +60,14 @@ app.post("/login", (req, res) => {
 app.get('/usuarios', (req, res) => {
     const sql = 'SELECT id_usuario, nombre, email, rol, activo, fecha_actualizado FROM usuarios';
     db.query(sql, (err, results) => {
-        if (err) return res.status(500).send(err);
-        res.json(results);
+        if (err) {
+        console.log(err);
+        return res.status(500).json({
+          error: "Error al obtener los usuarios"
+        });
+      }
+
+      return res.status(200).json(results);
     });
 });
 
@@ -73,8 +79,24 @@ app.post('/usuarios/agregar', async (req, res) => {
 
     const sql = 'INSERT INTO usuarios (nombre, email, password, rol, activo) VALUES (?, ?, ?, ?, ?)';
     db.query(sql, [nombre, email, passwordHash, rol, activo], (err, results) => { //passwordHash se manda a la BD.
-        if (err) return res.status(500).send(err);
-        res.json({ id: results.insertId, ...req.body });
+        if (err) {
+      console.log(err);
+      return res.status(500).json({
+        error: "Error al crear el usuario"
+      });
+    }
+
+    if (results.affectedRows === 0) {
+      return res.status(400).json({
+        message: "No se pudo crear el usuario"
+      });
+    }
+
+    return res.status(201).json({
+      message: "Usuario creado correctamente",
+      id: results.insertId
+    });
+
     });
 });
 
@@ -97,37 +119,43 @@ app.put('/usuarios/editar/:id', async (req, res) => {
         params = [nombre, email, rol, activo, req.params.id];
     }
     db.query(sql, params, (err, results) => {
-        if (err) return res.status(500).send(err);
-        res.json({ message: 'Usuario actualizado' });
+       if (err) {
+        console.log(err);
+        return res.status(500).json({ error: "Error al actualizar" });
+      }
+
+      if (results.affectedRows === 0) {
+        return res.status(404).json({ message: "Usuario no encontrado" });
+      }
+
+      return res.status(200).json({
+        message: "Usuario actualizado correctamente"
+      });
+
     });
 });
-
-app.put("/jugadores/editar/:id", async (req, res) => {
-  const { id_equipo, nombre, apellido, documento, numero_camiseta, estado } = req.body;
-
- db.query(
-      `UPDATE jugadores  
-       SET id_equipo = ?, nombre = ?, apellido = ?, documento = ?, numero_camiseta = ?, estado = ?
-       WHERE id_jugador = ?`,
-      [id_equipo, nombre, apellido, documento, numero_camiseta, estado, req.params.id], (err, results) => {
-        if (err) return res.status(500).send(err);
-        res.json({ message: 'Jugador actualizado' });
-  });
-});
-
-
-
-
-
-
 
 
 
 app.delete('/usuarios/eliminar/:id', (req, res) => {
     const sql = 'DELETE FROM usuarios WHERE id_usuario = ?';
     db.query(sql, [req.params.id], (err, results) => {
-        if (err) return res.status(500).send(err);
-        res.json({ message: 'Usuario eliminado' });
+        if (err) {
+        console.log(err);
+        return res.status(500).json({
+          error: "Error al eliminar el resultado"
+        });
+      }
+
+      if (results.affectedRows === 0) {
+        return res.status(404).json({
+          message: "Resultado no encontrado"
+        });
+      }
+
+      return res.status(200).json({
+        message: "Resultado eliminado correctamente"
+      });
     });
 });
 
