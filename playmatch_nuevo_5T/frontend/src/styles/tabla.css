@@ -5,6 +5,10 @@
   margin: 40px auto;
   padding: 20px;
   color: #e5e7eb;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 🔥 centra todo */
 }
 
 /* HEADER */
@@ -12,6 +16,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 /* INPUT */
@@ -34,14 +39,21 @@
   cursor: pointer;
 }
 
+/* 🔥 WRAPPER PARA SCROLL */
+.tabla-wrapper {
+  width: 100%;
+  overflow-x: auto; /* 🔥 evita que se desborde */
+}
+
 /* TABLA COMO GRID */
 table {
   width: 100%;
+  min-width: 1200px; /* 🔥 clave para muchas columnas */
   border-collapse: separate;
-  border-spacing: 0 12px; /* 👈 separación tipo cards */
+  border-spacing: 0 12px;
 }
 
-/* OCULTAR HEAD (opcional estilo moderno) */
+/* OCULTAR HEAD */
 thead {
   opacity: 0.6;
 }
@@ -66,28 +78,17 @@ td {
   padding: 16px;
   border: none;
   font-size: 14px;
+
+  white-space: nowrap; /* 🔥 evita que rompa el layout */
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis; /* 🔥 corta texto largo */
 }
 
-/* PRIMERA CELDA MÁS FUERTE */
+/* PRIMERA CELDA */
 td:first-child {
   font-weight: bold;
   color: #a78bfa;
-}
-
-/* EMAIL */
-td:nth-child(3) {
-  color: #60a5fa;
-}
-
-/* ROL */
-td:nth-child(4) {
-  text-transform: capitalize;
-}
-
-/* ACTIVO COMO BADGE */
-td:nth-child(5) {
-  font-weight: 600;
-  color: #22c55e;
 }
 
 /* BOTONES */
