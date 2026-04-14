@@ -1,9 +1,9 @@
 /* CONTENEDOR */
 .tabla-container {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 40px auto;
-  padding: 20px;
+  padding: -5px;
   color: #e5e7eb;
 
   display: flex;
@@ -63,14 +63,14 @@ tbody tr {
   background: linear-gradient(135deg, #1e293b, #0f172a);
   border-radius: 14px;
   overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
   transition: 0.25s ease;
 }
 
 /* EFECTO HOVER */
 tbody tr:hover {
   transform: scale(1.01);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
 }
 
 /* CELDAS */
@@ -79,7 +79,7 @@ td {
   border: none;
   font-size: 14px;
 
-  white-space: normal; 
+  white-space: normal;
   word-break: break-word;
   max-width: 150px;
   overflow: hidden;
