@@ -1,27 +1,27 @@
-import express from 'express';
-import mysql from 'mysql2';
-import cors from 'cors';
-import bcrypt from 'bcrypt';
-import swaggerUI from 'swagger-ui-express';
-import swaggerDocumentation from './swagger.json' with { type: 'json' };
+import express from "express";
+import mysql from "mysql2";
+import cors from "cors";
+import bcrypt from "bcrypt";
+import swaggerUI from "swagger-ui-express";
+import swaggerDocumentation from "./swagger.json" with { type: "json" };
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 
-app.use('/doc', swaggerUI.serve, swaggerUI.setup(swaggerDocumentation));
+app.use("/doc", swaggerUI.serve, swaggerUI.setup(swaggerDocumentation));
 
 const db = mysql.createConnection({
-   host: 'localhost',
-   user: 'root',    
-   password: '',  
-   database: 'playmatch_nuevo'
+  host: "localhost",
+  user: "root",
+  password: "",
+  database: "playmatch_nuevo",
 });
 
-db.connect(err => {
-   if (err) throw err;
-   console.log('MySQL Conectado...');
+db.connect((err) => {
+  if (err) throw err;
+  console.log("MySQL Conectado...");
 });
 
 app.post("/login", (req, res) => {
@@ -36,7 +36,7 @@ app.post("/login", (req, res) => {
 
     if (result.length === 0) {
       return res.status(401).json({
-        message: "Correo o contraseña incorrectos"
+        message: "Correo o contraseña incorrectos",
       });
     }
 
@@ -47,121 +47,118 @@ app.post("/login", (req, res) => {
     if (coincide) {
       res.json({
         message: "Login exitoso",
-        usuario
+        usuario,
       });
     } else {
       res.status(401).json({
-        message: "Correo o contraseña incorrectos"
+        message: "Correo o contraseña incorrectos",
       });
     }
   });
 });
 
-app.get('/usuarios', (req, res) => {
-    const sql = 'SELECT id_usuario, nombre, email, rol, activo, fecha_actualizado FROM usuarios';
-    db.query(sql, (err, results) => {
-        if (err) {
-        console.log(err);
-        return res.status(500).json({
-          error: "Error al obtener los usuarios"
-        });
-      }
-
-      return res.status(200).json(results);
-    });
-});
-
-
-app.post('/usuarios/agregar', async (req, res) => {
-    const { nombre, email, password, rol, activo } = req.body;
-
-    const passwordHash = await bcrypt.hash(password, 10); //Encriptar contraseña
-
-    const sql = 'INSERT INTO usuarios (nombre, email, password, rol, activo) VALUES (?, ?, ?, ?, ?)';
-    db.query(sql, [nombre, email, passwordHash, rol, activo], (err, results) => { //passwordHash se manda a la BD.
-        if (err) {
+app.get("/usuarios", (req, res) => {
+  const sql =
+    "SELECT id_usuario, nombre, email, rol, activo, fecha_actualizado FROM usuarios";
+  db.query(sql, (err, results) => {
+    if (err) {
       console.log(err);
       return res.status(500).json({
-        error: "Error al crear el usuario"
+        error: "Error al obtener los usuarios",
+      });
+    }
+
+    return res.status(200).json(results);
+  });
+});
+
+app.post("/usuarios/agregar", async (req, res) => {
+  const { nombre, email, password, rol, activo } = req.body;
+
+  const passwordHash = await bcrypt.hash(password, 10); //Encriptar contraseña
+
+  const sql =
+    "INSERT INTO usuarios (nombre, email, password, rol, activo) VALUES (?, ?, ?, ?, ?)";
+  db.query(sql, [nombre, email, passwordHash, rol, activo], (err, results) => {
+    //passwordHash se manda a la BD.
+    if (err) {
+      console.log(err);
+      return res.status(500).json({
+        error: "Error al crear el usuario",
       });
     }
 
     if (results.affectedRows === 0) {
       return res.status(400).json({
-        message: "No se pudo crear el usuario"
+        message: "No se pudo crear el usuario",
       });
     }
 
     return res.status(201).json({
       message: "Usuario creado correctamente",
-      id: results.insertId
+      id: results.insertId,
     });
-
-    });
+  });
 });
 
+app.put("/usuarios/editar/:id", async (req, res) => {
+  const { nombre, email, password, rol, activo } = req.body;
 
+  let sql;
+  let params;
+  let passwordHash = password;
 
-app.put('/usuarios/editar/:id', async (req, res) => {
-    const { nombre, email, password, rol, activo } = req.body;
+  if (password) {
+    passwordHash = await bcrypt.hash(password, 10);
 
-    let sql;
-    let params;
-    let passwordHash = password;
-
-    if (password) {
-        passwordHash = await bcrypt.hash(password, 10);
-
-        sql = 'UPDATE usuarios SET nombre = ?, email = ?, password = ?, rol = ?, activo = ? WHERE id_usuario = ?';
-        params = [nombre, email, passwordHash, rol, activo, req.params.id];
-    }else{
-        sql = 'UPDATE usuarios SET nombre = ?, email = ?, rol = ?, activo = ? WHERE id_usuario = ?';
-        params = [nombre, email, rol, activo, req.params.id];
+    sql =
+      "UPDATE usuarios SET nombre = ?, email = ?, password = ?, rol = ?, activo = ? WHERE id_usuario = ?";
+    params = [nombre, email, passwordHash, rol, activo, req.params.id];
+  } else {
+    sql =
+      "UPDATE usuarios SET nombre = ?, email = ?, rol = ?, activo = ? WHERE id_usuario = ?";
+    params = [nombre, email, rol, activo, req.params.id];
+  }
+  db.query(sql, params, (err, results) => {
+    if (err) {
+      console.log(err);
+      return res.status(500).json({ error: "Error al actualizar" });
     }
-    db.query(sql, params, (err, results) => {
-       if (err) {
-        console.log(err);
-        return res.status(500).json({ error: "Error al actualizar" });
-      }
 
-      if (results.affectedRows === 0) {
-        return res.status(404).json({ message: "Usuario no encontrado" });
-      }
+    if (results.affectedRows === 0) {
+      return res.status(404).json({ message: "Usuario no encontrado" });
+    }
 
-      return res.status(200).json({
-        message: "Usuario actualizado correctamente"
-      });
-
+    return res.status(200).json({
+      message: "Usuario actualizado correctamente",
     });
+  });
 });
 
-
-
-app.delete('/usuarios/eliminar/:id', (req, res) => {
-    const sql = 'DELETE FROM usuarios WHERE id_usuario = ?';
-    db.query(sql, [req.params.id], (err, results) => {
-        if (err) {
-        console.log(err);
-        return res.status(500).json({
-          error: "Error al eliminar el resultado"
-        });
-      }
-
-      if (results.affectedRows === 0) {
-        return res.status(404).json({
-          message: "Resultado no encontrado"
-        });
-      }
-
-      return res.status(200).json({
-        message: "Resultado eliminado correctamente"
+app.delete("/usuarios/eliminar/:id", (req, res) => {
+  const sql = "DELETE FROM usuarios WHERE id_usuario = ?";
+  db.query(sql, [req.params.id], (err, results) => {
+    if (err) {
+      console.log(err);
+      return res.status(500).json({
+        error: "Error al eliminar el resultado",
       });
+    }
+
+    if (results.affectedRows === 0) {
+      return res.status(404).json({
+        message: "Resultado no encontrado",
+      });
+    }
+
+    return res.status(200).json({
+      message: "Resultado eliminado correctamente",
     });
+  });
 });
 
-
-app.get('/posiciones', (req, res) => {
-    const sql = `
+app.get("/posiciones", (req, res) => {
+  const sql = `
     SELECT
       p.id_posicion, 
       p.id_torneo,
@@ -179,16 +176,18 @@ app.get('/posiciones', (req, res) => {
      FROM posiciones p
      JOIN torneos t ON p.id_torneo = t.id_torneo
      JOIN equipos e ON p.id_equipo = e.id_equipo`;
-    db.query(sql, (err, results) => {
-        if (err) {
-         console.log(err);
-         return res.status(500).send(err);
-        }
-        res.json(results);
-    });
+  db.query(sql, (err, results) => {
+    if (err) {
+      console.log(err);
+      return res.status(500).json({
+        error: "Error al obtener las posiciones",
+      });
+    }
+    return res.status(200).json(results);
+  });
 });
 
-app.post('/posiciones/agregar', (req, res) => {
+app.post("/posiciones/agregar", (req, res) => {
   const {
     id_torneo,
     id_equipo,
@@ -200,22 +199,37 @@ app.post('/posiciones/agregar', (req, res) => {
     gc,
   } = req.body;
 
-  const puntos = (ganados * 3) + (empatados * 1);
+  const puntos = ganados * 3 + empatados * 1;
 
   const sql = `
     INSERT INTO posiciones (id_torneo, id_equipo, jugados, ganados, perdidos, gf, gc, puntos) 
     VALUES (?, ?, ?, ?, ?, ?, ?, ?)`;
-  db.query(sql, [id_torneo, id_equipo, jugados, ganados, perdidos, gf, gc, puntos],
-    (err, result) => {
-      if (err) return res.status(500).send(err);
-      res.json({ message: "Posición creada" });
-    });
+  db.query(
+    sql,
+    [id_torneo, id_equipo, jugados, ganados, perdidos, gf, gc, puntos],
+    (err, results) => {
+      if (err) {
+        console.log(err);
+        return res.status(500).json({
+          error: "Error al crear la posición",
+        });
+      }
+
+      if (results.affectedRows === 0) {
+        return res.status(400).json({
+          message: "No se pudo crear la posición",
+        });
+      }
+
+      return res.status(201).json({
+        message: "Posición creada correctamente",
+        id: results.insertId,
+      });
+    },
+  );
 });
 
-
-
-app.put('/posiciones/editar/:id', (req, res) => {
-
+app.put("/posiciones/editar/:id", (req, res) => {
   const { id } = req.params;
 
   const {
@@ -226,10 +240,10 @@ app.put('/posiciones/editar/:id', (req, res) => {
     empatados,
     perdidos,
     gf,
-    gc
-  } = req.body; 
+    gc,
+  } = req.body;
 
-  const puntos = (ganados * 3) + (empatados * 1);
+  const puntos = ganados * 3 + empatados * 1;
 
   const sql = `
     UPDATE posiciones SET
@@ -245,75 +259,154 @@ app.put('/posiciones/editar/:id', (req, res) => {
     WHERE id_posicion = ?
   `;
 
-  db.query(sql, [
-    id_torneo,
-    id_equipo,
-    jugados,
-    ganados,
-    empatados,
-    perdidos,
-    gf,
-    gc,
-    puntos,
-    id
-  ], (err, result) => {
-    if (err) return res.status(500).send(err);
-    res.json({ message: "Posición actualizada" });
+  db.query(
+    sql,
+    [
+      id_torneo,
+      id_equipo,
+      jugados,
+      ganados,
+      empatados,
+      perdidos,
+      gf,
+      gc,
+      puntos,
+      id,
+    ],
+    (err, results) => {
+      if (err) {
+        console.log(err);
+        return res.status(500).json({ error: "Error al actualizar" });
+      }
+
+      if (results.affectedRows === 0) {
+        return res.status(404).json({ message: "Posición no encontrada" });
+      }
+
+      return res.status(200).json({
+        message: "Posición actualizada correctamente",
+      });
+    },
+  );
+});
+
+app.delete("/posiciones/eliminar/:id", (req, res) => {
+  const sql = "DELETE FROM posiciones WHERE id_posicion = ?";
+  db.query(sql, [req.params.id], (err, results) => {
+    if (err) {
+      console.log(err);
+      return res.status(500).json({
+        error: "Error al eliminar la posición",
+      });
+    }
+
+    if (results.affectedRows === 0) {
+      return res.status(404).json({
+        message: "Posición no encontrada",
+      });
+    }
+
+    return res.status(200).json({
+      message: "Posición eliminada correctamente",
+    });
   });
 });
 
+app.get("/torneos", (req, res) => {
+  db.query(
+    "SELECT id_torneo, nombre, descripcion, fecha_inicio, fecha_fin, estado FROM torneos",
+    (err, results) => {
+      if (err) {
+        console.log(err);
+        return res.status(500).json({
+          error: "Error al obtener los torneos",
+        });
+      }
 
-
-app.delete('/posiciones/eliminar/:id', (req, res) => {
-    const sql = 'DELETE FROM posiciones WHERE id_posicion = ?';
-    db.query(sql, [req.params.id], (err, results) => {
-        if (err) return res.status(500).send(err);
-        res.json({ message: 'Posición eliminada' });
-    });
+      return res.status(200).json(results);
+    },
+  );
 });
 
+app.post("/torneos/agregar", async (req, res) => {
+  const { nombre, descripcion, fecha_inicio, fecha_fin, estado } = req.body;
 
+  const sql =
+    "INSERT INTO torneos (nombre, descripcion, fecha_inicio, fecha_fin, estado) VALUES (?, ?, ?, ?, ?)";
+  db.query(
+    sql,
+    [nombre, descripcion, fecha_inicio, fecha_fin, estado],
+    (err, results) => {
+      if (err) {
+        console.log(err);
+        return res.status(500).json({
+          error: "Error al crear el torneo",
+        });
+      }
 
+      if (results.affectedRows === 0) {
+        return res.status(400).json({
+          message: "No se pudo crear el torneo",
+        });
+      }
 
+      return res.status(201).json({
+        message: "Torneo creado correctamente",
+        id: results.insertId,
+      });
+    },
+  );
+});
 
-app.get('/torneos', (req, res) => {
-  db.query("SELECT id_torneo, nombre, descripcion, fecha_inicio, fecha_fin, estado FROM torneos", (err, result) => {
-    if (err) return res.status(500).send(err);
-    res.json(result);
+app.put("/torneos/editar/:id", async (req, res) => {
+  const { nombre, descripcion, fecha_inicio, fecha_fin, estado } = req.body;
+
+  const sql =
+    "UPDATE torneos SET nombre = ?, descripcion = ?, fecha_inicio = ?, fecha_fin = ?, estado = ? WHERE id_torneo = ?";
+  db.query(
+    sql,
+    [nombre, descripcion, fecha_inicio, fecha_fin, estado, req.params.id],
+    (err, results) => {
+      if (err) {
+        console.log(err);
+        return res.status(500).json({ error: "Error al actualizar" });
+      }
+
+      if (results.affectedRows === 0) {
+        return res.status(404).json({ message: "Torneo no encontrado" });
+      }
+
+      return res.status(200).json({
+        message: "Torneo actualizado correctamente",
+      });
+    },
+  );
+});
+
+app.delete("/torneos/eliminar/:id", (req, res) => {
+  const sql = "DELETE FROM torneos WHERE id_torneo = ?";
+  db.query(sql, [req.params.id], (err, results) => {
+    if (err) {
+      console.log(err);
+      return res.status(500).json({
+        error: "Error al eliminar el torneo",
+      });
+    }
+
+    if (results.affectedRows === 0) {
+      return res.status(404).json({
+        message: "Torneo no encontrado",
+      });
+    }
+
+    return res.status(200).json({
+      message: "Torneo eliminado correctamente",
+    });
   });
 });
 
-app.post('/torneos/agregar', async (req, res) => {
-    const { nombre, descripcion, fecha_inicio, fecha_fin, estado } = req.body;
-
-    const sql = 'INSERT INTO torneos (nombre, descripcion, fecha_inicio, fecha_fin, estado) VALUES (?, ?, ?, ?, ?)';
-    db.query(sql, [nombre, descripcion, fecha_inicio, fecha_fin, estado], (err, results) => { 
-        if (err) return res.status(500).send(err);
-        res.json({ id: results.insertId, ...req.body });
-    });
-});
-
-app.put('/torneos/editar/:id', async (req, res) => {
-    const { nombre, descripcion, fecha_inicio, fecha_fin, estado } = req.body;
-
-    const sql = 'UPDATE torneos SET nombre = ?, descripcion = ?, fecha_inicio = ?, fecha_fin = ?, estado = ? WHERE id_torneo = ?';
-    db.query(sql, [nombre, descripcion, fecha_inicio, fecha_fin, estado, req.params.id], (err, results) => {
-        if (err) return res.status(500).send(err);
-        res.json({ message: 'Torneo actualizado' });
-    });
-});
-
-app.delete('/torneos/eliminar/:id', (req, res) => {
-    const sql = 'DELETE FROM torneos WHERE id_torneo = ?';
-    db.query(sql, [req.params.id], (err, results) => {
-        if (err) return res.status(500).send(err);
-        res.json({ message: 'Torneo eliminado' });
-    });
-});
-
-
-app.get('/equipos', (req, res) => {
-    const sql = `
+app.get("/equipos", (req, res) => {
+  const sql = `
     SELECT
       e.id_equipo, 
       e.id_torneo,
@@ -322,43 +415,31 @@ app.get('/equipos', (req, res) => {
       e.entrenador
      FROM equipos e
      JOIN torneos t ON e.id_torneo = t.id_torneo`;
-    db.query(sql, (err, results) => {
-        if (err) {
-         console.log(err);
-         return res.status(500).send(err);
-        }
-        res.json(results);
-    });
+  db.query(sql, (err, results) => {
+    if (err) {
+      console.log(err);
+      return res.status(500).send(err);
+    }
+    res.json(results);
+  });
 });
 
-app.post('/equipos/agregar', (req, res) => {
-  const {
-    id_torneo,
-    nombre,
-    entrenador,
-  } = req.body;
+app.post("/equipos/agregar", (req, res) => {
+  const { id_torneo, nombre, entrenador } = req.body;
 
   const sql = `
     INSERT INTO equipos (id_torneo, nombre, entrenador) 
     VALUES (?, ?, ?)`;
-  db.query(sql, [id_torneo, nombre, entrenador],
-    (err, result) => {
-      if (err) return res.status(500).send(err);
-      res.json({ message: "Equipo creado" });
-    });
+  db.query(sql, [id_torneo, nombre, entrenador], (err, result) => {
+    if (err) return res.status(500).send(err);
+    res.json({ message: "Equipo creado" });
+  });
 });
 
-
-
-app.put('/equipos/editar/:id', (req, res) => {
-
+app.put("/equipos/editar/:id", (req, res) => {
   const { id } = req.params;
 
-  const {
-    id_torneo,
-    nombre,
-    entrenador
-  } = req.body; 
+  const { id_torneo, nombre, entrenador } = req.body;
 
   const sql = `
     UPDATE equipos SET
@@ -368,33 +449,22 @@ app.put('/equipos/editar/:id', (req, res) => {
     WHERE id_equipo = ?
   `;
 
-  db.query(sql, [
-    id_torneo,
-    nombre,
-    entrenador,
-    id
-  ], (err, result) => {
+  db.query(sql, [id_torneo, nombre, entrenador, id], (err, result) => {
     if (err) return res.status(500).send(err);
     res.json({ message: "Equipo actualizado" });
   });
 });
 
-
-
-app.delete('/equipos/eliminar/:id', (req, res) => {
-    const sql = 'DELETE FROM equipos WHERE id_equipo = ?';
-    db.query(sql, [req.params.id], (err, results) => {
-        if (err) return res.status(500).send(err);
-        res.json({ message: 'Equipo eliminado' });
-    });
+app.delete("/equipos/eliminar/:id", (req, res) => {
+  const sql = "DELETE FROM equipos WHERE id_equipo = ?";
+  db.query(sql, [req.params.id], (err, results) => {
+    if (err) return res.status(500).send(err);
+    res.json({ message: "Equipo eliminado" });
+  });
 });
 
-
-
-
-
 app.get("/jugadores", (req, res) => {
-    const sql = `
+  const sql = `
     SELECT 
     j.id_jugador,
     j.id_equipo,
@@ -406,31 +476,20 @@ app.get("/jugadores", (req, res) => {
     j.estado
     FROM jugadores j
     JOIN equipos e ON j.id_equipo = e.id_equipo`;
-    db.query(sql, (err, results) => {
-        if (err) {
-         console.log(err);
-         return res.status(500).send(err);
-        }
-        res.json(results);
-    });
+  db.query(sql, (err, results) => {
+    if (err) {
+      console.log(err);
+      return res.status(500).send(err);
+    }
+    res.json(results);
+  });
 });
 
-
-
-
-app.put('/jugadores/editar/:id', (req, res) => {
-
+app.put("/jugadores/editar/:id", (req, res) => {
   const { id } = req.params;
 
-  const {
-    id_equipo,
-    nombre,
-    apellido,
-    documento,
-    numero_camiseta,
-    estado
-  } = req.body; 
-
+  const { id_equipo, nombre, apellido, documento, numero_camiseta, estado } =
+    req.body;
 
   const sql = `
     UPDATE jugadores SET
@@ -443,57 +502,51 @@ app.put('/jugadores/editar/:id', (req, res) => {
     WHERE id_jugador = ?
   `;
 
-  db.query(sql, [
-    id_equipo,
-    nombre,
-    apellido,
-    documento,
-    numero_camiseta,
-    estado,
-    id
-  ], (err, result) => {
-    if (err) return res.status(500).send(err);
-    res.json({ message: "Jugador actualizado" });
-  });
+  db.query(
+    sql,
+    [id_equipo, nombre, apellido, documento, numero_camiseta, estado, id],
+    (err, result) => {
+      if (err) return res.status(500).send(err);
+      res.json({ message: "Jugador actualizado" });
+    },
+  );
 });
 
+app.post("/jugadores/agregar", async (req, res) => {
+  const { id_equipo, nombre, apellido, documento, numero_camiseta, estado } =
+    req.body;
 
-app.post('/jugadores/agregar', async (req, res) => {
-  const { id_equipo, nombre, apellido, documento, numero_camiseta, estado } = req.body;
-
-    const sql = `
+  const sql = `
       INSERT INTO jugadores 
       (id_equipo, nombre, apellido, documento, numero_camiseta, estado) 
       VALUES (?, ?, ?, ?, ?, ?)
     `;
 
-    db.query(sql, [
-      id_equipo,
-      nombre,
-      apellido,
-      documento,
-      numero_camiseta,
-      estado
-    ], (err, results) => { //passwordHash se manda a la BD.
-        if (err) return res.status(500).send(err);
-        res.json({ id: results.insertId, ...req.body });
-    });
+  db.query(
+    sql,
+    [id_equipo, nombre, apellido, documento, numero_camiseta, estado],
+    (err, results) => {
+      //passwordHash se manda a la BD.
+      if (err) return res.status(500).send(err);
+      res.json({ id: results.insertId, ...req.body });
+    },
+  );
 });
 
-app.delete("/jugadores/eliminar/:id",  (req, res) => {
-  const sql = 'DELETE FROM jugadores WHERE id_jugador = ?';
+app.delete("/jugadores/eliminar/:id", (req, res) => {
+  const sql = "DELETE FROM jugadores WHERE id_jugador = ?";
   db.query(sql, [req.params.id], (err, results) => {
-        if (err) return res.status(500).send(err);
-        res.json({ message: 'Torneo eliminado' });
+    if (err) return res.status(500).send(err);
+    res.json({ message: "Torneo eliminado" });
   });
 });
 
 app.listen(3000, () => {
-   console.log('Servidor corriendo en el puerto 3000');
+  console.log("Servidor corriendo en el puerto 3000");
 });
 
-app.get('/encuentros', (req, res) => {
-    const sql = `
+app.get("/encuentros", (req, res) => {
+  const sql = `
     SELECT
       en.id_encuentro, 
       en.id_torneo,
@@ -517,17 +570,16 @@ app.get('/encuentros', (req, res) => {
      JOIN equipos eLocal ON en.id_equipo_local = eLocal.id_equipo
      JOIN equipos eVisitante ON en.id_equipo_visitante = eVisitante.id_equipo
      JOIN usuarios u ON en.id_arbitro = u.id_usuario`;
-    db.query(sql, (err, results) => {
-        if (err) {
-         console.log(err);
-         return res.status(500).send(err);
-        }
-        res.json(results);
-    });
+  db.query(sql, (err, results) => {
+    if (err) {
+      console.log(err);
+      return res.status(500).send(err);
+    }
+    res.json(results);
+  });
 });
 
-
-app.post('/encuentros/agregar', (req, res) => {
+app.post("/encuentros/agregar", (req, res) => {
   const {
     id_torneo,
     id_equipo_local,
@@ -536,22 +588,32 @@ app.post('/encuentros/agregar', (req, res) => {
     lugar,
     jornada,
     id_arbitro,
-    estado
+    estado,
   } = req.body;
 
   const sql = `
     INSERT INTO encuentros (id_torneo, id_equipo_local, id_equipo_visitante, fecha, lugar, jornada, id_arbitro, estado) 
     VALUES (?, ?, ?, ?, ?, ?, ?, ?)`;
-  db.query(sql, [id_torneo, id_equipo_local, id_equipo_visitante, fecha, lugar, jornada, id_arbitro, estado],
+  db.query(
+    sql,
+    [
+      id_torneo,
+      id_equipo_local,
+      id_equipo_visitante,
+      fecha,
+      lugar,
+      jornada,
+      id_arbitro,
+      estado,
+    ],
     (err, result) => {
       if (err) return res.status(500).send(err);
       res.json({ message: "Encuentro creado" });
-    });
+    },
+  );
 });
 
-
-app.put('/encuentros/editar/:id', (req, res) => {
-
+app.put("/encuentros/editar/:id", (req, res) => {
   const { id } = req.params;
 
   const {
@@ -562,7 +624,7 @@ app.put('/encuentros/editar/:id', (req, res) => {
     lugar,
     jornada,
     id_arbitro,
-    estado
+    estado,
   } = req.body;
 
   const sql = `
@@ -578,61 +640,61 @@ app.put('/encuentros/editar/:id', (req, res) => {
     WHERE id_encuentro = ?
   `;
 
-  db.query(sql, [
-    id_torneo,
-    id_equipo_local,
-    id_equipo_visitante,
-    fecha,
-    lugar,
-    jornada,
-    id_arbitro,
-    estado,
-    id
-  ], (err, result) => {
+  db.query(
+    sql,
+    [
+      id_torneo,
+      id_equipo_local,
+      id_equipo_visitante,
+      fecha,
+      lugar,
+      jornada,
+      id_arbitro,
+      estado,
+      id,
+    ],
+    (err, result) => {
+      if (err) {
+        console.log(err);
+        return res.status(500).json({ error: "Error al actualizar" });
+      }
 
-    if (err) {
-      console.log(err);
-      return res.status(500).json({ error: "Error al actualizar" });
-    }
+      if (result.affectedRows === 0) {
+        return res.status(404).json({ message: "Encuentro no encontrado" });
+      }
 
-    if (result.affectedRows === 0) {
-      return res.status(404).json({ message: "Encuentro no encontrado" });
-    }
-
-    return res.status(200).json({
-      message: "Encuentro actualizado correctamente"
-    });
-  });
+      return res.status(200).json({
+        message: "Encuentro actualizado correctamente",
+      });
+    },
+  );
 });
 
-
-
-app.delete('/encuentros/eliminar/:id', (req, res) => {
-    const sql = 'DELETE FROM encuentros WHERE id_encuentro = ?';
-    db.query(sql, [req.params.id], (err, results) => {
-    
+app.delete("/encuentros/eliminar/:id", (req, res) => {
+  const sql = "DELETE FROM encuentros WHERE id_encuentro = ?";
+  db.query(sql, [req.params.id], (err, results) => {
     if (err) {
       console.log(err);
       return res.status(500).json({
-        error: "Error al eliminar el encuentro"
+        error: "Error al eliminar el encuentro",
       });
     }
 
     if (results.affectedRows === 0) {
       return res.status(404).json({
-        message: "Encuentro no encontrado"
+        message: "Encuentro no encontrado",
       });
     }
 
     return res.status(200).json({
       success: true,
-      message: "Encuentro eliminado correctamente"
+      message: "Encuentro eliminado correctamente",
     });
-    });
+  });
 });
 
-app.get('/resultados', (req, res) => {
-    const sql = `
+app.get("/resultados", (req, res) => {
+  const sql = `
     SELECT
       r.id_resultado, 
       r.id_encuentro,
@@ -651,21 +713,19 @@ app.get('/resultados', (req, res) => {
 
      FROM resultados r
      JOIN usuarios u ON r.id_created_by = u.id_usuario`;
-    db.query(sql, (err, results) => {
-       
-      if (err) {
-        console.log(err);
-        return res.status(500).json({
-          error: "Error al obtener los encuentros"
-        });
-      }
+  db.query(sql, (err, results) => {
+    if (err) {
+      console.log(err);
+      return res.status(500).json({
+        error: "Error al obtener los encuentros",
+      });
+    }
 
-      return res.status(200).json(results);
-
-    });
+    return res.status(200).json(results);
+  });
 });
 
-app.post('/resultados/agregar', (req, res) => {
+app.post("/resultados/agregar", (req, res) => {
   const {
     id_encuentro,
     goles_local,
@@ -681,30 +741,42 @@ app.post('/resultados/agregar', (req, res) => {
   const sql = `
     INSERT INTO resultados (id_encuentro, goles_local, goles_visitante, faltas_local, faltas_visitante, tarjetas_amarillas, tarjetas_rojas, observaciones, id_created_by) 
     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`;
-  db.query(sql, [id_encuentro, goles_local, goles_visitante, faltas_local, faltas_visitante, tarjetas_amarillas, tarjetas_rojas, observaciones, id_created_by],
+  db.query(
+    sql,
+    [
+      id_encuentro,
+      goles_local,
+      goles_visitante,
+      faltas_local,
+      faltas_visitante,
+      tarjetas_amarillas,
+      tarjetas_rojas,
+      observaciones,
+      id_created_by,
+    ],
     (err, result) => {
       if (err) {
-      console.log(err);
-      return res.status(500).json({
-        error: "Error al crear el encuentro"
-      });
-    }
+        console.log(err);
+        return res.status(500).json({
+          error: "Error al crear el encuentro",
+        });
+      }
 
-    if (result.affectedRows === 0) {
-      return res.status(400).json({
-        message: "No se pudo crear el encuentro"
-      });
-    }
+      if (result.affectedRows === 0) {
+        return res.status(400).json({
+          message: "No se pudo crear el encuentro",
+        });
+      }
 
-    return res.status(201).json({
-      message: "Encuentro creado correctamente",
-      id: result.insertId
-    });
-    });
+      return res.status(201).json({
+        message: "Encuentro creado correctamente",
+        id: result.insertId,
+      });
+    },
+  );
 });
 
-app.put('/resultados/editar/:id', (req, res) => {
-
+app.put("/resultados/editar/:id", (req, res) => {
   const { id } = req.params;
 
   const {
@@ -716,7 +788,7 @@ app.put('/resultados/editar/:id', (req, res) => {
     tarjetas_amarillas,
     tarjetas_rojas,
     observaciones,
-    id_created_by
+    id_created_by,
   } = req.body;
 
   const sql = `
@@ -733,53 +805,55 @@ app.put('/resultados/editar/:id', (req, res) => {
     WHERE id_resultado = ?
   `;
 
-  db.query(sql, [
-    id_encuentro,
-    goles_local,
-    goles_visitante,
-    faltas_local,
-    faltas_visitante,
-    tarjetas_amarillas,
-    tarjetas_rojas,
-    observaciones,
-    id_created_by,
-    id
-  ], (err, result) => {
+  db.query(
+    sql,
+    [
+      id_encuentro,
+      goles_local,
+      goles_visitante,
+      faltas_local,
+      faltas_visitante,
+      tarjetas_amarillas,
+      tarjetas_rojas,
+      observaciones,
+      id_created_by,
+      id,
+    ],
+    (err, result) => {
+      if (err) {
+        console.log(err);
+        return res.status(500).json({ error: "Error al actualizar" });
+      }
 
-    if (err) {
-      console.log(err);
-      return res.status(500).json({ error: "Error al actualizar" });
-    }
+      if (result.affectedRows === 0) {
+        return res.status(404).json({ message: "Resultado no encontrado" });
+      }
 
-    if (result.affectedRows === 0) {
-      return res.status(404).json({ message: "Resultado no encontrado" });
-    }
-
-    return res.status(200).json({
-      message: "Resultado actualizado correctamente"
-    });
-  });
+      return res.status(200).json({
+        message: "Resultado actualizado correctamente",
+      });
+    },
+  );
 });
 
-app.delete('/resultados/eliminar/:id', (req, res) => {
-    const sql = 'DELETE FROM resultados WHERE id_resultado = ?';
-    db.query(sql, [req.params.id], (err, results) => {
-    
+app.delete("/resultados/eliminar/:id", (req, res) => {
+  const sql = "DELETE FROM resultados WHERE id_resultado = ?";
+  db.query(sql, [req.params.id], (err, results) => {
     if (err) {
       console.log(err);
       return res.status(500).json({
-        error: "Error al eliminar el resultado"
+        error: "Error al eliminar el resultado",
       });
     }
 
     if (results.affectedRows === 0) {
       return res.status(404).json({
-        message: "Resultado no encontrado"
+        message: "Resultado no encontrado",
       });
     }
 
     return res.status(200).json({
-      message: "Resultado eliminado correctamente"
+      message: "Resultado eliminado correctamente",
     });
-    });
+  });
 });
