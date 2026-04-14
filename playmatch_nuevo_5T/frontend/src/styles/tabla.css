@@ -1,93 +1,121 @@
+/* CONTENEDOR */
 .tabla-container {
-  width: 95%;
+  width: 100%;
+  max-width: 1100px;
   margin: 40px auto;
-  background: #1e293b; /* fondo oscuro */
   padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
   color: #e5e7eb;
 }
 
 /* HEADER */
+.tabla-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* INPUT */
 .tabla-header input {
-  padding: 8px;
-  border-radius: 6px;
+  padding: 10px 14px;
+  border-radius: 10px;
   border: none;
-  background: #334155;
+  background: #1e293b;
   color: white;
-  display: flex;
+  outline: none;
 }
 
-.tabla-header input::placeholder {
-  color: #94a3b8;
-}
-
-/* BOTÓN AGREGAR */
+/* BOTÓN */
 .btn-add {
-  background: #22c55e;
+  background: #6366f1;
   color: white;
   border: none;
-  padding: 6px 12px;
-  border-radius: 6px;
+  padding: 10px 16px;
+  border-radius: 10px;
   cursor: pointer;
-  transition: 0.3s;
-  display: flex;
-  margin-left: 180px;
 }
 
-.btn-add:hover {
-  background: #16a34a;
-}
-
-/* TABLA */
+/* TABLA COMO GRID */
 table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0 12px; /* 👈 separación tipo cards */
 }
 
-th {
-  background: #334155;
-  color: #f1f5f9;
+/* OCULTAR HEAD (opcional estilo moderno) */
+thead {
+  opacity: 0.6;
 }
 
+/* FILAS COMO TARJETAS */
+tbody tr {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  transition: 0.25s ease;
+}
+
+/* EFECTO HOVER */
+tbody tr:hover {
+  transform: scale(1.01);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+}
+
+/* CELDAS */
 td {
-  color: #cbd5f5;
+  padding: 16px;
+  border: none;
+  font-size: 14px;
 }
 
-th, td {
-  padding: 12px;
-  border-bottom: 1px solid #475569;
+/* PRIMERA CELDA MÁS FUERTE */
+td:first-child {
+  font-weight: bold;
+  color: #a78bfa;
 }
 
-/* HOVER FILAS */
-tr:hover {
-  background: #2c3a4f;
+/* EMAIL */
+td:nth-child(3) {
+  color: #60a5fa;
+}
+
+/* ROL */
+td:nth-child(4) {
+  text-transform: capitalize;
+}
+
+/* ACTIVO COMO BADGE */
+td:nth-child(5) {
+  font-weight: 600;
+  color: #22c55e;
 }
 
 /* BOTONES */
 .btn-edit {
   background: #f59e0b;
   border: none;
-  padding: 5px 10px;
-  margin-right: 5px;
-  border-radius: 5px;
+  padding: 6px 12px;
+  border-radius: 8px;
   cursor: pointer;
-  color: black;
+  margin-right: 6px;
 }
 
 .btn-delete {
   background: #ef4444;
-  color: white;
   border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
+  padding: 6px 12px;
+  border-radius: 8px;
   cursor: pointer;
+  color: white;
 }
 
-.btn-edit:hover {
-  background: #d97706;
-}
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  table {
+    font-size: 12px;
+  }
 
-.btn-delete:hover {
-  background: #dc2626;
+  td {
+    padding: 10px;
+  }
 }

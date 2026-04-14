@@ -25,7 +25,7 @@ function InicioAdmin() {
     <div className="layout-container">
   
       <aside className="sidebar">
-        <div className="brand-title">🏆 Playmatch</div>
+        <div className="brand-title">🏆 Play Match</div>
         
         <div className="sidebar-content">
           <Link to="/usuarios" className="sidebar-link">

@@ -27,6 +27,7 @@ db.connect(err => {
 app.post("/login", (req, res) => {
   const { correo, password } = req.body;
 
+  
   const sql = "SELECT * FROM usuarios WHERE email = ?";
 
   db.query(sql, [correo], async (err, result) => {
