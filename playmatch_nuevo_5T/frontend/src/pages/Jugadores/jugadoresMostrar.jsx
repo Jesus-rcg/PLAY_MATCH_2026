@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import "../../styles/tabla.css";
 
 function JugadoresMostrar() {
 
@@ -12,12 +13,8 @@ function JugadoresMostrar() {
 
     const navigate = useNavigate();
 
-    useEffect(() => {
-        obtenerJugadores();
-    }, []);
-
     const obtenerJugadores = () => {
-        axios.get("http://localhost:3000/jugadores")
+        axios.get("http://localhost:3000/api/jugadores")
             .then(res => {
                 console.log("DATOS DEL BACKEND:", res.data); // 👈 AQUÍ
                 setJugadores(res.data);
@@ -25,20 +22,24 @@ function JugadoresMostrar() {
             .catch(err => console.log(err));
     };
 
+    useEffect(() => {
+        obtenerJugadores();
+    }, []);
+
     const safe = (val) => (val ?? "").toString().toLowerCase();
 
-    const jugadoresFiltrados = jugadores.filter(u => {
+    const jugadoresFiltrados = jugadores.filter(j => {
         const texto = busqueda.toLowerCase();
 
         return (
-            safe(u.id_jugador).includes(texto) ||
-            safe(u.id_equipo).includes(texto) ||
-            safe(u.equipo).includes(texto) ||
-            safe(u.nombre).includes(texto) ||
-            safe(u.apellido).includes(texto) ||
-            safe(u.documento).includes(texto) ||
-            safe(u.numero_camiseta).includes(texto) ||
-            safe(u.estado).includes(texto)
+            safe(j.id_jugador).includes(texto) ||
+            safe(j.id_equipo).includes(texto) ||
+            safe(j.equipo).includes(texto) ||
+            safe(j.nombre).includes(texto) ||
+            safe(j.apellido).includes(texto) ||
+            safe(j.documento).includes(texto) ||
+            safe(j.numero_camiseta).includes(texto) ||
+            safe(j.estado).includes(texto)
         );
     });
 
@@ -82,27 +83,27 @@ function JugadoresMostrar() {
 
                 <tbody>
                     {jugadoresPagina.length > 0 ? (
-                        jugadoresPagina.map((u) => (
-                            <tr key={u.id_jugador}>
-                                <td>{u.id_jugador}</td>
-                                <td>{u.equipo}</td>
-                                <td>{u.nombre}</td>
-                                <td>{u.apellido}</td>
-                                <td>{u.documento}</td>
-                                <td>{u.numero_camiseta}</td>
-                                <td>{u.estado}</td>
+                        jugadoresPagina.map((j) => (
+                            <tr key={j.id_jugador}>
+                                <td>{j.id_jugador}</td>
+                                <td>{j.equipo}</td>
+                                <td>{j.nombre}</td>
+                                <td>{j.apellido}</td>
+                                <td>{j.documento}</td>
+                                <td>{j.numero_camiseta}</td>
+                                <td>{j.estado}</td>
 
                                 <td>
                                     <button
                                         className="btn-edit"
-                                        onClick={() => navigate(`/jugadores/editar/${u.id_jugador}`)}
+                                        onClick={() => navigate(`/jugadores/editar/${j.id_jugador}`)}
                                     >
                                         Editar
                                     </button>
 
                                     <button
                                         className="btn-delete"
-                                        onClick={() => navigate(`/jugadores/eliminar/${u.id_jugador}`)}
+                                        onClick={() => navigate(`/jugadores/eliminar/${j.id_jugador}`)}
                                     >
                                         Eliminar
                                     </button>

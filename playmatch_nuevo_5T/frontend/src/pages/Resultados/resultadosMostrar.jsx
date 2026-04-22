@@ -13,18 +13,18 @@ function ResultadosTabla() {
 
   const navigate = useNavigate();
 
-
-  useEffect(() => {
-    obtenerResultados();
-  }, []);
-
+  
   const obtenerResultados = () => {
-    axios.get("http://localhost:3000/resultados")
+    axios.get("http://localhost:3000/api/resultados")
       .then(res => {
         setResultados(res.data);
       })
       .catch(err => console.log(err));
   };
+
+  useEffect(() => {
+    obtenerResultados();
+  }, []);
 
   const resultadosFiltrados = resultados.filter(r => {
     const texto = busqueda.toLowerCase();

@@ -14,17 +14,17 @@ function EquiposTabla() {
   const navigate = useNavigate();
 
 
-  useEffect(() => {
-    obtenerEquipos();
-  }, []);
-
   const obtenerEquipos = () => {
-    axios.get("http://localhost:3000/equipos")
+    axios.get("http://localhost:3000/api/equipos")
       .then(res => {
         setEquipos(res.data);
       })
       .catch(err => console.log(err));
   };
+
+  useEffect(() => {
+    obtenerEquipos();
+  }, []);
 
   const equiposFiltados = equipos.filter(e => {
     const texto = busqueda.toLowerCase();

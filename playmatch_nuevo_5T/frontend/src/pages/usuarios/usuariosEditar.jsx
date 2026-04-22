@@ -14,7 +14,7 @@ function EditarUsuario() {
   const [activo, setActivo] = useState(0);
 
   useEffect(() => {
-    axios.get(`http://localhost:3000/usuarios`)
+    axios.get(`http://localhost:3000/api/usuarios`)
       .then((response) => {
         const usuario = response.data.find(u => u.id_usuario === parseInt(id));
         if (usuario) {
@@ -27,7 +27,7 @@ function EditarUsuario() {
   }, [id]);
 
   const editar = () => {
-    axios.put(`http://localhost:3000/usuarios/editar/${id}`, {
+    axios.put(`http://localhost:3000/api/usuarios/${id}`, {
       nombre,
       email,
       password,

@@ -13,18 +13,19 @@ function TorneosTabla() {
 
   const navigate = useNavigate();
 
-
-  useEffect(() => {
-    obtenerTorneos();
-  }, []);
-
   const obtenerTorneos = () => {
-    axios.get("http://localhost:3000/torneos")
+    axios.get("http://localhost:3000/api/torneos")
       .then(res => {
         setTorneos(res.data);
       })
       .catch(err => console.log(err));
   };
+
+
+  useEffect(() => {
+    obtenerTorneos();
+  }, []);
+
 
   const torneosFiltrados = torneos.filter(t => {
     const texto = busqueda.toLowerCase();

@@ -13,7 +13,7 @@ function TorneosCrear() {
   const [estado, setEstado] = useState(0);
 
   const agregar = () => {
-    axios.post("http://localhost:3000/torneos/agregar", {
+    axios.post("http://localhost:3000/api/torneos", {
       nombre,
       descripcion,
       fecha_inicio,
@@ -27,7 +27,6 @@ function TorneosCrear() {
       setFechaInicio(undefined);
       setFechaFin(undefined);
       setEstado(0);
-      obtenerTorneos();
     });
   };
 

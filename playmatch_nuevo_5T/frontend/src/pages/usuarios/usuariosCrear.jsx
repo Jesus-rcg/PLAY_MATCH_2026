@@ -13,7 +13,7 @@ function Usuarios() {
   const [activo, setActivo] = useState(0);
 
   const agregar = () => {
-    axios.post("http://localhost:3000/usuarios/agregar", {
+    axios.post("http://localhost:3000/api/usuarios", {
       nombre,
       email,
       password,
@@ -27,7 +27,6 @@ function Usuarios() {
       setPassword(null);
       setRol(undefined);
       setActivo(0);
-      obtenerUsuarios();
     });
   };
 

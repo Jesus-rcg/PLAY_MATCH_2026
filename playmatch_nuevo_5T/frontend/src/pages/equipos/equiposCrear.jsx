@@ -15,12 +15,12 @@ function EquiposCrear() {
 
 
   useEffect(() => {
-    axios.get("http://localhost:3000/torneos")
+    axios.get("http://localhost:3000/api/torneos")
         .then(res => setTorneos(res.data));
   }, []);
 
   const agregar = () => {
-    axios.post("http://localhost:3000/equipos/agregar", {
+    axios.post("http://localhost:3000/api/equipos", {
     id_torneo, 
     nombre, 
     entrenador

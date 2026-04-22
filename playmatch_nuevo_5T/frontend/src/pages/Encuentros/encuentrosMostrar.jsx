@@ -13,18 +13,18 @@ function EncuentrosTabla() {
 
   const navigate = useNavigate();
 
-
-  useEffect(() => {
-    obtenerEncuentros();
-  }, []);
-
   const obtenerEncuentros = () => {
-    axios.get("http://localhost:3000/encuentros")
+    axios.get("http://localhost:3000/api/encuentros")
       .then(res => {
         setEncuentros(res.data);
       })
       .catch(err => console.log(err));
   };
+
+  useEffect(() => {
+    obtenerEncuentros();
+  }, []);
+
 
   const encuentrosFiltrados = encuentros.filter(en => {
     const texto = busqueda.toLowerCase();

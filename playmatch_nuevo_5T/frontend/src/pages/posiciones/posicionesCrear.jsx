@@ -20,15 +20,15 @@ function PosicionesCrear() {
 
 
   useEffect(() => {
-    axios.get("http://localhost:3000/torneos")
+    axios.get("http://localhost:3000/api/torneos")
         .then(res => setTorneos(res.data));
 
-    axios.get("http://localhost:3000/equipos")
+    axios.get("http://localhost:3000/api/equipos")
         .then(res => setEquipos(res.data));
   }, []);
 
   const agregar = () => {
-    axios.post("http://localhost:3000/posiciones/agregar", {
+    axios.post("http://localhost:3000/api/posiciones", {
       id_torneo: idTorneo,
       id_equipo: idEquipo,
       jugados,

@@ -14,7 +14,7 @@ function EditarTorneo() {
   const [estado, setEstado] = useState(0);
 
   useEffect(() => {
-    axios.get(`http://localhost:3000/torneos`)
+    axios.get(`http://localhost:3000/api/torneos`)
       .then((response) => {
         const torneos = response.data.find(t => t.id_torneo === parseInt(id));
         if (torneos) {
@@ -28,7 +28,7 @@ function EditarTorneo() {
   }, [id]);
 
   const editar = () => {
-    axios.put(`http://localhost:3000/torneos/editar/${id}`, {
+    axios.put(`http://localhost:3000/api/torneos/${id}`, {
       nombre,
       descripcion,
       fecha_inicio,

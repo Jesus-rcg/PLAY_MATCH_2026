@@ -22,21 +22,21 @@ function EncuentrosCrear() {
 
 
   useEffect(() => {
-    axios.get("http://localhost:3000/torneos")
+    axios.get("http://localhost:3000/api/torneos")
         .then(res => setTorneos(res.data));
 
-    axios.get("http://localhost:3000/equipos")
+    axios.get("http://localhost:3000/api/equipos")
         .then(res => setEquipoLocal(res.data));
 
-    axios.get("http://localhost:3000/equipos")
+    axios.get("http://localhost:3000/api/equipos")
         .then(res => setEquipoVisitante(res.data));
 
-    axios.get("http://localhost:3000/usuarios")
+    axios.get("http://localhost:3000/api/usuarios")
         .then(res => setArbitros(res.data));
   }, []);
 
   const agregar = () => {
-    axios.post("http://localhost:3000/encuentros/agregar", {
+    axios.post("http://localhost:3000/api/encuentros", {
       id_torneo: idTorneo,
       id_equipo_local: idEquipoLocal,
       id_equipo_visitante: idEquipoVisitante,

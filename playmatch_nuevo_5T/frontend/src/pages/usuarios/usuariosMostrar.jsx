@@ -13,18 +13,18 @@ function UsuariosTabla() {
 
   const navigate = useNavigate();
 
-
-  useEffect(() => {
-    obtenerUsuarios();
-  }, []);
-
   const obtenerUsuarios = () => {
-    axios.get("http://localhost:3000/usuarios")
+    axios.get("http://localhost:3000/api/usuarios")
       .then(res => {
         setUsuarios(res.data);
       })
       .catch(err => console.log(err));
   };
+
+
+  useEffect(() => {
+    obtenerUsuarios();
+  }, []);
 
   const usuariosFiltrados = usuarios.filter(u => {
     const texto = busqueda.toLowerCase();

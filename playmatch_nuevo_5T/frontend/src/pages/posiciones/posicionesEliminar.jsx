@@ -8,7 +8,7 @@ function EliminarPosicion() {
   const { id } = useParams();
 
   const eliminar = () => {
-    axios.delete(`http://localhost:3000/posiciones/eliminar/${id}`)
+    axios.delete(`http://localhost:3000/api/posiciones/${id}`)
       .then(() => {
         alert("Posición eliminada correctamente");
         navigate("/posiciones");

@@ -8,7 +8,7 @@ function EliminarEncuentros() {
   const { id } = useParams();
 
   const eliminar = () => {
-    axios.delete(`http://localhost:3000/encuentros/eliminar/${id}`)
+    axios.delete(`http://localhost:3000/api/encuentros/${id}`)
       .then(() => {
         alert("Encuentro eliminado correctamente");
         navigate("/encuentros");

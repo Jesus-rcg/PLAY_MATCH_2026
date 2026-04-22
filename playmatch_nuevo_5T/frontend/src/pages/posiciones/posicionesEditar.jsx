@@ -21,13 +21,13 @@ function EditarPosicion() {
 
 
   useEffect(() => {
-    axios.get("http://localhost:3000/torneos")
+    axios.get("http://localhost:3000/api/torneos")
         .then(res => setTorneos(res.data));
 
-    axios.get("http://localhost:3000/equipos")
+    axios.get("http://localhost:3000/api/equipos")
         .then(res => setEquipos(res.data));
 
-    axios.get("http://localhost:3000/posiciones")
+    axios.get("http://localhost:3000/api/posiciones")
     .then((response) => {
         const posicion = response.data.find (p => p.id_posicion === parseInt(id));
         if (posicion){
@@ -44,7 +44,7 @@ function EditarPosicion() {
   }, [id]);
 
   const editar = () => {
-    axios.put(`http://localhost:3000/posiciones/editar/${id}`, {
+    axios.put(`http://localhost:3000/api/posiciones/${id}`, {
       id_torneo: idTorneo,
       id_equipo: idEquipo,
       jugados,

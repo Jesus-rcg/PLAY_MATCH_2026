@@ -13,18 +13,19 @@ function PosicionesTabla() {
 
   const navigate = useNavigate();
 
-
-  useEffect(() => {
-    obtenerPosiciones();
-  }, []);
-
   const obtenerPosiciones = () => {
-    axios.get("http://localhost:3000/posiciones")
+    axios.get("http://localhost:3000/api/posiciones")
       .then(res => {
         setPosiciones(res.data);
       })
       .catch(err => console.log(err));
   };
+
+  useEffect(() => {
+    obtenerPosiciones();
+  }, []);
+
+
 
   const posicionesFiltradas = posiciones.filter(p => {
     const texto = busqueda.toLowerCase();

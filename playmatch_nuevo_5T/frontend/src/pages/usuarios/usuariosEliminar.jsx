@@ -8,7 +8,7 @@ function EliminarUsuario() {
   const { id } = useParams();
 
   const eliminar = () => {
-    axios.delete(`http://localhost:3000/usuarios/eliminar/${id}`)
+    axios.delete(`http://localhost:3000/api/usuarios/${id}`)
       .then(() => {
         alert("Usuario eliminado correctamente");
         navigate("/usuarios");

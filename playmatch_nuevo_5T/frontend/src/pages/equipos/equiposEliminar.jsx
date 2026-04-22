@@ -8,7 +8,7 @@ function EliminarEquipo() {
   const { id } = useParams();
 
   const eliminar = () => {
-    axios.delete(`http://localhost:3000/equipos/eliminar/${id}`)
+    axios.delete(`http://localhost:3000/api/equipos/${id}`)
       .then(() => {
         alert("Equipo eliminado correctamente");
         navigate("/equipos");

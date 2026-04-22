@@ -15,10 +15,10 @@ function EditarEquipo() {
 
 
   useEffect(() => {
-    axios.get("http://localhost:3000/torneos")
+    axios.get("http://localhost:3000/api/torneos")
         .then(res => setTorneos(res.data));
 
-    axios.get("http://localhost:3000/equipos")
+    axios.get("http://localhost:3000/api/equipos")
     .then((response) => {
         const equipo = response.data.find (e => e.id_equipo === parseInt(id));
         if (equipo){
@@ -30,7 +30,7 @@ function EditarEquipo() {
   }, [id]);
 
   const editar = () => {
-    axios.put(`http://localhost:3000/equipos/editar/${id}`, {
+    axios.put(`http://localhost:3000/api/equipos/${id}`, {
       id_torneo: idTorneo,
       nombre,
       entrenador

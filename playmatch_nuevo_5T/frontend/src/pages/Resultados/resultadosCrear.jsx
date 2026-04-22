@@ -29,7 +29,7 @@ function ResultadosCrear() {
   }, []);
 
   const agregar = () => {
-    axios.post("http://localhost:3000/resultados/agregar", {
+    axios.post("http://localhost:3000/api/resultados", {
       id_encuentro,
       goles_local,
       goles_visitante,

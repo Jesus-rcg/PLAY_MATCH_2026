@@ -23,13 +23,13 @@ function EditarResultado() {
 
 
   useEffect(() => {
-    axios.get("http://localhost:3000/encuentros")
+    axios.get("http://localhost:3000/api/encuentros")
         .then(res => setEncuentros(res.data));
 
-    axios.get("http://localhost:3000/usuarios")
+    axios.get("http://localhost:3000/api/usuarios")
         .then(res => setUsuarios(res.data));
 
-    axios.get("http://localhost:3000/resultados")
+    axios.get("http://localhost:3000/api/resultados")
     .then((response) => {
         const resultado = response.data.find (r => r.id_resultado === parseInt(id));
         if (resultado){
@@ -40,14 +40,14 @@ function EditarResultado() {
             setFaltasVisitante(resultado.faltas_visitante);
             setTarjetasAmarillas(resultado.tarjetas_amarillas);
             setTarjetasRojas(resultado.tarjetas_rojas);
-            setObservaciones(resultado.observacione<s);
+            setObservaciones(resultado.observaciones);
             setCreador(resultado.id_created_by);
         }
     });
   }, [id]);
 
   const editar = () => {
-    axios.put(`http://localhost:3000/resultados/editar/${id}`, {
+    axios.put(`http://localhost:3000/api/resultados/${id}`, {
       id_encuentro,
       goles_local,
       goles_visitante,

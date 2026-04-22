@@ -43,7 +43,7 @@ function App() {
     <BrowserRouter>
       <Routes>
 
-        <Route path="/" element={<Login />} />
+        <Route path="/login" element={<Login />} />
         <Route element={<InicioAdmin />}>
         <Route path="/inicioAdmin" element={<InicioAdmin />} />
 

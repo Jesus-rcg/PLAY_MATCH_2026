@@ -8,7 +8,7 @@ function EliminarTorneo() {
   const { id } = useParams();
 
   const eliminar = () => {
-    axios.delete(`http://localhost:3000/torneos/eliminar/${id}`)
+    axios.delete(`http://localhost:3000/api/torneos/${id}`)
       .then(() => {
         alert("Torneo eliminado correctamente");
         navigate("/torneos");
