@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+import Axios from "axios";
+import Api from "../../api/axios";
 import "../../styles/tabla.css";
 
 function JugadoresMostrar() {
@@ -14,7 +15,7 @@ function JugadoresMostrar() {
     const navigate = useNavigate();
 
     const obtenerJugadores = () => {
-        axios.get("http://localhost:3000/api/jugadores")
+        Api.get("/jugadores")
             .then(res => {
                 console.log("DATOS DEL BACKEND:", res.data); // 👈 AQUÍ
                 setJugadores(res.data);

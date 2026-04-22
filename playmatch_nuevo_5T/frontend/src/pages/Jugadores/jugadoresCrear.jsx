@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+import Axios from "axios";
+import Api from "../../api/axios";
 import "../../styles/create.css"
 
 function JugadoresCrear() {
@@ -16,13 +17,13 @@ function JugadoresCrear() {
   const [equipos, setEquipos] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3000/api/equipos")
+    Api.get("/equipos")
       .then(res => setEquipos(res.data))
       .catch(err => console.log(err));
   }, []);
 
   const agregar = () => {
-    axios.post("http://localhost:3000/api/jugadores", {
+    Api.post("/jugadores", {
       id_equipo,
       nombre,
       apellido,

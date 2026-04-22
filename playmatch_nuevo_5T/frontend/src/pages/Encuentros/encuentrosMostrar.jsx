@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+import Axios from "axios";
+import Api from "../../api/axios";
 import "../../styles/tabla.css";
 
 function EncuentrosTabla() {
@@ -14,7 +15,7 @@ function EncuentrosTabla() {
   const navigate = useNavigate();
 
   const obtenerEncuentros = () => {
-    axios.get("http://localhost:3000/api/encuentros")
+    Api.get("/encuentros")
       .then(res => {
         setEncuentros(res.data);
       })

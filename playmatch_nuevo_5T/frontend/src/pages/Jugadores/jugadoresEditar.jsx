@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import axios from "axios";
+import Axios from "axios";
+import Api from "../../api/axios";
 import "../../styles/create.css"
 import JugadoresMostrar from "./jugadoresMostrar";
 
@@ -19,10 +20,10 @@ function EditarUsuario() {
 
   useEffect(() => {
 
-    axios.get("http://localhost:3000/api/equipos")
+    Api.get("/equipos")
     .then(res => setEquipos(res.data));
     
-    axios.get(`http://localhost:3000/api/jugadores`)
+    Api.get(`/jugadores`)
       .then((response) => {
         const jugador = response.data.find(j => j.id_jugador === parseInt(id));
         if (jugador) {
@@ -37,7 +38,7 @@ function EditarUsuario() {
   }, [id]);
 
   const editar = () => {
-    axios.put(`http://localhost:3000/api/jugadores/${id}`, {
+    Api.put(`/jugadores/${id}`, {
       id_equipo: equipo,
       nombre,
       apellido,

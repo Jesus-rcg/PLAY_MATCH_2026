@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Api from "./api/axios";
 
 import Index from "./pages/index"
 import Login from "./pages/login"

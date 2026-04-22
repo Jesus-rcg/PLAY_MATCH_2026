@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import axios from "axios";
+import Api from "../../api/axios";
 import "../../styles/create.css"
 
 function EditarEncuentro() {
@@ -22,19 +22,19 @@ function EditarEncuentro() {
   const [arbitros, setArbitros] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3000/api/torneos")
+    Api.get("torneos")
         .then(res => setTorneos(res.data));
 
-    axios.get("http://localhost:3000/api/equipos")
+    Api.get("/equipos")
         .then(res => setEquipoLocal(res.data));
 
-    axios.get("http://localhost:3000/api/equipos")
+    Api.get("/equipos")
         .then(res => setEquipoVisitante(res.data));
 
-    axios.get("http://localhost:3000/api/usuarios")
+    Api.get("/usuarios")
         .then(res => setArbitros(res.data));
 
-    axios.get("http://localhost:3000/api/encuentros")
+    Api.get("/encuentros")
     .then((response) => {
         const encuentro = response.data.find (e => e.id_encuentro === parseInt(id));
         if (encuentro){
@@ -51,7 +51,7 @@ function EditarEncuentro() {
   }, [id]);
 
   const editar = () => {
-    axios.put(`http://localhost:3000/api/encuentros/${id}`, {
+    Api.put(`/encuentros/${id}`, {
       id_torneo: idTorneo,
       id_equipo_local: idEquipoLocal,
       id_equipo_visitante: idEquipoVisitante,
