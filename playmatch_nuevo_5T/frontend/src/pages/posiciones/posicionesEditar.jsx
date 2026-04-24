@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import axios from "axios";
+import Api from "../../api/axios";
 import "../../styles/create.css"
 
 function EditarPosicion() {
@@ -21,13 +21,13 @@ function EditarPosicion() {
 
 
   useEffect(() => {
-    axios.get("http://localhost:3000/api/torneos")
+    Api.get("/torneos")
         .then(res => setTorneos(res.data));
 
-    axios.get("http://localhost:3000/api/equipos")
+    Api.get("/equipos")
         .then(res => setEquipos(res.data));
 
-    axios.get("http://localhost:3000/api/posiciones")
+    Api.get("/posiciones")
     .then((response) => {
         const posicion = response.data.find (p => p.id_posicion === parseInt(id));
         if (posicion){
@@ -44,7 +44,7 @@ function EditarPosicion() {
   }, [id]);
 
   const editar = () => {
-    axios.put(`http://localhost:3000/api/posiciones/${id}`, {
+    Api.put(`/posiciones/${id}`, {
       id_torneo: idTorneo,
       id_equipo: idEquipo,
       jugados,

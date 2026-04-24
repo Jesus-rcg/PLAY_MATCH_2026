@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+import Api from "../../api/axios";
 import "../../styles/create.css"
 
 function EquiposCrear() {
@@ -15,12 +15,12 @@ function EquiposCrear() {
 
 
   useEffect(() => {
-    axios.get("http://localhost:3000/api/torneos")
+    Api.get("/torneos")
         .then(res => setTorneos(res.data));
   }, []);
 
   const agregar = () => {
-    axios.post("http://localhost:3000/api/equipos", {
+    Api.post("/equipos", {
     id_torneo, 
     nombre, 
     entrenador

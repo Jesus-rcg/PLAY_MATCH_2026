@@ -1,16 +1,22 @@
-import swaggerAutogen from 'swagger-autogen';
+import swaggerJSDoc from "swagger-jsdoc";
 
-const outputFile = './swagger.json';
-
-const endPointsFiles = ['./index.js'];
-
-const doc = {
+const options = {
+  definition: {
+    openapi: "3.0.0",
     info: {
-       title: 'API de Play Match',
-       description: 'Sistema de Gestion de Torneos'
+      title: "API de Playmatch",
+      version: "1.0.0",
+      description: "Documentación de la API para torneos",
     },
-    host: 'localhost:3000',
-    schemes: ['http']
-}
+    servers: [
+      {
+        url: "http://localhost:3000",
+      },
+    ],
+  },
+  apis: ["./routes/*.js"],
+};
 
-swaggerAutogen()(outputFile, endPointsFiles, doc);
+const specs = swaggerJSDoc(options);
+
+export default { specs };

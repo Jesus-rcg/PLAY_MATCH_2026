@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+import Api from "../../api/axios";
 import "../../styles/create.css"
 
 function TorneosCrear() {
@@ -13,7 +13,7 @@ function TorneosCrear() {
   const [estado, setEstado] = useState(0);
 
   const agregar = () => {
-    axios.post("http://localhost:3000/api/torneos", {
+    Api.post("/torneos", {
       nombre,
       descripcion,
       fecha_inicio,

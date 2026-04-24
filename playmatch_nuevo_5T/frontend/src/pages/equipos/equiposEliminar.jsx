@@ -1,5 +1,5 @@
 import { useNavigate, useParams } from "react-router-dom";
-import axios from "axios";
+import Api from "../../api/axios";
 import "../../styles/eliminar.css"
 
 function EliminarEquipo() {
@@ -8,7 +8,7 @@ function EliminarEquipo() {
   const { id } = useParams();
 
   const eliminar = () => {
-    axios.delete(`http://localhost:3000/api/equipos/${id}`)
+    Api.delete(`/equipos/${id}`)
       .then(() => {
         alert("Equipo eliminado correctamente");
         navigate("/equipos");

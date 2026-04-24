@@ -1,5 +1,5 @@
 import { useNavigate, useParams } from "react-router-dom";
-import axios from "axios";
+import Api from "../../api/axios";
 import "../../styles/eliminar.css"
 
 function EliminarUsuario() {
@@ -8,7 +8,7 @@ function EliminarUsuario() {
   const { id } = useParams();
 
   const eliminar = () => {
-    axios.delete(`http://localhost:3000/api/usuarios/${id}`)
+    Api.delete(`/usuarios/${id}`)
       .then(() => {
         alert("Usuario eliminado correctamente");
         navigate("/usuarios");

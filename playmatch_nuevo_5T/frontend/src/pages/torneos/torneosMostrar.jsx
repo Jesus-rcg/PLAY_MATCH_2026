@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+import api from "../../api/axios";
 import "../../styles/tabla.css";
 
 function TorneosTabla() {
@@ -14,7 +14,7 @@ function TorneosTabla() {
   const navigate = useNavigate();
 
   const obtenerTorneos = () => {
-    axios.get("http://localhost:3000/api/torneos")
+    api.get("/torneos")
       .then(res => {
         setTorneos(res.data);
       })

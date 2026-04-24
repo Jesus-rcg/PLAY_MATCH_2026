@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import Axios from "axios";
 import Api from "../../api/axios";
 import "../../styles/create.css"
 import JugadoresMostrar from "./jugadoresMostrar";

@@ -1,5 +1,4 @@
 import { useNavigate, useParams } from "react-router-dom";
-import Axios from "axios";
 import Api from "../../api/axios";
 import "../../styles/eliminar.css"
 

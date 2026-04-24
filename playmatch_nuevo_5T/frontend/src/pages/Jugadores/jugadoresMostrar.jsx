@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Axios from "axios";
 import Api from "../../api/axios";
 import "../../styles/tabla.css";
 

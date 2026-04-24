@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+import Api from "../../api/axios";
 import "../../styles/tabla.css";
 
 function ResultadosTabla() {
@@ -15,7 +15,7 @@ function ResultadosTabla() {
 
   
   const obtenerResultados = () => {
-    axios.get("http://localhost:3000/api/resultados")
+    Api.get("/resultados")
       .then(res => {
         setResultados(res.data);
       })

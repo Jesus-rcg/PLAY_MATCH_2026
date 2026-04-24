@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import axios from "axios";
+import Api from "../../api/axios";
 import "../../styles/create.css"
 
 function EditarUsuario() {
@@ -14,7 +14,7 @@ function EditarUsuario() {
   const [activo, setActivo] = useState(0);
 
   useEffect(() => {
-    axios.get(`http://localhost:3000/api/usuarios`)
+    Api.get(`/usuarios`)
       .then((response) => {
         const usuario = response.data.find(u => u.id_usuario === parseInt(id));
         if (usuario) {
@@ -27,7 +27,7 @@ function EditarUsuario() {
   }, [id]);
 
   const editar = () => {
-    axios.put(`http://localhost:3000/api/usuarios/${id}`, {
+    Api.put(`/usuarios/${id}`, {
       nombre,
       email,
       password,

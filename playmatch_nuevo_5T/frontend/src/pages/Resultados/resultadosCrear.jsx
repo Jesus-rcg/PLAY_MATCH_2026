@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+import Api from "../../api/axios";
 import "../../styles/create.css"
 
 function ResultadosCrear() {
@@ -21,15 +21,15 @@ function ResultadosCrear() {
 
 
   useEffect(() => {
-    axios.get("http://localhost:3000/encuentros")
+    Api.get("/encuentros")
         .then(res => setEncuentros(res.data));
 
-    axios.get("http://localhost:3000/usuarios")
+    Api.get("/usuarios")
         .then(res => setUsuarios(res.data));
   }, []);
 
   const agregar = () => {
-    axios.post("http://localhost:3000/api/resultados", {
+    Api.post("/resultados", {
       id_encuentro,
       goles_local,
       goles_visitante,

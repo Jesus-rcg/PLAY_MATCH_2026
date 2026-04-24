@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+import Api from "../../api/axios";
 import "../../styles/tabla.css";
 
 function UsuariosTabla() {
@@ -14,7 +14,7 @@ function UsuariosTabla() {
   const navigate = useNavigate();
 
   const obtenerUsuarios = () => {
-    axios.get("http://localhost:3000/api/usuarios")
+    Api.get("/usuarios")
       .then(res => {
         setUsuarios(res.data);
       })

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+import Api from "../api/axios";
 import "../styles/login.css";
 
 function Login() {
@@ -18,14 +18,14 @@ function Login() {
     setError("");
 
     try {
-      const res = await axios.post("http://localhost:3000/api/login", {
+      const res = await Api.post("/login", {
         correo,
         password
       });
 
       setMensaje("Inicio de sesión exitoso");
 
-      // guardar usuario (opcional)
+      
       localStorage.setItem("usuario", JSON.stringify(res.data.usuario));
 
       // 🔥 redirigir

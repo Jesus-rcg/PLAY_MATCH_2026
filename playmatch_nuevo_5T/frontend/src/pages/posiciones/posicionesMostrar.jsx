@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+import Api from "../../api/axios";
 import "../../styles/tabla.css";
 
 function PosicionesTabla() {
@@ -14,7 +14,7 @@ function PosicionesTabla() {
   const navigate = useNavigate();
 
   const obtenerPosiciones = () => {
-    axios.get("http://localhost:3000/api/posiciones")
+    Api.get("/posiciones")
       .then(res => {
         setPosiciones(res.data);
       })

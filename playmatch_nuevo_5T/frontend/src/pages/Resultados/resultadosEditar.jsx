@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import axios from "axios";
+import Api from "../../api/axios";
 import "../../styles/create.css"
 
 function EditarResultado() {
@@ -23,13 +23,13 @@ function EditarResultado() {
 
 
   useEffect(() => {
-    axios.get("http://localhost:3000/api/encuentros")
+    Api.get("/encuentros")
         .then(res => setEncuentros(res.data));
 
-    axios.get("http://localhost:3000/api/usuarios")
+    Api.get("/usuarios")
         .then(res => setUsuarios(res.data));
 
-    axios.get("http://localhost:3000/api/resultados")
+    Api.get("/resultados")
     .then((response) => {
         const resultado = response.data.find (r => r.id_resultado === parseInt(id));
         if (resultado){
@@ -47,7 +47,7 @@ function EditarResultado() {
   }, [id]);
 
   const editar = () => {
-    axios.put(`http://localhost:3000/api/resultados/${id}`, {
+    Api.put(`/resultados/${id}`, {
       id_encuentro,
       goles_local,
       goles_visitante,
