@@ -4,6 +4,7 @@ import cors from "cors";
 import swaggerUi from "swagger-ui-express";
 import swagger from "./swagger.js";
 
+import { verificarToken } from "./middleware/auth.js";
 import loginRoutes from "./routes/login.routes.js"
 import encuentrosRoutes from "./routes/encuentros.routes.js"
 import equiposRoutes from "./routes/equipos.routes.js"
@@ -25,13 +26,13 @@ app.use(express.json());
 app.use("/doc", swaggerUi.serve, swaggerUi.setup(swagger.specs));
 
 app.use("/api/login", loginRoutes);
-app.use("/api/encuentros", encuentrosRoutes);
-app.use("/api/equipos", equiposRoutes);
-app.use("/api/jugadores", jugadoresRoutes);
-app.use("/api/posiciones", posicionesRoutes);
-app.use("/api/resultados", resultadosRoutes);
-app.use("/api/torneos", torneosRoutes);
-app.use("/api/usuarios", usuariosRoutes);
+app.use("/api/encuentros", verificarToken, encuentrosRoutes);
+app.use("/api/equipos", verificarToken, equiposRoutes);
+app.use("/api/jugadores", verificarToken, jugadoresRoutes);
+app.use("/api/posiciones", verificarToken, posicionesRoutes);
+app.use("/api/resultados", verificarToken, resultadosRoutes);
+app.use("/api/torneos", verificarToken, torneosRoutes);
+app.use("/api/usuarios", verificarToken, usuariosRoutes);
 
 
 export default app;

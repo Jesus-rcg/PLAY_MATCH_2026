@@ -1,5 +1,8 @@
 import { db } from "../config/db.js";
 import bcrypt from "bcrypt";
+import jwt from "jsonwebtoken";
+
+const SECRET_KEY = "clave_secreta";
 
 export const login = (req, res) => {
   const { correo, password } = req.body;
@@ -22,10 +25,25 @@ export const login = (req, res) => {
     const coincide = await bcrypt.compare(password, usuario.password);
 
     if (coincide) {
+
+      const token = jwt.sign({
+        id: usuario.id_usuario,
+        rol: usuario.rol
+      },
+      SECRET_KEY,{
+        expiresIn: "2h"
+      }
+
+      );
+
+      const {password: _, ...usuarioSeguro} = usuario;
+
       res.json({
         message: "Login exitoso",
-        usuario,
+        token,
+        usuario: usuarioSeguro
       });
+      
     } else {
       res.status(401).json({
         message: "Correo o contraseña incorrectos",
