@@ -6,11 +6,12 @@ function InicioAdmin() {
   const navigate = useNavigate();
   const usuario = JSON.parse(localStorage.getItem("usuario"));
 
+  const token = localStorage.getItem("token");
   useEffect(() => {
-    if (!usuario) {
-      navigate("/");
+    if (!usuario || !token) {
+      navigate("/login");
     }
-  }, [usuario, navigate]);
+  }, [usuario, token, navigate]);
 
   if (!usuario) {
     return null;
@@ -18,7 +19,8 @@ function InicioAdmin() {
 
   const handleLogout = () => {
     localStorage.removeItem("usuario");
-    navigate("/");
+    localStorage.removeItem("token");
+    navigate("/login");
   };
 
   return (

@@ -4,7 +4,7 @@ import Api from "../api/axios";
 import "../styles/login.css";
 
 function Login() {
-  const [correo, setCorreo] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [mensaje, setMensaje] = useState("");
   const [error, setError] = useState("");
@@ -19,13 +19,13 @@ function Login() {
 
     try {
       const res = await Api.post("/login", {
-        correo,
+        email,
         password
       });
 
       setMensaje("Inicio de sesión exitoso");
 
-      
+      localStorage.setItem("token", res.data.token)
       localStorage.setItem("usuario", JSON.stringify(res.data.usuario));
 
       // 🔥 redirigir
@@ -57,8 +57,8 @@ function Login() {
             <label>Correo</label>
             <input
               type="email"
-              value={correo}
-              onChange={(e) => setCorreo(e.target.value)}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               required
               autoFocus
             />

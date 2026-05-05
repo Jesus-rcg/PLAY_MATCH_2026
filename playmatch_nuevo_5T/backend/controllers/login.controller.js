@@ -5,11 +5,11 @@ import jwt from "jsonwebtoken";
 const SECRET_KEY = "clave_secreta";
 
 export const login = (req, res) => {
-  const { correo, password } = req.body;
+  const { email, password } = req.body;
 
   const sql = "SELECT * FROM usuarios WHERE email = ?";
 
-  db.query(sql, [correo], async (err, result) => {
+  db.query(sql, [email], async (err, result) => {
     if (err) {
       return res.status(500).json({ message: "Error del servidor" });
     }
