@@ -48,7 +48,8 @@ function PosicionesCrear() {
         <div className="form-card">
 
           <h2>Agregar Posicion</h2>
-
+            
+            <label>Torneo:</label>
             <select onChange={(e) => setIdTorneo(e.target.value)}>
                 <option value="">Seleccione el torneo</option>
                     {torneos.map(t => (
@@ -57,7 +58,8 @@ function PosicionesCrear() {
                 </option>
                 ))}
             </select>
-
+            
+            <label>Equipo:</label>
             <select onChange={(e) => setIdEquipo(e.target.value)}>
                 <option value="">Seleccione el equipo</option>
                     {equipos.map(e => (

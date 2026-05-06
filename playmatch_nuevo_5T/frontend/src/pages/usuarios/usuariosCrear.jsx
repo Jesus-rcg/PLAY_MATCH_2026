@@ -10,7 +10,7 @@ function Usuarios() {
   const [email, setEmail] = useState ("");
   const [password, setPassword] = useState(null);
   const [rol, setRol] = useState(undefined);
-  const [activo, setActivo] = useState(0);
+  const [estado, setEstado] = useState(0);
 
   const agregar = () => {
     Api.post("/usuarios", {
@@ -18,7 +18,7 @@ function Usuarios() {
       email,
       password,
       rol,
-      activo
+      estado
     }).then(() => {
       alert("Usuario creado correctamente");
       navigate("/usuarios");
@@ -26,7 +26,7 @@ function Usuarios() {
       setEmail("");
       setPassword(null);
       setRol(undefined);
-      setActivo(0);
+      setEstado(0);
     });
   };
 
@@ -63,11 +63,11 @@ function Usuarios() {
             <option value="consultor">Consultor</option>
           </select>
 
-          <label>¿Activo?</label>
-          <select className="select-activo" onChange={(e) => setActivo(e.target.value)}>
+          <label>¿Estado?</label>
+          <select className="select-estado" onChange={(e) => setEstado(e.target.value)}>
             <option selected>Seleccione</option>
-            <option value="1">Si</option>
-            <option value="2">No</option>
+            <option value="Activo">Activo</option>
+            <option value="Inactivo">Inactivo</option>
           </select>
           
           <button type='button' onClick={agregar}>Agregar</button>

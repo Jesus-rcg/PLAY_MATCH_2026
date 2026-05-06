@@ -46,6 +46,7 @@ function EditarEquipo() {
 
           <h2>Editar Equipo</h2>
 
+            <label>Torneo:</label>
            <select value={idTorneo} onChange={(e) => setIdTorneo(e.target.value)}>
                 <option value="">Seleccione el torneo</option>
                     {torneos.map(t => (

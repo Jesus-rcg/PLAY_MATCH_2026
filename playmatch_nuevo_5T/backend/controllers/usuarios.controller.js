@@ -3,7 +3,7 @@ import bcrypt from "bcrypt";
 
 export const getUsuarios = (req, res) => {
   const sql =
-    "SELECT id_usuario, nombre, email, rol, activo, fecha_actualizado FROM usuarios";
+    "SELECT id_usuario, nombre, email, rol, estado, fecha_actualizado FROM usuarios";
   db.query(sql, (err, results) => {
     if (err) {
       console.log(err);
@@ -17,13 +17,13 @@ export const getUsuarios = (req, res) => {
 };
 
 export const crearUsuarios = async (req, res) => {
-  const { nombre, email, password, rol, activo } = req.body;
+  const { nombre, email, password, rol, estado } = req.body;
 
   const passwordHash = await bcrypt.hash(password, 10); //Encriptar contraseña
 
   const sql =
-    "INSERT INTO usuarios (nombre, email, password, rol, activo) VALUES (?, ?, ?, ?, ?)";
-  db.query(sql, [nombre, email, passwordHash, rol, activo], (err, results) => {
+    "INSERT INTO usuarios (nombre, email, password, rol, estado) VALUES (?, ?, ?, ?, ?)";
+  db.query(sql, [nombre, email, passwordHash, rol, estado], (err, results) => {
     //passwordHash se manda a la BD.
     if (err) {
       console.log(err);
@@ -46,7 +46,7 @@ export const crearUsuarios = async (req, res) => {
 };
 
 export const editarUsuarios = async (req, res) => {
-  const { nombre, email, password, rol, activo } = req.body;
+  const { nombre, email, password, rol, estado } = req.body;
 
   let sql;
   let params;
@@ -56,12 +56,12 @@ export const editarUsuarios = async (req, res) => {
     passwordHash = await bcrypt.hash(password, 10);
 
     sql =
-      "UPDATE usuarios SET nombre = ?, email = ?, password = ?, rol = ?, activo = ? WHERE id_usuario = ?";
-    params = [nombre, email, passwordHash, rol, activo, req.params.id];
+      "UPDATE usuarios SET nombre = ?, email = ?, password = ?, rol = ?, estado = ? WHERE id_usuario = ?";
+    params = [nombre, email, passwordHash, rol, estado, req.params.id];
   } else {
     sql =
-      "UPDATE usuarios SET nombre = ?, email = ?, rol = ?, activo = ? WHERE id_usuario = ?";
-    params = [nombre, email, rol, activo, req.params.id];
+      "UPDATE usuarios SET nombre = ?, email = ?, rol = ?, estado = ? WHERE id_usuario = ?";
+    params = [nombre, email, rol, estado, req.params.id];
   }
   db.query(sql, params, (err, results) => {
     if (err) {

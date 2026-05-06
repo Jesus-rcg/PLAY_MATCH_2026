@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 14-04-2026 a las 06:04:45
+-- Tiempo de generación: 06-05-2026 a las 22:42:27
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -67,9 +67,9 @@ CREATE TABLE `encuentros` (
   `id_equipo_visitante` int(11) NOT NULL,
   `fecha` datetime NOT NULL,
   `lugar` varchar(100) DEFAULT NULL,
-  `jornada` int(11) DEFAULT NULL,
+  `jornada` enum('Mañana','Tarde','Noche') NOT NULL DEFAULT 'Tarde',
   `id_arbitro` int(11) DEFAULT NULL,
-  `estado` varchar(20) DEFAULT 'pendiente'
+  `estado` enum('Programado','En curso','Finalizado','Cancelado') NOT NULL DEFAULT 'Programado'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -77,10 +77,11 @@ CREATE TABLE `encuentros` (
 --
 
 INSERT INTO `encuentros` (`id_encuentro`, `id_torneo`, `id_equipo_local`, `id_equipo_visitante`, `fecha`, `lugar`, `jornada`, `id_arbitro`, `estado`) VALUES
-(1, 1, 1, 2, '2024-12-05 15:00:00', 'Cancha Central', 1, 2, 'jugado'),
-(2, 1, 2, 4, '2026-03-30 05:00:00', 'Cancha Pamela ', 1, 1, '2'),
-(5, 3, 2, 1, '2026-03-31 00:00:00', 'Parques', 0, 5, '1'),
-(6, 1, 1, 4, '2026-04-02 00:00:00', 'bosa', 9, 3, '1');
+(1, 1, 1, 2, '2024-12-05 15:00:00', 'Cancha Central', 'Mañana', 2, ''),
+(2, 1, 2, 4, '2026-03-30 05:00:00', 'Cancha Pamela ', 'Mañana', 1, 'En curso'),
+(5, 3, 2, 1, '2026-03-31 00:00:00', 'Parques', '', NULL, 'Programado'),
+(6, 1, 1, 4, '2026-04-02 00:00:00', 'bosa', '', 3, 'Programado'),
+(8, 5, 2, 4, '2026-05-28 00:00:00', 'Bosa', 'Noche', 13, 'Programado');
 
 -- --------------------------------------------------------
 
@@ -174,18 +175,19 @@ CREATE TABLE `resultados` (
   `tarjetas_amarillas` text DEFAULT NULL,
   `tarjetas_rojas` text DEFAULT NULL,
   `observaciones` text DEFAULT NULL,
-  `id_created_by` int(11) DEFAULT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+  `id_creador` int(11) DEFAULT NULL,
+  `fecha_creacion` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `resultados`
 --
 
-INSERT INTO `resultados` (`id_resultado`, `id_encuentro`, `goles_local`, `goles_visitante`, `faltas_local`, `faltas_visitante`, `tarjetas_amarillas`, `tarjetas_rojas`, `observaciones`, `id_created_by`, `created_at`) VALUES
+INSERT INTO `resultados` (`id_resultado`, `id_encuentro`, `goles_local`, `goles_visitante`, `faltas_local`, `faltas_visitante`, `tarjetas_amarillas`, `tarjetas_rojas`, `observaciones`, `id_creador`, `fecha_creacion`) VALUES
 (1, 1, 2, 1, 8, 12, '10,7', NULL, NULL, 1, '2026-03-22 17:03:32'),
 (7, 2, 3, 0, 10, 11, '5', '0', 'El partido fue interumpido por varias faltas', 2, '2026-04-14 02:58:02'),
-(26, 6, 9, 5, 4, 1, '0', '2', 'Se', 1, '2026-04-14 03:35:18');
+(26, 6, 9, 5, 4, 1, '0', '2', 'Se', 1, '2026-04-14 03:35:18'),
+(33, 7, 1, 1, 1, 1, '1', '1', '1', 1, '2026-05-06 20:29:02');
 
 -- --------------------------------------------------------
 
@@ -199,7 +201,7 @@ CREATE TABLE `torneos` (
   `descripcion` text DEFAULT NULL,
   `fecha_inicio` date NOT NULL,
   `fecha_fin` date DEFAULT NULL,
-  `estado` varchar(20) DEFAULT 'activo'
+  `estado` enum('Programado','En curso','Finalizado','Cancelado') NOT NULL DEFAULT 'Programado'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -207,8 +209,9 @@ CREATE TABLE `torneos` (
 --
 
 INSERT INTO `torneos` (`id_torneo`, `nombre`, `descripcion`, `fecha_inicio`, `fecha_fin`, `estado`) VALUES
-(1, 'Copa Navidad 2024', 'Torneo relámpago de fin de año', '2024-12-01', '2024-12-20', 'activo'),
-(3, 'Socios', '12', '2006-08-16', '2026-08-16', 'No se');
+(1, 'Copa Navidad 2024', 'Torneo relámpago de fin de año', '2024-12-01', '2024-12-20', ''),
+(3, 'Socios', '12', '2006-08-16', '2026-08-16', 'Programado'),
+(5, 'Pepes', 'Pepes', '2026-05-06', '2026-05-08', 'Cancelado');
 
 -- --------------------------------------------------------
 
@@ -222,7 +225,7 @@ CREATE TABLE `usuarios` (
   `email` varchar(100) NOT NULL,
   `password` varchar(255) NOT NULL,
   `rol` enum('admin','arbitro','entrenador','consultor') DEFAULT 'consultor',
-  `activo` tinyint(1) DEFAULT 1,
+  `estado` enum('Activo','Inactivo') NOT NULL DEFAULT 'Activo',
   `fecha_actualizado` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -230,12 +233,14 @@ CREATE TABLE `usuarios` (
 -- Volcado de datos para la tabla `usuarios`
 --
 
-INSERT INTO `usuarios` (`id_usuario`, `nombre`, `email`, `password`, `rol`, `activo`, `fecha_actualizado`) VALUES
-(1, 'Admin Sistema', 'admin@torneo.com', '240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9', 'admin', 1, '2026-03-22 17:03:32'),
-(2, 'Carlos Arbitro', 'arbitro@torneo.com', 'cf1b33af348aa06eeff41427e7830b207bd2256d8685b825633dd3cbb46ed0a6', 'arbitro', 1, '2026-03-22 17:03:32'),
-(3, 'Maria Entrenador', 'entrenador@torneo.com', 'defbe44d30454a18fbbd862cfe5e59818d18dafd8feba4d71a797c20c265b672', 'entrenador', 1, '2026-03-22 17:03:32'),
-(4, 'Camilo', 'camilo123@gmail.com', '$2b$10$k99O3ljMWX3rSz9RVvPtwOZfflEwprQJW3CyDkxzPe5QYb4DqwoaS', 'admin', 1, '2026-04-09 05:44:11'),
-(5, 'Sebastian', 'sebastian123@gmail.com', '$2b$10$FRaBXeWJE/NRa3bYE5Sik.qKiJKIxrtEjBTjpZbjrmiXF2L4dK8La', 'admin', 1, '2026-03-24 15:25:43');
+INSERT INTO `usuarios` (`id_usuario`, `nombre`, `email`, `password`, `rol`, `estado`, `fecha_actualizado`) VALUES
+(1, 'Admin Sistema', 'admin@torneo.com', '$2b$10$Nqe3vdVxpzkQsy4lji8zMePL9Hs./gqBOnLZocUEhultSSqbzp60K', 'admin', 'Activo', '2026-05-06 20:12:28'),
+(2, 'Carlos Arbitro', 'arbitro@torneo.com', 'cf1b33af348aa06eeff41427e7830b207bd2256d8685b825633dd3cbb46ed0a6', 'arbitro', 'Activo', '2026-03-22 17:03:32'),
+(3, 'Maria Entrenador', 'entrenador@torneo.com', 'defbe44d30454a18fbbd862cfe5e59818d18dafd8feba4d71a797c20c265b672', 'entrenador', 'Activo', '2026-03-22 17:03:32'),
+(4, 'Camilo', 'camilo123@torneo.com', '$2b$10$JIz60cMgiVsCdPuul.rTb.4LGRdJT/8sbNxfWOG00zBBrMTD8GPLG', 'admin', 'Activo', '2026-05-05 21:49:25'),
+(12, 'Prueba', 'prueba@gmail.com', '$2b$10$Gbwd2lHF4v1.VrBFIBBZpuaJnN0Bzv1eJ/vTr18Mswgv.T8ecWrhu', 'admin', 'Activo', '2026-05-05 22:45:34'),
+(13, 'Sebastian', 'sebastian1234@gmail.com', '$2b$10$3u7nc9GF8ejOIIXwVACcfezHQwWJLAKMTQZuh66fhte.cmnpMLeYK', 'admin', 'Activo', '2026-05-06 20:12:51'),
+(14, 'prueba', 'prueba98@gmail.com', '$2b$10$h9cIgGcI7VV7eSM89nBNvemXPqDgKciLmC/oGXzMwUXjfHLYQVOZi', 'arbitro', 'Inactivo', '2026-05-06 20:13:35');
 
 --
 -- Índices para tablas volcadas
@@ -279,7 +284,7 @@ ALTER TABLE `posiciones`
 ALTER TABLE `resultados`
   ADD PRIMARY KEY (`id_resultado`),
   ADD UNIQUE KEY `id_encuentro` (`id_encuentro`),
-  ADD KEY `id_created_by` (`id_created_by`);
+  ADD KEY `id_created_by` (`id_creador`);
 
 --
 -- Indices de la tabla `torneos`
@@ -302,7 +307,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `encuentros`
 --
 ALTER TABLE `encuentros`
-  MODIFY `id_encuentro` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_encuentro` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de la tabla `equipos`
@@ -320,25 +325,25 @@ ALTER TABLE `jugadores`
 -- AUTO_INCREMENT de la tabla `posiciones`
 --
 ALTER TABLE `posiciones`
-  MODIFY `id_posicion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+  MODIFY `id_posicion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- AUTO_INCREMENT de la tabla `resultados`
 --
 ALTER TABLE `resultados`
-  MODIFY `id_resultado` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id_resultado` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- AUTO_INCREMENT de la tabla `torneos`
 --
 ALTER TABLE `torneos`
-  MODIFY `id_torneo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_torneo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- Restricciones para tablas volcadas
@@ -364,20 +369,6 @@ ALTER TABLE `equipos`
 --
 ALTER TABLE `jugadores`
   ADD CONSTRAINT `jugadores_ibfk_1` FOREIGN KEY (`id_equipo`) REFERENCES `equipos` (`id_equipo`) ON DELETE CASCADE;
-
---
--- Filtros para la tabla `posiciones`
---
-ALTER TABLE `posiciones`
-  ADD CONSTRAINT `fk_posiciones_torneo` FOREIGN KEY (`id_torneo`) REFERENCES `torneos` (`id_torneo`),
-  ADD CONSTRAINT `posiciones_ibfk_1` FOREIGN KEY (`id_equipo`) REFERENCES `equipos` (`id_equipo`) ON DELETE CASCADE;
-
---
--- Filtros para la tabla `resultados`
---
-ALTER TABLE `resultados`
-  ADD CONSTRAINT `resultados_ibfk_1` FOREIGN KEY (`id_encuentro`) REFERENCES `encuentros` (`id_encuentro`) ON DELETE CASCADE,
-  ADD CONSTRAINT `resultados_ibfk_2` FOREIGN KEY (`id_created_by`) REFERENCES `usuarios` (`id_usuario`) ON DELETE SET NULL;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

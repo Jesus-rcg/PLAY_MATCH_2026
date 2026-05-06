@@ -101,11 +101,13 @@ function EncuentrosCrear() {
             <input type="text" onChange={(e) => setLugar(e.target.value)}></input>
           </div>
 
-          <div className="mb-3">
-            <label>Jornada: </label>
-            <br/>
-            <input type="text" onChange={(e) => setJornada(e.target.value)}></input>
-          </div>
+          <label>Jornada</label>
+          <select className="select-estado" onChange={(e) => setJornada(e.target.value)}>
+            <option selected>Seleccione</option>
+            <option value="Mañana">Mañana</option>
+            <option value="Tarde">Tarde</option>
+            <option value="Noche">Noche</option>
+          </select>
                 
         <label>Arbitro: </label>   
           <select onChange={(e) => setIdArbitro(e.target.value)}>
@@ -117,11 +119,14 @@ function EncuentrosCrear() {
                 ))}
           </select>
 
-          <div className="mb-3">
-            <label>Estado: </label>
-            <br/>
-            <input type="text" onChange={(e) => setEstado(e.target.value)}></input>
-          </div>
+          <label>¿Estado?</label>
+          <select className="select-estado" onChange={(e) => setEstado(e.target.value)}>
+            <option selected>Seleccione</option>
+            <option value="Programado">Programado</option>
+            <option value="En curso">En curso</option>
+            <option value="Finalizado">Finalizado</option>
+            <option value="Cancelado">Cancelado</option>
+          </select>
          
           <button type='button' onClick={agregar}>Agregar</button>
 

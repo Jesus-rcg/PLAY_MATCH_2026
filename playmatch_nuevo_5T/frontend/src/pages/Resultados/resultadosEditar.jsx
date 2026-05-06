@@ -56,7 +56,7 @@ function EditarResultado() {
       tarjetas_amarillas,
       tarjetas_rojas,
       observaciones,
-      id_created_by: creador
+      id_creador: creador
     }).then(() => {
       alert("Resultado editado correctamente");
       navigate("/resultados");

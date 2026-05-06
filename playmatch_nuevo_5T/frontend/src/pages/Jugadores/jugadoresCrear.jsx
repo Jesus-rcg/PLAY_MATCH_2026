@@ -43,7 +43,7 @@ function JugadoresCrear() {
 
         <h2>Agregar Jugador</h2>
 
-        {/* EQUIPO */}
+        <label>Equipo:</label>
         <select  onChange={(e) => setId_equipo(e.target.value)}>
           <option value="">Seleccione el equipo</option>
           {equipos.map(e => (

@@ -11,7 +11,7 @@ function EditarUsuario() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState(null);
   const [rol, setRol] = useState(undefined);
-  const [activo, setActivo] = useState(0);
+  const [estado, setEstado] = useState(0);
 
   useEffect(() => {
     Api.get(`/usuarios`)
@@ -21,7 +21,7 @@ function EditarUsuario() {
           setNombre(usuario.nombre);
           setEmail(usuario.email);
           setRol(usuario.rol);
-          setActivo(usuario.activo);
+          setEstado(usuario.estado);
         }
       });
   }, [id]);
@@ -32,7 +32,7 @@ function EditarUsuario() {
       email,
       password,
       rol,
-      activo
+      estado
     }).then(() => {
       alert("Usuario actualizado correctamente");
       navigate("/usuarios");
@@ -71,11 +71,11 @@ function EditarUsuario() {
             <option value="consultor">Consultor</option>
           </select>
 
-          <label>¿Activo?</label>
-          <select className="select-activo" onChange={(e) => setActivo(e.target.value)}>
+          <label>¿Estado?</label>
+          <select className="select-estado" value={estado} onChange={(e) => setEstado(e.target.value)}>
             <option selected>Seleccione</option>
-            <option value="1">Si</option>
-            <option value="2">No</option>
+            <option value="Activo">Activo</option>
+            <option value="Inactivo">Inactivo</option>
           </select>
           
           <button type='button' onClick={editar}>Actualizar</button>

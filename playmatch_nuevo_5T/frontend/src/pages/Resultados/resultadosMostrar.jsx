@@ -40,7 +40,7 @@ function ResultadosTabla() {
       r.tarjetas_rojas.toString().includes(texto) ||
       r.observaciones.toString().includes(texto) ||
       r.creador.toString().includes(texto) ||
-      r.created_at.toString().includes(texto)
+      r.fecha_creacion.toString().includes(texto)
     );
 });
 
@@ -100,7 +100,7 @@ function ResultadosTabla() {
                 <td>{r.tarjetas_rojas}</td>
                 <td>{r.observaciones}</td>
                 <td>{r.creador}</td>
-                <td>{r.created_at}</td>
+                <td>{r.fecha_creacion}</td>
                 <td>
                   <button className="btn-edit" onClick={() => navigate(`/resultados/editar/${r.id_resultado}`)}>Editar</button>
                   <button className="btn-delete" onClick={() => navigate(`/resultados/eliminar/${r.id_resultado}`)}>Eliminar</button>

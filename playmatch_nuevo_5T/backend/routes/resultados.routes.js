@@ -47,10 +47,10 @@ const router = express.Router();
  *         observaciones:
  *           type: string
  *           example: "El partido fue interumpido por varias faltas"
- *         id_created_by:
+ *         id_creador:
  *           type: number
  *           example: "2"
- *         created_at:
+ *         fecha_creacion:
  *           type: date
  *           example: "2026-03-22 12:03:32"
  * 
@@ -99,8 +99,8 @@ router.get("/", getResultados);
  *               - tarjetas_amarillas
  *               - tarjetas_rojas
  *               - observaciones
- *               - id_created_by
- *               - created_at
+ *               - id_creador
+ *               - fecha_creacion
  *               
  *             properties:
  *               id_encuentro:
@@ -127,10 +127,10 @@ router.get("/", getResultados);
  *               observaciones:
  *                  type: string
  *                  example: "El partido fue interumpido por varias faltas"
- *               id_created_by:
+ *               id_creador:
  *                  type: number
  *                  example: "2"
- *               created_at:
+ *               fecha_creacion:
  *                  type: date
  *                  example: "2026-03-22 12:03:32"
  *               
@@ -181,9 +181,9 @@ router.post("/", agregarResultados);
  *                  type: number
  *               observaciones:
  *                  type: string
- *               id_created_by:
+ *               id_creador:
  *                  type: number
- *               created_at:
+ *               fecha_creacion:
  *                  type: date
  *               
  *     responses:

@@ -34,7 +34,7 @@ function UsuariosTabla() {
       u.nombre.toLowerCase().includes(texto) ||
       u.email.toLowerCase().includes(texto) ||
       u.rol.toLowerCase().includes(texto) ||
-      u.activo.toString().includes(texto)
+      u.estado.toString().includes(texto)
     );
   });
 
@@ -69,7 +69,7 @@ function UsuariosTabla() {
             <th>Nombre</th>
             <th>Email</th>
             <th>Rol</th>
-            <th>Activo</th>
+            <th>Estado</th>
             <th>Fecha actualización</th>
             <th>Acciones</th>
           </tr>
@@ -83,7 +83,7 @@ function UsuariosTabla() {
                 <td>{u.nombre}</td>
                 <td>{u.email}</td>
                 <td>{u.rol}</td>
-                <td>{u.activo  === 1 ? "Sí" : "No"}</td>
+                <td>{u.estado}</td>
                 <td>{u.fecha_actualizado}</td>
                 <td>
                   <button className="btn-edit"  onClick={() => navigate(`/usuarios/editar/${u.id_usuario}`)}>Editar</button>

@@ -60,11 +60,14 @@ function TorneosCrear() {
             <input type="date" onChange={(e) => setFechaFin(e.target.value)}></input>
           </div>
 
-          <div className="mb-3">
-            <label>Estado: </label>
-            <br/>
-            <input type="email" onChange={(e) => setEstado(e.target.value)}></input>
-          </div>
+          <label>¿Estado?</label>
+          <select className="select-estado" onChange={(e) => setEstado(e.target.value)}>
+            <option selected>Seleccione</option>
+            <option value="Programado">Programado</option>
+            <option value="En curso">En curso</option>
+            <option value="Finalizado">Finalizado</option>
+            <option value="Cancelado">Cancelado</option>
+          </select>
           
           <button type='button' onClick={agregar}>Agregar</button>
 

@@ -38,7 +38,7 @@ function ResultadosCrear() {
       tarjetas_amarillas,
       tarjetas_rojas,
       observaciones,
-      id_created_by: creador
+      id_creador: creador
     }).then(() => {
       alert("Resultado creado correctamente");
       navigate("/resultados");

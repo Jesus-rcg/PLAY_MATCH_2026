@@ -36,6 +36,7 @@ function EquiposCrear() {
 
           <h2>Agregar Equipo</h2>
 
+            <label>Torneo:</label>
             <select onChange={(e) => setIdTorneo(e.target.value)}>
                 <option value="">Seleccione el torneo</option>
                     {torneos.map(t => (

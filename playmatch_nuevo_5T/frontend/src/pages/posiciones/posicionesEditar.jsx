@@ -64,7 +64,8 @@ function EditarPosicion() {
         <div className="form-card">
 
           <h2>Editar Posicion</h2>
-
+            
+            <label>Torneo:</label>
             <select value={idTorneo} onChange={(e) => setIdTorneo(e.target.value)}>
                 <option value="">Seleccione el torneo</option>
                     {torneos.map(t => (
@@ -73,7 +74,9 @@ function EditarPosicion() {
                 </option>
                 ))}
             </select>
+                
 
+            <label>Equipo:</label>
             <select value={idEquipo} onChange={(e) => setIdEquipo(e.target.value)}>
                 <option value="">Seleccione el equipo</option>
                     {equipos.map(e => (

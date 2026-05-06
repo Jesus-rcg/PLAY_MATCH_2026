@@ -12,14 +12,14 @@ export const getResultados = (req, res) => {
       r.tarjetas_amarillas,
       r.tarjetas_rojas,
       r.observaciones,
-      r.id_created_by,
+      r.id_creador,
 
       u.nombre AS creador,
 
-      r.created_at
+      r.fecha_creacion
 
      FROM resultados r
-     JOIN usuarios u ON r.id_created_by = u.id_usuario`;
+     JOIN usuarios u ON r.id_creador = u.id_usuario`;
   db.query(sql, (err, results) => {
     if (err) {
       console.log(err);
@@ -42,11 +42,11 @@ export const agregarResultados = (req, res) => {
     tarjetas_amarillas,
     tarjetas_rojas,
     observaciones,
-    id_created_by,
+    id_creador,
   } = req.body;
 
   const sql = `
-    INSERT INTO resultados (id_encuentro, goles_local, goles_visitante, faltas_local, faltas_visitante, tarjetas_amarillas, tarjetas_rojas, observaciones, id_created_by) 
+    INSERT INTO resultados (id_encuentro, goles_local, goles_visitante, faltas_local, faltas_visitante, tarjetas_amarillas, tarjetas_rojas, observaciones, id_creador) 
     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`;
   db.query(
     sql,
@@ -59,7 +59,7 @@ export const agregarResultados = (req, res) => {
       tarjetas_amarillas,
       tarjetas_rojas,
       observaciones,
-      id_created_by,
+      id_creador,
     ],
     (err, result) => {
       if (err) {
@@ -95,7 +95,7 @@ export const editarResultados = (req, res) => {
     tarjetas_amarillas,
     tarjetas_rojas,
     observaciones,
-    id_created_by,
+    id_creador,
   } = req.body;
 
   const sql = `
@@ -108,7 +108,7 @@ export const editarResultados = (req, res) => {
     tarjetas_amarillas = ?,
     tarjetas_rojas = ?,
     observaciones = ?,
-    id_created_by = ?
+    id_creador = ?
     WHERE id_resultado = ?
   `;
 
@@ -123,7 +123,7 @@ export const editarResultados = (req, res) => {
       tarjetas_amarillas,
       tarjetas_rojas,
       observaciones,
-      id_created_by,
+      id_creador,
       id,
     ],
     (err, result) => {

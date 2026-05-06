@@ -31,7 +31,7 @@ const router = express.Router();
  *         rol:
  *           type: string
  *           example: "PEPITO"
- *         activo:
+ *         estado:
  *           type: string
  *           example: "PEPITO"
  *         fecha_actualizado:
@@ -78,7 +78,7 @@ router.get("/", getUsuarios);
  *               - email
  *               - password
  *               - rol
- *               - activo
+ *               - estado
  *               - fecha_actualizado
  *               
  *             properties:
@@ -94,7 +94,7 @@ router.get("/", getUsuarios);
  *               rol:
  *                 type: string
  *                 example: "equipo_visitante_id"
- *               activo:
+ *               estado:
  *                 type: string
  *                 example: "equipo_visitante_id"
  *               fecha_actualizado:
@@ -142,9 +142,9 @@ router.post("/", crearUsuarios);
  *               rol:
  *                 type: string
  *                 format: date
- *               activo:
+ *               estado:
  *                 type: string
- *                 format: date
+ *                 format: string
  *               fecha_actualizado:
  *                 type: string
  *                 format: date
