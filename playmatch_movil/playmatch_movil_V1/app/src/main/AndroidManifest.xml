@@ -17,10 +17,14 @@
         <activity
                 android:name=".ui.ClientesActivity"
                 android:exported="false"/>
+
+        <activity android:name=".MenuActivity"
+                  android:exported="true"/>
         <activity
                 android:name=".loginActivity.LoginActivity"
                 android:exported="true">
         </activity>
+
         <activity
                 android:name=".loginActivity.LoginActivity2"
                 android:exported="true">
@@ -30,6 +34,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
         <activity
                 android:name=".MainActivity"
                 android:exported="false"/>

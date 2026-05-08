@@ -5,6 +5,7 @@ import android.graphics.Color
 import android.os.Bundle
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import com.example.ventas.MenuActivity
 import com.example.ventas.R
 import com.example.ventas.ui.ClientesActivity
 import com.example.ventas.api.ApiClient
@@ -53,7 +54,7 @@ class LoginActivity2 : AppCompatActivity() {
                             message.setTextColor(Color.GREEN)
                             message.text = "Ingreso con éxito"
 
-                            val intent = Intent(this@LoginActivity2, ClientesActivity::class.java)
+                            val intent = Intent(this@LoginActivity2, MenuActivity::class.java)
                             startActivity(intent)
                             finish()
 
