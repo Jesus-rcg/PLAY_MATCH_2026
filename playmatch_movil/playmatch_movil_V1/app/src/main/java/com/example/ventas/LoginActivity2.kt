@@ -34,7 +34,7 @@ class LoginActivity2 : AppCompatActivity() {
 
             if (email.isNotEmpty() && password.isNotEmpty()) {
 
-                val api = ApiClient.retrofit.create(ApiService::class.java)
+                val api = ApiClient.instance
                 val request = LoginRequest(email, password)
 
                 api.login(request).enqueue(object : Callback<LoginResponse> {
