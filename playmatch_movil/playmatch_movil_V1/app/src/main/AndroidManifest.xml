@@ -21,8 +21,9 @@
         <activity android:name=".MenuActivity"
                   android:exported="true"/>
 
-        <activity android:name=".UsuarioOperacionesActivity"
+        <activity android:name=".OperacionesActivity"
                   android:exported="true"/>
+
 
         <activity android:name=".UsuarioActivity"/>
 

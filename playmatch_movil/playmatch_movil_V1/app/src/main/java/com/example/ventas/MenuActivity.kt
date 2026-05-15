@@ -10,11 +10,40 @@ class MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_menu)
-        val btnUsuario = findViewById<ImageButton>(R.id.btnUser)
 
-        btnUsuario.setOnClickListener {
-            val intent = Intent(this, UsuarioOperacionesActivity::class.java)
-            startActivity(intent)
+        findViewById<ImageButton>(R.id.btnUser).setOnClickListener {
+            abrirOperaciones("Usuarios")
         }
+
+        findViewById<ImageButton>(R.id.btnEquipos).setOnClickListener {
+            abrirOperaciones("Equipos")
+        }
+
+        findViewById<ImageButton>(R.id.btnVersus).setOnClickListener {
+            abrirOperaciones("Encuentros")
+        }
+
+        findViewById<ImageButton>(R.id.btnPosiciones).setOnClickListener {
+            abrirOperaciones("Posiciones")
+        }
+
+        findViewById<ImageButton>(R.id.btnJugadores).setOnClickListener {
+            abrirOperaciones("Jugadores")
+        }
+
+        findViewById<ImageButton>(R.id.btnTorneo).setOnClickListener {
+            abrirOperaciones("Torneos")
+        }
+
+        findViewById<ImageButton>(R.id.btnResultados).setOnClickListener {
+            abrirOperaciones("Resultados")
+        }
+
+    }
+
+    private fun abrirOperaciones(modulo: String){
+        val intent = Intent(this, OperacionesActivity::class.java)
+        intent.putExtra("MODULO", modulo)
+        startActivity(intent)
     }
 }
