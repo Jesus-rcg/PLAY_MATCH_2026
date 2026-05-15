@@ -13,7 +13,7 @@ class MenuActivity : AppCompatActivity() {
         val btnUsuario = findViewById<ImageButton>(R.id.btnUser)
 
         btnUsuario.setOnClickListener {
-            val intent = Intent(this, UsuarioActivity::class.java)
+            val intent = Intent(this, UsuarioOperacionesActivity::class.java)
             startActivity(intent)
         }
     }
