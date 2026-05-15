@@ -38,6 +38,9 @@
         <activity
             android:name="com.example.ventas.UsuarioOperacionesActivity"
             android:exported="true" />
+        <activity
+            android:name="com.example.ventas.PosicionesOperacionesActivity"
+            android:exported="true" />
         <activity android:name="com.example.ventas.UsuarioActivity" />
         <activity
             android:name="com.example.ventas.loginActivity.LoginActivity2"
