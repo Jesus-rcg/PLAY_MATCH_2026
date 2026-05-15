@@ -10,11 +10,10 @@ class MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_menu)
-
         val btnUsuario = findViewById<ImageButton>(R.id.btnUser)
 
         btnUsuario.setOnClickListener {
-            val intent = Intent(this, UsuarioOperacionesActivity::class.java)
+            val intent = Intent(this, UsuarioActivity::class.java)
             startActivity(intent)
         }
     }
