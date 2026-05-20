@@ -1,6 +1,7 @@
 package com.example.ventas.model
 import java.util.Date
-class Jugador {
+data class Jugador (
+
     val id_jugador:Int? = null,
     val id_equipo: String,
     val nombre: String,
@@ -9,4 +10,4 @@ class Jugador {
     val numero_camiseta: String,
     val estado: String
 
-}
+)
