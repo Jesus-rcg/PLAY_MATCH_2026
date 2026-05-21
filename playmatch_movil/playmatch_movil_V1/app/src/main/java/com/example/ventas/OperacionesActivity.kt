@@ -5,6 +5,7 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 
 class OperacionesActivity : AppCompatActivity() {
 
@@ -28,11 +29,30 @@ class OperacionesActivity : AppCompatActivity() {
         val cardEliminar = findViewById<LinearLayout>(R.id.tarjetaEliminar)
         val cardVerTodos = findViewById<LinearLayout>(R.id.tarjetaVerTodos)
 
+        /*
         cardGuardar.setOnClickListener {
             Toast.makeText(this, "Guardar - $modulo", Toast.LENGTH_SHORT).show()
         }
-        cardBuscar.setOnClickListener {
-            Toast.makeText(this, "Buscar - $modulo", Toast.LENGTH_SHORT).show()
+
+         */
+        cardGuardar.setOnClickListener {
+
+            when(modulo){
+
+                "Jugadores" -> {
+                    startActivity(
+                        Intent(this, CrearJugadorActivity::class.java)
+                    )
+                }
+
+                else -> {
+                    Toast.makeText(
+                        this,
+                        "Formulario no disponible",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
+            }
         }
         cardEditar.setOnClickListener {
             Toast.makeText(this, "Editar - $modulo", Toast.LENGTH_SHORT).show()
