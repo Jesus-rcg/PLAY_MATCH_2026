@@ -36,10 +36,7 @@
             android:name="com.example.ventas.MenuActivity"
             android:exported="true" />
         <activity
-            android:name="com.example.ventas.UsuarioOperacionesActivity"
-            android:exported="true" />
-        <activity
-            android:name="com.example.ventas.PosicionesOperacionesActivity"
+            android:name="com.example.ventas.OperacionesActivity"
             android:exported="true" />
         <activity android:name="com.example.ventas.UsuarioActivity" />
         <activity
