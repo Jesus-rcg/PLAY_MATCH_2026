@@ -12,12 +12,20 @@
         "source": "C:\\Users\\JuAlJeCa\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-main-33:\\mipmap\\config.png"
     },
     {
+        "merged": "com.example.ventas.app-debug-31:/layout_activity_usuarios.xml.flat",
+        "source": "com.example.ventas.app-main-33:/layout/activity_usuarios.xml"
+    },
+    {
         "merged": "C:\\Users\\JuAlJeCa\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-debug-31:\\mipmap_resultados.jpg.flat",
         "source": "C:\\Users\\JuAlJeCa\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-main-33:\\mipmap\\resultados.jpg"
     },
     {
         "merged": "C:\\Users\\JuAlJeCa\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-debug-31:\\mipmap_torneo.png.flat",
         "source": "C:\\Users\\JuAlJeCa\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-main-33:\\mipmap\\torneo.png"
+    },
+    {
+        "merged": "C:\\Users\\JuAlJeCa\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-debug-31:\\layout_activity_buscar_jugador.xml.flat",
+        "source": "C:\\Users\\JuAlJeCa\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-main-33:\\layout\\activity_buscar_jugador.xml"
     },
     {
         "merged": "C:\\Users\\JuAlJeCa\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-debug-31:\\mipmap_equipos.png.flat",
@@ -36,6 +44,10 @@
         "source": "C:\\Users\\JuAlJeCa\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-main-33:\\mipmap\\guardar.png"
     },
     {
+        "merged": "C:\\Users\\JuAlJeCa\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-debug-31:\\layout_activity_eliminar_jugador.xml.flat",
+        "source": "C:\\Users\\JuAlJeCa\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-main-33:\\layout\\activity_eliminar_jugador.xml"
+    },
+    {
         "merged": "C:\\Users\\JuAlJeCa\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-debug-31:\\layout_activity_login.xml.flat",
         "source": "C:\\Users\\JuAlJeCa\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-main-33:\\layout\\activity_login.xml"
     },
@@ -48,12 +60,12 @@
         "source": "C:\\Users\\JuAlJeCa\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-main-33:\\mipmap\\versus.png"
     },
     {
-        "merged": "C:\\Users\\JuAlJeCa\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-debug-31:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\JuAlJeCa\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-main-33:\\xml\\backup_rules.xml"
+        "merged": "C:\\Users\\JuAlJeCa\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-debug-31:\\layout_activity_crear_jugador.xml.flat",
+        "source": "C:\\Users\\JuAlJeCa\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-main-33:\\layout\\activity_crear_jugador.xml"
     },
     {
-        "merged": "com.example.ventas.app-debug-31:/layout_menu_usuarios.xml.flat",
-        "source": "com.example.ventas.app-main-33:/layout/menu_usuarios.xml"
+        "merged": "C:\\Users\\JuAlJeCa\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-debug-31:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\JuAlJeCa\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-main-33:\\xml\\backup_rules.xml"
     },
     {
         "merged": "C:\\Users\\JuAlJeCa\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-debug-31:\\mipmap_ver.png.flat",
@@ -62,10 +74,6 @@
     {
         "merged": "C:\\Users\\JuAlJeCa\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-debug-31:\\mipmap_buscar.png.flat",
         "source": "C:\\Users\\JuAlJeCa\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-main-33:\\mipmap\\buscar.png"
-    },
-    {
-        "merged": "C:\\Users\\JuAlJeCa\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-debug-31:\\layout_menu_posiciones.xml.flat",
-        "source": "C:\\Users\\JuAlJeCa\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-main-33:\\layout\\menu_posiciones.xml"
     },
     {
         "merged": "C:\\Users\\JuAlJeCa\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-debug-31:\\mipmap_jugadores.png.flat",
@@ -80,6 +88,10 @@
         "source": "C:\\Users\\JuAlJeCa\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-main-33:\\layout\\activity_usuarios.xml"
     },
     {
+        "merged": "C:\\Users\\JuAlJeCa\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-debug-31:\\layout_activity_jugadores.xml.flat",
+        "source": "C:\\Users\\JuAlJeCa\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-main-33:\\layout\\activity_jugadores.xml"
+    },
+    {
         "merged": "C:\\Users\\JuAlJeCa\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-debug-31:\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\JuAlJeCa\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-main-33:\\layout\\activity_main.xml"
     },
@@ -90,6 +102,14 @@
     {
         "merged": "C:\\Users\\JuAlJeCa\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-debug-31:\\layout_clientes.xml.flat",
         "source": "C:\\Users\\JuAlJeCa\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-main-33:\\layout\\clientes.xml"
+    },
+    {
+        "merged": "C:\\Users\\JuAlJeCa\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-debug-31:\\layout_activity_editar_jugador.xml.flat",
+        "source": "C:\\Users\\JuAlJeCa\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-main-33:\\layout\\activity_editar_jugador.xml"
+    },
+    {
+        "merged": "C:\\Users\\JuAlJeCa\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-debug-31:\\layout_activity_lista_jugadores.xml.flat",
+        "source": "C:\\Users\\JuAlJeCa\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-main-33:\\layout\\activity_lista_jugadores.xml"
     },
     {
         "merged": "C:\\Users\\JuAlJeCa\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-debug-31:\\mipmap_editar.png.flat",

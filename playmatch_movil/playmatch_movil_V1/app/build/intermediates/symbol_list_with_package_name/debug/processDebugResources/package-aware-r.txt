@@ -3150,6 +3150,7 @@ id btnEditar
 id btnEliminar
 id btnEquipos
 id btnGuardar
+id btnGuardarJugador
 id btnJugadores
 id btnLogin
 id btnPosiciones
@@ -3549,10 +3550,14 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id tvMessage
+id txtApellido
+id txtDocumento
 id txtEmail
 id txtEstado
 id txtFecha
+id txtIdEquipo
 id txtNombre
+id txtNumeroCamiseta
 id txtPassword
 id txtRol
 id txtTituloModulo
@@ -3693,6 +3698,12 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_buscar_jugador
+layout activity_crear_jugador
+layout activity_editar_jugador
+layout activity_eliminar_jugador
+layout activity_jugadores
+layout activity_lista_jugadores
 layout activity_login
 layout activity_login2
 layout activity_main
