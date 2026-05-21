@@ -22,6 +22,8 @@ id etNombre
 id etPassword
 id main
 id message
+id spEquipo
+id spEstado
 id tarjetaBuscar
 id tarjetaEditar
 id tarjetaEliminar
@@ -42,7 +44,6 @@ id txtDocumento
 id txtEmail
 id txtEstado
 id txtFecha
-id txtIdEquipo
 id txtNombre
 id txtNumeroCamiseta
 id txtPassword

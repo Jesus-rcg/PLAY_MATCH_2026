@@ -2,8 +2,10 @@ package com.example.ventas
 
 import android.os.Bundle
 import android.util.Log
+import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Spinner
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.ventas.api.ApiClient
@@ -21,10 +23,69 @@ class CrearJugadorActivity : AppCompatActivity() {
 
 
 
-        // INPUTS
+        // =========================
+        // SPINNERS
+        // =========================
 
-        val txtIdEquipo =
-            findViewById<EditText>(R.id.txtIdEquipo)
+        val spEquipo =
+            findViewById<Spinner>(R.id.spEquipo)
+
+        val spEstado =
+            findViewById<Spinner>(R.id.spEstado)
+
+
+
+        // =========================
+        // DATOS EQUIPOS
+        // =========================
+
+        val equipos = arrayOf(
+            "Castilla",
+            "Bosa",
+            "Prueba"
+        )
+
+        val adapterEquipos = ArrayAdapter(
+            this,
+            android.R.layout.simple_spinner_item,
+            equipos
+        )
+
+        adapterEquipos.setDropDownViewResource(
+            android.R.layout.simple_spinner_dropdown_item
+        )
+
+        spEquipo.adapter = adapterEquipos
+
+
+
+        // =========================
+        // DATOS ESTADOS
+        // =========================
+
+        val estados = arrayOf(
+            "Activo",
+            "Lesionado",
+            "Suspendido"
+        )
+
+        val adapterEstados = ArrayAdapter(
+            this,
+            android.R.layout.simple_spinner_item,
+            estados
+        )
+
+        adapterEstados.setDropDownViewResource(
+            android.R.layout.simple_spinner_dropdown_item
+        )
+
+        spEstado.adapter = adapterEstados
+
+
+
+        // =========================
+        // INPUTS
+        // =========================
 
         val txtNombre =
             findViewById<EditText>(R.id.txtNombre)
@@ -38,42 +99,50 @@ class CrearJugadorActivity : AppCompatActivity() {
         val txtNumeroCamiseta =
             findViewById<EditText>(R.id.txtNumeroCamiseta)
 
-        val txtEstado =
-            findViewById<EditText>(R.id.txtEstado)
 
 
-
+        // =========================
         // BOTON
+        // =========================
 
         val btnGuardarJugador =
             findViewById<Button>(R.id.btnGuardarJugador)
 
 
 
+        // =========================
         // CLICK BOTON
+        // =========================
 
         btnGuardarJugador.setOnClickListener {
 
             val jugador = Jugador(
 
-                id_equipo = txtIdEquipo.text.toString(),
+                id_equipo =
+                    spEquipo.selectedItem.toString(),
 
-                nombre = txtNombre.text.toString(),
+                nombre =
+                    txtNombre.text.toString(),
 
-                apellido = txtApellido.text.toString(),
+                apellido =
+                    txtApellido.text.toString(),
 
-                documento = txtDocumento.text.toString(),
+                documento =
+                    txtDocumento.text.toString(),
 
                 numero_camiseta =
                     txtNumeroCamiseta.text.toString(),
 
-                estado = txtEstado.text.toString()
+                estado =
+                    spEstado.selectedItem.toString()
 
             )
 
 
 
+            // =========================
             // TOKEN
+            // =========================
 
             val prefs =
                 getSharedPreferences("app", MODE_PRIVATE)
@@ -83,7 +152,9 @@ class CrearJugadorActivity : AppCompatActivity() {
 
 
 
+            // =========================
             // PETICION API
+            // =========================
 
             ApiClient.instance.createJugador(
 
@@ -107,14 +178,21 @@ class CrearJugadorActivity : AppCompatActivity() {
 
 
 
+                        // =========================
                         // LIMPIAR CAMPOS
+                        // =========================
 
-                        txtIdEquipo.text.clear()
+                        spEquipo.setSelection(0)
+
+                        spEstado.setSelection(0)
+
                         txtNombre.text.clear()
+
                         txtApellido.text.clear()
+
                         txtDocumento.text.clear()
+
                         txtNumeroCamiseta.text.clear()
-                        txtEstado.text.clear()
 
                     } else {
 

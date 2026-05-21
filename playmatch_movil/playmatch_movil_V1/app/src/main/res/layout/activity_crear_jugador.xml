@@ -25,15 +25,13 @@
 
         <!-- ID EQUIPO -->
 
-        <EditText
-                android:id="@+id/txtIdEquipo"
+
+        <Spinner
+                android:id="@+id/spEquipo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="ID Equipo"
-                android:inputType="text"
-                android:padding="12dp"
-                android:background="@android:drawable/edit_text"
-                android:layout_marginBottom="12dp"/>
+                android:layout_marginBottom="12dp"
+        />
 
         <!-- NOMBRE -->
 
@@ -85,15 +83,12 @@
 
         <!-- ESTADO -->
 
-        <EditText
-                android:id="@+id/txtEstado"
+        <Spinner
+                android:id="@+id/spEstado"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Estado"
-                android:inputType="text"
-                android:padding="12dp"
-                android:background="@android:drawable/edit_text"
-                android:layout_marginBottom="20dp"/>
+                android:layout_marginBottom="12dp"
+        />
 
         <!-- BOTON -->
 

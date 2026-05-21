@@ -3468,6 +3468,8 @@ id snackbar_text
 id snap
 id snapMargins
 id south
+id spEquipo
+id spEstado
 id spacer
 id special_effects_controller_view_tag
 id spline
@@ -3557,7 +3559,6 @@ id txtDocumento
 id txtEmail
 id txtEstado
 id txtFecha
-id txtIdEquipo
 id txtNombre
 id txtNumeroCamiseta
 id txtPassword
