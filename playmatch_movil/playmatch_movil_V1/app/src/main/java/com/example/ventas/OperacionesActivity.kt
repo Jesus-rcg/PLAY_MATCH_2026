@@ -29,12 +29,6 @@ class OperacionesActivity : AppCompatActivity() {
         val cardEliminar = findViewById<LinearLayout>(R.id.tarjetaEliminar)
         val cardVerTodos = findViewById<LinearLayout>(R.id.tarjetaVerTodos)
 
-        /*
-        cardGuardar.setOnClickListener {
-            Toast.makeText(this, "Guardar - $modulo", Toast.LENGTH_SHORT).show()
-        }
-
-         */
         cardGuardar.setOnClickListener {
 
             when(modulo){
@@ -42,6 +36,12 @@ class OperacionesActivity : AppCompatActivity() {
                 "Jugadores" -> {
                     startActivity(
                         Intent(this, CrearJugadorActivity::class.java)
+                    )
+                }
+
+                "Equipos" -> {
+                    startActivity(
+                        Intent(this, com.example.ventas.ui.EquipoActivity::class.java)
                     )
                 }
 
@@ -54,12 +54,15 @@ class OperacionesActivity : AppCompatActivity() {
                 }
             }
         }
+
         cardEditar.setOnClickListener {
             Toast.makeText(this, "Editar - $modulo", Toast.LENGTH_SHORT).show()
         }
+
         cardEliminar.setOnClickListener {
             Toast.makeText(this, "Eliminar - $modulo", Toast.LENGTH_SHORT).show()
         }
+
         cardVerTodos.setOnClickListener {
             Toast.makeText(this, "Ver todos - $modulo", Toast.LENGTH_SHORT).show()
         }
