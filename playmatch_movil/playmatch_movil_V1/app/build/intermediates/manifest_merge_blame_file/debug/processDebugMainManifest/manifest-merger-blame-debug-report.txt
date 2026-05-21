@@ -9,165 +9,168 @@
 9        android:targetSdkVersion="35" />
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:5:5-66
-11-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:5:22-64
+11-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:5:5-66
+11-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:5:22-64
 12
 13    <permission
-13-->[androidx.core:core:1.10.1] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\479b5844f8696b5481dc2ba776f40214\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
+13-->[androidx.core:core:1.10.1] C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\479b5844f8696b5481dc2ba776f40214\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
 14        android:name="com.example.ventas.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-14-->[androidx.core:core:1.10.1] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\479b5844f8696b5481dc2ba776f40214\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
+14-->[androidx.core:core:1.10.1] C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\479b5844f8696b5481dc2ba776f40214\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
 15        android:protectionLevel="signature" />
-15-->[androidx.core:core:1.10.1] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\479b5844f8696b5481dc2ba776f40214\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
+15-->[androidx.core:core:1.10.1] C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\479b5844f8696b5481dc2ba776f40214\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
 16
 17    <uses-permission android:name="com.example.ventas.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-17-->[androidx.core:core:1.10.1] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\479b5844f8696b5481dc2ba776f40214\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
-17-->[androidx.core:core:1.10.1] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\479b5844f8696b5481dc2ba776f40214\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
+17-->[androidx.core:core:1.10.1] C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\479b5844f8696b5481dc2ba776f40214\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
+17-->[androidx.core:core:1.10.1] C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\479b5844f8696b5481dc2ba776f40214\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
 18
 19    <application
-19-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:7:5-49:19
+19-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:7:5-52:19
 20        android:allowBackup="true"
-20-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:8:13-39
+20-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:8:13-39
 21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-21-->[androidx.core:core:1.10.1] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\479b5844f8696b5481dc2ba776f40214\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
+21-->[androidx.core:core:1.10.1] C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\479b5844f8696b5481dc2ba776f40214\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
 22        android:dataExtractionRules="@xml/data_extraction_rules"
-22-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:9:13-69
+22-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:9:13-69
 23        android:debuggable="true"
 24        android:extractNativeLibs="false"
 25        android:fullBackupContent="@xml/backup_rules"
-25-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:10:13-58
+25-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:10:13-58
 26        android:label="@string/app_name"
-26-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:11:13-45
+26-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:11:13-45
 27        android:networkSecurityConfig="@xml/network_security_config"
-27-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:15:13-73
+27-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:15:13-73
 28        android:supportsRtl="true"
-28-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:12:13-39
+28-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:12:13-39
 29        android:testOnly="true"
 30        android:theme="@style/Theme.Ventas"
-30-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:13:13-48
+30-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:13:13-48
 31        android:usesCleartextTraffic="true" >
-31-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:14:13-48
+31-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:14:13-48
 32        <activity
-32-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:18:9-20:43
+32-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:18:9-20:43
 33            android:name="com.example.ventas.ui.ClientesActivity"
-33-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:19:17-52
+33-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:19:17-52
 34            android:exported="false" />
-34-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:20:17-41
+34-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:20:17-41
 35        <activity
-35-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:22:9-23:44
+35-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:22:9-23:44
 36            android:name="com.example.ventas.MenuActivity"
-36-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:22:19-47
+36-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:22:19-47
 37            android:exported="true" />
-37-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:23:19-42
+37-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:23:19-42
 38        <activity
-38-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:25:9-26:44
+38-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:25:9-26:44
 39            android:name="com.example.ventas.OperacionesActivity"
-39-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:25:19-54
+39-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:25:19-54
 40            android:exported="true" />
-40-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:26:19-42
+40-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:26:19-42
 41        <activity
-41-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:28:9-29:44
+41-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:28:9-29:44
 42            android:name="com.example.ventas.JugadoresActivity"
-42-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:28:19-52
+42-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:28:19-52
 43            android:exported="true" />
-43-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:29:19-42
+43-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:29:19-42
 44        <activity
-44-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:30:9-32:42
+44-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:30:9-32:42
 45            android:name="com.example.ventas.CrearJugadorActivity"
-45-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:31:17-53
+45-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:31:17-53
 46            android:exported="true" />
-46-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:32:17-40
+46-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:32:17-40
 47        <activity android:name="com.example.ventas.UsuarioActivity" />
-47-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:34:9-52
-47-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:34:19-50
+47-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:34:9-52
+47-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:34:19-50
 48        <activity
-48-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:36:9-44:20
+48-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:36:9-44:20
 49            android:name="com.example.ventas.loginActivity.LoginActivity2"
-49-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:37:17-61
+49-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:37:17-61
 50            android:exported="true" >
-50-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:38:17-40
+50-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:38:17-40
 51            <intent-filter>
-51-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:39:13-43:29
+51-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:39:13-43:29
 52                <action android:name="android.intent.action.MAIN" />
-52-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:40:17-68
-52-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:40:25-66
+52-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:40:17-68
+52-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:40:25-66
 53
 54                <category android:name="android.intent.category.LAUNCHER" />
-54-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:42:17-76
-54-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:42:27-74
+54-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:42:17-76
+54-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:42:27-74
 55            </intent-filter>
 56        </activity>
-57        <activity
-57-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:46:9-48:43
-58            android:name="com.example.ventas.MainActivity"
-58-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:47:17-45
-59            android:exported="false" />
-59-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:48:17-41
-60
-61        <provider
-61-->[androidx.emoji2:emoji2:1.2.0] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\de1a6777cdacc5e1b90675e6bce5840d\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-62            android:name="androidx.startup.InitializationProvider"
-62-->[androidx.emoji2:emoji2:1.2.0] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\de1a6777cdacc5e1b90675e6bce5840d\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-63            android:authorities="com.example.ventas.androidx-startup"
-63-->[androidx.emoji2:emoji2:1.2.0] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\de1a6777cdacc5e1b90675e6bce5840d\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-64            android:exported="false" >
-64-->[androidx.emoji2:emoji2:1.2.0] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\de1a6777cdacc5e1b90675e6bce5840d\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-65            <meta-data
-65-->[androidx.emoji2:emoji2:1.2.0] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\de1a6777cdacc5e1b90675e6bce5840d\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-66                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-66-->[androidx.emoji2:emoji2:1.2.0] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\de1a6777cdacc5e1b90675e6bce5840d\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-67                android:value="androidx.startup" />
-67-->[androidx.emoji2:emoji2:1.2.0] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\de1a6777cdacc5e1b90675e6bce5840d\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-68            <meta-data
-68-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\affebadfc35398a073b9a621ad18f529\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
-69                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-69-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\affebadfc35398a073b9a621ad18f529\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
-70                android:value="androidx.startup" />
-70-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\affebadfc35398a073b9a621ad18f529\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
-71            <meta-data
-71-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
-72                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-72-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
-73                android:value="androidx.startup" />
-73-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
-74        </provider>
-75
-76        <receiver
-76-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
-77            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-77-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
-78            android:directBootAware="false"
-78-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
-79            android:enabled="true"
-79-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
-80            android:exported="true"
-80-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
-81            android:permission="android.permission.DUMP" >
-81-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
-82            <intent-filter>
-82-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
-83                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-83-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
-83-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
-84            </intent-filter>
-85            <intent-filter>
-85-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
-86                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-86-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
-86-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
-87            </intent-filter>
-88            <intent-filter>
-88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
-89                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
-89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
-90            </intent-filter>
-91            <intent-filter>
-91-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
-92                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-92-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
-92-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
-93            </intent-filter>
-94        </receiver>
-95    </application>
-96
-97</manifest>
+57        <activity android:name="com.example.ventas.ui.EquipoActivity" />
+57-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:46:9-54
+57-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:46:19-52
+58        <activity
+58-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:47:9-49:43
+59            android:name="com.example.ventas.MainActivity"
+59-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:48:17-45
+60            android:exported="false" />
+60-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:49:17-41
+61
+62        <provider
+62-->[androidx.emoji2:emoji2:1.2.0] C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\de1a6777cdacc5e1b90675e6bce5840d\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+63            android:name="androidx.startup.InitializationProvider"
+63-->[androidx.emoji2:emoji2:1.2.0] C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\de1a6777cdacc5e1b90675e6bce5840d\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+64            android:authorities="com.example.ventas.androidx-startup"
+64-->[androidx.emoji2:emoji2:1.2.0] C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\de1a6777cdacc5e1b90675e6bce5840d\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+65            android:exported="false" >
+65-->[androidx.emoji2:emoji2:1.2.0] C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\de1a6777cdacc5e1b90675e6bce5840d\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+66            <meta-data
+66-->[androidx.emoji2:emoji2:1.2.0] C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\de1a6777cdacc5e1b90675e6bce5840d\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+67                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+67-->[androidx.emoji2:emoji2:1.2.0] C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\de1a6777cdacc5e1b90675e6bce5840d\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+68                android:value="androidx.startup" />
+68-->[androidx.emoji2:emoji2:1.2.0] C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\de1a6777cdacc5e1b90675e6bce5840d\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+69            <meta-data
+69-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\affebadfc35398a073b9a621ad18f529\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+70                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+70-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\affebadfc35398a073b9a621ad18f529\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+71                android:value="androidx.startup" />
+71-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\affebadfc35398a073b9a621ad18f529\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+72            <meta-data
+72-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+73                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+73-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+74                android:value="androidx.startup" />
+74-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+75        </provider>
+76
+77        <receiver
+77-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+78            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+78-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+79            android:directBootAware="false"
+79-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+80            android:enabled="true"
+80-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+81            android:exported="true"
+81-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+82            android:permission="android.permission.DUMP" >
+82-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+83            <intent-filter>
+83-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+84                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+84-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+84-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+85            </intent-filter>
+86            <intent-filter>
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+87                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+87-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+87-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+88            </intent-filter>
+89            <intent-filter>
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+90                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+90-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+90-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+91            </intent-filter>
+92            <intent-filter>
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+93                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+93-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+93-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+94            </intent-filter>
+95        </receiver>
+96    </application>
+97
+98</manifest>

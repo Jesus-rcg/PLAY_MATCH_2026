@@ -3240,6 +3240,8 @@ id endToStart
 id enterAlways
 id enterAlwaysCollapsed
 id etEmail
+id etEntrenador
+id etNombre
 id etPassword
 id exitUntilCollapsed
 id expand_activities_button
@@ -3702,6 +3704,7 @@ layout activity_buscar_jugador
 layout activity_crear_jugador
 layout activity_editar_jugador
 layout activity_eliminar_jugador
+layout activity_equipo
 layout activity_jugadores
 layout activity_lista_jugadores
 layout activity_login
