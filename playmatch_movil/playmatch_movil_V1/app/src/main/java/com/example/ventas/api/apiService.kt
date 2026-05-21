@@ -11,6 +11,7 @@ import retrofit2.http.Header
 import retrofit2.http.Path
 import retrofit2.http.PUT
 import retrofit2.http.DELETE
+import com.example.ventas.model.Equipo
 
 interface ApiService {
 
@@ -46,4 +47,12 @@ interface ApiService {
         @Header("Authorization") token:String,
         @Path("id") id: Int
     ): Call<Void>
+    @POST("equipos")
+    fun createEquipo(
+
+        @Header("Authorization") token: String,
+
+        @Body equipo: Equipo
+
+    ): Call<Equipo>
 }

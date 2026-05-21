@@ -16,6 +16,8 @@ id btnUser
 id btnVersus
 id btnVolver
 id etEmail
+id etEntrenador
+id etNombre
 id etPassword
 id main
 id message
@@ -41,6 +43,7 @@ id txtNombre
 id txtPassword
 id txtRol
 id txtTituloModulo
+layout activity_equipo
 layout activity_login
 layout activity_login2
 layout activity_main
