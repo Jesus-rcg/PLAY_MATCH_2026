@@ -48,6 +48,8 @@
         </activity>
 
         <activity android:name=".ui.EquipoActivity"/>
+        <activity android:name=".ui.ListaEquiposActivity"/>
+        <activity android:name=".ui.EditarEquipoActivity"/>
         <activity
                 android:name=".MainActivity"
                 android:exported="false"/>

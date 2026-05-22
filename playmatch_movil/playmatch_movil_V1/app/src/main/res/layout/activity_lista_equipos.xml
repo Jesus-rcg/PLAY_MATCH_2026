@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="#FFFFFF">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⚽ PLAYMATCH"
+            android:textColor="#0B6E4F"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Equipos"
+            android:textColor="#111111"
+            android:textStyle="bold"
+            android:textSize="34sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="24dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerEquipos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+</LinearLayout>

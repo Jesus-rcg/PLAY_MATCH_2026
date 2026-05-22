@@ -62,15 +62,42 @@ class OperacionesActivity : AppCompatActivity() {
         }
 
         cardEditar.setOnClickListener {
-            Toast.makeText(this, "Editar - $modulo", Toast.LENGTH_SHORT).show()
+            when(modulo) {
+                "Equipos" -> {
+                    startActivity(
+                        Intent(this, com.example.ventas.ui.ListaEquiposActivity::class.java)
+                    )
+                }
+                else -> {
+                    Toast.makeText(this, "Editar - $modulo", Toast.LENGTH_SHORT).show()
+                }
+            }
         }
 
         cardEliminar.setOnClickListener {
-            Toast.makeText(this, "Eliminar - $modulo", Toast.LENGTH_SHORT).show()
+            when(modulo) {
+                "Equipos" -> {
+                    startActivity(
+                        Intent(this, com.example.ventas.ui.ListaEquiposActivity::class.java)
+                    )
+                }
+                else -> {
+                    Toast.makeText(this, "Eliminar - $modulo", Toast.LENGTH_SHORT).show()
+                }
+            }
         }
-
         cardVerTodos.setOnClickListener {
-            Toast.makeText(this, "Ver todos - $modulo", Toast.LENGTH_SHORT).show()
+            when(modulo) {
+                "Equipos" -> {
+                    startActivity(
+                        Intent(this, com.example.ventas.ui.ListaEquiposActivity::class.java)
+                    )
+                }
+                else -> {
+                    Toast.makeText(this, "Ver todos - $modulo", Toast.LENGTH_SHORT).show()
+                }
+            }
+
         }
     }
 }
