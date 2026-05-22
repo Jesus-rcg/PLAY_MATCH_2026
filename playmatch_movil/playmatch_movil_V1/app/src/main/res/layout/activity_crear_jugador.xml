@@ -12,7 +12,29 @@
             android:orientation="vertical"
             android:padding="20dp">
 
-        <!-- TITULO -->
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+            <ImageButton
+                    android:id="@+id/btnVolver"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@android:drawable/ic_menu_revert"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Volver" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Volver a Jugadores"
+                    android:textColor="#534AB7"
+                    android:textSize="13sp"
+                    android:layout_marginStart="4dp" />
+        </LinearLayout>
 
         <TextView
                 android:layout_width="wrap_content"
@@ -25,15 +47,11 @@
 
         <!-- ID EQUIPO -->
 
-        <EditText
-                android:id="@+id/txtIdEquipo"
+        <Spinner
+                android:id="@+id/spEquipos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="ID Equipo"
-                android:inputType="text"
-                android:padding="12dp"
-                android:background="@android:drawable/edit_text"
-                android:layout_marginBottom="12dp"/>
+                android:layout_marginTop="10dp"/>
 
         <!-- NOMBRE -->
 
@@ -85,15 +103,11 @@
 
         <!-- ESTADO -->
 
-        <EditText
-                android:id="@+id/txtEstado"
+        <Spinner
+                android:id="@+id/spEstados"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Estado"
-                android:inputType="text"
-                android:padding="12dp"
-                android:background="@android:drawable/edit_text"
-                android:layout_marginBottom="20dp"/>
+                android:layout_marginTop="10dp"/>
 
         <!-- BOTON -->
 

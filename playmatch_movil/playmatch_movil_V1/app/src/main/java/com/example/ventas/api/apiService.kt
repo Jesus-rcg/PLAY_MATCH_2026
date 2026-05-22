@@ -14,6 +14,7 @@ import retrofit2.http.Path
 import retrofit2.http.PUT
 import retrofit2.http.DELETE
 import com.example.ventas.model.Equipo
+import com.example.ventas.model.Estado
 
 interface ApiService {
 
@@ -169,6 +170,7 @@ interface ApiService {
 
         @Body equipo: Equipo
 
+
     ): Call<Equipo>
 
     @GET("equipos")
@@ -194,4 +196,13 @@ interface ApiService {
         @Header("Authorization") token: String,
         @Path("id") id: Int
     ): Call<Void>
+
+    // =========== Estado =================
+    @GET("estados")
+    fun getEstado(
+
+        @Header("Authorization")
+        token: String
+
+    ): Call<List<Estado>>
 }

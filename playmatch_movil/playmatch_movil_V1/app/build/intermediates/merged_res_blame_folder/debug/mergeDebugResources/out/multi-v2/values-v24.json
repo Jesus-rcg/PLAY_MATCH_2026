@@ -4,7 +4,11 @@
             "outputFile": "com.example.ventas.app-mergeDebugResources-29:/values-v24/values-v24.xml",
             "map": [
                 {
+<<<<<<< Updated upstream
                     "source": "C:\\Users\\JorgeBautista\\.gradle\\caches\\8.11.1\\transforms\\c722a92279874d000bfa7fbacc366930\\transformed\\material-1.10.0\\res\\values-v24\\values-v24.xml",
+=======
+                    "source": "C:\\Users\\JuAlJeCa\\.gradle\\caches\\8.11.1\\transforms\\c722a92279874d000bfa7fbacc366930\\transformed\\material-1.10.0\\res\\values-v24\\values-v24.xml",
+>>>>>>> Stashed changes
                     "from": {
                         "startLines": "2,3,4,5,6,9,12,15",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -23,7 +27,11 @@
                     }
                 },
                 {
+<<<<<<< Updated upstream
                     "source": "C:\\Users\\JorgeBautista\\.gradle\\caches\\8.11.1\\transforms\\05e9d93043301910c664e64b86cc2a13\\transformed\\appcompat-1.6.1\\res\\values-v24\\values-v24.xml",
+=======
+                    "source": "C:\\Users\\JuAlJeCa\\.gradle\\caches\\8.11.1\\transforms\\05e9d93043301910c664e64b86cc2a13\\transformed\\appcompat-1.6.1\\res\\values-v24\\values-v24.xml",
+>>>>>>> Stashed changes
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

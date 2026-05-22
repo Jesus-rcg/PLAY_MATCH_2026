@@ -28,6 +28,8 @@ id message
 id recyclerEquipos
 id seleccionEstado
 id seleccionRol
+id spEquipos
+id spEstados
 id tarjetaBuscar
 id tarjetaEditar
 id tarjetaEliminar
@@ -50,7 +52,6 @@ id txtDocumento
 id txtEmail
 id txtEstado
 id txtFecha
-id txtIdEquipo
 id txtNombre
 id txtNumeroCamiseta
 id txtPassword

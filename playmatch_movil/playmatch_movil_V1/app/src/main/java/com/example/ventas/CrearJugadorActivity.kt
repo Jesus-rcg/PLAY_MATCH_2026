@@ -1,12 +1,18 @@
 package com.example.ventas
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.util.Log
+import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
+import android.widget.Spinner
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.ventas.api.ApiClient
+import com.example.ventas.model.Equipo
+import com.example.ventas.model.Estado
 import com.example.ventas.model.Jugador
 import retrofit2.Call
 import retrofit2.Callback
@@ -14,17 +20,31 @@ import retrofit2.Response
 
 class CrearJugadorActivity : AppCompatActivity() {
 
+    private lateinit var spEquipos: Spinner
+    private lateinit var spEstados: Spinner
+
+    private var listaEquipos = mutableListOf<Equipo>()
+    private var listaEstados = mutableListOf<Estado>()
+
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_crear_jugador)
 
+        findViewById<ImageButton>(R.id.btnVolver).setOnClickListener {
+            finish()
+        }
 
+        // SPINNERS
+
+        spEquipos = findViewById(R.id.spEquipos)
+        spEstados = findViewById(R.id.spEstados)
+
+        cargarEquipos()
+        cargarEstados()
 
         // INPUTS
-
-        val txtIdEquipo =
-            findViewById<EditText>(R.id.txtIdEquipo)
 
         val txtNombre =
             findViewById<EditText>(R.id.txtNombre)
@@ -38,25 +58,28 @@ class CrearJugadorActivity : AppCompatActivity() {
         val txtNumeroCamiseta =
             findViewById<EditText>(R.id.txtNumeroCamiseta)
 
-        val txtEstado =
-            findViewById<EditText>(R.id.txtEstado)
-
-
-
         // BOTON
 
         val btnGuardarJugador =
             findViewById<Button>(R.id.btnGuardarJugador)
 
-
-
         // CLICK BOTON
 
         btnGuardarJugador.setOnClickListener {
 
-            val jugador = Jugador(
+            val posicionEquipo =
+                spEquipos.selectedItemPosition
 
-                id_equipo = txtIdEquipo.text.toString(),
+            val posicionEstado =
+                spEstados.selectedItemPosition
+
+            val idEquipo =
+                listaEquipos[posicionEquipo].id_equipo
+
+            val idEstado =
+                listaEstados[posicionEstado].id_estado
+
+            val jugador = Jugador(
 
                 nombre = txtNombre.text.toString(),
 
@@ -67,11 +90,10 @@ class CrearJugadorActivity : AppCompatActivity() {
                 numero_camiseta =
                     txtNumeroCamiseta.text.toString(),
 
-                estado = txtEstado.text.toString()
+                estado = idEstado,
 
+                id_equipo = idEquipo
             )
-
-
 
             // TOKEN
 
@@ -80,8 +102,6 @@ class CrearJugadorActivity : AppCompatActivity() {
 
             val token =
                 prefs.getString("token", "") ?: ""
-
-
 
             // PETICION API
 
@@ -105,16 +125,15 @@ class CrearJugadorActivity : AppCompatActivity() {
                             Toast.LENGTH_LONG
                         ).show()
 
-
-
                         // LIMPIAR CAMPOS
 
-                        txtIdEquipo.text.clear()
                         txtNombre.text.clear()
                         txtApellido.text.clear()
                         txtDocumento.text.clear()
                         txtNumeroCamiseta.text.clear()
-                        txtEstado.text.clear()
+
+                        spEquipos.setSelection(0)
+                        spEstados.setSelection(0)
 
                     } else {
 
@@ -150,5 +169,109 @@ class CrearJugadorActivity : AppCompatActivity() {
                 }
             })
         }
+    }
+
+    private fun cargarEquipos() {
+
+        val prefs =
+            getSharedPreferences("app", MODE_PRIVATE)
+
+        val token =
+            prefs.getString("token", "") ?: ""
+
+        ApiClient.instance.getEquipos("Bearer $token")
+            .enqueue(object : Callback<List<Equipo>> {
+
+                override fun onResponse(
+                    call: Call<List<Equipo>>,
+                    response: Response<List<Equipo>>
+                ) {
+
+                    if (response.isSuccessful && response.body() != null) {
+
+                        listaEquipos =
+                            response.body()!!.toMutableList()
+
+                        val nombres =
+                            listaEquipos.map { it.nombre }
+
+                        val adapter = ArrayAdapter(
+                            this@CrearJugadorActivity,
+                            android.R.layout.simple_spinner_item,
+                            nombres
+                        )
+
+                        adapter.setDropDownViewResource(
+                            android.R.layout.simple_spinner_dropdown_item
+                        )
+
+                        spEquipos.adapter = adapter
+                    }
+                }
+
+                override fun onFailure(
+                    call: Call<List<Equipo>>,
+                    t: Throwable
+                ) {
+
+                    Toast.makeText(
+                        this@CrearJugadorActivity,
+                        "Error cargando equipos",
+                        Toast.LENGTH_LONG
+                    ).show()
+                }
+            })
+    }
+
+    private fun cargarEstados() {
+
+        val prefs =
+            getSharedPreferences("app", MODE_PRIVATE)
+
+        val token =
+            prefs.getString("token", "") ?: ""
+
+        ApiClient.instance.getEstado("Bearer $token")
+            .enqueue(object : Callback<List<Estado>> {
+
+                override fun onResponse(
+                    call: Call<List<Estado>>,
+                    response: Response<List<Estado>>
+                ) {
+
+                    if (response.isSuccessful && response.body() != null) {
+
+                        listaEstados =
+                            response.body()!!.toMutableList()
+
+                        val nombres =
+                            listaEstados.map { it.nombre }
+
+                        val adapter = ArrayAdapter(
+                            this@CrearJugadorActivity,
+                            android.R.layout.simple_spinner_item,
+                            nombres
+                        )
+
+                        adapter.setDropDownViewResource(
+                            android.R.layout.simple_spinner_dropdown_item
+                        )
+
+                        spEstados.adapter = adapter
+                    }
+                }
+
+                override fun onFailure(
+                    call: Call<List<Estado>>,
+                    t: Throwable
+                ) {
+
+                    Toast.makeText(
+                        this@CrearJugadorActivity,
+                        "Error cargando estados",
+                        Toast.LENGTH_LONG
+                    ).show()
+                }
+            })
     }
 }

@@ -4,7 +4,11 @@
             "outputFile": "com.example.ventas.app-mergeDebugResources-29:/values-watch-v21/values-watch-v21.xml",
             "map": [
                 {
+<<<<<<< Updated upstream
                     "source": "C:\\Users\\JorgeBautista\\.gradle\\caches\\8.11.1\\transforms\\05e9d93043301910c664e64b86cc2a13\\transformed\\appcompat-1.6.1\\res\\values-watch-v21\\values-watch-v21.xml",
+=======
+                    "source": "C:\\Users\\JuAlJeCa\\.gradle\\caches\\8.11.1\\transforms\\05e9d93043301910c664e64b86cc2a13\\transformed\\appcompat-1.6.1\\res\\values-watch-v21\\values-watch-v21.xml",
+>>>>>>> Stashed changes
                     "from": {
                         "startLines": "2,6,10",
                         "startColumns": "4,4,4",

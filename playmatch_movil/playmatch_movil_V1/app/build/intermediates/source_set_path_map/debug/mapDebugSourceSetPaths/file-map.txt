@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 com.example.ventas.app-startup-runtime-1.1.1-0 C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\0033300589ce032ec1078ab4dc210fb5\transformed\startup-runtime-1.1.1\res
 com.example.ventas.app-appcompat-1.6.1-1 C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\05e9d93043301910c664e64b86cc2a13\transformed\appcompat-1.6.1\res
 com.example.ventas.app-fragment-1.3.6-2 C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\281c32583820be9392170e3e076fa4a2\transformed\fragment-1.3.6\res
@@ -32,3 +33,39 @@ com.example.ventas.app-packageDebugResources-30 C:\Users\JorgeBautista\Desktop\P
 com.example.ventas.app-debug-31 C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\build\intermediates\merged_res\debug\mergeDebugResources
 com.example.ventas.app-debug-32 C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\debug\res
 com.example.ventas.app-main-33 C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\res
+=======
+com.example.ventas.app-startup-runtime-1.1.1-0 C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\0033300589ce032ec1078ab4dc210fb5\transformed\startup-runtime-1.1.1\res
+com.example.ventas.app-appcompat-1.6.1-1 C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\05e9d93043301910c664e64b86cc2a13\transformed\appcompat-1.6.1\res
+com.example.ventas.app-fragment-1.3.6-2 C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\281c32583820be9392170e3e076fa4a2\transformed\fragment-1.3.6\res
+com.example.ventas.app-cardview-1.0.0-3 C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\3d3f987465a34a6caffeba5a76358063\transformed\cardview-1.0.0\res
+com.example.ventas.app-viewpager2-1.0.0-4 C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\47455811d36d558fdd24530a9129aece\transformed\viewpager2-1.0.0\res
+com.example.ventas.app-core-1.10.1-5 C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\479b5844f8696b5481dc2ba776f40214\transformed\core-1.10.1\res
+com.example.ventas.app-savedstate-1.2.1-6 C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\49ad0b88da372f6198da1cc5cb1561bc\transformed\savedstate-1.2.1\res
+com.example.ventas.app-coordinatorlayout-1.1.0-7 C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\589789b184988c90c49e7ace948dfa40\transformed\coordinatorlayout-1.1.0\res
+com.example.ventas.app-lifecycle-runtime-2.6.1-8 C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\591d33077ba56722d1fd88c78604afba\transformed\lifecycle-runtime-2.6.1\res
+com.example.ventas.app-core-runtime-2.2.0-9 C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\63f11022d56f9d2f52165a90614975e9\transformed\core-runtime-2.2.0\res
+com.example.ventas.app-appcompat-resources-1.6.1-10 C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\732de01e20d1821f40d018010d7376c2\transformed\appcompat-resources-1.6.1\res
+com.example.ventas.app-emoji2-views-helper-1.2.0-11 C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\7703ac233cc54b123fe69bf2f732924a\transformed\emoji2-views-helper-1.2.0\res
+com.example.ventas.app-annotation-experimental-1.3.0-12 C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\7fc6a2eb8d543316afee21838f75124f\transformed\annotation-experimental-1.3.0\res
+com.example.ventas.app-recyclerview-1.1.0-13 C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\9bb7e6344d809b4a5cfdb33fc42abdd4\transformed\recyclerview-1.1.0\res
+com.example.ventas.app-lifecycle-process-2.6.1-14 C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\affebadfc35398a073b9a621ad18f529\transformed\lifecycle-process-2.6.1\res
+com.example.ventas.app-core-ktx-1.10.1-15 C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\b32fac65133141b4a61970c158898fc6\transformed\core-ktx-1.10.1\res
+com.example.ventas.app-activity-1.8.0-16 C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\b3cb39927272f352b01c247e95d46cbc\transformed\activity-1.8.0\res
+com.example.ventas.app-lifecycle-viewmodel-2.6.1-17 C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\b95186a1b0ba34f436e550b2ee87bbec\transformed\lifecycle-viewmodel-2.6.1\res
+com.example.ventas.app-lifecycle-livedata-core-2.6.1-18 C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\c437c7d244c22e30b5e69a2b173edcea\transformed\lifecycle-livedata-core-2.6.1\res
+com.example.ventas.app-material-1.10.0-19 C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\c722a92279874d000bfa7fbacc366930\transformed\material-1.10.0\res
+com.example.ventas.app-profileinstaller-1.3.0-20 C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\cca0dfb7489b21332c2e67ed6df195f4\transformed\profileinstaller-1.3.0\res
+com.example.ventas.app-lifecycle-livedata-2.6.1-21 C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\ccb97250201d50d802741d73a1cdaa7d\transformed\lifecycle-livedata-2.6.1\res
+com.example.ventas.app-lifecycle-viewmodel-savedstate-2.6.1-22 C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\d0dc4efa59f1d23de77db09ddac30cdb\transformed\lifecycle-viewmodel-savedstate-2.6.1\res
+com.example.ventas.app-emoji2-1.2.0-23 C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\de1a6777cdacc5e1b90675e6bce5840d\transformed\emoji2-1.2.0\res
+com.example.ventas.app-drawerlayout-1.1.1-24 C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\e0b2953f1908d07e6c6090d9ed91e8d5\transformed\drawerlayout-1.1.1\res
+com.example.ventas.app-constraintlayout-2.1.4-25 C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\ed360ceef48a57971fe2664b2f19db4a\transformed\constraintlayout-2.1.4\res
+com.example.ventas.app-transition-1.2.0-26 C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\f95e5a65f9113ed6bc1fe2d68914694e\transformed\transition-1.2.0\res
+com.example.ventas.app-pngs-27 C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\build\generated\res\pngs\debug
+com.example.ventas.app-resValues-28 C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\build\generated\res\resValues\debug
+com.example.ventas.app-packageDebugResources-29 C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.ventas.app-packageDebugResources-30 C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.ventas.app-debug-31 C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.example.ventas.app-debug-32 C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\debug\res
+com.example.ventas.app-main-33 C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\res
+>>>>>>> Stashed changes
