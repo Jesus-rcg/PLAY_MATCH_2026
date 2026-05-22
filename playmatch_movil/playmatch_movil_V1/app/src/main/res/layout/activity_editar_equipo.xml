@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⚽ PLAYMATCH"
+                android:textColor="#0B6E4F"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Editar Equipo"
+                android:textColor="#111111"
+                android:textStyle="bold"
+                android:textSize="34sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="24dp"/>
+
+        <EditText
+                android:id="@+id/etNombreEditar"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Nombre equipo"
+                android:padding="16dp"
+                android:backgroundTint="#0B6E4F"/>
+
+        <EditText
+                android:id="@+id/etEntrenadorEditar"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Entrenador"
+                android:padding="16dp"
+                android:backgroundTint="#0B6E4F"
+                android:layout_marginTop="20dp"/>
+
+        <Button
+                android:id="@+id/btnActualizar"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="ACTUALIZAR EQUIPO"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:backgroundTint="#0B6E4F"
+                android:layout_marginTop="30dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

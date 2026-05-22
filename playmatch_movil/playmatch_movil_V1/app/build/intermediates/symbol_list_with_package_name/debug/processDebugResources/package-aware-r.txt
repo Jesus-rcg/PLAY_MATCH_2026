@@ -3145,6 +3145,7 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnActualizar
 id btnBuscar
 id btnEditar
 id btnEliminar
@@ -3241,7 +3242,9 @@ id enterAlways
 id enterAlwaysCollapsed
 id etEmail
 id etEntrenador
+id etEntrenadorEditar
 id etNombre
+id etNombreEditar
 id etPassword
 id exitUntilCollapsed
 id expand_activities_button
@@ -3422,6 +3425,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id recyclerEquipos
 id report_drawn
 id reverseSawtooth
 id right
@@ -3553,7 +3557,9 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvEntrenador
 id tvMessage
+id tvNombreEquipo
 id txtApellido
 id txtDocumento
 id txtEmail
@@ -3705,10 +3711,12 @@ layout abc_tooltip
 layout activity_buscar_jugador
 layout activity_crear_jugador
 layout activity_crear_usuario
+layout activity_editar_equipo
 layout activity_editar_jugador
 layout activity_eliminar_jugador
 layout activity_equipo
 layout activity_jugadores
+layout activity_lista_equipos
 layout activity_lista_jugadores
 layout activity_login
 layout activity_login2
@@ -3731,6 +3739,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout item_equipo
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

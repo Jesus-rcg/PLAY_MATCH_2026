@@ -2,6 +2,7 @@ R_DEF: Internal format may change without notice
 local
 color black
 color white
+id btnActualizar
 id btnBuscar
 id btnEditar
 id btnEliminar
@@ -18,10 +19,13 @@ id btnVersus
 id btnVolver
 id etEmail
 id etEntrenador
+id etEntrenadorEditar
 id etNombre
+id etNombreEditar
 id etPassword
 id main
 id message
+id recyclerEquipos
 id seleccionEstado
 id seleccionRol
 id tarjetaBuscar
@@ -38,7 +42,9 @@ id textBtnVersus
 id textButtonUser
 id textView
 id titulo
+id tvEntrenador
 id tvMessage
+id tvNombreEquipo
 id txtApellido
 id txtDocumento
 id txtEmail
@@ -53,16 +59,19 @@ id txtTituloModulo
 layout activity_buscar_jugador
 layout activity_crear_jugador
 layout activity_crear_usuario
+layout activity_editar_equipo
 layout activity_editar_jugador
 layout activity_eliminar_jugador
 layout activity_equipo
 layout activity_jugadores
+layout activity_lista_equipos
 layout activity_lista_jugadores
 layout activity_login
 layout activity_login2
 layout activity_main
 layout activity_usuarios
 layout clientes
+layout item_equipo
 layout main_menu
 layout menu_usuarios
 mipmap buscar

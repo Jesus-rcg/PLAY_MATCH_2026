@@ -159,6 +159,9 @@ interface ApiService {
     ): Call<Void>
 
 
+
+
+    // ================= EQUIPO =================
     @POST("equipos")
     fun createEquipo(
 
@@ -167,4 +170,28 @@ interface ApiService {
         @Body equipo: Equipo
 
     ): Call<Equipo>
+
+    @GET("equipos")
+    fun getEquipos(
+        @Header("Authorization") token: String
+    ): Call<List<Equipo>>
+
+    @GET("equipos/{id}")
+    fun getEquipo(
+        @Header("Authorization") token: String,
+        @Path("id") id: Int
+    ): Call<Equipo>
+
+    @PUT("equipos/{id}")
+    fun updateEquipo(
+        @Header("Authorization") token: String,
+        @Path("id") id: Int,
+        @Body equipo: Equipo
+    ): Call<Void>
+
+    @DELETE("equipos/{id}")
+    fun deleteEquipo(
+        @Header("Authorization") token: String,
+        @Path("id") id: Int
+    ): Call<Void>
 }
