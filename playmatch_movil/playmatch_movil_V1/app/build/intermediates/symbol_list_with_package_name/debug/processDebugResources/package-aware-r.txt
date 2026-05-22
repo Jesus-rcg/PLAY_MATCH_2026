@@ -3450,6 +3450,8 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id seleccionEstado
+id seleccionRol
 id select_dialog_listview
 id selected
 id selection_type
@@ -3702,6 +3704,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_buscar_jugador
 layout activity_crear_jugador
+layout activity_crear_usuario
 layout activity_editar_jugador
 layout activity_eliminar_jugador
 layout activity_equipo
@@ -3796,10 +3799,15 @@ mipmap config
 mipmap editar
 mipmap eliminar
 mipmap equipos
+mipmap estado
+mipmap gmail
 mipmap guardar
 mipmap jugadores
+mipmap nombre
+mipmap password
 mipmap posiciones
 mipmap resultados
+mipmap rol
 mipmap torneo
 mipmap usuarios
 mipmap ver

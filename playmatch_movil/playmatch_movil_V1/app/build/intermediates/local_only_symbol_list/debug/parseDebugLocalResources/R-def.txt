@@ -22,6 +22,8 @@ id etNombre
 id etPassword
 id main
 id message
+id seleccionEstado
+id seleccionRol
 id tarjetaBuscar
 id tarjetaEditar
 id tarjetaEliminar
@@ -50,6 +52,7 @@ id txtRol
 id txtTituloModulo
 layout activity_buscar_jugador
 layout activity_crear_jugador
+layout activity_crear_usuario
 layout activity_editar_jugador
 layout activity_eliminar_jugador
 layout activity_equipo
@@ -67,10 +70,15 @@ mipmap config
 mipmap editar
 mipmap eliminar
 mipmap equipos
+mipmap estado
+mipmap gmail
 mipmap guardar
 mipmap jugadores
+mipmap nombre
+mipmap password
 mipmap posiciones
 mipmap resultados
+mipmap rol
 mipmap torneo
 mipmap usuarios
 mipmap ver

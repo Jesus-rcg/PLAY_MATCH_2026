@@ -1,5 +1,9 @@
 [
     {
+        "merged": "com.example.ventas.app-debug-31:/layout_activity_crear_usuario.xml.flat",
+        "source": "com.example.ventas.app-main-33:/layout/activity_crear_usuario.xml"
+    },
+    {
         "merged": "com.example.ventas.app-debug-31:/layout_activity_jugadores.xml.flat",
         "source": "com.example.ventas.app-main-33:/layout/activity_jugadores.xml"
     },
@@ -36,6 +40,10 @@
         "source": "com.example.ventas.app-main-33:/xml/data_extraction_rules.xml"
     },
     {
+        "merged": "com.example.ventas.app-debug-31:/mipmap_password.png.flat",
+        "source": "com.example.ventas.app-main-33:/mipmap/password.png"
+    },
+    {
         "merged": "com.example.ventas.app-debug-31:/mipmap_config.png.flat",
         "source": "com.example.ventas.app-main-33:/mipmap/config.png"
     },
@@ -64,12 +72,12 @@
         "source": "com.example.ventas.app-main-33:/mipmap/ver.png"
     },
     {
-        "merged": "com.example.ventas.app-debug-31:/layout_activity_equipo.xml.flat",
-        "source": "com.example.ventas.app-main-33:/layout/activity_equipo.xml"
-    },
-    {
         "merged": "com.example.ventas.app-debug-31:/xml_network_security_config.xml.flat",
         "source": "com.example.ventas.app-main-33:/xml/network_security_config.xml"
+    },
+    {
+        "merged": "com.example.ventas.app-debug-31:/layout_activity_equipo.xml.flat",
+        "source": "com.example.ventas.app-main-33:/layout/activity_equipo.xml"
     },
     {
         "merged": "com.example.ventas.app-debug-31:/mipmap_jugadores.png.flat",
@@ -92,12 +100,20 @@
         "source": "com.example.ventas.app-main-33:/layout/menu_usuarios.xml"
     },
     {
+        "merged": "com.example.ventas.app-debug-31:/mipmap_estado.png.flat",
+        "source": "com.example.ventas.app-main-33:/mipmap/estado.png"
+    },
+    {
         "merged": "com.example.ventas.app-debug-31:/mipmap_equipos.png.flat",
         "source": "com.example.ventas.app-main-33:/mipmap/equipos.png"
     },
     {
         "merged": "com.example.ventas.app-debug-31:/mipmap_guardar.png.flat",
         "source": "com.example.ventas.app-main-33:/mipmap/guardar.png"
+    },
+    {
+        "merged": "com.example.ventas.app-debug-31:/mipmap_rol.png.flat",
+        "source": "com.example.ventas.app-main-33:/mipmap/rol.png"
     },
     {
         "merged": "com.example.ventas.app-debug-31:/layout_clientes.xml.flat",
@@ -116,7 +132,15 @@
         "source": "com.example.ventas.app-main-33:/layout/activity_crear_jugador.xml"
     },
     {
+        "merged": "com.example.ventas.app-debug-31:/mipmap_gmail.png.flat",
+        "source": "com.example.ventas.app-main-33:/mipmap/gmail.png"
+    },
+    {
         "merged": "com.example.ventas.app-debug-31:/mipmap_usuarios.png.flat",
         "source": "com.example.ventas.app-main-33:/mipmap/usuarios.png"
+    },
+    {
+        "merged": "com.example.ventas.app-debug-31:/mipmap_nombre.png.flat",
+        "source": "com.example.ventas.app-main-33:/mipmap/nombre.png"
     }
 ]
