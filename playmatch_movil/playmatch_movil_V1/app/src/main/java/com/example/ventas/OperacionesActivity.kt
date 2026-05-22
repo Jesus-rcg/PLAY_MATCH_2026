@@ -45,6 +45,12 @@ class OperacionesActivity : AppCompatActivity() {
                     )
                 }
 
+                "Usuarios" -> {
+                    startActivity(
+                        Intent(this, CrearUsuarioActivity::class.java)
+                    )
+                }
+
                 else -> {
                     Toast.makeText(
                         this,
