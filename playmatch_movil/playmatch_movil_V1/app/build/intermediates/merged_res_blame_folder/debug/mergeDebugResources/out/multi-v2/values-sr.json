@@ -5,7 +5,10 @@
             "map": [
                 {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                     "source": "C:\\Users\\JorgeBautista\\.gradle\\caches\\8.11.1\\transforms\\479b5844f8696b5481dc2ba776f40214\\transformed\\core-1.10.1\\res\\values-sr\\values-sr.xml",
+=======
+                    "source": "C:\\Users\\JuAlJeCa\\.gradle\\caches\\8.11.1\\transforms\\479b5844f8696b5481dc2ba776f40214\\transformed\\core-1.10.1\\res\\values-sr\\values-sr.xml",
 =======
                     "source": "C:\\Users\\JuAlJeCa\\.gradle\\caches\\8.11.1\\transforms\\479b5844f8696b5481dc2ba776f40214\\transformed\\core-1.10.1\\res\\values-sr\\values-sr.xml",
                     "from": {
@@ -43,7 +46,29 @@
                 },
                 {
 <<<<<<< Updated upstream
+                    "source": "C:\\Users\\JuAlJeCa\\.gradle\\caches\\8.11.1\\transforms\\05e9d93043301910c664e64b86cc2a13\\transformed\\appcompat-1.6.1\\res\\values-sr\\values-sr.xml",
+>>>>>>> Stashed changes
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,153,255,352,456,560,665,781",
+                        "endColumns": "97,101,96,103,103,104,115,100",
+                        "endOffsets": "148,250,347,451,555,660,776,877"
+                    },
+                    "to": {
+                        "startLines": "39,40,41,42,43,44,45,110",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "3531,3629,3731,3828,3932,4036,4141,9411",
+                        "endColumns": "97,101,96,103,103,104,115,100",
+                        "endOffsets": "3624,3726,3823,3927,4031,4136,4252,9507"
+                    }
+                },
+                {
+<<<<<<< Updated upstream
                     "source": "C:\\Users\\JorgeBautista\\.gradle\\caches\\8.11.1\\transforms\\c722a92279874d000bfa7fbacc366930\\transformed\\material-1.10.0\\res\\values-sr\\values-sr.xml",
+=======
+                    "source": "C:\\Users\\JuAlJeCa\\.gradle\\caches\\8.11.1\\transforms\\c722a92279874d000bfa7fbacc366930\\transformed\\material-1.10.0\\res\\values-sr\\values-sr.xml",
+>>>>>>> Stashed changes
 =======
                     "source": "C:\\Users\\JuAlJeCa\\.gradle\\caches\\8.11.1\\transforms\\c722a92279874d000bfa7fbacc366930\\transformed\\material-1.10.0\\res\\values-sr\\values-sr.xml",
 >>>>>>> Stashed changes
@@ -64,6 +89,7 @@
                         "endOffsets": "366,3170,3246,3326,3433,3526,4346,4477,4558,4624,4716,4784,4847,4950,5010,5076,5132,5203,5263,5317,5429,5486,5547,5601,5677,5802,5888,5971,6109,6190,6273,6404,6492,6570,6624,6680,6746,6820,6898,6987,7069,7144,7220,7295,7366,7473,7563,7636,7728,7824,7896,7972,8068,8121,8203,8270,8357,8444,8506,8570,8633,8702,8807,8917,9013,9121,9179,9239,9319"
                     }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 },
                 {
                     "source": "C:\\Users\\JorgeBautista\\.gradle\\caches\\8.11.1\\transforms\\05e9d93043301910c664e64b86cc2a13\\transformed\\appcompat-1.6.1\\res\\values-sr\\values-sr.xml",
@@ -81,6 +107,8 @@
                         "endColumns": "106,100,105,85,103,121,83,80,90,92,94,93,99,92,94,104,90,90,85,104,105,102,105,108,106,169,96,86",
                         "endOffsets": "473,574,680,766,870,992,1076,1157,1248,1341,1436,1530,1630,1723,1818,1923,2014,2105,2191,2296,2402,2505,2611,2720,2827,2997,3094,9406"
                     }
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
                 }

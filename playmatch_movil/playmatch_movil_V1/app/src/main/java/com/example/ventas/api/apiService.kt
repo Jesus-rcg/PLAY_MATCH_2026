@@ -26,7 +26,6 @@ interface ApiService {
     ): Call<LoginResponse>
 
 
-
     // ================= USUARIOS =================
 
     @POST("usuarios")
@@ -41,7 +40,6 @@ interface ApiService {
     ): Call<Usuario>
 
 
-
     @GET("usuarios")
     fun getUsuarios(
 
@@ -49,7 +47,6 @@ interface ApiService {
         token: String
 
     ): Call<List<Usuario>>
-
 
 
     @GET("usuarios/{id}")
@@ -62,7 +59,6 @@ interface ApiService {
         id: Int
 
     ): Call<Usuario>
-
 
 
     @PUT("usuarios/{id}")
@@ -80,7 +76,6 @@ interface ApiService {
     ): Call<Void>
 
 
-
     @DELETE("usuarios/{id}")
     fun deleteUsuario(
 
@@ -91,7 +86,6 @@ interface ApiService {
         id: Int
 
     ): Call<Void>
-
 
 
     // ================= JUGADORES =================
@@ -108,7 +102,6 @@ interface ApiService {
     ): Call<Jugador>
 
 
-
     @GET("jugadores")
     fun getJugadores(
 
@@ -116,7 +109,6 @@ interface ApiService {
         token: String
 
     ): Call<List<Jugador>>
-
 
 
     @GET("jugadores/{id}")
@@ -129,7 +121,6 @@ interface ApiService {
         id: Int
 
     ): Call<Jugador>
-
 
 
     @PUT("jugadores/{id}")
@@ -145,7 +136,6 @@ interface ApiService {
         jugador: Jugador
 
     ): Call<Void>
-
 
 
     @DELETE("jugadores/{id}")
@@ -175,6 +165,7 @@ interface ApiService {
 
     @GET("equipos")
     fun getEquipos(
+<<<<<<< Updated upstream
         @Header("Authorization") token: String
     ): Call<List<Equipo>>
 
@@ -197,6 +188,14 @@ interface ApiService {
         @Path("id") id: Int
     ): Call<Void>
 
+=======
+
+        @Header("Authorization")
+        token: String
+
+    ): Call<List<Equipo>>
+
+>>>>>>> Stashed changes
     // =========== Estado =================
     @GET("estados")
     fun getEstado(
@@ -205,4 +204,8 @@ interface ApiService {
         token: String
 
     ): Call<List<Estado>>
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 }

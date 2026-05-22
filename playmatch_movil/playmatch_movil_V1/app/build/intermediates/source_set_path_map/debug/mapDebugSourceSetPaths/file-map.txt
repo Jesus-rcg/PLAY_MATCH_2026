@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas.app-startup-runtime-1.1.1-0 C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\0033300589ce032ec1078ab4dc210fb5\transformed\startup-runtime-1.1.1\res
 com.example.ventas.app-appcompat-1.6.1-1 C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\05e9d93043301910c664e64b86cc2a13\transformed\appcompat-1.6.1\res
 com.example.ventas.app-fragment-1.3.6-2 C:\Users\JorgeBautista\.gradle\caches\8.11.1\transforms\281c32583820be9392170e3e076fa4a2\transformed\fragment-1.3.6\res
@@ -34,6 +35,8 @@ com.example.ventas.app-debug-31 C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MA
 com.example.ventas.app-debug-32 C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\debug\res
 com.example.ventas.app-main-33 C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\res
 =======
+=======
+>>>>>>> Stashed changes
 com.example.ventas.app-startup-runtime-1.1.1-0 C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\0033300589ce032ec1078ab4dc210fb5\transformed\startup-runtime-1.1.1\res
 com.example.ventas.app-appcompat-1.6.1-1 C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\05e9d93043301910c664e64b86cc2a13\transformed\appcompat-1.6.1\res
 com.example.ventas.app-fragment-1.3.6-2 C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\281c32583820be9392170e3e076fa4a2\transformed\fragment-1.3.6\res
@@ -68,4 +71,7 @@ com.example.ventas.app-packageDebugResources-30 C:\Users\JuAlJeCa\Documents\GitH
 com.example.ventas.app-debug-31 C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\build\intermediates\merged_res\debug\mergeDebugResources
 com.example.ventas.app-debug-32 C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\debug\res
 com.example.ventas.app-main-33 C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\res
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes

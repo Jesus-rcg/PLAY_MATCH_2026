@@ -5,6 +5,7 @@
             "map": [
                 {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                     "source": "C:\\Users\\JorgeBautista\\.gradle\\caches\\8.11.1\\transforms\\3d3f987465a34a6caffeba5a76358063\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
@@ -36,6 +37,9 @@
                 },
                 {
                     "source": "C:\\Users\\JorgeBautista\\.gradle\\caches\\8.11.1\\transforms\\c722a92279874d000bfa7fbacc366930\\transformed\\material-1.10.0\\res\\values-v23\\values-v23.xml",
+=======
+                    "source": "C:\\Users\\JuAlJeCa\\.gradle\\caches\\8.11.1\\transforms\\c722a92279874d000bfa7fbacc366930\\transformed\\material-1.10.0\\res\\values-v23\\values-v23.xml",
+>>>>>>> Stashed changes
 =======
                     "source": "C:\\Users\\JuAlJeCa\\.gradle\\caches\\8.11.1\\transforms\\c722a92279874d000bfa7fbacc366930\\transformed\\material-1.10.0\\res\\values-v23\\values-v23.xml",
 >>>>>>> Stashed changes

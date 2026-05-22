@@ -5,7 +5,11 @@
             "map": [
                 {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                     "source": "C:\\Users\\JorgeBautista\\.gradle\\caches\\8.11.1\\transforms\\479b5844f8696b5481dc2ba776f40214\\transformed\\core-1.10.1\\res\\values-en-rXC\\values-en-rXC.xml",
+=======
+                    "source": "C:\\Users\\JuAlJeCa\\.gradle\\caches\\8.11.1\\transforms\\479b5844f8696b5481dc2ba776f40214\\transformed\\core-1.10.1\\res\\values-en-rXC\\values-en-rXC.xml",
+>>>>>>> Stashed changes
 =======
                     "source": "C:\\Users\\JuAlJeCa\\.gradle\\caches\\8.11.1\\transforms\\479b5844f8696b5481dc2ba776f40214\\transformed\\core-1.10.1\\res\\values-en-rXC\\values-en-rXC.xml",
 >>>>>>> Stashed changes
@@ -26,7 +30,11 @@
                 },
                 {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                     "source": "C:\\Users\\JorgeBautista\\.gradle\\caches\\8.11.1\\transforms\\05e9d93043301910c664e64b86cc2a13\\transformed\\appcompat-1.6.1\\res\\values-en-rXC\\values-en-rXC.xml",
+=======
+                    "source": "C:\\Users\\JuAlJeCa\\.gradle\\caches\\8.11.1\\transforms\\05e9d93043301910c664e64b86cc2a13\\transformed\\appcompat-1.6.1\\res\\values-en-rXC\\values-en-rXC.xml",
+>>>>>>> Stashed changes
 =======
                     "source": "C:\\Users\\JuAlJeCa\\.gradle\\caches\\8.11.1\\transforms\\05e9d93043301910c664e64b86cc2a13\\transformed\\appcompat-1.6.1\\res\\values-en-rXC\\values-en-rXC.xml",
 >>>>>>> Stashed changes

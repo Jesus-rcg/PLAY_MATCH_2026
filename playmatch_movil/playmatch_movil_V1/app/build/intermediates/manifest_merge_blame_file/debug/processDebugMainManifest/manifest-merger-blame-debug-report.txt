@@ -10,6 +10,7 @@
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 11-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:5:5-66
 11-->C:\Users\JorgeBautista\Desktop\PlayMatch\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:5:22-64
 12
@@ -282,6 +283,102 @@
 58            </intent-filter>
 59        </activity>
 60        <activity android:name="com.example.ventas.ui.EquipoActivity" />
+=======
+11-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:5:5-66
+11-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:5:22-64
+12
+13    <permission
+13-->[androidx.core:core:1.10.1] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\479b5844f8696b5481dc2ba776f40214\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
+14        android:name="com.example.ventas.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+14-->[androidx.core:core:1.10.1] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\479b5844f8696b5481dc2ba776f40214\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
+15        android:protectionLevel="signature" />
+15-->[androidx.core:core:1.10.1] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\479b5844f8696b5481dc2ba776f40214\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
+16
+17    <uses-permission android:name="com.example.ventas.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+17-->[androidx.core:core:1.10.1] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\479b5844f8696b5481dc2ba776f40214\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
+17-->[androidx.core:core:1.10.1] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\479b5844f8696b5481dc2ba776f40214\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
+18
+19    <application
+19-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:7:5-56:19
+20        android:allowBackup="true"
+20-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:8:13-39
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.10.1] C:\Users\JuAlJeCa\.gradle\caches\8.11.1\transforms\479b5844f8696b5481dc2ba776f40214\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
+22        android:dataExtractionRules="@xml/data_extraction_rules"
+22-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:9:13-69
+23        android:debuggable="true"
+24        android:extractNativeLibs="false"
+25        android:fullBackupContent="@xml/backup_rules"
+25-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:10:13-58
+26        android:label="@string/app_name"
+26-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:11:13-45
+27        android:networkSecurityConfig="@xml/network_security_config"
+27-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:15:13-73
+28        android:supportsRtl="true"
+28-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:12:13-39
+29        android:testOnly="true"
+30        android:theme="@style/Theme.Ventas"
+30-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:13:13-48
+31        android:usesCleartextTraffic="true" >
+31-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:14:13-48
+32        <activity
+32-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:18:9-20:43
+33            android:name="com.example.ventas.ui.ClientesActivity"
+33-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:19:17-52
+34            android:exported="false" />
+34-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:20:17-41
+35        <activity
+35-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:22:9-23:44
+36            android:name="com.example.ventas.MenuActivity"
+36-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:22:19-47
+37            android:exported="true" />
+37-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:23:19-42
+38        <activity
+38-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:25:9-26:44
+39            android:name="com.example.ventas.OperacionesActivity"
+39-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:25:19-54
+40            android:exported="true" />
+40-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:26:19-42
+41        <activity
+41-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:28:9-29:44
+42            android:name="com.example.ventas.JugadoresActivity"
+42-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:28:19-52
+43            android:exported="true" />
+43-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:29:19-42
+44        <activity
+44-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:30:9-32:42
+45            android:name="com.example.ventas.CrearJugadorActivity"
+45-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:31:17-53
+46            android:exported="true" />
+46-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:32:17-40
+47        <activity
+47-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:34:9-36:42
+48            android:name="com.example.ventas.CrearUsuarioActivity"
+48-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:35:17-53
+49            android:exported="true" />
+49-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:36:17-40
+50        <activity android:name="com.example.ventas.UsuarioActivity" />
+50-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:38:9-52
+50-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:38:19-50
+51        <activity
+51-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:40:9-48:20
+52            android:name="com.example.ventas.loginActivity.LoginActivity2"
+52-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:41:17-61
+53            android:exported="true" >
+53-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:42:17-40
+54            <intent-filter>
+54-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:43:13-47:29
+55                <action android:name="android.intent.action.MAIN" />
+55-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:44:17-68
+55-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:44:25-66
+56
+57                <category android:name="android.intent.category.LAUNCHER" />
+57-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:46:17-76
+57-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:46:27-74
+58            </intent-filter>
+59        </activity>
+60        <activity android:name="com.example.ventas.ui.EquipoActivity" />
+>>>>>>> Stashed changes
 60-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:50:9-54
 60-->C:\Users\JuAlJeCa\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:50:19-52
 61        <activity

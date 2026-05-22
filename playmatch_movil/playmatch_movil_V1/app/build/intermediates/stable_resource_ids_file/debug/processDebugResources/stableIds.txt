@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:style/Widget.MaterialComponents.MaterialCalendar.Year = 0x7f100428
 com.example.ventas:style/ThemeOverlay.Material3.ExtendedFloatingActionButton.Surface = 0x7f10029e
 com.example.ventas:id/etNombreEditar = 0x7f080222
@@ -470,6 +471,154 @@ com.example.ventas:style/ShapeAppearanceOverlay.MaterialComponents.ExtendedFloat
 com.example.ventas:macro/m3_comp_outlined_text_field_supporting_text_color = 0x7f0c00c6
 com.example.ventas:style/Widget.MaterialComponents.CheckedTextView = 0x7f100400
 com.example.ventas:style/Widget.AppCompat.Button.Borderless = 0x7f1002f1
+=======
+com.example.ventas:id/spEstados = 0x7f080220
+com.example.ventas:style/Widget.MaterialComponents.TextInputEditText.OutlinedBox.Dense = 0x7f100443
+com.example.ventas:style/Widget.Material3.Button.OutlinedButton.Icon = 0x7f100355
+com.example.ventas:style/Widget.Material3.Button.TextButton.Dialog = 0x7f100357
+com.example.ventas:id/month_navigation_previous = 0x7f080122
+com.example.ventas:style/Widget.Material3.Button = 0x7f10034c
+com.example.ventas:styleable/RecyclerView = 0x7f110075
+com.example.ventas:style/ThemeOverlay.Material3.TextInputEditText.FilledBox = 0x7f1002b7
+com.example.ventas:style/Base.ThemeOverlay.AppCompat = 0x7f100079
+com.example.ventas:style/ThemeOverlay.Material3.TabLayout = 0x7f1002b5
+com.example.ventas:style/Widget.MaterialComponents.Toolbar.Primary = 0x7f100458
+com.example.ventas:style/Theme.Material3.Light.Dialog.MinWidth = 0x7f10023f
+com.example.ventas:style/Widget.Design.TextInputLayout = 0x7f10033a
+com.example.ventas:style/ShapeAppearanceOverlay.Material3.Corner.Top = 0x7f100186
+com.example.ventas:style/Widget.Material3.PopupMenu.Overflow = 0x7f1003ba
+com.example.ventas:styleable/MotionScene = 0x7f110067
+com.example.ventas:style/Widget.MaterialComponents.Button.TextButton.Icon = 0x7f1003fb
+com.example.ventas:style/ThemeOverlay.Material3.HarmonizedColors = 0x7f1002a4
+com.example.ventas:styleable/CircularProgressIndicator = 0x7f11001f
+com.example.ventas:styleable/ImageFilterView = 0x7f11003d
+com.example.ventas:style/ShapeAppearance.M3.Comp.Badge.Large.Shape = 0x7f100156
+com.example.ventas:style/Widget.Material3.Button.TextButton = 0x7f100356
+com.example.ventas:style/ThemeOverlay.Material3.ExtendedFloatingActionButton.Surface = 0x7f10029e
+com.example.ventas:style/Widget.Material3.ExtendedFloatingActionButton.Icon.Secondary = 0x7f10037b
+com.example.ventas:style/Widget.MaterialComponents.MaterialCalendar.HeaderSelection.Fullscreen = 0x7f100422
+com.example.ventas:style/Widget.AppCompat.ProgressBar.Horizontal = 0x7f10031e
+com.example.ventas:styleable/MaterialButtonToggleGroup = 0x7f110050
+com.example.ventas:macro/m3_comp_primary_navigation_tab_with_label_text_label_text_type = 0x7f0c00d5
+com.example.ventas:style/Base.TextAppearance.AppCompat.SearchResult.Subtitle = 0x7f100029
+com.example.ventas:style/ThemeOverlay.Material3.Button.ElevatedButton = 0x7f100289
+com.example.ventas:style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu = 0x7f1003d8
+com.example.ventas:string/mtrl_picker_confirm = 0x7f0f0072
+com.example.ventas:integer/mtrl_tab_indicator_anim_duration_ms = 0x7f09003e
+com.example.ventas:dimen/m3_comp_input_chip_with_avatar_avatar_size = 0x7f060134
+com.example.ventas:style/Widget.MaterialComponents.ProgressIndicator = 0x7f100437
+com.example.ventas:style/ThemeOverlay.AppCompat.Dialog = 0x7f100279
+com.example.ventas:style/Widget.Design.Snackbar = 0x7f100337
+com.example.ventas:styleable/AppBarLayoutStates = 0x7f11000b
+com.example.ventas:style/Widget.Material3.AutoCompleteTextView.FilledBox = 0x7f10033e
+com.example.ventas:style/Widget.MaterialComponents.TimePicker.Display.Divider = 0x7f100451
+com.example.ventas:style/Widget.Material3.ActionMode = 0x7f10033c
+com.example.ventas:styleable/StateSet = 0x7f110084
+com.example.ventas:style/Widget.Material3.SearchView.Toolbar = 0x7f1003c1
+com.example.ventas:style/Widget.Material3.AutoCompleteTextView.OutlinedBox.Dense = 0x7f100341
+com.example.ventas:id/seleccionRol = 0x7f080194
+com.example.ventas:dimen/m3_sys_elevation_level1 = 0x7f0601ea
+com.example.ventas:styleable/FontFamilyFont = 0x7f110037
+com.example.ventas:macro/m3_comp_navigation_bar_inactive_hover_label_text_color = 0x7f0c0072
+com.example.ventas:layout/mtrl_picker_header_fullscreen = 0x7f0b0066
+com.example.ventas:style/Widget.Material3.Chip.Filter = 0x7f100365
+com.example.ventas:id/material_hour_text_input = 0x7f08010e
+com.example.ventas:drawable/$mtrl_checkbox_button_icon_indeterminate_unchecked__2 = 0x7f070016
+com.example.ventas:style/Widget.AppCompat.CompoundButton.RadioButton = 0x7f1002f9
+com.example.ventas:layout/mtrl_auto_complete_simple_item = 0x7f0b0054
+com.example.ventas:style/ThemeOverlay.Material3.PersonalizedColors = 0x7f1002b1
+com.example.ventas:style/Widget.Material3.MaterialCalendar.Year.Selected = 0x7f1003a5
+com.example.ventas:style/Theme.MaterialComponents = 0x7f100243
+com.example.ventas:style/TextAppearance.Design.Hint = 0x7f1001ce
+com.example.ventas:id/view_transition = 0x7f08020d
+com.example.ventas:style/Widget.Material3.CircularProgressIndicator = 0x7f10036e
+com.example.ventas:style/Widget.MaterialComponents.Button.Icon = 0x7f1003f4
+com.example.ventas:dimen/m3_sys_motion_easing_standard_accelerate_control_y2 = 0x7f06020a
+com.example.ventas:style/Widget.Material3.Button.TonalButton.Icon = 0x7f10035d
+com.example.ventas:style/Base.Widget.Material3.CompoundButton.CheckBox = 0x7f100104
+com.example.ventas:id/peekHeight = 0x7f08016c
+com.example.ventas:layout/mtrl_layout_snackbar = 0x7f0b005f
+com.example.ventas:style/Base.Theme.MaterialComponents.Light.Dialog = 0x7f100072
+com.example.ventas:style/Widget.MaterialComponents.ShapeableImageView = 0x7f100438
+com.example.ventas:style/Base.AlertDialog.AppCompat.Light = 0x7f10000c
+com.example.ventas:style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush = 0x7f1003f9
+com.example.ventas:string/mtrl_checkbox_button_path_checked = 0x7f0f0062
+com.example.ventas:style/Base.Widget.AppCompat.Button.Small = 0x7f1000d3
+com.example.ventas:style/Widget.Material3.Chip.Input.Elevated = 0x7f100368
+com.example.ventas:style/Base.TextAppearance.AppCompat.Widget.Button.Inverse = 0x7f10003c
+com.example.ventas:style/Base.TextAppearance.Material3.Search = 0x7f100043
+com.example.ventas:dimen/mtrl_tooltip_padding = 0x7f060302
+com.example.ventas:style/Base.V14.ThemeOverlay.Material3.SideSheetDialog = 0x7f10009c
+com.example.ventas:style/Widget.MaterialComponents.Chip.Entry = 0x7f100403
+com.example.ventas:styleable/MenuItem = 0x7f11005f
+com.example.ventas:style/ThemeOverlay.Material3.TextInputEditText.FilledBox.Dense = 0x7f1002b8
+com.example.ventas:style/TextAppearance.Material3.DisplaySmall = 0x7f1001ea
+com.example.ventas:style/Widget.Material3.MaterialDivider.Heavy = 0x7f1003a9
+com.example.ventas:style/RtlOverlay.Widget.AppCompat.Search.DropDown.Icon1 = 0x7f10014f
+com.example.ventas:style/Widget.Material3.MaterialTimePicker.Clock = 0x7f1003ac
+com.example.ventas:dimen/design_navigation_padding_bottom = 0x7f06007c
+com.example.ventas:style/AlertDialog.AppCompat = 0x7f100000
+com.example.ventas:style/Widget.AppCompat.ActivityChooserView = 0x7f1002ee
+com.example.ventas:style/Widget.MaterialComponents.AutoCompleteTextView.FilledBox = 0x7f1003e6
+com.example.ventas:macro/m3_comp_switch_disabled_selected_handle_color = 0x7f0c011a
+com.example.ventas:style/Widget.Material3.CardView.Outlined = 0x7f100361
+com.example.ventas:style/Base.Theme.AppCompat.CompactMenu = 0x7f10004c
+com.example.ventas:id/clip_vertical = 0x7f080083
+com.example.ventas:style/Base.Widget.AppCompat.ActionBar.TabView = 0x7f1000c7
+com.example.ventas:style/Theme.Material3.Light.SideSheetDialog = 0x7f100242
+com.example.ventas:layout/material_clock_period_toggle_land = 0x7f0b0043
+com.example.ventas:color/m3_sys_color_dark_outline = 0x7f05015d
+com.example.ventas:layout/custom_dialog = 0x7f0b0029
+com.example.ventas:style/Theme.MaterialComponents.DayNight.Dialog.Alert = 0x7f10024d
+com.example.ventas:style/Widget.MaterialComponents.MaterialCalendar.HeaderLayout = 0x7f10041f
+com.example.ventas:style/Widget.Material3.Snackbar.TextView = 0x7f1003ca
+com.example.ventas:id/view_tree_lifecycle_owner = 0x7f08020e
+com.example.ventas:macro/m3_comp_icon_button_unselected_icon_color = 0x7f0c005b
+com.example.ventas:style/ThemeOverlay.Material3.ActionBar = 0x7f10027e
+com.example.ventas:macro/m3_comp_linear_progress_indicator_active_indicator_color = 0x7f0c005e
+com.example.ventas:style/Widget.Material3.MaterialTimePicker.Button = 0x7f1003ab
+com.example.ventas:style/Widget.Material3.SideSheet.Detached = 0x7f1003c3
+com.example.ventas:style/Widget.Material3.Slider = 0x7f1003c6
+com.example.ventas:style/Widget.MaterialComponents.ActionBar.PrimarySurface = 0x7f1003df
+com.example.ventas:style/Theme.MaterialComponents.DayNight.NoActionBar.Bridge = 0x7f100256
+com.example.ventas:style/Widget.AppCompat.Light.ActionBar.TabBar.Inverse = 0x7f100303
+com.example.ventas:id/dragEnd = 0x7f0800ae
+com.example.ventas:style/Widget.MaterialComponents.MaterialCalendar.DayOfWeekLabel = 0x7f100419
+com.example.ventas:dimen/mtrl_calendar_dialog_background_inset = 0x7f060276
+com.example.ventas:string/abc_menu_meta_shortcut_label = 0x7f0f000d
+com.example.ventas:style/Widget.Compat.NotificationActionText = 0x7f10032f
+com.example.ventas:styleable/ButtonBarLayout = 0x7f110018
+com.example.ventas:style/Base.TextAppearance.AppCompat.Widget.PopupMenu.Large = 0x7f10003f
+com.example.ventas:style/Theme.MaterialComponents.Light.Dialog.MinWidth.Bridge = 0x7f10026c
+com.example.ventas:color/m3_sys_color_dynamic_light_on_tertiary_container = 0x7f050198
+com.example.ventas:id/easeIn = 0x7f0800b4
+com.example.ventas:style/Widget.Material3.MaterialCalendar.DayOfWeekLabel = 0x7f100396
+com.example.ventas:style/Widget.MaterialComponents.Snackbar.FullWidth = 0x7f10043b
+com.example.ventas:macro/m3_comp_text_button_focus_state_layer_color = 0x7f0c0143
+com.example.ventas:id/search_bar = 0x7f08018a
+com.example.ventas:style/ThemeOverlay.Material3.ExtendedFloatingActionButton.Primary = 0x7f10029c
+com.example.ventas:style/Theme.MaterialComponents.Bridge = 0x7f100245
+com.example.ventas:style/ThemeOverlay.Material3.DynamicColors.Dark = 0x7f100299
+com.example.ventas:dimen/m3_searchbar_margin_horizontal = 0x7f0601d4
+com.example.ventas:style/Widget.MaterialComponents.MaterialCalendar.Day.Today = 0x7f100418
+com.example.ventas:dimen/m3_chip_icon_size = 0x7f0600f9
+com.example.ventas:style/Widget.Material3.FloatingActionButton.Small.Secondary = 0x7f100389
+com.example.ventas:style/Base.Theme.MaterialComponents.Dialog.MinWidth = 0x7f10006c
+com.example.ventas:styleable/KeyTimeCycle = 0x7f110045
+com.example.ventas:id/bounceEnd = 0x7f080060
+com.example.ventas:style/Base.Widget.AppCompat.SearchView.ActionBar = 0x7f1000f4
+com.example.ventas:style/Theme.MaterialComponents.NoActionBar = 0x7f100270
+com.example.ventas:style/Widget.AppCompat.ActionBar.TabText = 0x7f1002e8
+com.example.ventas:style/TextAppearance.AppCompat.Button = 0x7f100197
+com.example.ventas:style/ShapeAppearance.M3.Comp.BottomAppBar.Container.Shape = 0x7f100158
+com.example.ventas:mipmap/rol = 0x7f0d000d
+com.example.ventas:style/Widget.MaterialComponents.TimePicker = 0x7f10044d
+com.example.ventas:style/Base.Widget.AppCompat.SeekBar = 0x7f1000f5
+com.example.ventas:style/ShapeAppearanceOverlay.MaterialComponents.ExtendedFloatingActionButton = 0x7f10018e
+com.example.ventas:macro/m3_comp_outlined_text_field_supporting_text_color = 0x7f0c00c6
+com.example.ventas:style/Widget.MaterialComponents.CheckedTextView = 0x7f100400
+com.example.ventas:style/Widget.AppCompat.Button.Borderless = 0x7f1002f1
+>>>>>>> Stashed changes
 com.example.ventas:style/Widget.AppCompat.Button.ButtonBar.AlertDialog = 0x7f1002f3
 com.example.ventas:id/txtEstado = 0x7f0801fe
 com.example.ventas:string/material_minute_selection = 0x7f0f004c
@@ -597,6 +746,9 @@ com.example.ventas:layout/notification_action = 0x7f0b006e
 com.example.ventas:style/Widget.MaterialComponents.Button.TextButton.Snackbar = 0x7f1003fc
 com.example.ventas:style/RtlOverlay.Widget.AppCompat.PopupMenuItem = 0x7f100148
 com.example.ventas:style/Widget.Material3.Button.OutlinedButton = 0x7f100354
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 com.example.ventas:style/Base.Widget.AppCompat.ActionBar.Solid = 0x7f1000c4
 com.example.ventas:style/TextAppearance.M3.Sys.Typescale.LabelMedium = 0x7f1001de
@@ -604,6 +756,7 @@ com.example.ventas:id/fitToContents = 0x7f0800cf
 com.example.ventas:style/ThemeOverlay.Material3.MaterialCalendar.HeaderCancelButton = 0x7f1002ac
 com.example.ventas:style/Theme.MaterialComponents.Light.Dialog.Alert.Bridge = 0x7f100267
 com.example.ventas:string/mtrl_picker_a11y_next_month = 0x7f0f006c
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 com.example.ventas:style/Theme.AppCompat.DayNight.Dialog = 0x7f100210
 com.example.ventas:style/Widget.MaterialComponents.MaterialCalendar.Fullscreen = 0x7f10041b
@@ -743,6 +896,8 @@ com.example.ventas:style/ShapeAppearance.Material3.Corner.Medium = 0x7f100173
 com.example.ventas:style/Platform.V21.AppCompat = 0x7f100140
 com.example.ventas:style/Animation.Material3.SideSheetDialog = 0x7f100007
 =======
+=======
+>>>>>>> Stashed changes
 com.example.ventas:style/ThemeOverlay.MaterialComponents.TimePicker.Display.TextInputEditText = 0x7f1002e1
 com.example.ventas:style/Base.V7.Theme.AppCompat.Light.Dialog = 0x7f1000be
 com.example.ventas:style/Base.ThemeOverlay.Material3.Dialog = 0x7f100082
@@ -867,11 +1022,15 @@ com.example.ventas:dimen/m3_comp_navigation_rail_pressed_state_layer_opacity = 0
 com.example.ventas:id/fitStart = 0x7f0800ce
 com.example.ventas:dimen/disabled_alpha_material_light = 0x7f06008f
 com.example.ventas:style/Theme.AppCompat.Light.DialogWhenLarge = 0x7f10021f
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 com.example.ventas:style/ShapeAppearance.M3.Sys.Shape.Corner.Large = 0x7f10016b
 com.example.ventas:dimen/m3_ripple_pressed_alpha = 0x7f0601d0
 com.example.ventas:string/m3_sys_motion_easing_standard = 0x7f0f0044
 com.example.ventas:color/mtrl_card_view_foreground = 0x7f0502a3
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 com.example.ventas:macro/m3_comp_date_picker_modal_header_supporting_text_type = 0x7f0c0019
 com.example.ventas:style/ShapeAppearance.M3.Comp.Sheet.Side.Docked.Container.Shape = 0x7f100163
@@ -891,6 +1050,8 @@ com.example.ventas:id/accessibility_custom_action_30 = 0x7f080028
 com.example.ventas:color/m3_calendar_item_stroke_color = 0x7f05006a
 com.example.ventas:style/Theme.MaterialComponents.Dialog.FixedSize.Bridge = 0x7f10025c
 =======
+=======
+>>>>>>> Stashed changes
 com.example.ventas:style/ShapeAppearance.M3.Comp.Sheet.Side.Docked.Container.Shape = 0x7f100163
 com.example.ventas:macro/m3_comp_date_picker_modal_header_supporting_text_type = 0x7f0c0019
 com.example.ventas:id/txtRol = 0x7f080204
@@ -918,6 +1079,9 @@ com.example.ventas:id/masked = 0x7f080103
 com.example.ventas:style/Base.TextAppearance.Widget.AppCompat.ExpandedMenu.Item = 0x7f100048
 com.example.ventas:id/special_effects_controller_view_tag = 0x7f0801a8
 com.example.ventas:style/Widget.MaterialComponents.CircularProgressIndicator.ExtraSmall = 0x7f100407
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 com.example.ventas:style/ShapeAppearance.M3.Comp.NavigationRail.ActiveIndicator.Shape = 0x7f10015e
 com.example.ventas:style/TextAppearance.AppCompat.Body2 = 0x7f100196
@@ -925,6 +1089,7 @@ com.example.ventas:color/m3_sys_color_light_surface_container_low = 0x7f0501d2
 com.example.ventas:style/RtlOverlay.Widget.AppCompat.PopupMenuItem.Text = 0x7f10014c
 com.example.ventas:style/Base.Theme.Material3.Dark.Dialog.FixedSize = 0x7f10005c
 com.example.ventas:dimen/m3_comp_outlined_autocomplete_menu_container_elevation = 0x7f06014f
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 com.example.ventas:style/Theme.Material3.Light.BottomSheetDialog = 0x7f10023c
 com.example.ventas:id/NO_DEBUG = 0x7f080006
@@ -935,6 +1100,8 @@ com.example.ventas:dimen/mtrl_textinput_start_icon_margin_end = 0x7f0602fc
 com.example.ventas:dimen/mtrl_btn_disabled_z = 0x7f060255
 com.example.ventas:style/TextAppearance.M3.Sys.Typescale.TitleMedium = 0x7f1001e1
 =======
+=======
+>>>>>>> Stashed changes
 com.example.ventas:id/NO_DEBUG = 0x7f080006
 com.example.ventas:style/Theme.Material3.Light.BottomSheetDialog = 0x7f10023c
 com.example.ventas:macro/m3_comp_fab_secondary_icon_color = 0x7f0c003d
@@ -944,11 +1111,15 @@ com.example.ventas:dimen/mtrl_btn_disabled_z = 0x7f060255
 com.example.ventas:dimen/mtrl_textinput_start_icon_margin_end = 0x7f0602fc
 com.example.ventas:style/Platform.MaterialComponents.Dialog = 0x7f10013a
 com.example.ventas:macro/m3_comp_top_app_bar_small_headline_color = 0x7f0c0171
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 com.example.ventas:style/Widget.AppCompat.ButtonBar = 0x7f1002f6
 com.example.ventas:macro/m3_comp_search_bar_input_text_type = 0x7f0c00eb
 com.example.ventas:style/Platform.AppCompat.Light = 0x7f100138
 com.example.ventas:style/ThemeOverlay.Material3.Button.TextButton = 0x7f10028d
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 com.example.ventas:layout/select_dialog_singlechoice_material = 0x7f0b0078
 com.example.ventas:style/MaterialAlertDialog.MaterialComponents.Body.Text = 0x7f10012e
@@ -979,6 +1150,8 @@ com.example.ventas:id/design_bottom_sheet = 0x7f08009e
 com.example.ventas:style/TextAppearance.Material3.SearchBar = 0x7f1001f2
 com.example.ventas:styleable/CollapsingToolbarLayout = 0x7f110022
 =======
+=======
+>>>>>>> Stashed changes
 com.example.ventas:layout/select_dialog_singlechoice_material = 0x7f0b0076
 com.example.ventas:style/MaterialAlertDialog.MaterialComponents.Picker.Date.Spinner = 0x7f100130
 com.example.ventas:style/MaterialAlertDialog.MaterialComponents.Body.Text = 0x7f10012e
@@ -998,6 +1171,9 @@ com.example.ventas:macro/m3_comp_extended_fab_secondary_icon_color = 0x7f0c0032
 com.example.ventas:styleable/CollapsingToolbarLayout = 0x7f110022
 com.example.ventas:style/TextAppearance.Material3.SearchBar = 0x7f1001f2
 com.example.ventas:id/design_bottom_sheet = 0x7f08009e
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 com.example.ventas:style/Base.Theme.MaterialComponents.Light = 0x7f10006e
 com.example.ventas:macro/m3_comp_time_picker_container_color = 0x7f0c014f
@@ -1006,8 +1182,11 @@ com.example.ventas:style/TextAppearance.AppCompat.Display4 = 0x7f10019c
 com.example.ventas:style/Widget.MaterialComponents.MaterialCalendar.Day.Selected = 0x7f100417
 com.example.ventas:color/mtrl_fab_ripple_color = 0x7f0502af
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:style/Base.Widget.Material3.ExtendedFloatingActionButton = 0x7f100107
 com.example.ventas:layout/design_bottom_navigation_item = 0x7f0b002b
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 com.example.ventas:style/Base.Widget.AppCompat.TextView.SpinnerItem = 0x7f1000fa
@@ -1015,6 +1194,7 @@ com.example.ventas:style/Base.Widget.AppCompat.RatingBar.Indicator = 0x7f1000f1
 com.example.ventas:drawable/ic_call_answer_video_low = 0x7f07008a
 com.example.ventas:style/TextAppearance.MaterialComponents.Headline6 = 0x7f100203
 com.example.ventas:styleable/TabLayout = 0x7f110088
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 com.example.ventas:macro/m3_comp_time_picker_period_selector_container_shape = 0x7f0c0153
 com.example.ventas:macro/m3_comp_navigation_bar_active_pressed_label_text_color = 0x7f0c006b
@@ -1030,6 +1210,8 @@ com.example.ventas:style/ThemeOverlay.Material3.Snackbar = 0x7f1002b4
 com.example.ventas:dimen/m3_comp_date_picker_modal_date_today_container_outline_width = 0x7f060105
 com.example.ventas:drawable/m3_avd_show_password = 0x7f07009a
 =======
+=======
+>>>>>>> Stashed changes
 com.example.ventas:style/Animation.Material3.BottomSheetDialog = 0x7f100006
 com.example.ventas:style/Widget.AppCompat.DrawerArrowToggle = 0x7f1002fb
 com.example.ventas:macro/m3_comp_navigation_bar_active_hover_icon_color = 0x7f0c0064
@@ -1056,6 +1238,9 @@ com.example.ventas:attr/materialCalendarHeaderLayout = 0x7f0302df
 com.example.ventas:dimen/mtrl_calendar_year_width = 0x7f060293
 com.example.ventas:style/Widget.MaterialComponents.ChipGroup = 0x7f100405
 com.example.ventas:style/TextAppearance.AppCompat.Widget.Button.Colored = 0x7f1001bc
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 com.example.ventas:style/TextAppearance.AppCompat.Widget.Button = 0x7f1001ba
 com.example.ventas:string/mtrl_picker_announce_current_selection = 0x7f0f006f
@@ -1069,7 +1254,11 @@ com.example.ventas:macro/m3_comp_navigation_rail_active_hover_state_layer_color 
 com.example.ventas:style/Base.Widget.Material3.Chip = 0x7f100102
 com.example.ventas:style/Base.Widget.AppCompat.Light.ActionBar.Solid = 0x7f1000df
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:layout/mtrl_search_bar = 0x7f0b006e
+=======
+com.example.ventas:layout/mtrl_search_bar = 0x7f0b006c
+>>>>>>> Stashed changes
 =======
 com.example.ventas:layout/mtrl_search_bar = 0x7f0b006c
 >>>>>>> Stashed changes
@@ -1079,6 +1268,7 @@ com.example.ventas:dimen/material_divider_thickness = 0x7f06022a
 com.example.ventas:color/m3_ref_palette_secondary95 = 0x7f050134
 com.example.ventas:style/ThemeOverlay.Material3.Dialog.Alert.Framework = 0x7f100298
 com.example.ventas:style/Base.Widget.AppCompat.DropDownItem.Spinner = 0x7f1000db
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 com.example.ventas:styleable/TextEffects = 0x7f11008a
 com.example.ventas:id/ghost_view_holder = 0x7f0800d9
@@ -1130,6 +1320,17 @@ com.example.ventas:styleable/TextEffects = 0x7f11008a
 com.example.ventas:dimen/m3_sys_motion_easing_emphasized_decelerate_control_y1 = 0x7f0601f5
 com.example.ventas:id/fill_horizontal = 0x7f0800c9
 com.example.ventas:style/Base.Widget.AppCompat.Button.Colored = 0x7f1000d2
+=======
+com.example.ventas:style/TextAppearance.MaterialComponents.Headline5 = 0x7f100202
+com.example.ventas:id/sawtooth = 0x7f080181
+com.example.ventas:interpolator/fast_out_slow_in = 0x7f0a0006
+com.example.ventas:styleable/FloatingActionButton = 0x7f110033
+com.example.ventas:id/ghost_view_holder = 0x7f0800d9
+com.example.ventas:styleable/TextEffects = 0x7f11008a
+com.example.ventas:dimen/m3_sys_motion_easing_emphasized_decelerate_control_y1 = 0x7f0601f5
+com.example.ventas:id/fill_horizontal = 0x7f0800c9
+com.example.ventas:style/Base.Widget.AppCompat.Button.Colored = 0x7f1000d2
+>>>>>>> Stashed changes
 com.example.ventas:styleable/CoordinatorLayout = 0x7f11002c
 com.example.ventas:color/m3_sys_color_dynamic_dark_background = 0x7f05016e
 com.example.ventas:id/tarjetaEditar = 0x7f0801cd
@@ -1170,17 +1371,23 @@ com.example.ventas:layout/activity_main = 0x7f0b0026
 com.example.ventas:id/dimensions = 0x7f0800a4
 com.example.ventas:macro/m3_comp_dialog_supporting_text_color = 0x7f0c0027
 com.example.ventas:id/postLayout = 0x7f080170
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 com.example.ventas:style/ThemeOverlay.Material3.Dialog = 0x7f100296
 com.example.ventas:color/m3_sys_color_light_on_primary = 0x7f0501bf
 com.example.ventas:id/navigation_bar_item_small_label_view = 0x7f080142
 com.example.ventas:dimen/mtrl_snackbar_action_text_color_alpha = 0x7f0602e8
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:macro/m3_comp_dialog_supporting_text_color = 0x7f0c0027
 com.example.ventas:id/postLayout = 0x7f080170
 com.example.ventas:id/dimensions = 0x7f0800a4
 com.example.ventas:style/Base.Theme.MaterialComponents.Light.Dialog.MinWidth = 0x7f100076
 com.example.ventas:layout/activity_main = 0x7f0b0027
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 com.example.ventas:style/Base.Widget.AppCompat.ActionBar = 0x7f1000c3
@@ -1198,6 +1405,7 @@ com.example.ventas:style/Base.V28.Theme.AppCompat = 0x7f1000b9
 com.example.ventas:dimen/m3_comp_outlined_text_field_focus_outline_width = 0x7f06015a
 com.example.ventas:string/mtrl_picker_navigate_to_year_description = 0x7f0f007d
 com.example.ventas:styleable/Layout = 0x7f110047
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 com.example.ventas:style/Widget.Material3.ExtendedFloatingActionButton.Icon.Primary = 0x7f10037a
 com.example.ventas:styleable/SwitchCompat = 0x7f110085
@@ -1239,6 +1447,28 @@ com.example.ventas:style/Base.Theme.AppCompat.Light.DarkActionBar = 0x7f100053
 com.example.ventas:dimen/m3_sys_motion_easing_standard_accelerate_control_y1 = 0x7f060209
 com.example.ventas:styleable/AppCompatTextHelper = 0x7f110010
 com.example.ventas:style/Base.V21.ThemeOverlay.AppCompat.Dialog = 0x7f1000aa
+=======
+com.example.ventas:styleable/SwitchCompat = 0x7f110085
+com.example.ventas:style/Widget.Material3.ExtendedFloatingActionButton.Icon.Primary = 0x7f10037a
+com.example.ventas:styleable/MaterialDivider = 0x7f110056
+com.example.ventas:styleable/AlertDialog = 0x7f110006
+com.example.ventas:color/white = 0x7f0502e8
+com.example.ventas:string/m3_exceed_max_badge_text_suffix = 0x7f0f0037
+com.example.ventas:macro/m3_comp_navigation_drawer_active_focus_state_layer_color = 0x7f0c007c
+com.example.ventas:dimen/m3_searchbar_height = 0x7f0601d3
+com.example.ventas:color/m3_timepicker_display_background_color = 0x7f0501f6
+com.example.ventas:style/ThemeOverlay.MaterialComponents.Toolbar.Surface = 0x7f1002e4
+com.example.ventas:layout/design_layout_snackbar_include = 0x7f0b002d
+com.example.ventas:style/Base.V23.Theme.AppCompat = 0x7f1000b0
+com.example.ventas:dimen/design_fab_elevation = 0x7f06006f
+com.example.ventas:id/textSpacerNoButtons = 0x7f0801db
+com.example.ventas:style/Base.V23.Theme.AppCompat.Light = 0x7f1000b1
+com.example.ventas:style/Widget.Compat.NotificationActionContainer = 0x7f10032e
+com.example.ventas:style/Base.Theme.AppCompat.Light.DarkActionBar = 0x7f100053
+com.example.ventas:dimen/m3_sys_motion_easing_standard_accelerate_control_y1 = 0x7f060209
+com.example.ventas:styleable/AppCompatTextHelper = 0x7f110010
+com.example.ventas:style/Base.V21.ThemeOverlay.AppCompat.Dialog = 0x7f1000aa
+>>>>>>> Stashed changes
 com.example.ventas:macro/m3_comp_filled_autocomplete_text_field_input_text_type = 0x7f0c0043
 com.example.ventas:style/ShapeAppearance.Material3.Corner.ExtraSmall = 0x7f100170
 com.example.ventas:style/Base.V22.Theme.AppCompat.Light = 0x7f1000af
@@ -1253,11 +1483,15 @@ com.example.ventas:style/Base.Widget.AppCompat.ListMenuView = 0x7f1000e6
 com.example.ventas:style/ShapeAppearance.MaterialComponents.Tooltip = 0x7f100180
 com.example.ventas:drawable/abc_edit_text_material = 0x7f07003c
 com.example.ventas:style/ThemeOverlay.MaterialComponents.TimePicker = 0x7f1002df
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 com.example.ventas:style/ShapeAppearance.Material3.LargeComponent = 0x7f100176
 com.example.ventas:string/material_motion_easing_standard = 0x7f0f0052
 com.example.ventas:style/ShapeAppearanceOverlay.Material3.Button = 0x7f100181
 com.example.ventas:styleable/NavigationBarView = 0x7f11006a
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 com.example.ventas:style/ThemeOverlay.Material3.FloatingActionButton.Secondary = 0x7f1002a1
 com.example.ventas:style/ThemeOverlay.MaterialComponents.TimePicker = 0x7f1002df
@@ -1336,6 +1570,35 @@ com.example.ventas:style/Widget.MaterialComponents.ExtendedFloatingActionButton 
 com.example.ventas:style/Widget.MaterialComponents.Button.TextButton = 0x7f1003f7
 com.example.ventas:style/Theme.Design = 0x7f100222
 com.example.ventas:style/Base.V14.Theme.MaterialComponents.Light = 0x7f100096
+=======
+com.example.ventas:attr/minHideDelay = 0x7f03030f
+com.example.ventas:dimen/mtrl_navigation_rail_icon_margin = 0x7f0602c8
+com.example.ventas:style/Widget.MaterialComponents.BottomAppBar.Colored = 0x7f1003ec
+com.example.ventas:id/cradle = 0x7f080092
+com.example.ventas:style/TextAppearance.Material3.LabelLarge = 0x7f1001ee
+com.example.ventas:style/ThemeOverlay.Material3.Button.IconButton.Filled = 0x7f10028b
+com.example.ventas:styleable/MaterialCheckBoxStates = 0x7f110055
+com.example.ventas:style/Base.V21.Theme.MaterialComponents.Dialog = 0x7f1000a7
+com.example.ventas:style/Base.V21.Theme.AppCompat.Light = 0x7f1000a4
+com.example.ventas:style/Base.V14.Theme.MaterialComponents.Light.DarkActionBar.Bridge = 0x7f100098
+com.example.ventas:style/Widget.MaterialComponents.TimePicker.Display.TextInputLayout = 0x7f100454
+com.example.ventas:style/ThemeOverlay.MaterialComponents.MaterialAlertDialog.Picker.Date.Spinner = 0x7f1002d7
+com.example.ventas:style/Widget.Material3.TextInputLayout.FilledBox.Dense = 0x7f1003d3
+com.example.ventas:id/snapMargins = 0x7f0801a5
+com.example.ventas:id/arc = 0x7f080050
+com.example.ventas:dimen/material_font_2_0_box_collapsed_padding_top = 0x7f060234
+com.example.ventas:id/mtrl_card_checked_layer_id = 0x7f08012e
+com.example.ventas:style/Base.V14.Theme.MaterialComponents.Light.Bridge = 0x7f100097
+com.example.ventas:style/ShapeAppearance.Material3.SmallComponent = 0x7f100179
+com.example.ventas:id/tag_accessibility_clickable_spans = 0x7f0801c0
+com.example.ventas:style/Widget.AppCompat.Light.AutoCompleteTextView = 0x7f10030d
+com.example.ventas:style/Theme.MaterialComponents.DayNight.DialogWhenLarge = 0x7f100254
+com.example.ventas:style/ThemeOverlay.Material3.MaterialTimePicker = 0x7f1002ad
+com.example.ventas:style/Widget.MaterialComponents.ExtendedFloatingActionButton = 0x7f10040e
+com.example.ventas:style/Widget.MaterialComponents.Button.TextButton = 0x7f1003f7
+com.example.ventas:style/Theme.Design = 0x7f100222
+com.example.ventas:style/Base.V14.Theme.MaterialComponents.Light = 0x7f100096
+>>>>>>> Stashed changes
 com.example.ventas:macro/m3_comp_search_view_header_trailing_icon_color = 0x7f0c00fb
 com.example.ventas:color/m3_ref_palette_neutral20 = 0x7f0500fc
 com.example.ventas:style/Widget.Material3.Chip.Suggestion.Elevated = 0x7f10036c
@@ -1355,6 +1618,9 @@ com.example.ventas:string/mtrl_picker_date_header_unselected = 0x7f0f0075
 com.example.ventas:style/Widget.Material3.CollapsingToolbar.Medium = 0x7f100374
 com.example.ventas:id/ratio = 0x7f080175
 com.example.ventas:styleable/AppCompatImageView = 0x7f11000e
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 com.example.ventas:style/Base.V14.Theme.MaterialComponents.Dialog = 0x7f100094
 com.example.ventas:string/mtrl_picker_date_header_title = 0x7f0f0074
@@ -1362,6 +1628,11 @@ com.example.ventas:style/Widget.Material3.MaterialCalendar.HeaderSelection.Fulls
 com.example.ventas:style/Base.ThemeOverlay.MaterialComponents.Light.Dialog.Alert.Framework = 0x7f100088
 com.example.ventas:style/TextAppearance.Design.Placeholder = 0x7f1001cf
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+com.example.ventas:id/cut = 0x7f080096
+com.example.ventas:style/Base.ThemeOverlay.Material3.BottomSheetDialog = 0x7f100081
+>>>>>>> Stashed changes
 =======
 com.example.ventas:id/cut = 0x7f080096
 com.example.ventas:style/Base.ThemeOverlay.Material3.BottomSheetDialog = 0x7f100081
@@ -1370,6 +1641,7 @@ com.example.ventas:string/m3_sys_motion_easing_emphasized_accelerate = 0x7f0f003
 com.example.ventas:style/Widget.AppCompat.Light.DropDownItem.Spinner = 0x7f10030e
 com.example.ventas:style/Widget.MaterialComponents.PopupMenu.ContextMenu = 0x7f100434
 com.example.ventas:style/Base.V24.Theme.Material3.Dark = 0x7f1000b2
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 com.example.ventas:id/collapseActionView = 0x7f080086
 com.example.ventas:style/Base.ThemeOverlay.Material3.AutoCompleteTextView = 0x7f100080
@@ -1385,6 +1657,8 @@ com.example.ventas:styleable/LinearLayoutCompat_Layout = 0x7f110049
 com.example.ventas:style/Widget.Material3.MaterialTimePicker.Display.Divider = 0x7f1003ae
 com.example.ventas:layout/mtrl_picker_text_input_date = 0x7f0b006c
 =======
+=======
+>>>>>>> Stashed changes
 com.example.ventas:style/Base.ThemeOverlay.Material3.AutoCompleteTextView = 0x7f100080
 com.example.ventas:id/collapseActionView = 0x7f080086
 com.example.ventas:style/Widget.Material3.CollapsingToolbar.Large = 0x7f100373
@@ -1398,12 +1672,16 @@ com.example.ventas:style/Base.V14.Theme.Material3.Light.Dialog = 0x7f100090
 com.example.ventas:style/Widget.Material3.MaterialTimePicker.Display.Divider = 0x7f1003ae
 com.example.ventas:style/Widget.Material3.MaterialCalendar.DayTextView = 0x7f100397
 com.example.ventas:styleable/LinearLayoutCompat_Layout = 0x7f110049
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 com.example.ventas:styleable/OnClick = 0x7f11006d
 com.example.ventas:style/Base.ThemeOverlay.AppCompat.Dialog.Alert = 0x7f10007e
 com.example.ventas:style/Base.ThemeOverlay.AppCompat.Dark = 0x7f10007b
 com.example.ventas:style/ShapeAppearance.M3.Comp.NavigationBar.Container.Shape = 0x7f10015c
 com.example.ventas:style/Base.Theme.MaterialComponents.Dialog.Alert = 0x7f100069
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 com.example.ventas:style/Widget.Material3.SearchBar = 0x7f1003bd
 com.example.ventas:style/Base.Theme.Material3.Light.Dialog = 0x7f100061
@@ -1419,6 +1697,8 @@ com.example.ventas:macro/m3_comp_switch_selected_pressed_state_layer_color = 0x7
 com.example.ventas:macro/m3_comp_navigation_bar_label_text_type = 0x7f0c0079
 com.example.ventas:macro/m3_comp_filled_icon_button_toggle_selected_icon_color = 0x7f0c004a
 =======
+=======
+>>>>>>> Stashed changes
 com.example.ventas:macro/m3_comp_filled_icon_button_toggle_selected_icon_color = 0x7f0c004a
 com.example.ventas:drawable/abc_btn_check_to_on_mtrl_015 = 0x7f07002e
 com.example.ventas:color/material_harmonized_color_on_error_container = 0x7f05024f
@@ -1435,6 +1715,9 @@ com.example.ventas:macro/m3_comp_navigation_bar_label_text_type = 0x7f0c0079
 com.example.ventas:macro/m3_comp_switch_selected_pressed_state_layer_color = 0x7f0c012d
 com.example.ventas:style/Base.V14.ThemeOverlay.MaterialComponents.BottomSheetDialog = 0x7f10009d
 com.example.ventas:style/Theme.AppCompat.Light.Dialog.MinWidth = 0x7f10021e
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 com.example.ventas:id/autoComplete = 0x7f080054
 com.example.ventas:layout/abc_screen_simple_overlay_action_mode = 0x7f0b0016
@@ -1446,7 +1729,11 @@ com.example.ventas:style/Base.Theme.AppCompat.Dialog.MinWidth = 0x7f100050
 com.example.ventas:style/Widget.Material3.TextInputLayout.OutlinedBox = 0x7f1003d6
 com.example.ventas:style/Base.ThemeOverlay.MaterialComponents.Dialog.Alert = 0x7f100086
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:id/submit_area = 0x7f0801bd
+=======
+com.example.ventas:id/submit_area = 0x7f0801bc
+>>>>>>> Stashed changes
 =======
 com.example.ventas:id/submit_area = 0x7f0801bc
 >>>>>>> Stashed changes
@@ -1462,6 +1749,7 @@ com.example.ventas:style/Base.Widget.MaterialComponents.CheckedTextView = 0x7f10
 com.example.ventas:styleable/Badge = 0x7f110013
 com.example.ventas:string/bottomsheet_action_collapse = 0x7f0f001f
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:attr/imagePanY = 0x7f030231
 com.example.ventas:id/BOTTOM_START = 0x7f080002
 com.example.ventas:style/TextAppearance.MaterialComponents.Subtitle1 = 0x7f100205
@@ -1469,6 +1757,8 @@ com.example.ventas:style/TextAppearance.AppCompat.Medium.Inverse = 0x7f1001a6
 com.example.ventas:style/Base.TextAppearance.MaterialComponents.Badge = 0x7f100044
 com.example.ventas:id/view_tree_saved_state_registry_owner = 0x7f080213
 =======
+=======
+>>>>>>> Stashed changes
 com.example.ventas:style/Widget.MaterialComponents.TabLayout.PrimarySurface = 0x7f10043f
 com.example.ventas:style/Base.TextAppearance.AppCompat.Body2 = 0x7f100018
 com.example.ventas:color/m3_ref_palette_tertiary95 = 0x7f050141
@@ -1491,6 +1781,9 @@ com.example.ventas:id/view_tree_saved_state_registry_owner = 0x7f080210
 com.example.ventas:style/Base.TextAppearance.MaterialComponents.Badge = 0x7f100044
 com.example.ventas:style/TextAppearance.AppCompat.Medium.Inverse = 0x7f1001a6
 com.example.ventas:style/TextAppearance.MaterialComponents.Subtitle1 = 0x7f100205
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 com.example.ventas:style/ThemeOverlay.MaterialComponents.TimePicker.Display = 0x7f1002e0
 com.example.ventas:id/noScroll = 0x7f080147
@@ -1500,6 +1793,7 @@ com.example.ventas:macro/m3_comp_switch_unselected_hover_icon_color = 0x7f0c0137
 com.example.ventas:style/Widget.Material3.Button.IconButton = 0x7f100350
 com.example.ventas:style/Base.TextAppearance.AppCompat.Widget.PopupMenu.Header = 0x7f10003e
 com.example.ventas:style/Base.TextAppearance.AppCompat.Large.Inverse = 0x7f100022
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 com.example.ventas:id/toggle = 0x7f0801ef
 com.example.ventas:macro/m3_comp_outlined_text_field_disabled_label_text_color = 0x7f0c00b5
@@ -1540,6 +1834,14 @@ com.example.ventas:style/Theme.MaterialComponents.DayNight.Dialog.MinWidth.Bridg
 com.example.ventas:string/mtrl_badge_numberless_content_description = 0x7f0f005d
 com.example.ventas:style/ThemeOverlay.Material3.DynamicColors.Light = 0x7f10029b
 com.example.ventas:styleable/AnimatedStateListDrawableItem = 0x7f110008
+=======
+com.example.ventas:id/toggle = 0x7f0801ee
+com.example.ventas:macro/m3_comp_outlined_text_field_disabled_label_text_color = 0x7f0c00b5
+com.example.ventas:style/Theme.MaterialComponents.DayNight.Dialog.MinWidth.Bridge = 0x7f100253
+com.example.ventas:string/mtrl_badge_numberless_content_description = 0x7f0f005d
+com.example.ventas:style/ThemeOverlay.Material3.DynamicColors.Light = 0x7f10029b
+com.example.ventas:styleable/AnimatedStateListDrawableItem = 0x7f110008
+>>>>>>> Stashed changes
 com.example.ventas:style/Widget.Material3.Toolbar = 0x7f1003da
 com.example.ventas:style/Base.V21.Theme.AppCompat = 0x7f1000a2
 com.example.ventas:color/material_personalized_color_text_primary_inverse_disable_only = 0x7f050287
@@ -1565,11 +1867,15 @@ com.example.ventas:layout/abc_popup_menu_header_item_layout = 0x7f0b0012
 com.example.ventas:style/ThemeOverlay.MaterialComponents.TextInputEditText = 0x7f1002da
 com.example.ventas:style/Theme.MaterialComponents.DayNight = 0x7f100247
 com.example.ventas:string/material_timepicker_text_input_mode_description = 0x7f0f005c
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 com.example.ventas:style/Animation.AppCompat.Dialog = 0x7f100002
 com.example.ventas:layout/activity_editar_jugador = 0x7f0b001f
 com.example.ventas:style/AlertDialog.AppCompat.Light = 0x7f100001
 com.example.ventas:styleable/ShapeAppearance = 0x7f11007a
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 com.example.ventas:style/TextAppearance.Design.Snackbar.Message = 0x7f1001d1
 com.example.ventas:macro/m3_comp_top_app_bar_large_headline_type = 0x7f0c016d
@@ -1578,6 +1884,8 @@ com.example.ventas:drawable/material_ic_keyboard_arrow_right_black_24dp = 0x7f07
 com.example.ventas:attr/endIconTintMode = 0x7f0301a8
 com.example.ventas:integer/material_motion_duration_medium_1 = 0x7f090028
 =======
+=======
+>>>>>>> Stashed changes
 com.example.ventas:macro/m3_comp_top_app_bar_large_headline_type = 0x7f0c016d
 com.example.ventas:style/TextAppearance.Design.Snackbar.Message = 0x7f1001d1
 com.example.ventas:integer/material_motion_duration_medium_1 = 0x7f090028
@@ -1586,14 +1894,22 @@ com.example.ventas:attr/endIconTintMode = 0x7f0301a8
 com.example.ventas:drawable/material_ic_keyboard_arrow_right_black_24dp = 0x7f0700ab
 com.example.ventas:style/Widget.AppCompat.ListView = 0x7f100317
 com.example.ventas:style/ThemeOverlay.MaterialComponents.DayNight.BottomSheetDialog = 0x7f1002cb
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 com.example.ventas:styleable/FragmentContainerView = 0x7f11003a
 com.example.ventas:string/side_sheet_accessibility_pane_title = 0x7f0f00a4
 com.example.ventas:string/material_timepicker_select_time = 0x7f0f005b
 com.example.ventas:mipmap/editar = 0x7f0d0002
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:string/searchbar_scrolling_view_behavior = 0x7f0f00a1
 com.example.ventas:style/Widget.AppCompat.Spinner.Underlined = 0x7f100329
+=======
+com.example.ventas:style/Widget.AppCompat.Spinner.Underlined = 0x7f100329
+com.example.ventas:string/searchbar_scrolling_view_behavior = 0x7f0f00a1
+>>>>>>> Stashed changes
 =======
 com.example.ventas:style/Widget.AppCompat.Spinner.Underlined = 0x7f100329
 com.example.ventas:string/searchbar_scrolling_view_behavior = 0x7f0f00a1
@@ -1622,15 +1938,21 @@ com.example.ventas:id/etEmail = 0x7f0800c0
 com.example.ventas:macro/m3_comp_outlined_button_pressed_outline_color = 0x7f0c00a9
 com.example.ventas:id/radio = 0x7f080174
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:id/txtTituloModulo = 0x7f080208
 com.example.ventas:id/wrap_content = 0x7f08021c
 com.example.ventas:string/mtrl_picker_today_description = 0x7f0f008c
 com.example.ventas:macro/m3_comp_outlined_text_field_outline_color = 0x7f0c00c5
 =======
+=======
+>>>>>>> Stashed changes
 com.example.ventas:id/txtTituloModulo = 0x7f080205
 com.example.ventas:macro/m3_comp_outlined_text_field_outline_color = 0x7f0c00c5
 com.example.ventas:id/wrap_content = 0x7f080219
 com.example.ventas:string/mtrl_picker_today_description = 0x7f0f008c
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 com.example.ventas:color/material_harmonized_color_error_container = 0x7f05024d
 com.example.ventas:style/Theme.MaterialComponents.Light.Dialog.FixedSize = 0x7f100269
@@ -1651,17 +1973,23 @@ com.example.ventas:attr/materialIconButtonStyle = 0x7f0302f4
 com.example.ventas:mipmap/buscar = 0x7f0d0000
 com.example.ventas:style/Widget.Material3.MaterialCalendar.HeaderSelection = 0x7f10039d
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:style/Theme.Material3.DynamicColors.DayNight = 0x7f100239
 com.example.ventas:string/mtrl_exceed_max_badge_number_content_description = 0x7f0f006a
 com.example.ventas:id/contentPanel = 0x7f08008c
 com.example.ventas:style/Widget.MaterialComponents.PopupMenu.ListPopupWindow = 0x7f100435
 com.example.ventas:style/TextAppearance.M3.Sys.Typescale.HeadlineLarge = 0x7f1001da
 =======
+=======
+>>>>>>> Stashed changes
 com.example.ventas:string/mtrl_exceed_max_badge_number_content_description = 0x7f0f006a
 com.example.ventas:style/Theme.Material3.DynamicColors.DayNight = 0x7f100239
 com.example.ventas:id/contentPanel = 0x7f08008c
 com.example.ventas:style/TextAppearance.M3.Sys.Typescale.HeadlineLarge = 0x7f1001da
 com.example.ventas:style/Widget.MaterialComponents.PopupMenu.ListPopupWindow = 0x7f100435
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 com.example.ventas:style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu = 0x7f1003d5
 com.example.ventas:color/switch_thumb_normal_material_dark = 0x7f0502e4
@@ -1669,6 +1997,7 @@ com.example.ventas:id/fixed = 0x7f0800d1
 com.example.ventas:style/Base.Widget.AppCompat.RatingBar.Small = 0x7f1000f2
 com.example.ventas:string/mtrl_picker_range_header_unselected = 0x7f0f0083
 com.example.ventas:style/Widget.Material3.PopupMenu.ListPopupWindow = 0x7f1003b9
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 com.example.ventas:string/mtrl_checkbox_button_path_unchecked = 0x7f0f0065
 com.example.ventas:style/Widget.Material3.AutoCompleteTextView.FilledBox.Dense = 0x7f10033f
@@ -1678,6 +2007,8 @@ com.example.ventas:string/mtrl_checkbox_button_icon_path_name = 0x7f0f0061
 com.example.ventas:style/Widget.MaterialComponents.BottomAppBar.PrimarySurface = 0x7f1003ed
 com.example.ventas:id/transitionToEnd = 0x7f0801f3
 =======
+=======
+>>>>>>> Stashed changes
 com.example.ventas:style/Widget.Material3.AutoCompleteTextView.FilledBox.Dense = 0x7f10033f
 com.example.ventas:string/mtrl_checkbox_button_path_unchecked = 0x7f0f0065
 com.example.ventas:macro/m3_comp_navigation_drawer_active_hover_state_layer_color = 0x7f0c007f
@@ -1687,6 +2018,9 @@ com.example.ventas:id/search_src_text = 0x7f080191
 com.example.ventas:string/mtrl_checkbox_button_icon_path_name = 0x7f0f0061
 com.example.ventas:style/Widget.MaterialComponents.BottomAppBar.PrimarySurface = 0x7f1003ed
 com.example.ventas:id/transitionToEnd = 0x7f0801f2
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 com.example.ventas:string/bottomsheet_drag_handle_clicked = 0x7f0f0022
 com.example.ventas:styleable/NavigationRailView = 0x7f11006b
@@ -1696,6 +2030,7 @@ com.example.ventas:style/Base.Widget.Material3.Snackbar = 0x7f10010e
 com.example.ventas:string/hide_bottom_view_on_scroll_behavior = 0x7f0f0034
 com.example.ventas:style/ThemeOverlay.Material3.AutoCompleteTextView.FilledBox.Dense = 0x7f100281
 com.example.ventas:dimen/m3_btn_stroke_size = 0x7f0600dd
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 com.example.ventas:styleable/Toolbar = 0x7f11008e
 com.example.ventas:id/leftToRight = 0x7f0800f9
@@ -1711,6 +2046,8 @@ com.example.ventas:style/Base.V14.Theme.Material3.Light.BottomSheetDialog = 0x7f
 com.example.ventas:style/Base.TextAppearance.AppCompat.Body1 = 0x7f100017
 com.example.ventas:id/rounded = 0x7f08017e
 =======
+=======
+>>>>>>> Stashed changes
 com.example.ventas:macro/m3_comp_linear_progress_indicator_track_color = 0x7f0c005f
 com.example.ventas:integer/mtrl_switch_track_viewport_width = 0x7f09003d
 com.example.ventas:style/ThemeOverlay.MaterialComponents.MaterialAlertDialog.Picker.Date = 0x7f1002d3
@@ -1724,6 +2061,9 @@ com.example.ventas:macro/m3_comp_extended_fab_secondary_container_color = 0x7f0c
 com.example.ventas:style/Base.V14.Theme.Material3.Light.BottomSheetDialog = 0x7f10008f
 com.example.ventas:style/Base.TextAppearance.AppCompat.Body1 = 0x7f100017
 com.example.ventas:id/rounded = 0x7f08017d
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 com.example.ventas:string/character_counter_content_description = 0x7f0f002b
 com.example.ventas:string/search_menu_title = 0x7f0f00a0
@@ -1735,7 +2075,11 @@ com.example.ventas:style/Base.Widget.AppCompat.ButtonBar.AlertDialog = 0x7f1000d
 com.example.ventas:style/Widget.Material3.CardView.Filled = 0x7f100360
 com.example.ventas:string/call_notification_answer_action = 0x7f0f0024
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:id/staticPostLayout = 0x7f0801b9
+=======
+com.example.ventas:id/staticPostLayout = 0x7f0801b8
+>>>>>>> Stashed changes
 =======
 com.example.ventas:id/staticPostLayout = 0x7f0801b8
 >>>>>>> Stashed changes
@@ -1743,6 +2087,7 @@ com.example.ventas:string/bottomsheet_drag_handle_content_description = 0x7f0f00
 com.example.ventas:dimen/mtrl_shape_corner_size_medium_component = 0x7f0602dc
 com.example.ventas:style/Widget.Material3.SearchView = 0x7f1003bf
 com.example.ventas:style/Widget.MaterialComponents.NavigationRailView.Colored = 0x7f10042e
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 com.example.ventas:id/textinput_helper_text = 0x7f0801e6
 com.example.ventas:layout/material_time_input = 0x7f0b004b
@@ -1757,6 +2102,8 @@ com.example.ventas:dimen/abc_button_inset_horizontal_material = 0x7f060012
 com.example.ventas:style/MaterialAlertDialog.Material3 = 0x7f100123
 com.example.ventas:plurals/mtrl_badge_content_description = 0x7f0e0000
 =======
+=======
+>>>>>>> Stashed changes
 com.example.ventas:id/textinput_helper_text = 0x7f0801e5
 com.example.ventas:layout/material_time_input = 0x7f0b0049
 com.example.ventas:layout/design_menu_item_action_area = 0x7f0b0030
@@ -1781,13 +2128,20 @@ com.example.ventas:id/edge = 0x7f0800b8
 com.example.ventas:dimen/abc_button_inset_horizontal_material = 0x7f060012
 com.example.ventas:plurals/mtrl_badge_content_description = 0x7f0e0000
 com.example.ventas:style/MaterialAlertDialog.Material3 = 0x7f100123
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 com.example.ventas:mipmap/usuarios = 0x7f0d000f
 com.example.ventas:style/Widget.Material3.MaterialButtonToggleGroup = 0x7f100390
 com.example.ventas:string/m3_sys_motion_easing_emphasized_path_data = 0x7f0f003f
 com.example.ventas:mipmap/resultados = 0x7f0d000c
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:id/tvMessage = 0x7f0801fc
+=======
+com.example.ventas:id/tvMessage = 0x7f0801fa
+>>>>>>> Stashed changes
 =======
 com.example.ventas:id/tvMessage = 0x7f0801fa
 >>>>>>> Stashed changes
@@ -1815,7 +2169,10 @@ com.example.ventas:id/jumpToStart = 0x7f0800f5
 com.example.ventas:macro/m3_comp_time_picker_time_selector_separator_color = 0x7f0c0166
 com.example.ventas:macro/m3_comp_time_picker_time_selector_selected_hover_state_layer_color = 0x7f0c0163
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:id/tvNombreEquipo = 0x7f0801fd
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 com.example.ventas:macro/m3_comp_time_picker_headline_type = 0x7f0c0152
@@ -1834,6 +2191,7 @@ com.example.ventas:style/Theme.AppCompat.Light.Dialog.Alert = 0x7f10021d
 com.example.ventas:macro/m3_comp_switch_unselected_pressed_track_outline_color = 0x7f0c0140
 com.example.ventas:style/Widget.Material3.CircularProgressIndicator.ExtraSmall = 0x7f10036f
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:macro/m3_comp_outlined_text_field_hover_supporting_text_color = 0x7f0c00c1
 com.example.ventas:dimen/m3_comp_primary_navigation_tab_active_indicator_height = 0x7f06015e
 com.example.ventas:macro/m3_comp_fab_primary_icon_color = 0x7f0c0039
@@ -1841,12 +2199,17 @@ com.example.ventas:style/Base.V14.Theme.MaterialComponents.Light.Dialog.Bridge =
 com.example.ventas:style/Widget.Material3.FloatingActionButton.Small.Surface = 0x7f10038a
 com.example.ventas:color/m3_sys_color_dynamic_light_on_background = 0x7f050190
 =======
+=======
+>>>>>>> Stashed changes
 com.example.ventas:color/m3_sys_color_dynamic_light_on_background = 0x7f050190
 com.example.ventas:dimen/m3_comp_primary_navigation_tab_active_indicator_height = 0x7f06015e
 com.example.ventas:macro/m3_comp_fab_primary_icon_color = 0x7f0c0039
 com.example.ventas:macro/m3_comp_outlined_text_field_hover_supporting_text_color = 0x7f0c00c1
 com.example.ventas:style/Widget.Material3.FloatingActionButton.Small.Surface = 0x7f10038a
 com.example.ventas:style/Base.V14.Theme.MaterialComponents.Light.Dialog.Bridge = 0x7f10009a
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 com.example.ventas:macro/m3_comp_switch_unselected_pressed_handle_color = 0x7f0c013c
 com.example.ventas:style/ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox.Dense = 0x7f1002de
@@ -1854,6 +2217,7 @@ com.example.ventas:macro/m3_comp_switch_unselected_hover_state_layer_color = 0x7
 com.example.ventas:macro/m3_comp_switch_unselected_hover_handle_color = 0x7f0c0136
 com.example.ventas:macro/m3_comp_switch_unselected_focus_track_outline_color = 0x7f0c0134
 com.example.ventas:macro/m3_comp_switch_unselected_focus_icon_color = 0x7f0c0131
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 com.example.ventas:id/tag_unhandled_key_listeners = 0x7f0801cb
 com.example.ventas:style/Widget.MaterialComponents.TimePicker.Button = 0x7f10044e
@@ -1868,6 +2232,8 @@ com.example.ventas:style/Base.Widget.AppCompat.Light.ActionBar = 0x7f1000de
 com.example.ventas:string/error_a11y_label = 0x7f0f002f
 com.example.ventas:style/TextAppearance.MaterialComponents.Caption = 0x7f1001fc
 =======
+=======
+>>>>>>> Stashed changes
 com.example.ventas:id/tag_unhandled_key_listeners = 0x7f0801ca
 com.example.ventas:style/Widget.MaterialComponents.TimePicker.Button = 0x7f10044e
 com.example.ventas:style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense = 0x7f100445
@@ -1880,6 +2246,9 @@ com.example.ventas:style/Widget.Material3.Chip.Input = 0x7f100367
 com.example.ventas:drawable/abc_list_longpressed_holo = 0x7f07004f
 com.example.ventas:dimen/m3_comp_primary_navigation_tab_with_icon_icon_size = 0x7f060163
 com.example.ventas:macro/m3_comp_search_view_header_supporting_text_color = 0x7f0c00f9
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 com.example.ventas:dimen/m3_comp_extended_fab_primary_focus_container_elevation = 0x7f06010f
 com.example.ventas:dimen/m3_card_elevated_dragged_z = 0x7f0600e7
@@ -1894,7 +2263,10 @@ com.example.ventas:style/ShapeAppearance.Material3.Corner.Large = 0x7f100172
 com.example.ventas:styleable/MaterialSwitch = 0x7f110059
 com.example.ventas:macro/m3_comp_switch_selected_focus_icon_color = 0x7f0c0122
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:color/m3_sys_color_dynamic_light_on_primary = 0x7f050191
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 com.example.ventas:macro/m3_comp_switch_disabled_selected_track_color = 0x7f0c011c
@@ -1906,7 +2278,11 @@ com.example.ventas:attr/maxButtonHeight = 0x7f030301
 com.example.ventas:color/material_dynamic_neutral60 = 0x7f05020b
 com.example.ventas:macro/m3_comp_switch_disabled_selected_icon_color = 0x7f0c011b
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:layout/mtrl_picker_header_dialog = 0x7f0b0067
+=======
+com.example.ventas:layout/mtrl_picker_header_dialog = 0x7f0b0065
+>>>>>>> Stashed changes
 =======
 com.example.ventas:layout/mtrl_picker_header_dialog = 0x7f0b0065
 >>>>>>> Stashed changes
@@ -1925,7 +2301,11 @@ com.example.ventas:macro/m3_comp_slider_label_label_text_color = 0x7f0c0113
 com.example.ventas:macro/m3_comp_navigation_rail_inactive_icon_color = 0x7f0c009e
 com.example.ventas:styleable/ActivityChooserView = 0x7f110005
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:id/title_template = 0x7f0801ed
+=======
+com.example.ventas:id/title_template = 0x7f0801ec
+>>>>>>> Stashed changes
 =======
 com.example.ventas:id/title_template = 0x7f0801ec
 >>>>>>> Stashed changes
@@ -1971,8 +2351,13 @@ com.example.ventas:style/Widget.Material3.SideSheet = 0x7f1003c2
 com.example.ventas:style/Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored = 0x7f10003a
 com.example.ventas:macro/m3_comp_date_picker_modal_header_supporting_text_color = 0x7f0c0018
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:style/Widget.Material3.Badge = 0x7f100342
 com.example.ventas:macro/m3_comp_outlined_text_field_input_text_color = 0x7f0c00c2
+=======
+com.example.ventas:macro/m3_comp_outlined_text_field_input_text_color = 0x7f0c00c2
+com.example.ventas:style/Widget.Material3.Badge = 0x7f100342
+>>>>>>> Stashed changes
 =======
 com.example.ventas:macro/m3_comp_outlined_text_field_input_text_color = 0x7f0c00c2
 com.example.ventas:style/Widget.Material3.Badge = 0x7f100342
@@ -2014,6 +2399,7 @@ com.example.ventas:integer/design_tab_indicator_anim_duration_ms = 0x7f090007
 com.example.ventas:string/mtrl_picker_invalid_format_use = 0x7f0f007a
 com.example.ventas:id/graph_wrap = 0x7f0800dc
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:style/Widget.AppCompat.TextView = 0x7f10032a
 com.example.ventas:id/disableScroll = 0x7f0800a9
 com.example.ventas:layout/design_navigation_item_header = 0x7f0b0033
@@ -2044,10 +2430,28 @@ com.example.ventas:macro/m3_comp_outlined_autocomplete_menu_list_item_selected_c
 com.example.ventas:style/CardView = 0x7f100120
 com.example.ventas:id/textinput_prefix_text = 0x7f0801e7
 >>>>>>> Stashed changes
+=======
+com.example.ventas:layout/design_navigation_item_header = 0x7f0b0032
+com.example.ventas:id/m3_side_sheet = 0x7f080100
+com.example.ventas:style/Widget.AppCompat.TextView = 0x7f10032a
+com.example.ventas:id/disableScroll = 0x7f0800a9
+com.example.ventas:dimen/tooltip_corner_radius = 0x7f060313
+com.example.ventas:dimen/design_snackbar_text_size = 0x7f060088
+com.example.ventas:style/Theme.AppCompat.DayNight.DialogWhenLarge = 0x7f100213
+com.example.ventas:drawable/$mtrl_checkbox_button_icon_indeterminate_unchecked__1 = 0x7f070015
+com.example.ventas:style/ThemeOverlay.Material3.BottomSheetDialog = 0x7f100287
+com.example.ventas:attr/materialCardViewOutlinedStyle = 0x7f0302ea
+com.example.ventas:style/ThemeOverlay.Material3.Chip = 0x7f100290
+com.example.ventas:interpolator/m3_sys_motion_easing_standard = 0x7f0a000b
+com.example.ventas:macro/m3_comp_outlined_autocomplete_menu_list_item_selected_container_color = 0x7f0c00a2
+com.example.ventas:style/CardView = 0x7f100120
+com.example.ventas:id/textinput_prefix_text = 0x7f0801e7
+>>>>>>> Stashed changes
 com.example.ventas:macro/m3_comp_navigation_rail_inactive_pressed_state_layer_color = 0x7f0c00a0
 com.example.ventas:macro/m3_comp_navigation_rail_active_label_text_color = 0x7f0c0099
 com.example.ventas:styleable/MaterialTextView = 0x7f11005b
 com.example.ventas:style/Widget.MaterialComponents.MaterialCalendar.Day = 0x7f100415
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 com.example.ventas:id/row_index_key = 0x7f08017f
 com.example.ventas:macro/m3_comp_outlined_text_field_focus_outline_color = 0x7f0c00bd
@@ -2063,6 +2467,22 @@ com.example.ventas:style/Base.Widget.AppCompat.Toolbar.Button.Navigation = 0x7f1
 com.example.ventas:dimen/abc_action_bar_content_inset_material = 0x7f060000
 com.example.ventas:dimen/mtrl_fab_min_touch_target = 0x7f0602b0
 com.example.ventas:macro/m3_comp_navigation_rail_active_icon_color = 0x7f0c0097
+=======
+com.example.ventas:id/row_index_key = 0x7f08017e
+com.example.ventas:macro/m3_comp_outlined_text_field_focus_outline_color = 0x7f0c00bd
+com.example.ventas:dimen/abc_dialog_padding_top_material = 0x7f060025
+com.example.ventas:style/Theme.Design.NoActionBar = 0x7f100227
+com.example.ventas:macro/m3_comp_navigation_rail_active_indicator_color = 0x7f0c0098
+com.example.ventas:style/Widget.AppCompat.ActionButton = 0x7f1002ea
+com.example.ventas:dimen/m3_comp_slider_disabled_active_track_opacity = 0x7f06017f
+com.example.ventas:macro/m3_comp_top_app_bar_small_container_color = 0x7f0c0170
+com.example.ventas:styleable/View = 0x7f110093
+com.example.ventas:string/mtrl_checkbox_button_path_name = 0x7f0f0064
+com.example.ventas:dimen/abc_action_bar_content_inset_material = 0x7f060000
+com.example.ventas:dimen/mtrl_fab_min_touch_target = 0x7f0602b0
+com.example.ventas:macro/m3_comp_navigation_rail_active_icon_color = 0x7f0c0097
+com.example.ventas:style/Base.Widget.AppCompat.Toolbar.Button.Navigation = 0x7f1000fc
+>>>>>>> Stashed changes
 =======
 com.example.ventas:id/row_index_key = 0x7f08017e
 com.example.ventas:macro/m3_comp_outlined_text_field_focus_outline_color = 0x7f0c00bd
@@ -2101,6 +2521,7 @@ com.example.ventas:id/pin = 0x7f08016e
 com.example.ventas:macro/m3_comp_outlined_card_container_color = 0x7f0c00aa
 com.example.ventas:integer/abc_config_activityDefaultDur = 0x7f090000
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:macro/m3_comp_navigation_bar_active_focus_state_layer_color = 0x7f0c0063
 com.example.ventas:style/TextAppearance.Design.HelperText = 0x7f1001cd
 com.example.ventas:dimen/mtrl_card_checked_icon_size = 0x7f060295
@@ -2111,11 +2532,19 @@ com.example.ventas:color/material_timepicker_clock_text_color = 0x7f050296
 com.example.ventas:dimen/mtrl_card_checked_icon_size = 0x7f060295
 com.example.ventas:macro/m3_comp_navigation_bar_active_focus_state_layer_color = 0x7f0c0063
 com.example.ventas:style/TextAppearance.Design.HelperText = 0x7f1001cd
+=======
+com.example.ventas:dimen/mtrl_card_checked_icon_size = 0x7f060295
+com.example.ventas:macro/m3_comp_navigation_bar_active_focus_state_layer_color = 0x7f0c0063
+com.example.ventas:style/TextAppearance.Design.HelperText = 0x7f1001cd
+>>>>>>> Stashed changes
 com.example.ventas:string/abc_action_bar_home_description = 0x7f0f0000
 com.example.ventas:color/material_timepicker_clock_text_color = 0x7f050296
 com.example.ventas:color/design_dark_default_color_primary = 0x7f050039
 com.example.ventas:styleable/ExtendedFloatingActionButton_Behavior_Layout = 0x7f110032
 com.example.ventas:color/m3_sys_color_dynamic_light_on_primary = 0x7f050191
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 com.example.ventas:dimen/m3_btn_text_btn_icon_padding_right = 0x7f0600df
 com.example.ventas:integer/mtrl_calendar_header_orientation = 0x7f090030
@@ -2130,7 +2559,11 @@ com.example.ventas:macro/m3_comp_filled_tonal_button_container_color = 0x7f0c005
 com.example.ventas:dimen/m3_btn_padding_bottom = 0x7f0600d9
 com.example.ventas:string/character_counter_overflowed_content_description = 0x7f0f002c
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:id/view_tree_on_back_pressed_dispatcher_owner = 0x7f080212
+=======
+com.example.ventas:id/view_tree_on_back_pressed_dispatcher_owner = 0x7f08020f
+>>>>>>> Stashed changes
 =======
 com.example.ventas:id/view_tree_on_back_pressed_dispatcher_owner = 0x7f08020f
 >>>>>>> Stashed changes
@@ -2140,7 +2573,11 @@ com.example.ventas:macro/m3_comp_filled_text_field_error_active_indicator_color 
 com.example.ventas:macro/m3_comp_filled_text_field_container_shape = 0x7f0c004d
 com.example.ventas:integer/m3_btn_anim_duration_ms = 0x7f09000b
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:id/search_go_btn = 0x7f08018f
+=======
+com.example.ventas:id/search_go_btn = 0x7f08018e
+>>>>>>> Stashed changes
 =======
 com.example.ventas:id/search_go_btn = 0x7f08018e
 >>>>>>> Stashed changes
@@ -2150,9 +2587,15 @@ com.example.ventas:macro/m3_comp_filled_button_container_color = 0x7f0c0044
 com.example.ventas:drawable/m3_tabs_background = 0x7f0700a0
 com.example.ventas:integer/m3_sys_motion_duration_short3 = 0x7f09001d
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:id/tarjetaGuardar = 0x7f0801d0
 com.example.ventas:style/Base.Widget.AppCompat.Button = 0x7f1000ce
 com.example.ventas:macro/m3_comp_filled_autocomplete_menu_list_item_selected_container_color = 0x7f0c0042
+=======
+com.example.ventas:id/tarjetaGuardar = 0x7f0801cf
+com.example.ventas:macro/m3_comp_filled_autocomplete_menu_list_item_selected_container_color = 0x7f0c0042
+com.example.ventas:style/Base.Widget.AppCompat.Button = 0x7f1000ce
+>>>>>>> Stashed changes
 =======
 com.example.ventas:id/tarjetaGuardar = 0x7f0801cf
 com.example.ventas:macro/m3_comp_filled_autocomplete_menu_list_item_selected_container_color = 0x7f0c0042
@@ -2183,6 +2626,7 @@ com.example.ventas:macro/m3_comp_date_picker_modal_range_selection_month_subhead
 com.example.ventas:id/home = 0x7f0800e2
 com.example.ventas:style/Widget.Material3.FloatingActionButton.Small.Primary = 0x7f100388
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:dimen/mtrl_calendar_header_height_fullscreen = 0x7f06027b
 com.example.ventas:macro/m3_comp_date_picker_modal_range_selection_active_indicator_container_color = 0x7f0c001a
 com.example.ventas:macro/m3_comp_time_picker_time_selector_selected_container_color = 0x7f0c0161
@@ -2195,19 +2639,31 @@ com.example.ventas:dimen/mtrl_calendar_header_height_fullscreen = 0x7f06027b
 com.example.ventas:macro/m3_comp_time_picker_time_selector_selected_container_color = 0x7f0c0161
 com.example.ventas:macro/m3_comp_date_picker_modal_header_headline_type = 0x7f0c0017
 >>>>>>> Stashed changes
+=======
+com.example.ventas:macro/m3_comp_date_picker_modal_range_selection_active_indicator_container_color = 0x7f0c001a
+com.example.ventas:dimen/mtrl_calendar_header_height_fullscreen = 0x7f06027b
+com.example.ventas:macro/m3_comp_time_picker_time_selector_selected_container_color = 0x7f0c0161
+com.example.ventas:macro/m3_comp_date_picker_modal_header_headline_type = 0x7f0c0017
+>>>>>>> Stashed changes
 com.example.ventas:macro/m3_comp_date_picker_modal_header_headline_color = 0x7f0c0016
 com.example.ventas:macro/m3_comp_navigation_drawer_inactive_label_text_color = 0x7f0c0090
 com.example.ventas:style/Base.TextAppearance.AppCompat.Small.Inverse = 0x7f10002c
 com.example.ventas:dimen/mtrl_calendar_year_height = 0x7f060290
 com.example.ventas:color/switch_thumb_disabled_material_dark = 0x7f0502e0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:dimen/abc_text_size_caption_material = 0x7f060042
 com.example.ventas:attr/fastScrollVerticalTrackDrawable = 0x7f0301d6
 =======
+=======
+>>>>>>> Stashed changes
 com.example.ventas:style/Base.V14.ThemeOverlay.MaterialComponents.MaterialAlertDialog = 0x7f1000a0
 com.example.ventas:attr/fastScrollVerticalTrackDrawable = 0x7f0301d6
 com.example.ventas:dimen/abc_text_size_caption_material = 0x7f060042
 com.example.ventas:layout/m3_auto_complete_simple_item = 0x7f0b003c
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 com.example.ventas:macro/m3_comp_date_picker_modal_date_today_label_text_color = 0x7f0c0014
 com.example.ventas:macro/m3_comp_secondary_navigation_tab_label_text_type = 0x7f0c0102
@@ -2218,6 +2674,7 @@ com.example.ventas:string/m3_sys_motion_easing_legacy_accelerate = 0x7f0f0041
 com.example.ventas:macro/m3_comp_switch_selected_icon_color = 0x7f0c012a
 com.example.ventas:styleable/ExtendedFloatingActionButton = 0x7f110031
 com.example.ventas:attr/radioButtonStyle = 0x7f03038c
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 com.example.ventas:macro/m3_comp_time_picker_period_selector_unselected_pressed_state_layer_color = 0x7f0c015e
 com.example.ventas:id/accessibility_custom_action_5 = 0x7f08002b
@@ -2237,11 +2694,22 @@ com.example.ventas:color/material_personalized_color_surface_container_high = 0x
 com.example.ventas:dimen/m3_comp_input_chip_container_elevation = 0x7f060131
 com.example.ventas:layout/support_simple_spinner_dropdown_item = 0x7f0b0077
 >>>>>>> Stashed changes
+=======
+com.example.ventas:id/accessibility_custom_action_5 = 0x7f08002b
+com.example.ventas:macro/m3_comp_time_picker_period_selector_unselected_pressed_state_layer_color = 0x7f0c015e
+com.example.ventas:style/Base.Theme.Material3.Light.BottomSheetDialog = 0x7f100060
+com.example.ventas:style/MaterialAlertDialog.MaterialComponents.Title.Icon = 0x7f100131
+com.example.ventas:macro/m3_comp_date_picker_modal_container_shape = 0x7f0c000f
+com.example.ventas:color/material_personalized_color_surface_container_high = 0x7f05027c
+com.example.ventas:dimen/m3_comp_input_chip_container_elevation = 0x7f060131
+com.example.ventas:layout/support_simple_spinner_dropdown_item = 0x7f0b0077
+>>>>>>> Stashed changes
 com.example.ventas:style/RtlOverlay.Widget.AppCompat.Search.DropDown.Text = 0x7f100152
 com.example.ventas:styleable/MaterialRadioButton = 0x7f110057
 com.example.ventas:style/Widget.Material3.FloatingActionButton.Large.Tertiary = 0x7f100385
 com.example.ventas:macro/m3_comp_checkbox_selected_disabled_container_color = 0x7f0c0007
 com.example.ventas:style/Widget.MaterialComponents.MaterialCalendar.HeaderLayout.Fullscreen = 0x7f100420
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 com.example.ventas:id/marquee = 0x7f080102
 com.example.ventas:style/ThemeOverlay.Material3.BottomAppBar = 0x7f100284
@@ -2254,16 +2722,22 @@ com.example.ventas:style/Widget.MaterialComponents.TabLayout.Colored = 0x7f10043
 com.example.ventas:string/abc_searchview_description_submit = 0x7f0f0016
 com.example.ventas:layout/material_radial_view_group = 0x7f0b0048
 =======
+=======
+>>>>>>> Stashed changes
 com.example.ventas:style/Widget.MaterialComponents.NavigationRailView = 0x7f10042d
 com.example.ventas:style/ThemeOverlay.Material3.BottomAppBar = 0x7f100284
 com.example.ventas:styleable/StateListDrawable = 0x7f110082
 com.example.ventas:style/Widget.Material3.TextInputEditText.FilledBox.Dense = 0x7f1003cf
 com.example.ventas:id/marquee = 0x7f080102
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 com.example.ventas:id/italic = 0x7f0800f2
 com.example.ventas:integer/m3_sys_motion_duration_medium3 = 0x7f090019
 com.example.ventas:style/Widget.AppCompat.RatingBar.Small = 0x7f100321
 com.example.ventas:style/Widget.MaterialComponents.Snackbar = 0x7f10043a
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 com.example.ventas:layout/mtrl_picker_text_input_date_range = 0x7f0b006d
 com.example.ventas:id/tag_state_description = 0x7f0801c8
@@ -2277,6 +2751,8 @@ com.example.ventas:layout/mtrl_picker_actions = 0x7f0b0064
 com.example.ventas:styleable/MaterialButton = 0x7f11004f
 com.example.ventas:layout/mtrl_navigation_rail_item = 0x7f0b0063
 =======
+=======
+>>>>>>> Stashed changes
 com.example.ventas:layout/mtrl_picker_text_input_date_range = 0x7f0b006b
 com.example.ventas:id/tag_state_description = 0x7f0801c7
 com.example.ventas:attr/contentPaddingRight = 0x7f030143
@@ -2291,6 +2767,9 @@ com.example.ventas:id/fitXY = 0x7f0800d0
 com.example.ventas:layout/mtrl_picker_actions = 0x7f0b0062
 com.example.ventas:styleable/MaterialButton = 0x7f11004f
 com.example.ventas:layout/mtrl_navigation_rail_item = 0x7f0b0061
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 com.example.ventas:dimen/abc_button_padding_horizontal_material = 0x7f060014
 com.example.ventas:dimen/m3_alert_dialog_icon_margin = 0x7f0600a1
@@ -2298,21 +2777,28 @@ com.example.ventas:drawable/mtrl_switch_thumb_unchecked = 0x7f0700cd
 com.example.ventas:id/hideable = 0x7f0800e1
 com.example.ventas:id/overshoot = 0x7f080162
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:layout/mtrl_calendar_year = 0x7f0b0060
 com.example.ventas:id/graph = 0x7f0800db
 com.example.ventas:color/m3_sys_color_dynamic_dark_surface_variant = 0x7f050189
 com.example.ventas:layout/mtrl_calendar_months = 0x7f0b005e
 =======
+=======
+>>>>>>> Stashed changes
 com.example.ventas:layout/mtrl_calendar_year = 0x7f0b005e
 com.example.ventas:id/graph = 0x7f0800db
 com.example.ventas:color/m3_sys_color_dynamic_dark_surface_variant = 0x7f050189
 com.example.ventas:layout/mtrl_calendar_months = 0x7f0b005c
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 com.example.ventas:style/TextAppearance.AppCompat.Light.SearchResult.Subtitle = 0x7f1001a1
 com.example.ventas:macro/m3_comp_navigation_drawer_inactive_focus_icon_color = 0x7f0c0089
 com.example.ventas:style/Base.TextAppearance.AppCompat.Light.Widget.PopupMenu.Small = 0x7f100024
 com.example.ventas:id/dragAnticlockwise = 0x7f0800ab
 com.example.ventas:styleable/MaterialTextAppearance = 0x7f11005a
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 com.example.ventas:layout/mtrl_calendar_month = 0x7f0b005b
 com.example.ventas:integer/mtrl_btn_anim_delay_ms = 0x7f09002e
@@ -2364,6 +2850,20 @@ com.example.ventas:id/buttonPanel = 0x7f080070
 com.example.ventas:layout/material_timepicker_textinput_display = 0x7f0b004c
 com.example.ventas:style/RtlOverlay.Widget.AppCompat.PopupMenuItem.SubmenuArrow = 0x7f10014b
 com.example.ventas:style/RtlOverlay.Widget.AppCompat.PopupMenuItem.Shortcut = 0x7f10014a
+=======
+com.example.ventas:layout/mtrl_calendar_month = 0x7f0b0059
+com.example.ventas:integer/mtrl_btn_anim_delay_ms = 0x7f09002e
+com.example.ventas:layout/mtrl_calendar_day_of_week = 0x7f0b0056
+com.example.ventas:color/m3_sys_color_dynamic_dark_inverse_on_surface = 0x7f05016f
+com.example.ventas:style/Widget.AppCompat.PopupMenu.Overflow = 0x7f10031b
+com.example.ventas:layout/mtrl_calendar_day = 0x7f0b0055
+com.example.ventas:layout/menu_usuarios = 0x7f0b004d
+com.example.ventas:style/Widget.MaterialComponents.Button.UnelevatedButton = 0x7f1003fd
+com.example.ventas:id/buttonPanel = 0x7f080070
+com.example.ventas:layout/material_timepicker_textinput_display = 0x7f0b004c
+com.example.ventas:style/RtlOverlay.Widget.AppCompat.PopupMenuItem.SubmenuArrow = 0x7f10014b
+com.example.ventas:style/RtlOverlay.Widget.AppCompat.PopupMenuItem.Shortcut = 0x7f10014a
+>>>>>>> Stashed changes
 com.example.ventas:string/mtrl_picker_end_date_description = 0x7f0f0077
 com.example.ventas:layout/material_time_chip = 0x7f0b0048
 com.example.ventas:dimen/m3_extended_fab_top_padding = 0x7f0601ae
@@ -2384,6 +2884,9 @@ com.example.ventas:layout/design_layout_tab_text = 0x7f0b002f
 com.example.ventas:string/m3_sys_motion_easing_linear = 0x7f0f0043
 com.example.ventas:style/Animation.Design.BottomSheetDialog = 0x7f100005
 com.example.ventas:layout/design_layout_snackbar = 0x7f0b002c
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 com.example.ventas:layout/activity_eliminar_jugador = 0x7f0b0020
 com.example.ventas:style/TextAppearance.MaterialComponents.Badge = 0x7f1001f8
@@ -2399,7 +2902,11 @@ com.example.ventas:dimen/m3_comp_filled_card_pressed_state_layer_opacity = 0x7f0
 com.example.ventas:style/Base.Widget.Material3.CompoundButton.Switch = 0x7f100106
 com.example.ventas:layout/abc_alert_dialog_material = 0x7f0b0009
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:id/wrap_content_constrained = 0x7f08021d
+=======
+com.example.ventas:id/wrap_content_constrained = 0x7f08021a
+>>>>>>> Stashed changes
 =======
 com.example.ventas:id/wrap_content_constrained = 0x7f08021a
 >>>>>>> Stashed changes
@@ -2414,7 +2921,11 @@ com.example.ventas:layout/abc_action_menu_item_layout = 0x7f0b0002
 com.example.ventas:interpolator/mtrl_linear_out_slow_in = 0x7f0a0011
 com.example.ventas:styleable/AppCompatSeekBar = 0x7f11000f
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:id/textBtnEquipos = 0x7f0801d4
+=======
+com.example.ventas:id/textBtnEquipos = 0x7f0801d3
+>>>>>>> Stashed changes
 =======
 com.example.ventas:id/textBtnEquipos = 0x7f0801d3
 >>>>>>> Stashed changes
@@ -2429,7 +2940,11 @@ com.example.ventas:string/mtrl_checkbox_state_description_unchecked = 0x7f0f0068
 com.example.ventas:style/Widget.Material3.MaterialCalendar.HeaderLayout.Fullscreen = 0x7f10039c
 com.example.ventas:string/mtrl_switch_thumb_group_name = 0x7f0f0091
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:id/textSpacerNoTitle = 0x7f0801dd
+=======
+com.example.ventas:id/textSpacerNoTitle = 0x7f0801dc
+>>>>>>> Stashed changes
 =======
 com.example.ventas:id/textSpacerNoTitle = 0x7f0801dc
 >>>>>>> Stashed changes
@@ -2442,7 +2957,11 @@ com.example.ventas:drawable/abc_scrubber_track_mtrl_alpha = 0x7f070061
 com.example.ventas:color/m3_sys_color_dark_surface_container_low = 0x7f050168
 com.example.ventas:drawable/ic_call_decline = 0x7f07008b
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:id/slide = 0x7f0801a2
+=======
+com.example.ventas:id/slide = 0x7f0801a1
+>>>>>>> Stashed changes
 =======
 com.example.ventas:id/slide = 0x7f0801a1
 >>>>>>> Stashed changes
@@ -2455,9 +2974,15 @@ com.example.ventas:integer/mtrl_switch_thumb_viewport_center_coordinate = 0x7f09
 com.example.ventas:integer/mtrl_switch_thumb_motion_duration = 0x7f090036
 com.example.ventas:string/abc_action_menu_overflow_description = 0x7f0f0002
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:id/west = 0x7f080217
 com.example.ventas:integer/material_motion_duration_medium_2 = 0x7f090029
 com.example.ventas:id/text2 = 0x7f0801d3
+=======
+com.example.ventas:id/west = 0x7f080214
+com.example.ventas:integer/material_motion_duration_medium_2 = 0x7f090029
+com.example.ventas:id/text2 = 0x7f0801d2
+>>>>>>> Stashed changes
 =======
 com.example.ventas:id/west = 0x7f080214
 com.example.ventas:integer/material_motion_duration_medium_2 = 0x7f090029
@@ -2471,10 +2996,13 @@ com.example.ventas:integer/m3_sys_shape_corner_full_corner_family = 0x7f090022
 com.example.ventas:style/Widget.Material3.CompoundButton.Switch = 0x7f100378
 com.example.ventas:integer/m3_sys_motion_duration_extra_long2 = 0x7f090010
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:id/tvEntrenador = 0x7f0801fb
 com.example.ventas:color/m3_bottom_sheet_drag_handle_color = 0x7f050063
 com.example.ventas:color/m3_ref_palette_tertiary40 = 0x7f05013b
 com.example.ventas:color/mtrl_tabs_legacy_text_color_selector = 0x7f0502c8
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 com.example.ventas:id/clockwise = 0x7f080084
@@ -2494,6 +3022,7 @@ com.example.ventas:integer/design_snackbar_text_max_lines = 0x7f090006
 com.example.ventas:integer/cancel_button_image_alpha = 0x7f090004
 com.example.ventas:integer/bottom_sheet_slide_duration = 0x7f090003
 com.example.ventas:id/month_navigation_next = 0x7f080121
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 com.example.ventas:id/showCustom = 0x7f08019c
 com.example.ventas:style/Widget.Material3.FloatingActionButton.Small.Tertiary = 0x7f10038b
@@ -2580,6 +3109,43 @@ com.example.ventas:id/txtDocumento = 0x7f0801fc
 com.example.ventas:style/Base.Theme.MaterialComponents.Dialog = 0x7f100068
 com.example.ventas:dimen/m3_comp_navigation_drawer_hover_state_layer_opacity = 0x7f060142
 com.example.ventas:drawable/tooltip_frame_dark = 0x7f0700e1
+=======
+com.example.ventas:id/showCustom = 0x7f08019b
+com.example.ventas:style/Widget.Material3.FloatingActionButton.Small.Tertiary = 0x7f10038b
+com.example.ventas:id/x_right = 0x7f08021c
+com.example.ventas:color/material_dynamic_secondary20 = 0x7f05022e
+com.example.ventas:id/visible_removing_fragment_view_tag = 0x7f080213
+com.example.ventas:drawable/abc_btn_radio_material_anim = 0x7f070032
+com.example.ventas:dimen/m3_badge_vertical_offset = 0x7f0600b6
+com.example.ventas:id/view_tree_view_model_store_owner = 0x7f080211
+com.example.ventas:id/auto = 0x7f080053
+com.example.ventas:style/Theme.Material3.DayNight.Dialog.MinWidth = 0x7f100234
+com.example.ventas:id/view_offset_helper = 0x7f08020c
+com.example.ventas:styleable/AppCompatTheme = 0x7f110012
+com.example.ventas:id/vertical_only = 0x7f08020b
+com.example.ventas:style/Widget.AppCompat.Button.Small = 0x7f1002f5
+com.example.ventas:macro/m3_comp_filled_text_field_container_color = 0x7f0c004c
+com.example.ventas:style/Widget.MaterialComponents.MaterialCalendar.HeaderCancelButton = 0x7f10041c
+com.example.ventas:layout/m3_alert_dialog = 0x7f0b0039
+com.example.ventas:id/useLogo = 0x7f08020a
+com.example.ventas:id/unchecked = 0x7f080206
+com.example.ventas:style/Theme.Material3.Light.Dialog.Alert = 0x7f10023e
+com.example.ventas:style/Widget.MaterialComponents.TimePicker.Clock = 0x7f10044f
+com.example.ventas:id/txtNumeroCamiseta = 0x7f080202
+com.example.ventas:id/selected = 0x7f080196
+com.example.ventas:id/txtNombre = 0x7f080201
+com.example.ventas:style/Base.Theme.Material3.Light = 0x7f10005f
+com.example.ventas:dimen/notification_top_pad = 0x7f060311
+com.example.ventas:string/abc_searchview_description_clear = 0x7f0f0013
+com.example.ventas:id/txtIdEquipo = 0x7f080200
+com.example.ventas:macro/m3_comp_search_view_container_surface_tint_layer_color = 0x7f0c00f3
+com.example.ventas:id/txtEmail = 0x7f0801fd
+com.example.ventas:style/Widget.AppCompat.RatingBar = 0x7f10031f
+com.example.ventas:id/txtDocumento = 0x7f0801fc
+com.example.ventas:style/Base.Theme.MaterialComponents.Dialog = 0x7f100068
+com.example.ventas:dimen/m3_comp_navigation_drawer_hover_state_layer_opacity = 0x7f060142
+com.example.ventas:drawable/tooltip_frame_dark = 0x7f0700e1
+>>>>>>> Stashed changes
 com.example.ventas:dimen/m3_comp_slider_disabled_handle_opacity = 0x7f060180
 com.example.ventas:id/jumpToEnd = 0x7f0800f4
 com.example.ventas:macro/m3_comp_primary_navigation_tab_active_focus_state_layer_color = 0x7f0c00c9
@@ -2594,6 +3160,9 @@ com.example.ventas:macro/m3_comp_extended_fab_primary_label_text_type = 0x7f0c00
 com.example.ventas:styleable/SearchView = 0x7f110079
 com.example.ventas:id/transition_scene_layoutid_cache = 0x7f0801f7
 com.example.ventas:id/transition_position = 0x7f0801f6
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 com.example.ventas:style/Widget.Design.BottomNavigationView = 0x7f100331
 com.example.ventas:id/notification_background = 0x7f08014c
@@ -2604,6 +3173,7 @@ com.example.ventas:style/Base.V7.Theme.AppCompat.Dialog = 0x7f1000bc
 com.example.ventas:macro/m3_comp_primary_navigation_tab_active_indicator_color = 0x7f0c00cb
 com.example.ventas:style/Widget.MaterialComponents.AutoCompleteTextView.OutlinedBox = 0x7f1003e8
 com.example.ventas:macro/m3_comp_filled_tonal_icon_button_toggle_selected_icon_color = 0x7f0c0056
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 com.example.ventas:id/transition_layout_save = 0x7f0801f6
 com.example.ventas:style/Widget.Material3.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu = 0x7f1003d4
@@ -2629,6 +3199,8 @@ com.example.ventas:id/fullscreen_header = 0x7f0800d7
 com.example.ventas:style/Base.Theme.MaterialComponents.Light.Dialog.FixedSize = 0x7f100075
 com.example.ventas:id/textStart = 0x7f0801de
 =======
+=======
+>>>>>>> Stashed changes
 com.example.ventas:id/transition_layout_save = 0x7f0801f5
 com.example.ventas:drawable/notification_bg_low = 0x7f0700d6
 com.example.ventas:color/m3_ref_palette_dynamic_secondary99 = 0x7f0500dc
@@ -2654,6 +3226,9 @@ com.example.ventas:id/btnVolverJugador = 0x7f08021e
 com.example.ventas:id/fullscreen_header = 0x7f0800d7
 com.example.ventas:style/Base.Theme.MaterialComponents.Light.Dialog.FixedSize = 0x7f100075
 com.example.ventas:id/textStart = 0x7f0801dd
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 com.example.ventas:string/bottomsheet_action_expand_halfway = 0x7f0f0021
 com.example.ventas:style/Base.Theme.MaterialComponents.Light.Bridge = 0x7f10006f
@@ -2661,6 +3236,7 @@ com.example.ventas:id/accessibility_custom_action_25 = 0x7f080022
 com.example.ventas:styleable/Constraint = 0x7f110026
 com.example.ventas:color/m3_text_button_background_color_selector = 0x7f0501ea
 com.example.ventas:style/Widget.MaterialComponents.TimePicker.Display.HelperText = 0x7f100452
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 com.example.ventas:id/textButtonUser = 0x7f0801da
 com.example.ventas:string/abc_activity_chooser_view_see_all = 0x7f0f0004
@@ -2672,6 +3248,8 @@ com.example.ventas:integer/m3_sys_motion_duration_short2 = 0x7f09001c
 com.example.ventas:id/text = 0x7f0801d2
 com.example.ventas:id/tag_unhandled_key_event_manager = 0x7f0801ca
 =======
+=======
+>>>>>>> Stashed changes
 com.example.ventas:id/textButtonUser = 0x7f0801d9
 com.example.ventas:string/abc_activity_chooser_view_see_all = 0x7f0f0004
 com.example.ventas:id/indeterminate = 0x7f0800ee
@@ -2681,11 +3259,15 @@ com.example.ventas:style/ShapeAppearanceOverlay.MaterialComponents.MaterialCalen
 com.example.ventas:integer/m3_sys_motion_duration_short2 = 0x7f09001c
 com.example.ventas:id/text = 0x7f0801d1
 com.example.ventas:id/tag_unhandled_key_event_manager = 0x7f0801c9
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 com.example.ventas:styleable/MotionTelltales = 0x7f110068
 com.example.ventas:styleable/ViewBackgroundHelper = 0x7f110094
 com.example.ventas:styleable/MenuGroup = 0x7f11005e
 com.example.ventas:style/Base.TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse = 0x7f100036
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 com.example.ventas:id/tag_transition_group = 0x7f0801c9
 com.example.ventas:id/tag_screen_reader_focusable = 0x7f0801c7
@@ -2721,6 +3303,8 @@ com.example.ventas:id/sin = 0x7f08019f
 com.example.ventas:id/showTitle = 0x7f08019e
 com.example.ventas:id/select_dialog_listview = 0x7f080196
 =======
+=======
+>>>>>>> Stashed changes
 com.example.ventas:id/tag_transition_group = 0x7f0801c8
 com.example.ventas:id/tag_screen_reader_focusable = 0x7f0801c6
 com.example.ventas:id/tag_accessibility_pane_title = 0x7f0801c2
@@ -2754,11 +3338,15 @@ com.example.ventas:style/Widget.AppCompat.ListView.Menu = 0x7f100319
 com.example.ventas:id/sin = 0x7f08019e
 com.example.ventas:id/showTitle = 0x7f08019d
 com.example.ventas:id/select_dialog_listview = 0x7f080195
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 com.example.ventas:macro/m3_comp_filled_text_field_input_text_type = 0x7f0c0051
 com.example.ventas:id/bestChoice = 0x7f08005b
 com.example.ventas:style/Theme.MaterialComponents.Light.Dialog.Bridge = 0x7f100268
 com.example.ventas:macro/m3_comp_radio_button_disabled_unselected_icon_color = 0x7f0c00d7
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 com.example.ventas:id/search_voice_btn = 0x7f080193
 com.example.ventas:id/search_plate = 0x7f080191
@@ -2774,6 +3362,8 @@ com.example.ventas:style/TextAppearance.MaterialComponents.Headline4 = 0x7f10020
 com.example.ventas:id/textBtnResultados = 0x7f0801d7
 com.example.ventas:id/screen = 0x7f080184
 =======
+=======
+>>>>>>> Stashed changes
 com.example.ventas:id/search_voice_btn = 0x7f080192
 com.example.ventas:id/search_plate = 0x7f080190
 com.example.ventas:macro/m3_comp_outlined_card_container_shape = 0x7f0c00ab
@@ -2787,6 +3377,9 @@ com.example.ventas:id/textBtnResultados = 0x7f0801d6
 com.example.ventas:string/mtrl_picker_range_header_only_end_selected = 0x7f0f007f
 com.example.ventas:style/Base.TextAppearance.AppCompat.Subhead.Inverse = 0x7f10002e
 com.example.ventas:id/screen = 0x7f080183
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 com.example.ventas:style/MaterialAlertDialog.Material3.Title.Text = 0x7f10012b
 com.example.ventas:id/matrix = 0x7f08011a
@@ -2794,8 +3387,13 @@ com.example.ventas:style/ThemeOverlay.Material3.ExtendedFloatingActionButton.Sec
 com.example.ventas:style/Widget.MaterialComponents.NavigationRailView.Colored.Compact = 0x7f10042f
 com.example.ventas:macro/m3_comp_outlined_text_field_hover_outline_color = 0x7f0c00c0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:id/save_non_transition_alpha = 0x7f080180
 com.example.ventas:id/right_icon = 0x7f08017c
+=======
+com.example.ventas:id/save_non_transition_alpha = 0x7f08017f
+com.example.ventas:id/right_icon = 0x7f08017b
+>>>>>>> Stashed changes
 =======
 com.example.ventas:id/save_non_transition_alpha = 0x7f08017f
 com.example.ventas:id/right_icon = 0x7f08017b
@@ -2816,7 +3414,11 @@ com.example.ventas:dimen/m3_comp_time_input_time_input_field_focus_outline_width
 com.example.ventas:id/open_search_view_dummy_toolbar = 0x7f080157
 com.example.ventas:style/Widget.MaterialComponents.Chip.Choice = 0x7f100402
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:layout/mtrl_picker_header_title_text = 0x7f0b006a
+=======
+com.example.ventas:layout/mtrl_picker_header_title_text = 0x7f0b0068
+>>>>>>> Stashed changes
 =======
 com.example.ventas:layout/mtrl_picker_header_title_text = 0x7f0b0068
 >>>>>>> Stashed changes
@@ -2831,8 +3433,13 @@ com.example.ventas:dimen/abc_action_button_min_width_material = 0x7f06000e
 com.example.ventas:style/ThemeOverlay.Material3.HarmonizedColors.Empty = 0x7f1002a5
 com.example.ventas:string/abc_searchview_description_query = 0x7f0f0014
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:style/Base.Widget.AppCompat.SearchView = 0x7f1000f3
 com.example.ventas:style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu = 0x7f100447
+=======
+com.example.ventas:style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu = 0x7f100447
+com.example.ventas:style/Base.Widget.AppCompat.SearchView = 0x7f1000f3
+>>>>>>> Stashed changes
 =======
 com.example.ventas:style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu = 0x7f100447
 com.example.ventas:style/Base.Widget.AppCompat.SearchView = 0x7f1000f3
@@ -2847,6 +3454,7 @@ com.example.ventas:layout/abc_action_bar_up_container = 0x7f0b0001
 com.example.ventas:style/Widget.MaterialComponents.MaterialCalendar.HeaderSelection = 0x7f100421
 com.example.ventas:color/mtrl_navigation_bar_item_tint = 0x7f0502b6
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:id/navigation_bar_item_large_label_view = 0x7f080141
 com.example.ventas:layout/design_navigation_item = 0x7f0b0032
 com.example.ventas:macro/m3_comp_time_picker_period_selector_selected_label_text_color = 0x7f0c0159
@@ -2854,12 +3462,17 @@ com.example.ventas:id/navigation_bar_item_labels_group = 0x7f080140
 com.example.ventas:style/Theme.Material3.DayNight.SideSheetDialog = 0x7f100237
 com.example.ventas:style/Platform.V21.AppCompat.Light = 0x7f100141
 =======
+=======
+>>>>>>> Stashed changes
 com.example.ventas:layout/design_navigation_item = 0x7f0b0031
 com.example.ventas:id/navigation_bar_item_large_label_view = 0x7f080141
 com.example.ventas:macro/m3_comp_time_picker_period_selector_selected_label_text_color = 0x7f0c0159
 com.example.ventas:style/Platform.V21.AppCompat.Light = 0x7f100141
 com.example.ventas:id/navigation_bar_item_labels_group = 0x7f080140
 com.example.ventas:style/Theme.Material3.DayNight.SideSheetDialog = 0x7f100237
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 com.example.ventas:id/mtrl_view_tag_bottom_padding = 0x7f08013b
 com.example.ventas:id/mtrl_picker_header_title_and_selection = 0x7f080135
@@ -2870,8 +3483,13 @@ com.example.ventas:id/mtrl_picker_fullscreen = 0x7f080132
 com.example.ventas:macro/m3_comp_switch_unselected_handle_color = 0x7f0c0135
 com.example.ventas:color/m3_sys_color_dynamic_on_primary_fixed_variant = 0x7f0501ab
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:styleable/ColorStateListItem = 0x7f110024
 com.example.ventas:style/Base.Widget.AppCompat.PopupWindow = 0x7f1000ed
+=======
+com.example.ventas:style/Base.Widget.AppCompat.PopupWindow = 0x7f1000ed
+com.example.ventas:styleable/ColorStateListItem = 0x7f110024
+>>>>>>> Stashed changes
 =======
 com.example.ventas:style/Base.Widget.AppCompat.PopupWindow = 0x7f1000ed
 com.example.ventas:styleable/ColorStateListItem = 0x7f110024
@@ -2885,7 +3503,11 @@ com.example.ventas:id/mtrl_calendar_selection_frame = 0x7f08012b
 com.example.ventas:styleable/KeyFramesAcceleration = 0x7f110042
 com.example.ventas:color/secondary_text_disabled_material_light = 0x7f0502df
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:layout/notification_template_part_time = 0x7f0b0075
+=======
+com.example.ventas:layout/notification_template_part_time = 0x7f0b0073
+>>>>>>> Stashed changes
 =======
 com.example.ventas:layout/notification_template_part_time = 0x7f0b0073
 >>>>>>> Stashed changes
@@ -2896,7 +3518,11 @@ com.example.ventas:styleable/MaterialCalendar = 0x7f110051
 com.example.ventas:string/exposed_dropdown_menu_content_description = 0x7f0f0031
 com.example.ventas:style/Base.V14.ThemeOverlay.MaterialComponents.Dialog = 0x7f10009e
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:id/seleccionEstado = 0x7f080194
+=======
+com.example.ventas:id/seleccionEstado = 0x7f080193
+>>>>>>> Stashed changes
 =======
 com.example.ventas:id/seleccionEstado = 0x7f080193
 >>>>>>> Stashed changes
@@ -2905,15 +3531,21 @@ com.example.ventas:id/material_timepicker_view = 0x7f080118
 com.example.ventas:style/Base.Widget.MaterialComponents.Slider = 0x7f10011b
 com.example.ventas:macro/m3_comp_switch_disabled_unselected_handle_color = 0x7f0c011d
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:attr/titleMargins = 0x7f03048d
 com.example.ventas:dimen/mtrl_calendar_content_padding = 0x7f06026e
 com.example.ventas:macro/m3_comp_time_picker_time_selector_selected_focus_state_layer_color = 0x7f0c0162
 com.example.ventas:id/material_timepicker_container = 0x7f080115
 =======
+=======
+>>>>>>> Stashed changes
 com.example.ventas:dimen/mtrl_calendar_content_padding = 0x7f06026e
 com.example.ventas:attr/titleMargins = 0x7f03048d
 com.example.ventas:id/material_timepicker_container = 0x7f080115
 com.example.ventas:macro/m3_comp_time_picker_time_selector_selected_focus_state_layer_color = 0x7f0c0162
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 com.example.ventas:styleable/ForegroundLinearLayout = 0x7f110038
 com.example.ventas:style/Widget.Material3.ActionBar.Solid = 0x7f10033b
@@ -2942,8 +3574,13 @@ com.example.ventas:id/inward = 0x7f0800f1
 com.example.ventas:id/end = 0x7f0800bc
 com.example.ventas:style/ThemeOverlay.Material3.NavigationRailView = 0x7f1002af
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:macro/m3_comp_slider_inactive_track_color = 0x7f0c0111
 com.example.ventas:id/included = 0x7f0800ed
+=======
+com.example.ventas:id/included = 0x7f0800ed
+com.example.ventas:macro/m3_comp_slider_inactive_track_color = 0x7f0c0111
+>>>>>>> Stashed changes
 =======
 com.example.ventas:id/included = 0x7f0800ed
 com.example.ventas:macro/m3_comp_slider_inactive_track_color = 0x7f0c0111
@@ -2960,7 +3597,11 @@ com.example.ventas:style/Widget.MaterialComponents.MaterialCalendar.HeaderConfir
 com.example.ventas:macro/m3_comp_navigation_bar_active_label_text_color = 0x7f0c0069
 com.example.ventas:id/homeAsUp = 0x7f0800e3
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:id/scrollable = 0x7f080189
+=======
+com.example.ventas:id/scrollable = 0x7f080188
+>>>>>>> Stashed changes
 =======
 com.example.ventas:id/scrollable = 0x7f080188
 >>>>>>> Stashed changes
@@ -2985,7 +3626,11 @@ com.example.ventas:string/mtrl_timepicker_cancel = 0x7f0f0099
 com.example.ventas:id/fill = 0x7f0800c8
 com.example.ventas:integer/m3_sys_motion_path = 0x7f09001f
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:layout/select_dialog_item_material = 0x7f0b0076
+=======
+com.example.ventas:layout/select_dialog_item_material = 0x7f0b0074
+>>>>>>> Stashed changes
 =======
 com.example.ventas:layout/select_dialog_item_material = 0x7f0b0074
 >>>>>>> Stashed changes
@@ -2999,15 +3644,21 @@ com.example.ventas:macro/m3_comp_time_picker_clock_dial_selector_handle_containe
 com.example.ventas:style/Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle = 0x7f100033
 com.example.ventas:id/east = 0x7f0800b7
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:id/submenuarrow = 0x7f0801bc
 com.example.ventas:id/open_search_view_status_bar_spacer = 0x7f08015d
 com.example.ventas:layout/activity_login = 0x7f0b0025
 com.example.ventas:id/easeOut = 0x7f0800b6
 =======
+=======
+>>>>>>> Stashed changes
 com.example.ventas:id/submenuarrow = 0x7f0801bb
 com.example.ventas:id/open_search_view_status_bar_spacer = 0x7f08015d
 com.example.ventas:id/easeOut = 0x7f0800b6
 com.example.ventas:layout/activity_login = 0x7f0b0024
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 com.example.ventas:id/easeInOut = 0x7f0800b5
 com.example.ventas:integer/mtrl_calendar_year_selector_span = 0x7f090032
@@ -3017,7 +3668,11 @@ com.example.ventas:attr/colorTertiaryContainer = 0x7f03012b
 com.example.ventas:id/motion_base = 0x7f080124
 com.example.ventas:id/barrier = 0x7f080057
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:layout/notification_action_tombstone = 0x7f0b0071
+=======
+com.example.ventas:layout/notification_action_tombstone = 0x7f0b006f
+>>>>>>> Stashed changes
 =======
 com.example.ventas:layout/notification_action_tombstone = 0x7f0b006f
 >>>>>>> Stashed changes
@@ -3031,8 +3686,13 @@ com.example.ventas:layout/abc_search_view = 0x7f0b0019
 com.example.ventas:style/Widget.MaterialComponents.MaterialCalendar.Item = 0x7f100425
 com.example.ventas:style/Widget.Material3.Button.Icon = 0x7f10034f
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:attr/layout_scrollInterpolator = 0x7f0302b0
 com.example.ventas:id/BOTTOM_END = 0x7f080001
+=======
+com.example.ventas:id/BOTTOM_END = 0x7f080001
+com.example.ventas:attr/layout_scrollInterpolator = 0x7f0302b0
+>>>>>>> Stashed changes
 =======
 com.example.ventas:id/BOTTOM_END = 0x7f080001
 com.example.ventas:attr/layout_scrollInterpolator = 0x7f0302b0
@@ -3057,7 +3717,11 @@ com.example.ventas:styleable/SnackbarLayout = 0x7f11007f
 com.example.ventas:style/Animation.AppCompat.DropDownUp = 0x7f100003
 com.example.ventas:id/clear_text = 0x7f080081
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:layout/material_timepicker = 0x7f0b004c
+=======
+com.example.ventas:layout/material_timepicker = 0x7f0b004a
+>>>>>>> Stashed changes
 =======
 com.example.ventas:layout/material_timepicker = 0x7f0b004a
 >>>>>>> Stashed changes
@@ -3082,7 +3746,11 @@ com.example.ventas:id/btnEquipos = 0x7f080065
 com.example.ventas:style/Theme.MaterialComponents.DayNight.BottomSheetDialog = 0x7f100248
 com.example.ventas:id/btnBuscar = 0x7f080062
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:id/src_over = 0x7f0801b2
+=======
+com.example.ventas:id/src_over = 0x7f0801b1
+>>>>>>> Stashed changes
 =======
 com.example.ventas:id/src_over = 0x7f0801b1
 >>>>>>> Stashed changes
@@ -3100,6 +3768,7 @@ com.example.ventas:id/all = 0x7f080049
 com.example.ventas:string/abc_activitychooserview_choose_application = 0x7f0f0005
 com.example.ventas:style/ShapeAppearance.M3.Comp.TextButton.Container.Shape = 0x7f100167
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:style/Base.DialogWindowTitle.AppCompat = 0x7f100011
 com.example.ventas:id/aligned = 0x7f080048
 com.example.ventas:id/alertTitle = 0x7f080047
@@ -3109,6 +3778,8 @@ com.example.ventas:id/month_title = 0x7f080123
 com.example.ventas:id/action_context_bar = 0x7f08003b
 com.example.ventas:id/scroll = 0x7f080185
 =======
+=======
+>>>>>>> Stashed changes
 com.example.ventas:id/aligned = 0x7f080048
 com.example.ventas:style/Base.DialogWindowTitle.AppCompat = 0x7f100011
 com.example.ventas:id/alertTitle = 0x7f080047
@@ -3117,6 +3788,9 @@ com.example.ventas:id/month_title = 0x7f080123
 com.example.ventas:style/ShapeAppearance.MaterialComponents = 0x7f10017b
 com.example.ventas:id/action_context_bar = 0x7f08003b
 com.example.ventas:id/scroll = 0x7f080184
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 com.example.ventas:mipmap/torneo = 0x7f0d000e
 com.example.ventas:attr/tabUnboundedRipple = 0x7f030424
@@ -3126,7 +3800,11 @@ com.example.ventas:style/ThemeOverlay.Material3.DynamicColors.DayNight = 0x7f100
 com.example.ventas:id/actionDown = 0x7f080030
 com.example.ventas:id/accessibility_custom_action_31 = 0x7f080029
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:id/withText = 0x7f080218
+=======
+com.example.ventas:id/withText = 0x7f080215
+>>>>>>> Stashed changes
 =======
 com.example.ventas:id/withText = 0x7f080215
 >>>>>>> Stashed changes
@@ -3136,9 +3814,15 @@ com.example.ventas:id/accessibility_custom_action_26 = 0x7f080023
 com.example.ventas:style/Base.AlertDialog.AppCompat = 0x7f10000b
 com.example.ventas:macro/m3_comp_search_view_header_leading_icon_color = 0x7f0c00f8
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:id/accessibility_custom_action_23 = 0x7f080020
 com.example.ventas:attr/fabAnchorMode = 0x7f0301cb
 com.example.ventas:id/right = 0x7f08017a
+=======
+com.example.ventas:attr/fabAnchorMode = 0x7f0301cb
+com.example.ventas:id/accessibility_custom_action_23 = 0x7f080020
+com.example.ventas:id/right = 0x7f080179
+>>>>>>> Stashed changes
 =======
 com.example.ventas:attr/fabAnchorMode = 0x7f0301cb
 com.example.ventas:id/accessibility_custom_action_23 = 0x7f080020
@@ -3179,10 +3863,15 @@ com.example.ventas:attr/constraintRotate = 0x7f030130
 com.example.ventas:drawable/notification_bg_normal_pressed = 0x7f0700da
 com.example.ventas:style/TextAppearance.Material3.ActionBar.Title = 0x7f1001e4
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:attr/fabCradleRoundedCornerRadius = 0x7f0301ce
 com.example.ventas:drawable/notification_bg_normal = 0x7f0700d9
 com.example.ventas:drawable/navigation_empty_icon = 0x7f0700d3
 com.example.ventas:string/mtrl_picker_announce_current_range_selection = 0x7f0f006e
+=======
+com.example.ventas:drawable/notification_bg_normal = 0x7f0700d9
+com.example.ventas:attr/fabCradleRoundedCornerRadius = 0x7f0301ce
+>>>>>>> Stashed changes
 =======
 com.example.ventas:drawable/notification_bg_normal = 0x7f0700d9
 com.example.ventas:attr/fabCradleRoundedCornerRadius = 0x7f0301ce
@@ -3271,7 +3960,11 @@ com.example.ventas:attr/colorOnSurfaceInverse = 0x7f03010a
 com.example.ventas:drawable/abc_list_divider_material = 0x7f07004c
 com.example.ventas:drawable/abc_item_background_holo_light = 0x7f07004b
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:layout/mtrl_calendar_month_labeled = 0x7f0b005c
+=======
+com.example.ventas:layout/mtrl_calendar_month_labeled = 0x7f0b005a
+>>>>>>> Stashed changes
 =======
 com.example.ventas:layout/mtrl_calendar_month_labeled = 0x7f0b005a
 >>>>>>> Stashed changes
@@ -3302,7 +3995,11 @@ com.example.ventas:drawable/$mtrl_switch_thumb_checked_pressed__0 = 0x7f070020
 com.example.ventas:drawable/$mtrl_checkbox_button_unchecked_checked__1 = 0x7f07001e
 com.example.ventas:drawable/abc_scrubber_primary_mtrl_alpha = 0x7f070060
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:layout/material_clock_period_toggle = 0x7f0b0044
+=======
+com.example.ventas:layout/material_clock_period_toggle = 0x7f0b0042
+>>>>>>> Stashed changes
 =======
 com.example.ventas:layout/material_clock_period_toggle = 0x7f0b0042
 >>>>>>> Stashed changes
@@ -3340,8 +4037,13 @@ com.example.ventas:dimen/tooltip_margin = 0x7f060315
 com.example.ventas:macro/m3_comp_badge_large_label_text_type = 0x7f0c0004
 com.example.ventas:dimen/notification_right_side_padding_top = 0x7f06030d
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:attr/textAppearanceTitleMedium = 0x7f03044d
 com.example.ventas:dimen/mtrl_progress_circular_size_medium = 0x7f0602d4
+=======
+com.example.ventas:dimen/mtrl_progress_circular_size_medium = 0x7f0602d4
+com.example.ventas:attr/textAppearanceTitleMedium = 0x7f03044d
+>>>>>>> Stashed changes
 =======
 com.example.ventas:dimen/mtrl_progress_circular_size_medium = 0x7f0602d4
 com.example.ventas:attr/textAppearanceTitleMedium = 0x7f03044d
@@ -3378,7 +4080,11 @@ com.example.ventas:attr/behavior_halfExpandedRatio = 0x7f03006c
 com.example.ventas:layout/activity_jugadores = 0x7f0b0022
 com.example.ventas:color/material_personalized_color_error_container = 0x7f050261
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:id/sharedValueUnset = 0x7f08019a
+=======
+com.example.ventas:id/sharedValueUnset = 0x7f080199
+>>>>>>> Stashed changes
 =======
 com.example.ventas:id/sharedValueUnset = 0x7f080199
 >>>>>>> Stashed changes
@@ -3388,7 +4094,11 @@ com.example.ventas:dimen/mtrl_snackbar_message_margin_horizontal = 0x7f0602ec
 com.example.ventas:style/Platform.MaterialComponents.Light = 0x7f10013b
 com.example.ventas:dimen/mtrl_snackbar_margin = 0x7f0602eb
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:layout/mtrl_alert_dialog_actions = 0x7f0b0051
+=======
+com.example.ventas:layout/mtrl_alert_dialog_actions = 0x7f0b004f
+>>>>>>> Stashed changes
 =======
 com.example.ventas:layout/mtrl_alert_dialog_actions = 0x7f0b004f
 >>>>>>> Stashed changes
@@ -3404,6 +4114,9 @@ com.example.ventas:style/TextAppearance.AppCompat = 0x7f100194
 com.example.ventas:id/tarjetaBuscar = 0x7f0801cd
 =======
 com.example.ventas:id/tarjetaBuscar = 0x7f0801cc
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 com.example.ventas:color/abc_primary_text_material_light = 0x7f05000c
 com.example.ventas:dimen/mtrl_slider_label_radius = 0x7f0602e0
@@ -3448,8 +4161,11 @@ com.example.ventas:attr/switchStyle = 0x7f030406
 com.example.ventas:dimen/mtrl_navigation_rail_text_size = 0x7f0602cc
 com.example.ventas:attr/circularflow_angles = 0x7f0300d3
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:layout/notification_template_part_chronometer = 0x7f0b0074
 =======
+=======
+>>>>>>> Stashed changes
 com.example.ventas:layout/notification_template_part_chronometer = 0x7f0b0072
 >>>>>>> Stashed changes
 com.example.ventas:dimen/mtrl_navigation_rail_text_bottom_margin = 0x7f0602cb
@@ -3516,7 +4232,10 @@ com.example.ventas:dimen/mtrl_calendar_navigation_height = 0x7f060285
 com.example.ventas:dimen/mtrl_calendar_month_vertical_padding = 0x7f060283
 com.example.ventas:attr/itemHorizontalTranslationEnabled = 0x7f030245
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:layout/activity_editar_equipo = 0x7f0b007a
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 com.example.ventas:attr/windowFixedHeightMinor = 0x7f0304cf
@@ -3579,7 +4298,11 @@ com.example.ventas:style/Theme.Material3.DayNight.BottomSheetDialog = 0x7f100231
 com.example.ventas:dimen/mtrl_alert_dialog_background_inset_top = 0x7f060242
 com.example.ventas:attr/flow_padding = 0x7f0301f4
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:id/skipCollapsed = 0x7f0801a0
+=======
+com.example.ventas:id/skipCollapsed = 0x7f08019f
+>>>>>>> Stashed changes
 =======
 com.example.ventas:id/skipCollapsed = 0x7f08019f
 >>>>>>> Stashed changes
@@ -3594,6 +4317,7 @@ com.example.ventas:style/Theme.AppCompat.CompactMenu = 0x7f10020d
 com.example.ventas:drawable/mtrl_ic_error = 0x7f0700c1
 com.example.ventas:dimen/material_input_text_to_prefix_suffix_padding = 0x7f060238
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:layout/design_navigation_item_subheader = 0x7f0b0035
 com.example.ventas:dimen/mtrl_switch_thumb_size = 0x7f0602f1
 com.example.ventas:dimen/mtrl_calendar_day_vertical_padding = 0x7f060273
@@ -3601,6 +4325,15 @@ com.example.ventas:dimen/material_font_1_3_box_collapsed_padding_top = 0x7f06023
 com.example.ventas:color/m3_sys_color_dark_surface_container_lowest = 0x7f050169
 com.example.ventas:color/m3_ref_palette_dynamic_secondary40 = 0x7f0500d5
 com.example.ventas:dimen/mtrl_progress_track_thickness = 0x7f0602da
+=======
+com.example.ventas:layout/design_navigation_item_subheader = 0x7f0b0034
+com.example.ventas:dimen/mtrl_switch_thumb_size = 0x7f0602f1
+com.example.ventas:dimen/mtrl_calendar_day_vertical_padding = 0x7f060273
+com.example.ventas:dimen/material_font_1_3_box_collapsed_padding_top = 0x7f060233
+com.example.ventas:dimen/mtrl_progress_track_thickness = 0x7f0602da
+com.example.ventas:color/m3_sys_color_dark_surface_container_lowest = 0x7f050169
+com.example.ventas:color/m3_ref_palette_dynamic_secondary40 = 0x7f0500d5
+>>>>>>> Stashed changes
 =======
 com.example.ventas:layout/design_navigation_item_subheader = 0x7f0b0034
 com.example.ventas:dimen/mtrl_switch_thumb_size = 0x7f0602f1
@@ -3672,7 +4405,11 @@ com.example.ventas:dimen/m3_small_fab_size = 0x7f0601e6
 com.example.ventas:layout/abc_screen_toolbar = 0x7f0b0017
 com.example.ventas:dimen/design_bottom_navigation_item_min_width = 0x7f060066
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:id/search_close_btn = 0x7f08018d
+=======
+com.example.ventas:id/search_close_btn = 0x7f08018c
+>>>>>>> Stashed changes
 =======
 com.example.ventas:id/search_close_btn = 0x7f08018c
 >>>>>>> Stashed changes
@@ -3731,6 +4468,10 @@ com.example.ventas:id/accelerate = 0x7f08000e
 com.example.ventas:dimen/m3_divider_heavy_thickness = 0x7f0601a8
 com.example.ventas:style/TextAppearance.Design.Suffix = 0x7f1001d2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+com.example.ventas:id/accelerate = 0x7f08000e
+>>>>>>> Stashed changes
 =======
 com.example.ventas:id/accelerate = 0x7f08000e
 >>>>>>> Stashed changes
@@ -3906,8 +4647,11 @@ com.example.ventas:color/m3_sys_color_dynamic_light_surface_container_lowest = 0
 com.example.ventas:dimen/m3_btn_max_width = 0x7f0600d8
 com.example.ventas:color/material_timepicker_clockface = 0x7f050297
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:id/visible = 0x7f080215
 =======
+=======
+>>>>>>> Stashed changes
 com.example.ventas:id/visible = 0x7f080212
 >>>>>>> Stashed changes
 com.example.ventas:dimen/m3_btn_icon_only_min_width = 0x7f0600d6
@@ -3921,7 +4665,11 @@ com.example.ventas:dimen/m3_appbar_size_medium = 0x7f0600ab
 com.example.ventas:attr/textAppearanceBodySmall = 0x7f03042e
 com.example.ventas:drawable/mtrl_switch_thumb_checked = 0x7f0700c7
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:layout/m3_side_sheet_dialog = 0x7f0b003f
+=======
+com.example.ventas:layout/m3_side_sheet_dialog = 0x7f0b003d
+>>>>>>> Stashed changes
 =======
 com.example.ventas:layout/m3_side_sheet_dialog = 0x7f0b003d
 >>>>>>> Stashed changes
@@ -3957,7 +4705,11 @@ com.example.ventas:dimen/m3_back_progress_side_container_max_scale_x_distance_sh
 com.example.ventas:macro/m3_comp_navigation_drawer_inactive_focus_label_text_color = 0x7f0c008a
 com.example.ventas:dimen/m3_back_progress_main_container_max_translation_y = 0x7f0600ae
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:id/tag_on_receive_content_listener = 0x7f0801c5
+=======
+com.example.ventas:id/tag_on_receive_content_listener = 0x7f0801c4
+>>>>>>> Stashed changes
 =======
 com.example.ventas:id/tag_on_receive_content_listener = 0x7f0801c4
 >>>>>>> Stashed changes
@@ -4014,8 +4766,11 @@ com.example.ventas:attr/methodName = 0x7f03030d
 com.example.ventas:dimen/design_navigation_item_icon_padding = 0x7f060079
 com.example.ventas:dimen/design_navigation_item_horizontal_padding = 0x7f060078
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:layout/mtrl_picker_fullscreen = 0x7f0b0066
 =======
+=======
+>>>>>>> Stashed changes
 com.example.ventas:layout/mtrl_picker_fullscreen = 0x7f0b0064
 >>>>>>> Stashed changes
 com.example.ventas:id/btnVolver = 0x7f08006f
@@ -4213,8 +4968,13 @@ com.example.ventas:style/Base.V21.ThemeOverlay.Material3.BottomSheetDialog = 0x7
 com.example.ventas:color/m3_ref_palette_dynamic_neutral12 = 0x7f0500a1
 com.example.ventas:color/material_personalized_color_control_normal = 0x7f05025f
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:style/Base.Widget.AppCompat.Button.Borderless = 0x7f1000cf
 com.example.ventas:styleable/Tooltip = 0x7f11008f
+=======
+com.example.ventas:styleable/Tooltip = 0x7f11008f
+com.example.ventas:style/Base.Widget.AppCompat.Button.Borderless = 0x7f1000cf
+>>>>>>> Stashed changes
 =======
 com.example.ventas:styleable/Tooltip = 0x7f11008f
 com.example.ventas:style/Base.Widget.AppCompat.Button.Borderless = 0x7f1000cf
@@ -4295,8 +5055,11 @@ com.example.ventas:color/material_dynamic_neutral40 = 0x7f050209
 com.example.ventas:macro/m3_comp_slider_disabled_active_track_color = 0x7f0c010d
 com.example.ventas:color/m3_sys_color_light_tertiary_container = 0x7f0501d7
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:id/textBtnJugadores = 0x7f0801d5
 =======
+=======
+>>>>>>> Stashed changes
 com.example.ventas:id/textBtnJugadores = 0x7f0801d4
 >>>>>>> Stashed changes
 com.example.ventas:color/material_dynamic_neutral10 = 0x7f050205
@@ -4321,7 +5084,11 @@ com.example.ventas:color/m3_textfield_input_text_color = 0x7f0501ef
 com.example.ventas:drawable/avd_show_password = 0x7f070078
 com.example.ventas:color/m3_text_button_foreground_color_selector = 0x7f0501eb
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:id/startHorizontal = 0x7f0801b5
+=======
+com.example.ventas:id/startHorizontal = 0x7f0801b4
+>>>>>>> Stashed changes
 =======
 com.example.ventas:id/startHorizontal = 0x7f0801b4
 >>>>>>> Stashed changes
@@ -4343,7 +5110,11 @@ com.example.ventas:macro/m3_comp_switch_selected_focus_handle_color = 0x7f0c0121
 com.example.ventas:color/m3_sys_color_on_primary_fixed = 0x7f0501d8
 com.example.ventas:color/m3_sys_color_light_surface_bright = 0x7f0501ce
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:layout/material_clockface_view = 0x7f0b0047
+=======
+com.example.ventas:layout/material_clockface_view = 0x7f0b0045
+>>>>>>> Stashed changes
 =======
 com.example.ventas:layout/material_clockface_view = 0x7f0b0045
 >>>>>>> Stashed changes
@@ -4386,7 +5157,11 @@ com.example.ventas:integer/hide_password_duration = 0x7f090008
 com.example.ventas:color/m3_sys_color_dynamic_on_primary_fixed = 0x7f0501aa
 com.example.ventas:dimen/m3_comp_search_bar_hover_state_layer_opacity = 0x7f06016f
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:id/staticLayout = 0x7f0801b8
+=======
+com.example.ventas:id/staticLayout = 0x7f0801b7
+>>>>>>> Stashed changes
 =======
 com.example.ventas:id/staticLayout = 0x7f0801b7
 >>>>>>> Stashed changes
@@ -4419,6 +5194,7 @@ com.example.ventas:color/m3_sys_color_dynamic_light_on_surface = 0x7f050195
 com.example.ventas:style/Base.V7.Theme.AppCompat.Light = 0x7f1000bd
 com.example.ventas:macro/m3_comp_switch_disabled_unselected_track_color = 0x7f0c011f
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:id/topPanel = 0x7f0801f1
 com.example.ventas:color/material_on_background_emphasis_high_type = 0x7f050251
 com.example.ventas:style/ShapeAppearance.M3.Comp.SearchView.FullScreen.Container.Shape = 0x7f100162
@@ -4428,6 +5204,16 @@ com.example.ventas:style/Base.Widget.AppCompat.RatingBar = 0x7f1000f0
 com.example.ventas:id/CTRL = 0x7f080003
 com.example.ventas:dimen/design_fab_size_normal = 0x7f060072
 com.example.ventas:id/btnActualizar = 0x7f080220
+=======
+com.example.ventas:id/topPanel = 0x7f0801f0
+com.example.ventas:style/ShapeAppearance.M3.Comp.SearchView.FullScreen.Container.Shape = 0x7f100162
+com.example.ventas:color/material_on_background_emphasis_high_type = 0x7f050251
+com.example.ventas:id/textBtnTorneo = 0x7f0801d7
+com.example.ventas:style/Base.Widget.AppCompat.RatingBar = 0x7f1000f0
+com.example.ventas:color/m3_sys_color_dynamic_light_on_secondary = 0x7f050193
+com.example.ventas:id/CTRL = 0x7f080003
+com.example.ventas:dimen/design_fab_size_normal = 0x7f060072
+>>>>>>> Stashed changes
 =======
 com.example.ventas:id/topPanel = 0x7f0801f0
 com.example.ventas:style/ShapeAppearance.M3.Comp.SearchView.FullScreen.Container.Shape = 0x7f100162
@@ -4479,7 +5265,11 @@ com.example.ventas:color/m3_ref_palette_neutral_variant10 = 0x7f050110
 com.example.ventas:color/m3_sys_color_dynamic_dark_on_primary = 0x7f050173
 com.example.ventas:color/m3_sys_color_dynamic_dark_inverse_surface = 0x7f050171
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:id/search_edit_frame = 0x7f08018e
+=======
+com.example.ventas:id/search_edit_frame = 0x7f08018d
+>>>>>>> Stashed changes
 =======
 com.example.ventas:id/search_edit_frame = 0x7f08018d
 >>>>>>> Stashed changes
@@ -4503,7 +5293,11 @@ com.example.ventas:drawable/material_ic_keyboard_arrow_left_black_24dp = 0x7f070
 com.example.ventas:attr/colorOnPrimary = 0x7f030100
 com.example.ventas:drawable/abc_list_pressed_holo_dark = 0x7f070050
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:layout/select_dialog_multichoice_material = 0x7f0b0077
+=======
+com.example.ventas:layout/select_dialog_multichoice_material = 0x7f0b0075
+>>>>>>> Stashed changes
 =======
 com.example.ventas:layout/select_dialog_multichoice_material = 0x7f0b0075
 >>>>>>> Stashed changes
@@ -4526,7 +5320,11 @@ com.example.ventas:color/m3_slider_inactive_track_color = 0x7f050148
 com.example.ventas:color/m3_slider_halo_color = 0x7f050147
 com.example.ventas:attr/fontVariationSettings = 0x7f030204
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:layout/material_textinput_timepicker = 0x7f0b0049
+=======
+com.example.ventas:layout/material_textinput_timepicker = 0x7f0b0047
+>>>>>>> Stashed changes
 =======
 com.example.ventas:layout/material_textinput_timepicker = 0x7f0b0047
 >>>>>>> Stashed changes
@@ -4544,7 +5342,11 @@ com.example.ventas:color/material_dynamic_tertiary50 = 0x7f05023e
 com.example.ventas:color/m3_ref_palette_tertiary0 = 0x7f050136
 com.example.ventas:color/m3_ref_palette_secondary99 = 0x7f050135
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:id/scale = 0x7f080183
+=======
+com.example.ventas:id/scale = 0x7f080182
+>>>>>>> Stashed changes
 =======
 com.example.ventas:id/scale = 0x7f080182
 >>>>>>> Stashed changes
@@ -4554,7 +5356,11 @@ com.example.ventas:dimen/mtrl_calendar_day_horizontal_padding = 0x7f060271
 com.example.ventas:style/Widget.Material3.BottomNavigationView.ActiveIndicator = 0x7f100348
 com.example.ventas:color/m3_ref_palette_secondary90 = 0x7f050133
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:id/snackbar_action = 0x7f0801a3
+=======
+com.example.ventas:id/snackbar_action = 0x7f0801a2
+>>>>>>> Stashed changes
 =======
 com.example.ventas:id/snackbar_action = 0x7f0801a2
 >>>>>>> Stashed changes
@@ -4625,7 +5431,11 @@ com.example.ventas:attr/fontProviderFetchStrategy = 0x7f0301fe
 com.example.ventas:attr/queryBackground = 0x7f030389
 com.example.ventas:color/m3_ref_palette_dynamic_tertiary60 = 0x7f0500e4
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:id/reverseSawtooth = 0x7f080179
+=======
+com.example.ventas:id/reverseSawtooth = 0x7f080178
+>>>>>>> Stashed changes
 =======
 com.example.ventas:id/reverseSawtooth = 0x7f080178
 >>>>>>> Stashed changes
@@ -4634,8 +5444,11 @@ com.example.ventas:attr/motionDurationMedium3 = 0x7f030324
 com.example.ventas:attr/itemPadding = 0x7f03024b
 com.example.ventas:color/m3_dark_highlighted_text = 0x7f050077
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:id/sharedValueSet = 0x7f080199
 =======
+=======
+>>>>>>> Stashed changes
 com.example.ventas:id/sharedValueSet = 0x7f080198
 >>>>>>> Stashed changes
 com.example.ventas:color/m3_ref_palette_dynamic_secondary95 = 0x7f0500db
@@ -4645,7 +5458,11 @@ com.example.ventas:dimen/abc_action_bar_subtitle_top_margin_material = 0x7f06000
 com.example.ventas:macro/m3_comp_search_bar_pressed_supporting_text_color = 0x7f0c00ee
 com.example.ventas:color/m3_sys_color_light_inverse_primary = 0x7f0501ba
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 com.example.ventas:id/save_overlay_view = 0x7f080181
+=======
+com.example.ventas:id/save_overlay_view = 0x7f080180
+>>>>>>> Stashed changes
 =======
 com.example.ventas:id/save_overlay_view = 0x7f080180
 >>>>>>> Stashed changes

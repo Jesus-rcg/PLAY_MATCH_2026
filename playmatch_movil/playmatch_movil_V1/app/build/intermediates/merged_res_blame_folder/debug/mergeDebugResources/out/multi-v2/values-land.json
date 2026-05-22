@@ -5,6 +5,7 @@
             "map": [
                 {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                     "source": "C:\\Users\\JorgeBautista\\.gradle\\caches\\8.11.1\\transforms\\05e9d93043301910c664e64b86cc2a13\\transformed\\appcompat-1.6.1\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
@@ -16,6 +17,9 @@
                 },
                 {
                     "source": "C:\\Users\\JorgeBautista\\.gradle\\caches\\8.11.1\\transforms\\c722a92279874d000bfa7fbacc366930\\transformed\\material-1.10.0\\res\\values-land\\values-land.xml",
+=======
+                    "source": "C:\\Users\\JuAlJeCa\\.gradle\\caches\\8.11.1\\transforms\\c722a92279874d000bfa7fbacc366930\\transformed\\material-1.10.0\\res\\values-land\\values-land.xml",
+>>>>>>> Stashed changes
 =======
                     "source": "C:\\Users\\JuAlJeCa\\.gradle\\caches\\8.11.1\\transforms\\c722a92279874d000bfa7fbacc366930\\transformed\\material-1.10.0\\res\\values-land\\values-land.xml",
 >>>>>>> Stashed changes
