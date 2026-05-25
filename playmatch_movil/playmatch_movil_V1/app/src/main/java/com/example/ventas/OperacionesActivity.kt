@@ -50,6 +50,11 @@ class OperacionesActivity : AppCompatActivity() {
                         Intent(this, CrearUsuarioActivity::class.java)
                     )
                 }
+                "Torneos" -> {
+                    startActivity(
+                        Intent(this, CrearTorneoActivity::class.java)
+                    )
+                }
 
                 else -> {
                     Toast.makeText(
@@ -68,6 +73,11 @@ class OperacionesActivity : AppCompatActivity() {
                         Intent(this, com.example.ventas.ui.ListaEquiposActivity::class.java)
                     )
                 }
+                "Torneos" -> {
+                    startActivity(
+                        Intent(this, com.example.ventas.ui.ListaTorneosActivity::class.java)
+                    )
+                }
                 else -> {
                     Toast.makeText(this, "Editar - $modulo", Toast.LENGTH_SHORT).show()
                 }
@@ -81,6 +91,11 @@ class OperacionesActivity : AppCompatActivity() {
                         Intent(this, com.example.ventas.ui.ListaEquiposActivity::class.java)
                     )
                 }
+                    "Torneos" -> {
+                        startActivity(
+                            Intent(this, com.example.ventas.ui.ListaTorneosActivity::class.java)
+                        )
+                    }
                 else -> {
                     Toast.makeText(this, "Eliminar - $modulo", Toast.LENGTH_SHORT).show()
                 }
@@ -91,6 +106,11 @@ class OperacionesActivity : AppCompatActivity() {
                 "Equipos" -> {
                     startActivity(
                         Intent(this, com.example.ventas.ui.ListaEquiposActivity::class.java)
+                    )
+                }
+                "Torneos" -> {
+                    startActivity(
+                        Intent(this, com.example.ventas.ui.ListaTorneosActivity::class.java)
                     )
                 }
                 else -> {

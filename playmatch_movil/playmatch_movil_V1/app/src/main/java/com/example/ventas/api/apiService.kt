@@ -165,7 +165,6 @@ interface ApiService {
 
     @GET("equipos")
     fun getEquipos(
-<<<<<<< Updated upstream
         @Header("Authorization") token: String
     ): Call<List<Equipo>>
 
@@ -188,14 +187,13 @@ interface ApiService {
         @Path("id") id: Int
     ): Call<Void>
 
-=======
 
         @Header("Authorization")
         token: String
 
-    ): Call<List<Equipo>>
+    ): Call<List<Estado>>
 
->>>>>>> Stashed changes
+
     // =========== Estado =================
     @GET("estados")
     fun getEstado(
@@ -204,8 +202,14 @@ interface ApiService {
         token: String
 
     ): Call<List<Estado>>
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
+//============ Torneo =================
+
+    @POST("torneos")
+    fun createTorneo(
+
+        @Header("Authorization") token: String,
+
+        @Body torneo: Torneo
+    ): Call<Torneo>
 }
