@@ -4,6 +4,9 @@ import com.example.ventas.model.Usuario
 import com.example.ventas.model.Jugador
 import com.example.ventas.model.LoginRequest
 import com.example.ventas.model.LoginResponse
+import com.example.ventas.model.Equipo
+import com.example.ventas.model.Estado
+import com.example.ventas.model.Torneo
 
 import retrofit2.Call
 import retrofit2.http.Body
@@ -13,8 +16,6 @@ import retrofit2.http.Header
 import retrofit2.http.Path
 import retrofit2.http.PUT
 import retrofit2.http.DELETE
-import com.example.ventas.model.Equipo
-import com.example.ventas.model.Estado
 
 interface ApiService {
 
@@ -150,51 +151,70 @@ interface ApiService {
     ): Call<Void>
 
 
+    // ================= EQUIPOS =================
 
-
-    // ================= EQUIPO =================
     @POST("equipos")
     fun createEquipo(
 
-        @Header("Authorization") token: String,
+        @Header("Authorization")
+        token: String,
 
-        @Body equipo: Equipo
-
+        @Body
+        equipo: Equipo
 
     ): Call<Equipo>
+
 
     @GET("equipos")
     fun getEquipos(
-        @Header("Authorization") token: String
-    ): Call<List<Equipo>>
-
-    @GET("equipos/{id}")
-    fun getEquipo(
-        @Header("Authorization") token: String,
-        @Path("id") id: Int
-    ): Call<Equipo>
-
-    @PUT("equipos/{id}")
-    fun updateEquipo(
-        @Header("Authorization") token: String,
-        @Path("id") id: Int,
-        @Body equipo: Equipo
-    ): Call<Void>
-
-    @DELETE("equipos/{id}")
-    fun deleteEquipo(
-        @Header("Authorization") token: String,
-        @Path("id") id: Int
-    ): Call<Void>
-
 
         @Header("Authorization")
         token: String
 
-    ): Call<List<Estado>>
+    ): Call<List<Equipo>>
 
 
-    // =========== Estado =================
+    @GET("equipos/{id}")
+    fun getEquipo(
+
+        @Header("Authorization")
+        token: String,
+
+        @Path("id")
+        id: Int
+
+    ): Call<Equipo>
+
+
+    @PUT("equipos/{id}")
+    fun updateEquipo(
+
+        @Header("Authorization")
+        token: String,
+
+        @Path("id")
+        id: Int,
+
+        @Body
+        equipo: Equipo
+
+    ): Call<Void>
+
+
+    @DELETE("equipos/{id}")
+    fun deleteEquipo(
+
+        @Header("Authorization")
+        token: String,
+
+        @Path("id")
+        id: Int
+
+    ): Call<Void>
+
+
+    // ================= ESTADOS =================
+
     @GET("estados")
     fun getEstado(
 
@@ -203,13 +223,17 @@ interface ApiService {
 
     ): Call<List<Estado>>
 
-//============ Torneo =================
+
+    // ================= TORNEOS =================
 
     @POST("torneos")
     fun createTorneo(
 
-        @Header("Authorization") token: String,
+        @Header("Authorization")
+        token: String,
 
-        @Body torneo: Torneo
+        @Body
+        torneo: Torneo
+
     ): Call<Torneo>
 }

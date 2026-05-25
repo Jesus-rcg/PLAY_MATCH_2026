@@ -11,13 +11,12 @@ import android.widget.Spinner
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.ventas.api.ApiClient
-import com.example.ventas.model.Equipo
 import com.example.ventas.model.Estado
-import com.example.ventas.model.Jugador
 import com.example.ventas.model.Torneo
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import java.util.Date
 
 class CrearTorneoActivity : AppCompatActivity() {
 
@@ -59,7 +58,7 @@ class CrearTorneoActivity : AppCompatActivity() {
 
         // BOTON
 
-        val btnGuardartorneo =
+        val btnGuardarTorneo =
             findViewById<Button>(R.id.btnGuardarTorneo)
 
         // CLICK BOTON
@@ -84,7 +83,7 @@ class CrearTorneoActivity : AppCompatActivity() {
 
                 fecha_fin = txtFecha_fin.text.toString(),
 
-                estado = idEstado,
+                estado = idEstado
 
             )
 

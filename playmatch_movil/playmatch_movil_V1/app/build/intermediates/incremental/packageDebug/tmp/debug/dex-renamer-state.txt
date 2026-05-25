@@ -1,26 +1,10 @@
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-#Fri May 22 17:24:03 COT 2026
-base.0=C\:\\Users\\JorgeBautista\\Desktop\\PlayMatch\\PLAY_MATCH_2026\\playmatch_movil\\playmatch_movil_V1\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=C\:\\Users\\JorgeBautista\\Desktop\\PlayMatch\\PLAY_MATCH_2026\\playmatch_movil\\playmatch_movil_V1\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.2=C\:\\Users\\JorgeBautista\\Desktop\\PlayMatch\\PLAY_MATCH_2026\\playmatch_movil\\playmatch_movil_V1\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
-base.3=C\:\\Users\\JorgeBautista\\Desktop\\PlayMatch\\PLAY_MATCH_2026\\playmatch_movil\\playmatch_movil_V1\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\7\\classes.dex
-base.4=C\:\\Users\\JorgeBautista\\Desktop\\PlayMatch\\PLAY_MATCH_2026\\playmatch_movil\\playmatch_movil_V1\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\8\\classes.dex
-base.5=C\:\\Users\\JorgeBautista\\Desktop\\PlayMatch\\PLAY_MATCH_2026\\playmatch_movil\\playmatch_movil_V1\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
-=======
-=======
->>>>>>> Stashed changes
-#Fri May 22 17:41:49 COT 2026
+#Mon May 25 15:58:29 COT 2026
 base.0=C\:\\Users\\JuAlJeCa\\Documents\\GitHub\\PLAY_MATCH_2026\\playmatch_movil\\playmatch_movil_V1\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\JuAlJeCa\\Documents\\GitHub\\PLAY_MATCH_2026\\playmatch_movil\\playmatch_movil_V1\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\JuAlJeCa\\Documents\\GitHub\\PLAY_MATCH_2026\\playmatch_movil\\playmatch_movil_V1\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
 base.3=C\:\\Users\\JuAlJeCa\\Documents\\GitHub\\PLAY_MATCH_2026\\playmatch_movil\\playmatch_movil_V1\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\7\\classes.dex
 base.4=C\:\\Users\\JuAlJeCa\\Documents\\GitHub\\PLAY_MATCH_2026\\playmatch_movil\\playmatch_movil_V1\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\8\\classes.dex
 base.5=C\:\\Users\\JuAlJeCa\\Documents\\GitHub\\PLAY_MATCH_2026\\playmatch_movil\\playmatch_movil_V1\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=4/classes.dex

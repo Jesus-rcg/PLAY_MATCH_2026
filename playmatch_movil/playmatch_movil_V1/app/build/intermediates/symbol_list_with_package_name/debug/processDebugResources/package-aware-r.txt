@@ -3152,6 +3152,7 @@ id btnEliminar
 id btnEquipos
 id btnGuardar
 id btnGuardarJugador
+id btnGuardarTorneo
 id btnJugadores
 id btnLogin
 id btnPosiciones
@@ -3476,6 +3477,8 @@ id snapMargins
 id south
 id spEquipos
 id spEstados
+id spEstadosJugador
+id spTorneos
 id spacer
 id special_effects_controller_view_tag
 id spline
@@ -3563,10 +3566,13 @@ id tvEntrenador
 id tvMessage
 id tvNombreEquipo
 id txtApellido
+id txtDescripcion
 id txtDocumento
 id txtEmail
 id txtEstado
 id txtFecha
+id txtFecha_fin
+id txtFecha_inicio
 id txtNombre
 id txtNumeroCamiseta
 id txtPassword
@@ -3710,11 +3716,15 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_buscar_jugador
+layout activity_buscar_torneo
 layout activity_crear_jugador
+layout activity_crear_torneo
 layout activity_crear_usuario
 layout activity_editar_equipo
 layout activity_editar_jugador
+layout activity_editar_torneo
 layout activity_eliminar_jugador
+layout activity_eliminar_torneo
 layout activity_equipo
 layout activity_jugadores
 layout activity_lista_equipos
@@ -3722,6 +3732,7 @@ layout activity_lista_jugadores
 layout activity_login
 layout activity_login2
 layout activity_main
+layout activity_torneos
 layout activity_usuarios
 layout clientes
 layout custom_dialog

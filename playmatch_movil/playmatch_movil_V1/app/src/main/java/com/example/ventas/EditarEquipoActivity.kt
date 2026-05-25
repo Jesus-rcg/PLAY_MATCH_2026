@@ -41,7 +41,7 @@ class EditarEquipoActivity : AppCompatActivity() {
 
         val equipo = Equipo(
             id_equipo = equipoId,
-            id_torneo = "1",
+            id_torneo = 1,
             nombre = etNombre.text.toString(),
             entrenador = etEntrenador.text.toString()
         )

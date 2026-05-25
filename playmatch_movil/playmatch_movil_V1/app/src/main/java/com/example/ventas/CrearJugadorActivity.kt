@@ -21,7 +21,7 @@ import retrofit2.Response
 class CrearJugadorActivity : AppCompatActivity() {
 
     private lateinit var spEquipos: Spinner
-    private lateinit var spEstados: Spinner
+    private lateinit var spEstadosJugador: Spinner
 
     private var listaEquipos = mutableListOf<Equipo>()
     private var listaEstados = mutableListOf<Estado>()
@@ -39,7 +39,7 @@ class CrearJugadorActivity : AppCompatActivity() {
         // SPINNERS
 
         spEquipos = findViewById(R.id.spEquipos)
-        spEstados = findViewById(R.id.spEstados)
+        spEstadosJugador = findViewById(R.id.spEstadosJugador)
 
         cargarEquipos()
         cargarEstados()
@@ -71,7 +71,7 @@ class CrearJugadorActivity : AppCompatActivity() {
                 spEquipos.selectedItemPosition
 
             val posicionEstado =
-                spEstados.selectedItemPosition
+                spEstadosJugador.selectedItemPosition
 
             val idEquipo =
                 listaEquipos[posicionEquipo].id_equipo
@@ -133,7 +133,7 @@ class CrearJugadorActivity : AppCompatActivity() {
                         txtNumeroCamiseta.text.clear()
 
                         spEquipos.setSelection(0)
-                        spEstados.setSelection(0)
+                        spEstadosJugador.setSelection(0)
 
                     } else {
 
@@ -257,7 +257,7 @@ class CrearJugadorActivity : AppCompatActivity() {
                             android.R.layout.simple_spinner_dropdown_item
                         )
 
-                        spEstados.adapter = adapter
+                        spEstadosJugador.adapter = adapter
                     }
                 }
 

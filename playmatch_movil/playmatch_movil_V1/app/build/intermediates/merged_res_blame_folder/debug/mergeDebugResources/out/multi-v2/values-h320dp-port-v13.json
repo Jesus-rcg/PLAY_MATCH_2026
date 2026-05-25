@@ -4,15 +4,7 @@
             "outputFile": "com.example.ventas.app-mergeDebugResources-29:/values-h320dp-port-v13/values-h320dp-port-v13.xml",
             "map": [
                 {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-                    "source": "C:\\Users\\JorgeBautista\\.gradle\\caches\\8.11.1\\transforms\\c722a92279874d000bfa7fbacc366930\\transformed\\material-1.10.0\\res\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
-=======
                     "source": "C:\\Users\\JuAlJeCa\\.gradle\\caches\\8.11.1\\transforms\\c722a92279874d000bfa7fbacc366930\\transformed\\material-1.10.0\\res\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
->>>>>>> Stashed changes
-=======
-                    "source": "C:\\Users\\JuAlJeCa\\.gradle\\caches\\8.11.1\\transforms\\c722a92279874d000bfa7fbacc366930\\transformed\\material-1.10.0\\res\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
->>>>>>> Stashed changes
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

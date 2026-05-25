@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#F5F5F5"
@@ -80,7 +81,7 @@
         <!-- DOCUMENTO -->
 
         <EditText
-                android:id="@+id/txtFechaInicio"
+                android:id="@+id/txtFecha_inicio"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Fecha Inicio (YYYY-MM-DD)"
@@ -92,7 +93,7 @@
         <!-- NUMERO CAMISETA -->
 
         <EditText
-                android:id="@+id/txtFechaFin"
+                android:id="@+id/txtFecha_fin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Fecha Fin (YYYY-MM-DD)"
@@ -107,9 +108,8 @@
                 android:id="@+id/spEstados"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"/>
-
-        <!-- BOTON -->
+                android:layout_marginTop="10dp"
+                tools:ignore="DuplicateIds"/>
 
         <Button
                 android:id="@+id/btnGuardarTorneo"
@@ -120,16 +120,9 @@
                 android:textColor="#FFFFFF"
                 android:backgroundTint="#534AB7"
                 android:padding="14dp"/>
-        <Spinner
-                android:id="@+id/spEstados"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"/>
 
-        /*CONECTAR CON LA DB 'Programado','En curso','Finalizado','Cancelado'
-            definir el spinner con esos valores
-            y luego en el boton guardar, tomar el valor seleccionado del spinner y guardarlo en la base de datos
-        */
+
+
     </LinearLayout>
 
 </ScrollView>
