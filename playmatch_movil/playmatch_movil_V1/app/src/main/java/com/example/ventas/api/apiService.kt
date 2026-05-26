@@ -5,7 +5,6 @@ import com.example.ventas.model.Jugador
 import com.example.ventas.model.LoginRequest
 import com.example.ventas.model.LoginResponse
 import com.example.ventas.model.Equipo
-import com.example.ventas.model.Estado
 import com.example.ventas.model.Torneo
 
 import retrofit2.Call
@@ -211,17 +210,6 @@ interface ApiService {
         id: Int
 
     ): Call<Void>
-
-
-    // ================= ESTADOS =================
-
-    @GET("estados")
-    fun getEstado(
-
-        @Header("Authorization")
-        token: String
-
-    ): Call<List<Estado>>
 
 
     // ================= TORNEOS =================

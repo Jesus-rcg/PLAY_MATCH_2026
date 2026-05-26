@@ -11,20 +11,14 @@ import android.widget.Spinner
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.ventas.api.ApiClient
-import com.example.ventas.model.Estado
 import com.example.ventas.model.Torneo
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import java.util.Date
 
 class CrearTorneoActivity : AppCompatActivity() {
 
-    
     private lateinit var spEstados: Spinner
-
-    
-    private var listaEstados = mutableListOf<Estado>()
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,11 +26,13 @@ class CrearTorneoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_crear_torneo)
 
+        // BOTON VOLVER
+
         findViewById<ImageButton>(R.id.btnVolver).setOnClickListener {
             finish()
         }
 
-        // SPINNERS
+        // SPINNER
 
         spEstados = findViewById(R.id.spEstados)
 
@@ -65,13 +61,8 @@ class CrearTorneoActivity : AppCompatActivity() {
 
         btnGuardarTorneo.setOnClickListener {
 
-
-            val posicionEstado =
-                spEstados.selectedItemPosition
-
-
-            val idEstado =
-                listaEstados[posicionEstado].id_estado
+            val estado =
+                spEstados.selectedItem.toString()
 
             val torneo = Torneo(
 
@@ -83,8 +74,7 @@ class CrearTorneoActivity : AppCompatActivity() {
 
                 fecha_fin = txtFecha_fin.text.toString(),
 
-                estado = idEstado
-
+                estado = estado
             )
 
             // TOKEN
@@ -123,6 +113,7 @@ class CrearTorneoActivity : AppCompatActivity() {
                         txtDescripcion.text.clear()
                         txtFecha_inicio.text.clear()
                         txtFecha_fin.text.clear()
+
                         spEstados.setSelection(0)
 
                     } else {
@@ -161,56 +152,26 @@ class CrearTorneoActivity : AppCompatActivity() {
         }
     }
 
+    // CARGAR ESTADOS MANUALMENTE
 
     private fun cargarEstados() {
 
-        val prefs =
-            getSharedPreferences("app", MODE_PRIVATE)
+        val estados = listOf(
+            "Activo",
+            "En curso",
+            "Finalizado"
+        )
 
-        val token =
-            prefs.getString("token", "") ?: ""
+        val adapter = ArrayAdapter(
+            this,
+            android.R.layout.simple_spinner_item,
+            estados
+        )
 
-        ApiClient.instance.getEstado("Bearer $token")
-            .enqueue(object : Callback<List<Estado>> {
+        adapter.setDropDownViewResource(
+            android.R.layout.simple_spinner_dropdown_item
+        )
 
-                override fun onResponse(
-                    call: Call<List<Estado>>,
-                    response: Response<List<Estado>>
-                ) {
-
-                    if (response.isSuccessful && response.body() != null) {
-
-                        listaEstados =
-                            response.body()!!.toMutableList()
-
-                        val nombres =
-                            listaEstados.map { it.nombre }
-
-                        val adapter = ArrayAdapter(
-                            this@CrearTorneoActivity,
-                            android.R.layout.simple_spinner_item,
-                            nombres
-                        )
-
-                        adapter.setDropDownViewResource(
-                            android.R.layout.simple_spinner_dropdown_item
-                        )
-
-                        spEstados.adapter = adapter
-                    }
-                }
-
-                override fun onFailure(
-                    call: Call<List<Estado>>,
-                    t: Throwable
-                ) {
-
-                    Toast.makeText(
-                        this@CrearTorneoActivity,
-                        "Error cargando estados",
-                        Toast.LENGTH_LONG
-                    ).show()
-                }
-            })
+        spEstados.adapter = adapter
     }
 }
