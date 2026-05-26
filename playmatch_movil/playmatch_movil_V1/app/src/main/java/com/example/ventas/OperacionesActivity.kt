@@ -15,117 +15,64 @@ class OperacionesActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.menu_usuarios)
 
-        val modulo =
-            intent.getStringExtra("MODULO") ?: "Módulo"
+        val modulo = intent.getStringExtra("MODULO") ?: "Módulo"
 
-        val txtTitulo =
-            findViewById<TextView>(R.id.txtTituloModulo)
-
+        val txtTitulo = findViewById<TextView>(R.id.txtTituloModulo)
         txtTitulo.text = modulo
 
-        val btnVolver =
-            findViewById<ImageButton>(R.id.btnVolver)
+        val btnVolver = findViewById<ImageButton>(R.id.btnVolver)
+        btnVolver.setOnClickListener { finish() }
 
-        btnVolver.setOnClickListener {
-            finish()
-        }
-
-        val cardGuardar =
-            findViewById<LinearLayout>(R.id.tarjetaGuardar)
-
-        val cardBuscar =
-            findViewById<LinearLayout>(R.id.tarjetaBuscar)
-
-        val cardEditar =
-            findViewById<LinearLayout>(R.id.tarjetaEditar)
-
-        val cardEliminar =
-            findViewById<LinearLayout>(R.id.tarjetaEliminar)
-
-        val cardVerTodos =
-            findViewById<LinearLayout>(R.id.tarjetaVerTodos)
+        val cardGuardar = findViewById<LinearLayout>(R.id.tarjetaGuardar)
+        val cardBuscar = findViewById<LinearLayout>(R.id.tarjetaBuscar)
+        val cardEditar = findViewById<LinearLayout>(R.id.tarjetaEditar)
+        val cardEliminar = findViewById<LinearLayout>(R.id.tarjetaEliminar)
+        val cardVerTodos = findViewById<LinearLayout>(R.id.tarjetaVerTodos)
 
         // ================= GUARDAR =================
-
         cardGuardar.setOnClickListener {
-
             when (modulo) {
-
-                "Jugadores" -> {
-
-                    startActivity(
-                        Intent(
-                            this,
-                            CrearJugadorActivity::class.java
-                        )
-                    )
-                }
-
-                "Equipos" -> {
-
-                    startActivity(
-                        Intent(
-                            this,
-                            com.example.ventas.ui.EquipoActivity::class.java
-                        )
-                    )
-                }
-
-                "Usuarios" -> {
-
-                    startActivity(
-                        Intent(
-                            this,
-                            CrearUsuarioActivity::class.java
-                        )
-                    )
-                }
-
-                "Torneos" -> {
-
-                    startActivity(
-                        Intent(
-                            this,
-                            CrearTorneoActivity::class.java
-                        )
-                    )
-                }
-
-                else -> {
-
-                    Toast.makeText(
-                        this,
-                        "Formulario no disponible",
-                        Toast.LENGTH_SHORT
-                    ).show()
-                }
+                "Jugadores" -> startActivity(Intent(this, CrearJugadorActivity::class.java))
+                "Equipos" -> startActivity(Intent(this, com.example.ventas.ui.EquipoActivity::class.java))
+                "Usuarios" -> startActivity(Intent(this, CrearUsuarioActivity::class.java))
+                "Torneos" -> startActivity(Intent(this, CrearTorneoActivity::class.java))
+                else -> Toast.makeText(this, "Formulario no disponible", Toast.LENGTH_SHORT).show()
             }
         }
 
         // ================= BUSCAR =================
-
         cardBuscar.setOnClickListener {
-
             when (modulo) {
+                "Jugadores" -> startActivity(Intent(this, BuscarJugadorActivity::class.java))
+                "Equipos" -> Toast.makeText(this, "Buscar equipo próximamente", Toast.LENGTH_SHORT).show()
+                else -> Toast.makeText(this, "Buscar no disponible", Toast.LENGTH_SHORT).show()
+            }
+        }
 
-                "Jugadores" -> {
+        // ================= EDITAR =================
+        cardEditar.setOnClickListener {
+            when (modulo) {
+                "Jugadores" -> startActivity(Intent(this, EditarJugadorActivity::class.java))
+                "Equipos" -> startActivity(Intent(this, com.example.ventas.ui.ListaEquiposActivity::class.java))
+                else -> Toast.makeText(this, "Editar no disponible", Toast.LENGTH_SHORT).show()
+            }
+        }
 
-                    startActivity(
-                        Intent(
-                            this,
-                            BuscarJugadorActivity::class.java
-                        )
-                    )
-                }
+        // ================= ELIMINAR =================
+        cardEliminar.setOnClickListener {
+            when (modulo) {
+                "Jugadores" -> startActivity(Intent(this, EliminarJugadorActivity::class.java))
+                "Equipos" -> startActivity(Intent(this, com.example.ventas.ui.ListaEquiposActivity::class.java))
+                else -> Toast.makeText(this, "Eliminar no disponible", Toast.LENGTH_SHORT).show()
+            }
+        }
 
-                else -> {
-
-                    Toast.makeText(
-                        this,
-                        "Buscar no disponible",
-                        Toast.LENGTH_SHORT
-                    ).show()
-                }
+        // ================= VER TODOS =================
+        cardVerTodos.setOnClickListener {
+            when (modulo) {
+                "Jugadores" -> startActivity(Intent(this, ListaJugadoresActivity::class.java))
+                "Equipos" -> startActivity(Intent(this, com.example.ventas.ui.ListaEquiposActivity::class.java))
+                else -> Toast.makeText(this, "Lista no disponible", Toast.LENGTH_SHORT).show()
             }
         }
     }

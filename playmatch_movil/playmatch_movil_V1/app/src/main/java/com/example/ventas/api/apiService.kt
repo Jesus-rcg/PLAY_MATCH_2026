@@ -236,4 +236,8 @@ interface ApiService {
         torneo: Torneo
 
     ): Call<Torneo>
+    @GET("torneos")
+    fun getTorneos(
+        @Header("Authorization") token: String
+    ): Call<List<Torneo>>
 }
