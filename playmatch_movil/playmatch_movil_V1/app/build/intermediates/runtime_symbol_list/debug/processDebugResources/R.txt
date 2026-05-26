@@ -2971,6 +2971,7 @@ int drawable ic_mtrl_chip_checked_black 0x7f070094
 int drawable ic_mtrl_chip_checked_circle 0x7f070095
 int drawable ic_mtrl_chip_close_circle 0x7f070096
 int drawable ic_search_black_24 0x7f070097
+int drawable input_background 0x7f0700e3
 int drawable m3_appbar_background 0x7f070098
 int drawable m3_avd_hide_password 0x7f070099
 int drawable m3_avd_show_password 0x7f07009a
@@ -3043,6 +3044,7 @@ int drawable notification_template_icon_bg 0x7f0700dc
 int drawable notification_template_icon_low_bg 0x7f0700dd
 int drawable notification_tile_bg 0x7f0700de
 int drawable notify_panel_notification_icon_bg 0x7f0700df
+int drawable spinner_background 0x7f0700e4
 int drawable test_level_drawable 0x7f0700e0
 int drawable tooltip_frame_dark 0x7f0700e1
 int drawable tooltip_frame_light 0x7f0700e2
@@ -3480,6 +3482,7 @@ int id spEstadosJugador 0x7f0801ae
 int id spTorneos 0x7f0801af
 int id spacer 0x7f0801b0
 int id special_effects_controller_view_tag 0x7f0801b1
+int id spinnerTorneo 0x7f08022a
 int id spline 0x7f0801b2
 int id split_action_bar 0x7f0801b3
 int id spread 0x7f0801b4
@@ -3725,6 +3728,7 @@ int layout activity_editar_torneo 0x7f0b0023
 int layout activity_eliminar_jugador 0x7f0b0024
 int layout activity_eliminar_torneo 0x7f0b0025
 int layout activity_equipo 0x7f0b0026
+int layout activity_equipos_menu 0x7f0b0080
 int layout activity_jugadores 0x7f0b0027
 int layout activity_lista_equipos 0x7f0b0028
 int layout activity_lista_jugadores 0x7f0b0029

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="← Menú principal"
+                android:textColor="#0B6E4F"
+                android:textSize="14sp"
+                android:layout_marginBottom="16dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Equipos"
+                android:textColor="#111111"
+                android:textStyle="bold"
+                android:textSize="34sp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Qué quieres hacer?"
+                android:textColor="#888888"
+                android:textSize="16sp"
+                android:layout_marginBottom="24dp"/>
+
+        <LinearLayout android:id="@+id/tarjetaGuardar"
+                      android:layout_width="match_parent" android:layout_height="72dp"
+                      android:orientation="horizontal" android:gravity="center_vertical"
+                      android:padding="16dp" android:layout_marginBottom="12dp" android:background="#F0F9F5">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="💾  " android:textSize="24sp"/>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Guardar" android:textStyle="bold" android:textSize="16sp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Crear nuevo registro" android:textColor="#888888" android:textSize="13sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/tarjetaBuscar"
+                      android:layout_width="match_parent" android:layout_height="72dp"
+                      android:orientation="horizontal" android:gravity="center_vertical"
+                      android:padding="16dp" android:layout_marginBottom="12dp" android:background="#F0F9F5">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🔍  " android:textSize="24sp"/>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Buscar" android:textStyle="bold" android:textSize="16sp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Buscar por ID" android:textColor="#888888" android:textSize="13sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/tarjetaEditar"
+                      android:layout_width="match_parent" android:layout_height="72dp"
+                      android:orientation="horizontal" android:gravity="center_vertical"
+                      android:padding="16dp" android:layout_marginBottom="12dp" android:background="#F0F9F5">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="✏️  " android:textSize="24sp"/>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Editar" android:textStyle="bold" android:textSize="16sp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Modificar un registro" android:textColor="#888888" android:textSize="13sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/tarjetaEliminar"
+                      android:layout_width="match_parent" android:layout_height="72dp"
+                      android:orientation="horizontal" android:gravity="center_vertical"
+                      android:padding="16dp" android:layout_marginBottom="12dp" android:background="#F0F9F5">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🗑️  " android:textSize="24sp"/>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Eliminar" android:textStyle="bold" android:textSize="16sp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Borrar por ID" android:textColor="#888888" android:textSize="13sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/tarjetaVerTodos"
+                      android:layout_width="match_parent" android:layout_height="72dp"
+                      android:orientation="horizontal" android:gravity="center_vertical"
+                      android:padding="16dp" android:layout_marginBottom="12dp" android:background="#F0F9F5">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="📋  " android:textSize="24sp"/>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ver todos" android:textStyle="bold" android:textSize="16sp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ver todos los registros" android:textColor="#888888" android:textSize="13sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

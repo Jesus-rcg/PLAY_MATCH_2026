@@ -1,4 +1,5 @@
 package com.example.ventas.model
+import android.R
 import java.util.Date
 
 data class Torneo (
@@ -8,6 +9,6 @@ data class Torneo (
     val descripcion: String,
     val fecha_inicio: String,
     val fecha_fin: String,
-    val estado: Int
+    val estado: Any? = null,
 
 )
