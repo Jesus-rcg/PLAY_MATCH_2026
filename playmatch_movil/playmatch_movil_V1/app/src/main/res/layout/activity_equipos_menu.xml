@@ -3,7 +3,7 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#FFFFFF">
+        android:background="#f0fff4">
 
     <LinearLayout
             android:layout_width="match_parent"
@@ -12,81 +12,148 @@
             android:padding="24dp">
 
         <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="← Menú principal"
-                android:textColor="#0B6E4F"
-                android:textSize="14sp"
-                android:layout_marginBottom="16dp"/>
+                android:text="⚽ PLAYMATCH"
+                android:textColor="#16a34a"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:letterSpacing="0.1"
+                android:layout_marginBottom="8dp"/>
 
         <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Equipos"
-                android:textColor="#111111"
+                android:textColor="#14532d"
                 android:textStyle="bold"
-                android:textSize="34sp"/>
+                android:textSize="26sp"
+                android:gravity="center"
+                android:layout_marginBottom="6dp"/>
 
         <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="¿Qué quieres hacer?"
-                android:textColor="#888888"
-                android:textSize="16sp"
-                android:layout_marginBottom="24dp"/>
+                android:textColor="#4ade80"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"/>
 
-        <LinearLayout android:id="@+id/tarjetaGuardar"
-                      android:layout_width="match_parent" android:layout_height="72dp"
-                      android:orientation="horizontal" android:gravity="center_vertical"
-                      android:padding="16dp" android:layout_marginBottom="12dp" android:background="#F0F9F5">
-            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="💾  " android:textSize="24sp"/>
-            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Guardar" android:textStyle="bold" android:textSize="16sp"/>
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Crear nuevo registro" android:textColor="#888888" android:textSize="13sp"/>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#bbf7d0"
+                android:layout_marginBottom="20dp"/>
+
+        <!-- GUARDAR -->
+        <LinearLayout
+                android:id="@+id/tarjetaGuardar"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/card_background">
+            <TextView android:layout_width="40dp" android:layout_height="wrap_content"
+                      android:text="💾" android:textSize="22sp"/>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="Guardar" android:textStyle="bold" android:textSize="15sp"
+                          android:textColor="#14532d"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="Crear nuevo registro" android:textColor="#15803d" android:textSize="12sp"/>
             </LinearLayout>
         </LinearLayout>
 
-        <LinearLayout android:id="@+id/tarjetaBuscar"
-                      android:layout_width="match_parent" android:layout_height="72dp"
-                      android:orientation="horizontal" android:gravity="center_vertical"
-                      android:padding="16dp" android:layout_marginBottom="12dp" android:background="#F0F9F5">
-            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🔍  " android:textSize="24sp"/>
-            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Buscar" android:textStyle="bold" android:textSize="16sp"/>
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Buscar por ID" android:textColor="#888888" android:textSize="13sp"/>
+        <!-- BUSCAR -->
+        <LinearLayout
+                android:id="@+id/tarjetaBuscar"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/card_background">
+            <TextView android:layout_width="40dp" android:layout_height="wrap_content"
+                      android:text="🔍" android:textSize="22sp"/>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="Buscar" android:textStyle="bold" android:textSize="15sp"
+                          android:textColor="#14532d"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="Buscar por ID" android:textColor="#15803d" android:textSize="12sp"/>
             </LinearLayout>
         </LinearLayout>
 
-        <LinearLayout android:id="@+id/tarjetaEditar"
-                      android:layout_width="match_parent" android:layout_height="72dp"
-                      android:orientation="horizontal" android:gravity="center_vertical"
-                      android:padding="16dp" android:layout_marginBottom="12dp" android:background="#F0F9F5">
-            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="✏️  " android:textSize="24sp"/>
-            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Editar" android:textStyle="bold" android:textSize="16sp"/>
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Modificar un registro" android:textColor="#888888" android:textSize="13sp"/>
+        <!-- EDITAR -->
+        <LinearLayout
+                android:id="@+id/tarjetaEditar"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/card_background">
+            <TextView android:layout_width="40dp" android:layout_height="wrap_content"
+                      android:text="✏️" android:textSize="22sp"/>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="Editar" android:textStyle="bold" android:textSize="15sp"
+                          android:textColor="#14532d"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="Modificar un registro" android:textColor="#15803d" android:textSize="12sp"/>
             </LinearLayout>
         </LinearLayout>
 
-        <LinearLayout android:id="@+id/tarjetaEliminar"
-                      android:layout_width="match_parent" android:layout_height="72dp"
-                      android:orientation="horizontal" android:gravity="center_vertical"
-                      android:padding="16dp" android:layout_marginBottom="12dp" android:background="#F0F9F5">
-            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🗑️  " android:textSize="24sp"/>
-            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Eliminar" android:textStyle="bold" android:textSize="16sp"/>
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Borrar por ID" android:textColor="#888888" android:textSize="13sp"/>
+        <!-- ELIMINAR -->
+        <LinearLayout
+                android:id="@+id/tarjetaEliminar"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/card_background">
+            <TextView android:layout_width="40dp" android:layout_height="wrap_content"
+                      android:text="🗑️" android:textSize="22sp"/>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="Eliminar" android:textStyle="bold" android:textSize="15sp"
+                          android:textColor="#14532d"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="Borrar por ID" android:textColor="#15803d" android:textSize="12sp"/>
             </LinearLayout>
         </LinearLayout>
 
-        <LinearLayout android:id="@+id/tarjetaVerTodos"
-                      android:layout_width="match_parent" android:layout_height="72dp"
-                      android:orientation="horizontal" android:gravity="center_vertical"
-                      android:padding="16dp" android:layout_marginBottom="12dp" android:background="#F0F9F5">
-            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="📋  " android:textSize="24sp"/>
-            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ver todos" android:textStyle="bold" android:textSize="16sp"/>
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ver todos los registros" android:textColor="#888888" android:textSize="13sp"/>
+        <!-- VER TODOS -->
+        <LinearLayout
+                android:id="@+id/tarjetaVerTodos"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/card_background">
+            <TextView android:layout_width="40dp" android:layout_height="wrap_content"
+                      android:text="📋" android:textSize="22sp"/>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="Ver todos" android:textStyle="bold" android:textSize="15sp"
+                          android:textColor="#14532d"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="Ver todos los registros" android:textColor="#15803d" android:textSize="12sp"/>
             </LinearLayout>
         </LinearLayout>
 

@@ -4,30 +4,58 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="24dp"
-        android:background="#FFFFFF">
+        android:background="#f0fff4">
 
-    <TextView
-            android:layout_width="wrap_content"
+    <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="⚽ PLAYMATCH"
-            android:textColor="#0B6E4F"
-            android:textStyle="bold"
-            android:textSize="20sp"/>
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:paddingBottom="12dp">
 
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Equipos"
-            android:textColor="#111111"
-            android:textStyle="bold"
-            android:textSize="34sp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="24dp"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="⚽ PLAYMATCH"
+                android:textColor="#16a34a"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:letterSpacing="0.1"
+                android:layout_marginBottom="8dp"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Equipos"
+                android:textColor="#14532d"
+                android:textStyle="bold"
+                android:textSize="26sp"
+                android:gravity="center"
+                android:layout_marginBottom="6dp"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Toca un equipo para editarlo"
+                android:textColor="#4ade80"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#bbf7d0"/>
+
+    </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerEquipos"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:clipToPadding="false"/>
 
 </LinearLayout>

@@ -6,7 +6,7 @@
         android:orientation="horizontal"
         android:padding="16dp"
         android:layout_marginBottom="12dp"
-        android:background="#F0F9F5"
+        android:background="@drawable/card_background"
         android:gravity="center_vertical">
 
     <LinearLayout
@@ -20,17 +20,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Nombre del equipo"
-                android:textColor="#0B6E4F"
+                android:textColor="#14532d"
                 android:textStyle="bold"
-                android:textSize="18sp"/>
+                android:textSize="16sp"/>
 
         <TextView
                 android:id="@+id/tvEntrenador"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Entrenador"
-                android:textColor="#444444"
-                android:textSize="14sp"
+                android:textColor="#15803d"
+                android:textSize="13sp"
                 android:layout_marginTop="4dp"/>
 
     </LinearLayout>
@@ -41,6 +41,6 @@
             android:layout_height="40dp"
             android:src="@android:drawable/ic_menu_delete"
             android:background="?attr/selectableItemBackgroundBorderless"
-            android:tint="#E53935"/>
+            android:tint="#22c55e"/>
 
 </LinearLayout>
