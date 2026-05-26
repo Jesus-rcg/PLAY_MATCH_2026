@@ -8,6 +8,6 @@ data class Jugador (
     val apellido: String,
     val documento: String,
     val numero_camiseta: String,
-    val estado: Int
+    val estado: String
 
 )

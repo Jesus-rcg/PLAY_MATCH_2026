@@ -44,6 +44,7 @@
         <activity
             android:name="com.example.ventas.CrearJugadorActivity"
             android:exported="true" />
+        <activity android:name="com.example.ventas.BuscarJugadorActivity" />
         <activity
             android:name="com.example.ventas.CrearUsuarioActivity"
             android:exported="true" />

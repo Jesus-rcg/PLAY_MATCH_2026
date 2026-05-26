@@ -3149,6 +3149,7 @@ id bounceEnd
 id bounceStart
 id btnActualizar
 id btnBuscar
+id btnBuscarJugador
 id btnEditar
 id btnEliminar
 id btnEquipos
@@ -3163,6 +3164,7 @@ id btnTorneo
 id btnUser
 id btnVersus
 id btnVolver
+id btnVolverJu
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3565,9 +3567,13 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvApellido
+id tvDocumento
 id tvEntrenador
 id tvMessage
+id tvNombre
 id tvNombreEquipo
+id tvNumero
 id txtApellido
 id txtDescripcion
 id txtDocumento
@@ -3576,6 +3582,7 @@ id txtEstado
 id txtFecha
 id txtFecha_fin
 id txtFecha_inicio
+id txtIdBuscar
 id txtNombre
 id txtNumeroCamiseta
 id txtPassword

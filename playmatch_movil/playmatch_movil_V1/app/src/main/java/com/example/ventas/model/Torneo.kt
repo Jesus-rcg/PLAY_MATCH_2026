@@ -9,6 +9,6 @@ data class Torneo (
     val descripcion: String,
     val fecha_inicio: String,
     val fecha_fin: String,
-    val estado: Any? = null,
+    val estado: String
 
 )

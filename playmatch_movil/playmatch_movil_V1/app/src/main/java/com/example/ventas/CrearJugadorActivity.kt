@@ -12,7 +12,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.ventas.api.ApiClient
 import com.example.ventas.model.Equipo
-import com.example.ventas.model.Estado
 import com.example.ventas.model.Jugador
 import retrofit2.Call
 import retrofit2.Callback
@@ -24,13 +23,14 @@ class CrearJugadorActivity : AppCompatActivity() {
     private lateinit var spEstadosJugador: Spinner
 
     private var listaEquipos = mutableListOf<Equipo>()
-    private var listaEstados = mutableListOf<Estado>()
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_crear_jugador)
+
+        // BOTON VOLVER
 
         findViewById<ImageButton>(R.id.btnVolver).setOnClickListener {
             finish()
@@ -58,7 +58,7 @@ class CrearJugadorActivity : AppCompatActivity() {
         val txtNumeroCamiseta =
             findViewById<EditText>(R.id.txtNumeroCamiseta)
 
-        // BOTON
+        // BOTON GUARDAR
 
         val btnGuardarJugador =
             findViewById<Button>(R.id.btnGuardarJugador)
@@ -70,14 +70,11 @@ class CrearJugadorActivity : AppCompatActivity() {
             val posicionEquipo =
                 spEquipos.selectedItemPosition
 
-            val posicionEstado =
-                spEstadosJugador.selectedItemPosition
-
             val idEquipo =
                 listaEquipos[posicionEquipo].id_equipo
 
-            val idEstado =
-                listaEstados[posicionEstado].id_estado
+            val estado =
+                spEstadosJugador.selectedItem.toString()
 
             val jugador = Jugador(
 
@@ -90,7 +87,7 @@ class CrearJugadorActivity : AppCompatActivity() {
                 numero_camiseta =
                     txtNumeroCamiseta.text.toString(),
 
-                estado = idEstado,
+                estado = estado,
 
                 id_equipo = idEquipo
             )
@@ -106,7 +103,6 @@ class CrearJugadorActivity : AppCompatActivity() {
             // PETICION API
 
             ApiClient.instance.createJugador(
-
                 "Bearer $token",
                 jugador
 
@@ -171,6 +167,8 @@ class CrearJugadorActivity : AppCompatActivity() {
         }
     }
 
+    // CARGAR EQUIPOS DESDE API
+
     private fun cargarEquipos() {
 
         val prefs =
@@ -219,59 +217,35 @@ class CrearJugadorActivity : AppCompatActivity() {
                         "Error cargando equipos",
                         Toast.LENGTH_LONG
                     ).show()
+
+                    Log.e(
+                        "API_ERROR",
+                        t.message.toString()
+                    )
                 }
             })
     }
 
+    // CARGAR ESTADOS MANUALMENTE
+
     private fun cargarEstados() {
 
-        val prefs =
-            getSharedPreferences("app", MODE_PRIVATE)
+        val estados = listOf(
+            "Activo",
+            "Lesionado",
+            "Suspendido"
+        )
 
-        val token =
-            prefs.getString("token", "") ?: ""
+        val adapter = ArrayAdapter(
+            this,
+            android.R.layout.simple_spinner_item,
+            estados
+        )
 
-        ApiClient.instance.getEstado("Bearer $token")
-            .enqueue(object : Callback<List<Estado>> {
+        adapter.setDropDownViewResource(
+            android.R.layout.simple_spinner_dropdown_item
+        )
 
-                override fun onResponse(
-                    call: Call<List<Estado>>,
-                    response: Response<List<Estado>>
-                ) {
-
-                    if (response.isSuccessful && response.body() != null) {
-
-                        listaEstados =
-                            response.body()!!.toMutableList()
-
-                        val nombres =
-                            listaEstados.map { it.nombre }
-
-                        val adapter = ArrayAdapter(
-                            this@CrearJugadorActivity,
-                            android.R.layout.simple_spinner_item,
-                            nombres
-                        )
-
-                        adapter.setDropDownViewResource(
-                            android.R.layout.simple_spinner_dropdown_item
-                        )
-
-                        spEstadosJugador.adapter = adapter
-                    }
-                }
-
-                override fun onFailure(
-                    call: Call<List<Estado>>,
-                    t: Throwable
-                ) {
-
-                    Toast.makeText(
-                        this@CrearJugadorActivity,
-                        "Error cargando estados",
-                        Toast.LENGTH_LONG
-                    ).show()
-                }
-            })
+        spEstadosJugador.adapter = adapter
     }
 }
