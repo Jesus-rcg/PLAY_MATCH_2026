@@ -2950,6 +2950,9 @@ drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable card_background
+drawable circulo_morado
+drawable circulo_rojo
+drawable circulo_verde
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -3046,6 +3049,9 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable rectangulo
+drawable rectangulo_gris
+drawable rectangulo_morado
 drawable spinner_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -3225,6 +3231,7 @@ id disableIntraAutoTransition
 id disablePostScroll
 id disableScroll
 id disjoint
+id dotEstado
 id dragAnticlockwise
 id dragClockwise
 id dragDown
@@ -3426,12 +3433,14 @@ id pin
 id position
 id postLayout
 id pressed
+id progressBar
 id progress_circular
 id progress_horizontal
 id radio
 id ratio
 id rectangles
 id recyclerEquipos
+id recyclerUsuarios
 id report_drawn
 id reverseSawtooth
 id right
@@ -3542,6 +3551,7 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
+id textView4
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3576,6 +3586,8 @@ id tvNombre
 id tvNombreEquipo
 id tvNumero
 id txtApellido
+id txtAvatar
+id txtContador
 id txtDescripcion
 id txtDocumento
 id txtEmail
@@ -3583,6 +3595,7 @@ id txtEstado
 id txtFecha
 id txtFecha_fin
 id txtFecha_inicio
+id txtId
 id txtIdBuscar
 id txtNombre
 id txtNumeroCamiseta
@@ -3746,7 +3759,7 @@ layout activity_login2
 layout activity_main
 layout activity_torneos
 layout activity_usuarios
-layout clientes
+layout activity_ver_usuarios
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3764,6 +3777,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout item_equipo
+layout item_usuario
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
