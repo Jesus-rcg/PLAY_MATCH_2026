@@ -17,7 +17,8 @@ import retrofit2.Callback
 import retrofit2.Response
 
 class EquipoAdapter(
-    private val listaEquipos: MutableList<Equipo>
+    private val listaEquipos: MutableList<Equipo>,
+    private val modo: String
 ) : RecyclerView.Adapter<EquipoAdapter.EquipoViewHolder>() {
 
     class EquipoViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -37,17 +38,30 @@ class EquipoAdapter(
         holder.tvNombre.text = equipo.nombre
         holder.tvEntrenador.text = "Entrenador: ${equipo.entrenador}"
 
-        // Al tocar la tarjeta abre EditarEquipoActivity
-        holder.itemView.setOnClickListener {
-            val context = holder.itemView.context
-            val intent = Intent(context, EditarEquipoActivity::class.java)
-            intent.putExtra("EQUIPO_ID", equipo.id_equipo)
-            intent.putExtra("EQUIPO_NOMBRE", equipo.nombre)
-            intent.putExtra("EQUIPO_ENTRENADOR", equipo.entrenador)
-            context.startActivity(intent)
+        // Según el modo mostramos u ocultamos el botón eliminar
+        when (modo) {
+            "eliminar" -> {
+                holder.btnEliminar.visibility = View.VISIBLE
+                holder.itemView.isClickable = false
+            }
+            "editar" -> {
+                holder.btnEliminar.visibility = View.GONE
+                holder.itemView.setOnClickListener {
+                    val context = holder.itemView.context
+                    val intent = Intent(context, EditarEquipoActivity::class.java)
+                    intent.putExtra("EQUIPO_ID", equipo.id_equipo)
+                    intent.putExtra("EQUIPO_NOMBRE", equipo.nombre)
+                    intent.putExtra("EQUIPO_ENTRENADOR", equipo.entrenador)
+                    context.startActivity(intent)
+                }
+            }
+            "vertodos" -> {
+                holder.btnEliminar.visibility = View.GONE
+                holder.itemView.isClickable = false
+            }
         }
 
-        // Al tocar el basurero muestra confirmación
+        // Botón eliminar
         holder.btnEliminar.setOnClickListener {
             val context = holder.itemView.context
             AlertDialog.Builder(context)
@@ -74,7 +88,8 @@ class EquipoAdapter(
                 if (response.isSuccessful) {
                     listaEquipos.removeAt(position)
                     notifyItemRemoved(position)
-                    Toast.makeText(context, "Equipo eliminado correctamente", Toast.LENGTH_SHORT).show()
+                    notifyItemRangeChanged(position, listaEquipos.size)
+                    Toast.makeText(context, "✅ Equipo eliminado correctamente", Toast.LENGTH_SHORT).show()
                 } else {
                     Toast.makeText(context, "Error al eliminar", Toast.LENGTH_SHORT).show()
                 }
