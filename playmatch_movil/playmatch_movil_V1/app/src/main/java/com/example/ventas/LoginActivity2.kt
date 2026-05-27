@@ -7,7 +7,6 @@ import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.example.ventas.MenuActivity
 import com.example.ventas.R
-import com.example.ventas.ui.ClientesActivity
 import com.example.ventas.api.ApiClient
 import com.example.ventas.api.ApiService
 import com.example.ventas.model.LoginRequest

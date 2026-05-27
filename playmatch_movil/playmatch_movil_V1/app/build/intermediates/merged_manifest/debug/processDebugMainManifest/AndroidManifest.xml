@@ -30,13 +30,13 @@
         android:theme="@style/Theme.Ventas"
         android:usesCleartextTraffic="true" >
         <activity
-            android:name="com.example.ventas.ui.ClientesActivity"
-            android:exported="false" />
-        <activity
             android:name="com.example.ventas.MenuActivity"
             android:exported="true" />
         <activity
             android:name="com.example.ventas.OperacionesActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.ventas.VerUsuariosActivity"
             android:exported="true" />
         <activity
             android:name="com.example.ventas.JugadoresActivity"

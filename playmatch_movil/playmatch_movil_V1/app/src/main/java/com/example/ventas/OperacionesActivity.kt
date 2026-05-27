@@ -72,6 +72,8 @@ class OperacionesActivity : AppCompatActivity() {
             when (modulo) {
                 "Jugadores" -> startActivity(Intent(this, ListaJugadoresActivity::class.java))
                 "Equipos" -> startActivity(Intent(this, com.example.ventas.ui.ListaEquiposActivity::class.java))
+                "Usuarios" -> {startActivity(Intent(this, VerUsuariosActivity::class.java))
+                }
                 else -> Toast.makeText(this, "Lista no disponible", Toast.LENGTH_SHORT).show()
             }
         }

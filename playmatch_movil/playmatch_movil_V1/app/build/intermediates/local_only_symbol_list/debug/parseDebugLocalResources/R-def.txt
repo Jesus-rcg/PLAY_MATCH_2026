@@ -3,7 +3,13 @@ local
 color black
 color white
 drawable card_background
+drawable circulo_morado
+drawable circulo_rojo
+drawable circulo_verde
 drawable input_background
+drawable rectangulo
+drawable rectangulo_gris
+drawable rectangulo_morado
 drawable spinner_background
 id btnActualizar
 id btnBuscar
@@ -23,6 +29,7 @@ id btnUser
 id btnVersus
 id btnVolver
 id btnVolverJu
+id dotEstado
 id etEmail
 id etEntrenador
 id etEntrenadorEditar
@@ -31,7 +38,9 @@ id etNombreEditar
 id etPassword
 id main
 id message
+id progressBar
 id recyclerEquipos
+id recyclerUsuarios
 id seleccionEstado
 id seleccionRol
 id spEquipos
@@ -52,6 +61,7 @@ id textBtnTorneo
 id textBtnVersus
 id textButtonUser
 id textView
+id textView4
 id titulo
 id tvApellido
 id tvDocumento
@@ -61,6 +71,8 @@ id tvNombre
 id tvNombreEquipo
 id tvNumero
 id txtApellido
+id txtAvatar
+id txtContador
 id txtDescripcion
 id txtDocumento
 id txtEmail
@@ -68,6 +80,7 @@ id txtEstado
 id txtFecha
 id txtFecha_fin
 id txtFecha_inicio
+id txtId
 id txtIdBuscar
 id txtNombre
 id txtNumeroCamiseta
@@ -94,8 +107,9 @@ layout activity_login2
 layout activity_main
 layout activity_torneos
 layout activity_usuarios
-layout clientes
+layout activity_ver_usuarios
 layout item_equipo
+layout item_usuario
 layout main_menu
 layout menu_usuarios
 mipmap buscar
