@@ -1,6 +1,7 @@
 package com.example.ventas.ui
 
 import android.os.Bundle
+import android.widget.ImageButton
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -15,19 +16,28 @@ import retrofit2.Response
 class ListaEquiposActivity : AppCompatActivity() {
 
     private lateinit var recyclerEquipos: RecyclerView
+    private var modo: String = "vertodos"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lista_equipos)
 
+        modo = intent.getStringExtra("MODO") ?: "vertodos"
+
         recyclerEquipos = findViewById(R.id.recyclerEquipos)
         recyclerEquipos.layoutManager = LinearLayoutManager(this)
+
+        findViewById<ImageButton>(R.id.btnVolver).setOnClickListener { finish() }
 
         cargarEquipos()
     }
 
-    private fun cargarEquipos() {
+    override fun onResume() {
+        super.onResume()
+        cargarEquipos()
+    }
 
+    private fun cargarEquipos() {
         val prefs = getSharedPreferences("app", MODE_PRIVATE)
         val token = prefs.getString("token", "") ?: ""
 
@@ -35,29 +45,18 @@ class ListaEquiposActivity : AppCompatActivity() {
             "Bearer $token"
         ).enqueue(object : Callback<List<Equipo>> {
 
-            override fun onResponse(
-                call: Call<List<Equipo>>,
-                response: Response<List<Equipo>>
-            ) {
+            override fun onResponse(call: Call<List<Equipo>>, response: Response<List<Equipo>>) {
                 if (response.isSuccessful) {
                     val equipos = response.body() ?: emptyList()
-                    val adapter = EquipoAdapter(equipos.toMutableList())
+                    val adapter = EquipoAdapter(equipos.toMutableList(), modo)
                     recyclerEquipos.adapter = adapter
                 } else {
-                    Toast.makeText(
-                        this@ListaEquiposActivity,
-                        "Error al cargar equipos",
-                        Toast.LENGTH_SHORT
-                    ).show()
+                    Toast.makeText(this@ListaEquiposActivity, "Error al cargar equipos", Toast.LENGTH_SHORT).show()
                 }
             }
 
             override fun onFailure(call: Call<List<Equipo>>, t: Throwable) {
-                Toast.makeText(
-                    this@ListaEquiposActivity,
-                    "Error de conexión",
-                    Toast.LENGTH_SHORT
-                ).show()
+                Toast.makeText(this@ListaEquiposActivity, "Error de conexión", Toast.LENGTH_SHORT).show()
             }
         })
     }
