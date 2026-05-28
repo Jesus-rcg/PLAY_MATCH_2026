@@ -2953,6 +2953,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable btn_volver_background
 drawable card_background
 drawable circulo_morado
 drawable circulo_rojo
@@ -3259,6 +3260,7 @@ id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
+id etBuscar
 id etEmail
 id etEntrenador
 id etEntrenadorEditar
@@ -3445,6 +3447,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id recyclerBuscar
 id recyclerEquipos
 id recyclerUsuarios
 id report_drawn
@@ -3590,6 +3593,7 @@ id tvMessage
 id tvNombre
 id tvNombreEquipo
 id tvNumero
+id tvSubtitulo
 id txtApellido
 id txtAvatar
 id txtContador
@@ -3742,6 +3746,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_buscar_equipo
 layout activity_buscar_jugador
 layout activity_buscar_torneo
 layout activity_crear_jugador

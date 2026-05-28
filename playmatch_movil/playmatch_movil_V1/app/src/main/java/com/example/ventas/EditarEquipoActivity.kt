@@ -11,6 +11,7 @@ import com.example.ventas.model.Equipo
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import android.widget.ImageButton
 
 class EditarEquipoActivity : AppCompatActivity() {
 
@@ -26,6 +27,7 @@ class EditarEquipoActivity : AppCompatActivity() {
         etNombre = findViewById(R.id.etNombreEditar)
         etEntrenador = findViewById(R.id.etEntrenadorEditar)
         btnActualizar = findViewById(R.id.btnActualizar)
+        findViewById<ImageButton>(R.id.btnVolver).setOnClickListener { finish() }
 
         // Recibe los datos del equipo que se tocó en la lista
         equipoId = intent.getIntExtra("EQUIPO_ID", 0)

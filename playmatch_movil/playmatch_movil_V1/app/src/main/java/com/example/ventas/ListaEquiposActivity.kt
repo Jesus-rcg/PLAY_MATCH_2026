@@ -12,6 +12,7 @@ import com.example.ventas.model.Equipo
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import android.widget.TextView
 
 class ListaEquiposActivity : AppCompatActivity() {
 
@@ -23,6 +24,12 @@ class ListaEquiposActivity : AppCompatActivity() {
         setContentView(R.layout.activity_lista_equipos)
 
         modo = intent.getStringExtra("MODO") ?: "vertodos"
+        val txtSubtitulo = findViewById<TextView>(R.id.tvSubtitulo)
+        when (modo) {
+            "editar" -> txtSubtitulo.text = "Toca el lápiz para editar"
+            "eliminar" -> txtSubtitulo.text = "Toca la basura para eliminar"
+            "vertodos" -> txtSubtitulo.text = "Lista de todos los equipos"
+        }
 
         recyclerEquipos = findViewById(R.id.recyclerEquipos)
         recyclerEquipos.layoutManager = LinearLayoutManager(this)
