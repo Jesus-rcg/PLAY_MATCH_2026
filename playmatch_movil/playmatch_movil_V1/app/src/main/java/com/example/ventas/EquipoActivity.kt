@@ -38,6 +38,7 @@ class EquipoActivity : AppCompatActivity() {
     }
 
     private fun cargarTorneos() {
+        findViewById<ImageButton>(R.id.btnVolver).setOnClickListener { finish() }
         val prefs = getSharedPreferences("app", MODE_PRIVATE)
         val token = prefs.getString("token", "") ?: ""
 

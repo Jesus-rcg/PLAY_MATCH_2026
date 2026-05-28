@@ -61,6 +61,7 @@
         <activity android:name="com.example.ventas.ui.ListaEquiposActivity" />
         <activity android:name="com.example.ventas.ui.EditarEquipoActivity" />
         <activity android:name="com.example.ventas.ui.EquiposMenuActivity" />
+        <activity android:name="com.example.ventas.ui.BuscarEquipoActivity" />
         <activity
             android:name="com.example.ventas.MainActivity"
             android:exported="false" />

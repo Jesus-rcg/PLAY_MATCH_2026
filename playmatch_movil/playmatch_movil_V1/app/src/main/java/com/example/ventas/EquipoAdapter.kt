@@ -24,6 +24,7 @@ class EquipoAdapter(
     class EquipoViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val tvNombre: TextView = itemView.findViewById(R.id.tvNombreEquipo)
         val tvEntrenador: TextView = itemView.findViewById(R.id.tvEntrenador)
+        val btnEditar: ImageButton = itemView.findViewById(R.id.btnEditar)
         val btnEliminar: ImageButton = itemView.findViewById(R.id.btnEliminar)
     }
 
@@ -38,15 +39,18 @@ class EquipoAdapter(
         holder.tvNombre.text = equipo.nombre
         holder.tvEntrenador.text = "Entrenador: ${equipo.entrenador}"
 
-        // Según el modo mostramos u ocultamos el botón eliminar
+        // Ocultar todo por defecto
+        holder.btnEditar.visibility = View.GONE
+        holder.btnEliminar.visibility = View.GONE
+        holder.itemView.setOnClickListener(null)
+        holder.btnEditar.setOnClickListener(null)
+        holder.btnEliminar.setOnClickListener(null)
+        android.util.Log.d("ADAPTER", "Modo: $modo")
+
         when (modo) {
-            "eliminar" -> {
-                holder.btnEliminar.visibility = View.VISIBLE
-                holder.itemView.isClickable = false
-            }
             "editar" -> {
-                holder.btnEliminar.visibility = View.GONE
-                holder.itemView.setOnClickListener {
+                holder.btnEditar.visibility = View.VISIBLE
+                holder.btnEditar.setOnClickListener {
                     val context = holder.itemView.context
                     val intent = Intent(context, EditarEquipoActivity::class.java)
                     intent.putExtra("EQUIPO_ID", equipo.id_equipo)
@@ -55,23 +59,23 @@ class EquipoAdapter(
                     context.startActivity(intent)
                 }
             }
-            "vertodos" -> {
-                holder.btnEliminar.visibility = View.GONE
-                holder.itemView.isClickable = false
-            }
-        }
-
-        // Botón eliminar
-        holder.btnEliminar.setOnClickListener {
-            val context = holder.itemView.context
-            AlertDialog.Builder(context)
-                .setTitle("Eliminar equipo")
-                .setMessage("¿Estás seguro que deseas eliminar ${equipo.nombre}?")
-                .setPositiveButton("Sí, eliminar") { _, _ ->
-                    eliminarEquipo(context, equipo, position)
+            "eliminar" -> {
+                holder.btnEliminar.visibility = View.VISIBLE
+                holder.btnEliminar.setOnClickListener {
+                    val context = holder.itemView.context
+                    AlertDialog.Builder(context)
+                        .setTitle("Eliminar equipo")
+                        .setMessage("¿Estás seguro que deseas eliminar ${equipo.nombre}?")
+                        .setPositiveButton("Sí, eliminar") { _, _ ->
+                            eliminarEquipo(context, equipo, holder.adapterPosition)
+                        }
+                        .setNegativeButton("Cancelar", null)
+                        .show()
                 }
-                .setNegativeButton("Cancelar", null)
-                .show()
+            }
+            "vertodos" -> {
+
+            }
         }
     }
 

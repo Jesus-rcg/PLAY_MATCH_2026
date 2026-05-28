@@ -44,7 +44,7 @@ class OperacionesActivity : AppCompatActivity() {
         cardBuscar.setOnClickListener {
             when (modulo) {
                 "Jugadores" -> startActivity(Intent(this, BuscarJugadorActivity::class.java))
-                "Equipos" -> Toast.makeText(this, "Buscar equipo próximamente", Toast.LENGTH_SHORT).show()
+                "Equipos" -> startActivity(Intent(this, com.example.ventas.ui.BuscarEquipoActivity::class.java))
                 else -> Toast.makeText(this, "Buscar no disponible", Toast.LENGTH_SHORT).show()
             }
         }
@@ -53,7 +53,11 @@ class OperacionesActivity : AppCompatActivity() {
         cardEditar.setOnClickListener {
             when (modulo) {
                 "Jugadores" -> startActivity(Intent(this, EditarJugadorActivity::class.java))
-                "Equipos" -> startActivity(Intent(this, com.example.ventas.ui.ListaEquiposActivity::class.java))
+                "Equipos" -> {
+                    val intent = Intent(this, com.example.ventas.ui.ListaEquiposActivity::class.java)
+                    intent.putExtra("MODO", "editar")
+                    startActivity(intent)
+                }
                 else -> Toast.makeText(this, "Editar no disponible", Toast.LENGTH_SHORT).show()
             }
         }
@@ -62,7 +66,11 @@ class OperacionesActivity : AppCompatActivity() {
         cardEliminar.setOnClickListener {
             when (modulo) {
                 "Jugadores" -> startActivity(Intent(this, EliminarJugadorActivity::class.java))
-                "Equipos" -> startActivity(Intent(this, com.example.ventas.ui.ListaEquiposActivity::class.java))
+                "Equipos" -> {
+                    val intent = Intent(this, com.example.ventas.ui.ListaEquiposActivity::class.java)
+                    intent.putExtra("MODO", "eliminar")
+                    startActivity(intent)
+                }
                 else -> Toast.makeText(this, "Eliminar no disponible", Toast.LENGTH_SHORT).show()
             }
         }
@@ -71,14 +79,12 @@ class OperacionesActivity : AppCompatActivity() {
         cardVerTodos.setOnClickListener {
             when (modulo) {
                 "Jugadores" -> startActivity(Intent(this, ListaJugadoresActivity::class.java))
-                "Equipos" -> startActivity(Intent(this, com.example.ventas.ui.ListaEquiposActivity::class.java))
-                "Usuarios" -> startActivity(Intent(this, VerUsuariosActivity::class.java))
                 "Equipos" -> {
                     val intent = Intent(this, com.example.ventas.ui.ListaEquiposActivity::class.java)
                     intent.putExtra("MODO", "vertodos")
                     startActivity(intent)
                 }
-
+                "Usuarios" -> startActivity(Intent(this, VerUsuariosActivity::class.java))
                 else -> Toast.makeText(this, "Lista no disponible", Toast.LENGTH_SHORT).show()
             }
         }
