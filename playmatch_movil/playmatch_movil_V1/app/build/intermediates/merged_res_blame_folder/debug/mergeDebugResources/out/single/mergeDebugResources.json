@@ -28,6 +28,10 @@
         "source": "C:\\Users\\Sebastian\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-main-33:\\layout\\activity_login2.xml"
     },
     {
+        "merged": "C:\\Users\\Sebastian\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-debug-31:\\drawable_boton_agregar.xml.flat",
+        "source": "C:\\Users\\Sebastian\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-main-33:\\drawable\\boton_agregar.xml"
+    },
+    {
         "merged": "C:\\Users\\Sebastian\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-debug-31:\\mipmap_guardar.png.flat",
         "source": "C:\\Users\\Sebastian\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-main-33:\\mipmap\\guardar.png"
     },
@@ -58,6 +62,10 @@
     {
         "merged": "C:\\Users\\Sebastian\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-debug-31:\\layout_activity_buscar_jugador.xml.flat",
         "source": "C:\\Users\\Sebastian\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-main-33:\\layout\\activity_buscar_jugador.xml"
+    },
+    {
+        "merged": "com.example.ventas.app-debug-31:/drawable_bg_busqueda.xml.flat",
+        "source": "com.example.ventas.app-main-33:/drawable/bg_busqueda.xml"
     },
     {
         "merged": "C:\\Users\\Sebastian\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-debug-31:\\mipmap_eliminar.png.flat",
@@ -108,8 +116,16 @@
         "source": "C:\\Users\\Sebastian\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-main-33:\\layout\\activity_buscar_torneo.xml"
     },
     {
+        "merged": "C:\\Users\\Sebastian\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-debug-31:\\drawable_boton_eliminar.xml.flat",
+        "source": "C:\\Users\\Sebastian\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-main-33:\\drawable\\boton_eliminar.xml"
+    },
+    {
         "merged": "C:\\Users\\Sebastian\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-debug-31:\\layout_activity_crear_usuario.xml.flat",
         "source": "C:\\Users\\Sebastian\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-main-33:\\layout\\activity_crear_usuario.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sebastian\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-debug-31:\\drawable_boton_editar.xml.flat",
+        "source": "C:\\Users\\Sebastian\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-main-33:\\drawable\\boton_editar.xml"
     },
     {
         "merged": "C:\\Users\\Sebastian\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-debug-31:\\mipmap_editar.png.flat",
@@ -188,10 +204,6 @@
         "source": "C:\\Users\\Sebastian\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-main-33:\\mipmap\\torneo.png"
     },
     {
-        "merged": "com.example.ventas.app-debug-31:/layout_activity_login2.xml.flat",
-        "source": "com.example.ventas.app-main-33:/layout/activity_login2.xml"
-    },
-    {
         "merged": "C:\\Users\\Sebastian\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-debug-31:\\drawable_input_background.xml.flat",
         "source": "C:\\Users\\Sebastian\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-main-33:\\drawable\\input_background.xml"
     },
@@ -218,6 +230,10 @@
     {
         "merged": "C:\\Users\\Sebastian\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-debug-31:\\mipmap_rol.png.flat",
         "source": "C:\\Users\\Sebastian\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-main-33:\\mipmap\\rol.png"
+    },
+    {
+        "merged": "com.example.ventas.app-debug-31:/layout_activity_ver_usuarios.xml.flat",
+        "source": "com.example.ventas.app-main-33:/layout/activity_ver_usuarios.xml"
     },
     {
         "merged": "C:\\Users\\Sebastian\\.gradle\\daemon\\8.11.1\\com.example.ventas.app-debug-31:\\layout_activity_lista_jugadores.xml.flat",

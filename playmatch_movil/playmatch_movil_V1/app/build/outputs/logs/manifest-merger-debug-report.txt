@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:2:1-68:12
-INJECTED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:2:1-68:12
-INJECTED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:2:1-68:12
-INJECTED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:2:1-68:12
+ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:2:1-62:12
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\Sebastian\.gradle\caches\8.11.1\transforms\c722a92279874d000bfa7fbacc366930\transformed\material-1.10.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Sebastian\.gradle\caches\8.11.1\transforms\ed360ceef48a57971fe2664b2f19db4a\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\Sebastian\.gradle\caches\8.11.1\transforms\732de01e20d1821f40d018010d7376c2\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
@@ -60,8 +60,8 @@ ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\p
 	android:name
 		ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:7:5-66:19
-INJECTED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:7:5-66:19
+ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:7:5-60:19
+INJECTED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:7:5-60:19
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\Sebastian\.gradle\caches\8.11.1\transforms\c722a92279874d000bfa7fbacc366930\transformed\material-1.10.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\Sebastian\.gradle\caches\8.11.1\transforms\c722a92279874d000bfa7fbacc366930\transformed\material-1.10.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Sebastian\.gradle\caches\8.11.1\transforms\ed360ceef48a57971fe2664b2f19db4a\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -135,53 +135,49 @@ ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\p
 	android:name
 		ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:35:17-54
 activity#com.example.ventas.CrearUsuarioActivity
-ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:36:9-41:42
+ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:36:9-38:42
 	android:exported
-		ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:41:17-40
+		ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:38:17-40
 	android:name
-		ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:40:17-53
-activity#com.example.ventas.UsuarioActivity
-ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:44:9-52
-	android:name
-		ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:44:19-50
+		ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:37:17-53
 activity#com.example.ventas.loginActivity.LoginActivity2
-ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:46:9-54:20
+ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:40:9-48:20
 	android:exported
-		ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:48:17-40
+		ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:42:17-40
 	android:name
-		ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:47:17-61
+		ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:41:17-61
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:49:13-53:29
+ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:43:13-47:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:50:17-68
+ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:44:17-68
 	android:name
-		ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:50:25-66
+		ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:44:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:52:17-76
+ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:46:17-76
 	android:name
-		ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:52:27-74
+		ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:46:27-74
 activity#com.example.ventas.ui.EquipoActivity
-ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:56:9-54
+ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:50:9-54
 	android:name
-		ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:56:19-52
+		ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:50:19-52
 activity#com.example.ventas.ui.ListaEquiposActivity
-ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:57:9-60
+ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:51:9-60
 	android:name
-		ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:57:19-58
+		ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:51:19-58
 activity#com.example.ventas.ui.EditarEquipoActivity
-ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:58:9-60
+ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:52:9-60
 	android:name
-		ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:58:19-58
+		ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:52:19-58
 activity#com.example.ventas.ui.EquiposMenuActivity
-ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:59:9-59
+ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:53:9-59
 	android:name
-		ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:59:19-57
+		ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:53:19-57
 activity#com.example.ventas.MainActivity
-ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:60:9-62:43
+ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:54:9-56:43
 	android:exported
-		ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:62:17-41
+		ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:56:17-41
 	android:name
-		ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:61:17-45
+		ADDED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml:55:17-45
 uses-sdk
 INJECTED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Sebastian\Documents\GitHub\PLAY_MATCH_2026\playmatch_movil\playmatch_movil_V1\app\src\main\AndroidManifest.xml

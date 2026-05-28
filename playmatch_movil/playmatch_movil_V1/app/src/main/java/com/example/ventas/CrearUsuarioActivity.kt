@@ -1,5 +1,6 @@
 package com.example.ventas
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.*
@@ -19,8 +20,11 @@ class CrearUsuarioActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_crear_usuario)
 
-        findViewById<ImageButton>(R.id.btnVolver).setOnClickListener {
-            finish()
+        val btnVolver = findViewById<ImageButton>(R.id.btnVolver)
+
+        btnVolver.setOnClickListener {
+            val intent = Intent(this, VerUsuariosActivity::class.java)
+            startActivity(intent)
         }
 
         val seleccionRol = findViewById<Spinner>(R.id.seleccionRol)

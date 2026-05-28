@@ -34,14 +34,8 @@
         <activity
                 android:name=".BuscarJugadorActivity"/>
         <activity
-
-
-
                 android:name=".CrearUsuarioActivity"
                 android:exported="true"/>
-
-        
-        <activity android:name=".UsuarioActivity"/>
 
         <activity
                 android:name=".loginActivity.LoginActivity2"

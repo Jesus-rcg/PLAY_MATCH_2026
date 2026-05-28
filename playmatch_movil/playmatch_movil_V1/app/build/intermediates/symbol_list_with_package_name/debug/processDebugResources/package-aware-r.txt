@@ -2941,6 +2941,10 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable bg_busqueda
+drawable boton_agregar
+drawable boton_editar
+drawable boton_eliminar
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -3155,9 +3159,8 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id btnActualizar
-id btnBuscar
+id btnAgregar
 id btnBuscarJugador
-id btnEditar
 id btnEliminar
 id btnEquipos
 id btnGuardar
@@ -3172,6 +3175,8 @@ id btnUser
 id btnVersus
 id btnVolver
 id btnVolverJu
+id button
+id button2
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3247,6 +3252,7 @@ id easeOut
 id east
 id edge
 id edit_query
+id edtBuscar
 id elastic
 id embed
 id end
@@ -3550,7 +3556,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView
 id textView4
 id text_input_end_icon
 id text_input_error_icon
@@ -3592,14 +3597,12 @@ id txtDescripcion
 id txtDocumento
 id txtEmail
 id txtEstado
-id txtFecha
 id txtFecha_fin
 id txtFecha_inicio
 id txtId
 id txtIdBuscar
 id txtNombre
 id txtNumeroCamiseta
-id txtPassword
 id txtRol
 id txtTituloModulo
 id unchecked
@@ -3758,7 +3761,6 @@ layout activity_login
 layout activity_login2
 layout activity_main
 layout activity_torneos
-layout activity_usuarios
 layout activity_ver_usuarios
 layout custom_dialog
 layout design_bottom_navigation_item

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -10,7 +11,7 @@
 
 
     <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center_vertical"
@@ -32,6 +33,20 @@
                 android:textColor="#534AB7"
                 android:textSize="13sp"
                 android:layout_marginStart="4dp" />
+
+        <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="4"/>
+
+        <Button
+                android:id="@+id/btnAgregar"
+                android:text="Agregar"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:drawableLeft="@drawable/boton_agregar"
+                android:backgroundTint="#4CAF50"
+                />
     </LinearLayout>
 
     <LinearLayout
@@ -45,7 +60,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Todos los usuarios"
+                android:text="Usuarios"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:textColor="#1A1A2E" />
@@ -64,13 +79,20 @@
                 android:paddingBottom="3dp" />
     </LinearLayout>
 
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Lista completa"
-            android:textSize="13sp"
-            android:textColor="#888780"
-            android:layout_marginBottom="16dp" />
+    <EditText
+            android:id="@+id/edtBuscar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Buscar por ID, correo o nombre..."
+            android:background="@drawable/bg_busqueda"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:drawableStart="@android:drawable/ic_menu_search"
+            android:drawablePadding="8dp"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textColorHint="#888780"
+            android:layout_marginBottom="10dp"/>
 
     <ProgressBar
             android:id="@+id/progressBar"
