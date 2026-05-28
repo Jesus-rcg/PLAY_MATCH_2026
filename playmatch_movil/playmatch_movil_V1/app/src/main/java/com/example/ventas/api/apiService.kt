@@ -6,6 +6,8 @@ import com.example.ventas.model.LoginRequest
 import com.example.ventas.model.LoginResponse
 import com.example.ventas.model.Equipo
 import com.example.ventas.model.Torneo
+import retrofit2.http.Query
+import com.example.ventas.api.ApiClient
 
 import retrofit2.Call
 import retrofit2.http.Body
@@ -111,20 +113,22 @@ interface ApiService {
     ): Call<List<Jugador>>
 
 
-    @GET("jugadores/{id}")
-    fun getJugador(
+    @GET("jugadores/buscar")
+    fun buscarJugador(
 
         @Header("Authorization")
         token: String,
 
-        @Path("id")
-        id: Int
+        @Query("buscar")
+        buscar: String
 
     ): Call<Jugador>
 
 
+    // ApiService.kt
+
     @PUT("jugadores/{id}")
-    fun updateJugador(
+    fun actualizarJugadores(
 
         @Header("Authorization")
         token: String,
