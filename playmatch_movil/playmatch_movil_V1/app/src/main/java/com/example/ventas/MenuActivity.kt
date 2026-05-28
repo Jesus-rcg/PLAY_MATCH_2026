@@ -12,7 +12,7 @@ class MenuActivity : AppCompatActivity() {
         setContentView(R.layout.main_menu)
 
         findViewById<ImageButton>(R.id.btnUser).setOnClickListener {
-            abrirOperaciones("Usuarios")
+            abrirUsuarios("Usuarios")
         }
 
         findViewById<ImageButton>(R.id.btnEquipos).setOnClickListener {
@@ -41,6 +41,11 @@ class MenuActivity : AppCompatActivity() {
 
     }
 
+    private fun abrirUsuarios(modulo: String){
+        val intent = Intent(this, VerUsuariosActivity::class.java)
+        intent.putExtra("MODULO", modulo)
+        startActivity(intent)
+    }
     private fun abrirOperaciones(modulo: String){
         val intent = Intent(this, OperacionesActivity::class.java)
         intent.putExtra("MODULO", modulo)

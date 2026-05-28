@@ -2,6 +2,10 @@ R_DEF: Internal format may change without notice
 local
 color black
 color white
+drawable bg_busqueda
+drawable boton_agregar
+drawable boton_editar
+drawable boton_eliminar
 drawable card_background
 drawable circulo_morado
 drawable circulo_rojo
@@ -12,9 +16,8 @@ drawable rectangulo_gris
 drawable rectangulo_morado
 drawable spinner_background
 id btnActualizar
-id btnBuscar
+id btnAgregar
 id btnBuscarJugador
-id btnEditar
 id btnEliminar
 id btnEquipos
 id btnGuardar
@@ -29,7 +32,10 @@ id btnUser
 id btnVersus
 id btnVolver
 id btnVolverJu
+id button
+id button2
 id dotEstado
+id edtBuscar
 id etEmail
 id etEntrenador
 id etEntrenadorEditar
@@ -60,7 +66,6 @@ id textBtnResultados
 id textBtnTorneo
 id textBtnVersus
 id textButtonUser
-id textView
 id textView4
 id titulo
 id tvApellido
@@ -77,14 +82,12 @@ id txtDescripcion
 id txtDocumento
 id txtEmail
 id txtEstado
-id txtFecha
 id txtFecha_fin
 id txtFecha_inicio
 id txtId
 id txtIdBuscar
 id txtNombre
 id txtNumeroCamiseta
-id txtPassword
 id txtRol
 id txtTituloModulo
 layout activity_buscar_jugador
@@ -106,7 +109,6 @@ layout activity_login
 layout activity_login2
 layout activity_main
 layout activity_torneos
-layout activity_usuarios
 layout activity_ver_usuarios
 layout item_equipo
 layout item_usuario

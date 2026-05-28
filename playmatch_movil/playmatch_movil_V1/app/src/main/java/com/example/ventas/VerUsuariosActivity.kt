@@ -1,5 +1,6 @@
 package com.example.ventas
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -21,8 +22,19 @@ class VerUsuariosActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ver_usuarios)
 
-        findViewById<ImageButton>(R.id.btnVolver).setOnClickListener {
-            finish()
+        val btnVolver = findViewById<ImageButton>(R.id.btnVolver)
+
+        btnVolver.setOnClickListener {
+            val intent = Intent(this, MenuActivity::class.java)
+            startActivity(intent)
+        }
+
+
+        val btnAgregar = findViewById<Button>(R.id.btnAgregar)
+
+        btnAgregar.setOnClickListener {
+            val intent = Intent(this, CrearUsuarioActivity::class.java)
+            startActivity(intent)
         }
 
         val recycler     = findViewById<RecyclerView>(R.id.recyclerUsuarios)
