@@ -48,6 +48,7 @@
         <activity
             android:name="com.example.ventas.CrearUsuarioActivity"
             android:exported="true" />
+        <activity android:name="com.example.ventas.EditarJugadorActivity" />
         <activity
             android:name="com.example.ventas.loginActivity.LoginActivity2"
             android:exported="true" >

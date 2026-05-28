@@ -1,141 +1,234 @@
 package com.example.ventas
 
-    import android.annotation.SuppressLint
-    import android.os.Bundle
-    import android.util.Log
-    import android.widget.Button
-    import android.widget.EditText
-    import android.widget.ImageButton
-    import android.widget.TextView
-    import android.widget.Toast
-    import androidx.appcompat.app.AppCompatActivity
-    import com.example.ventas.api.ApiClient
-    import com.example.ventas.model.Jugador
-    import retrofit2.Call
-    import retrofit2.Callback
-    import retrofit2.Response
+import android.annotation.SuppressLint
+import android.content.Intent
+import android.os.Bundle
+import android.util.Log
+import android.view.View
+import android.widget.Button
+import android.widget.EditText
+import android.widget.ImageButton
+import android.widget.TextView
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import androidx.cardview.widget.CardView
+import com.example.ventas.api.ApiClient
+import com.example.ventas.model.Jugador
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
-    class BuscarJugadorActivity : AppCompatActivity() {
+class BuscarJugadorActivity : AppCompatActivity() {
 
-        @SuppressLint("MissingInflatedId")
-        override fun onCreate(savedInstanceState: Bundle?) {
+    private var jugadorEncontrado: Jugador? = null
 
-            super.onCreate(savedInstanceState)
-            setContentView(R.layout.activity_buscar_jugador)
+    @SuppressLint("MissingInflatedId")
+    override fun onCreate(savedInstanceState: Bundle?) {
 
-            // BOTON VOLVER
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_buscar_jugador)
 
-            findViewById<ImageButton>(R.id.btnVolver).setOnClickListener {
-                finish()
+        // ================= BOTON VOLVER =================
+
+        findViewById<ImageButton>(R.id.btnVolver).setOnClickListener {
+            finish()
+        }
+
+        // ================= INPUT =================
+
+        val txtBuscar =
+            findViewById<EditText>(R.id.txtIdBuscarJugador)
+
+        // ================= CARD RESULTADO =================
+
+        val cardResultado =
+            findViewById<CardView>(R.id.cardResultadoJugador)
+
+        // ================= TEXTVIEWS =================
+
+        val tvNombre =
+            findViewById<TextView>(R.id.tvNombreJugador)
+
+        val tvApellido =
+            findViewById<TextView>(R.id.tvApellidoJugador)
+
+        val tvDocumento =
+            findViewById<TextView>(R.id.tvDocumentoJugador)
+
+        val tvNumero =
+            findViewById<TextView>(R.id.tvNumeroJugador)
+
+        // ================= BOTONES =================
+
+        val btnBuscarJugador =
+            findViewById<Button>(R.id.btnBuscarJugadores)
+
+        val btnEditarJugador =
+            findViewById<Button>(R.id.btnEditarJugador)
+
+        // ================= BUSCAR =================
+
+        btnBuscarJugador.setOnClickListener {
+
+            val buscar =
+                txtBuscar.text.toString().trim()
+
+            if (buscar.isEmpty()) {
+
+                Toast.makeText(
+                    this,
+                    "Ingrese un nombre o documento",
+                    Toast.LENGTH_LONG
+                ).show()
+
+                return@setOnClickListener
             }
 
-            // INPUT
+            // ================= TOKEN =================
 
-            val txtIdBuscar =
-                findViewById<EditText>(R.id.txtIdBuscar)
+            val prefs =
+                getSharedPreferences("app", MODE_PRIVATE)
 
-            // TEXTVIEWS
+            val token =
+                prefs.getString("token", "") ?: ""
 
-            val tvNombre =
-                findViewById<TextView>(R.id.tvNombre)
+            // ================= PETICION API =================
 
-            val tvApellido =
-                findViewById<TextView>(R.id.tvApellido)
+            ApiClient.instance.buscarJugador(
 
-            val tvDocumento =
-                findViewById<TextView>(R.id.tvDocumento)
+                "Bearer $token",
+                buscar
 
-            val tvNumero =
-                findViewById<TextView>(R.id.tvNumero)
+            ).enqueue(object : Callback<Jugador> {
 
-            // BOTON
+                override fun onResponse(
+                    call: Call<Jugador>,
+                    response: Response<Jugador>
+                ) {
 
-            val btnBuscarJugador =
-                findViewById<Button>(R.id.btnBuscarJugador)
-
-            // CLICK
-
-            btnBuscarJugador.setOnClickListener {
-
-                val id =
-                    txtIdBuscar.text.toString().toIntOrNull()
-
-                if (id == null) {
-
-                    Toast.makeText(
-                        this,
-                        "Ingrese un ID válido",
-                        Toast.LENGTH_LONG
-                    ).show()
-
-                    return@setOnClickListener
-                }
-
-                // TOKEN
-
-                val prefs =
-                    getSharedPreferences("app", MODE_PRIVATE)
-
-                val token =
-                    prefs.getString("token", "") ?: ""
-
-                // PETICION API
-
-                ApiClient.instance.getJugador(
-
-                    "Bearer $token",
-                    id
-
-                ).enqueue(object : Callback<Jugador> {
-
-                    override fun onResponse(
-                        call: Call<Jugador>,
-                        response: Response<Jugador>
+                    if (
+                        response.isSuccessful &&
+                        response.body() != null
                     ) {
 
-                        if (response.isSuccessful && response.body() != null) {
+                        val jugador = response.body()!!
 
-                            val jugador = response.body()!!
+                        jugadorEncontrado = jugador
 
-                            tvNombre.text =
-                                "Nombre: ${jugador.nombre}"
+                        // MOSTRAR CARD
 
-                            tvApellido.text =
-                                "Apellido: ${jugador.apellido}"
+                        cardResultado.visibility = View.VISIBLE
 
-                            tvDocumento.text =
-                                "Documento: ${jugador.documento}"
+                        // MOSTRAR DATOS
 
-                            tvNumero.text =
-                                "Número camiseta: ${jugador.numero_camiseta}"
+                        tvNombre.text =
+                            "Nombre: ${jugador.nombre}"
 
-                        } else {
+                        tvApellido.text =
+                            "Apellido: ${jugador.apellido}"
 
-                            Toast.makeText(
-                                this@BuscarJugadorActivity,
-                                "Jugador no encontrado",
-                                Toast.LENGTH_LONG
-                            ).show()
-                        }
-                    }
+                        tvDocumento.text =
+                            "Documento: ${jugador.documento}"
 
-                    override fun onFailure(
-                        call: Call<Jugador>,
-                        t: Throwable
-                    ) {
+                        tvNumero.text =
+                            "Número camiseta: ${jugador.numero_camiseta}"
+
+                    } else {
+
+                        cardResultado.visibility = View.GONE
 
                         Toast.makeText(
                             this@BuscarJugadorActivity,
-                            t.message,
+                            "Jugador no encontrado",
                             Toast.LENGTH_LONG
                         ).show()
 
                         Log.e(
-                            "API_ERROR",
-                            t.message.toString()
+                            "API_RESPONSE",
+                            "Código: ${response.code()}"
                         )
                     }
-                })
+                }
+
+                override fun onFailure(
+                    call: Call<Jugador>,
+                    t: Throwable
+                ) {
+
+                    cardResultado.visibility = View.GONE
+
+                    Toast.makeText(
+                        this@BuscarJugadorActivity,
+                        "Error: ${t.message}",
+                        Toast.LENGTH_LONG
+                    ).show()
+
+                    Log.e(
+                        "API_ERROR",
+                        t.message.toString()
+                    )
+                }
+            })
+        }
+
+        // ================= EDITAR =================
+
+        btnEditarJugador.setOnClickListener {
+
+            if (jugadorEncontrado == null) {
+
+                Toast.makeText(
+                    this,
+                    "Primero busque un jugador",
+                    Toast.LENGTH_SHORT
+                ).show()
+
+                return@setOnClickListener
             }
+
+            val jugador = jugadorEncontrado!!
+
+            val intent = Intent(
+                this,
+                EditarJugadorActivity::class.java
+            )
+
+            intent.putExtra(
+                "id_jugador",
+                jugador.id_jugador
+            )
+
+            intent.putExtra(
+                "id_equipo",
+                jugador.id_equipo
+            )
+
+            intent.putExtra(
+                "nombre",
+                jugador.nombre
+            )
+
+            intent.putExtra(
+                "apellido",
+                jugador.apellido
+            )
+
+            intent.putExtra(
+                "documento",
+                jugador.documento
+            )
+
+            intent.putExtra(
+                "numero_camiseta",
+                jugador.numero_camiseta
+            )
+
+            intent.putExtra(
+                "estado",
+                jugador.estado
+            )
+
+            startActivity(intent)
         }
     }
+}

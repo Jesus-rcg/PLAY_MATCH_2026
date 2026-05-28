@@ -37,6 +37,8 @@
                 android:name=".CrearUsuarioActivity"
                 android:exported="true"/>
 
+        <activity android:name=".EditarJugadorActivity"/>
+
         <activity
                 android:name=".loginActivity.LoginActivity2"
                 android:exported="true">

@@ -1,7 +1,11 @@
 import express from "express";
+
+
+
 import { getJugadores,
      agregarJugadores, 
      editarJugadores, 
+     buscarJugador,
      eliminarJugadores } from "../controllers/jugadores.controller.js";
 
 const router = express.Router();
@@ -112,6 +116,14 @@ router.get("/", getJugadores);
  *       500:
  *         description: Error del servidor
  */
+router.get("/buscar", buscarJugador);
+/**
+ * @swagger
+ * /api/jugadores:
+ *   post:
+ *     summary: Crear un nuevo jugador
+ *     tags: [Jugadores]
+ */
 router.post("/", agregarJugadores);
 
 /**
@@ -162,6 +174,7 @@ router.post("/", agregarJugadores);
  *       500:
  *         description: Error del servidor
  */
+router.get("/buscar", buscarJugador);
 router.put("/:id", editarJugadores);
 
 /**
