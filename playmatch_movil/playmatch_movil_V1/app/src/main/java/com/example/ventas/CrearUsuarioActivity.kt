@@ -23,7 +23,7 @@ class CrearUsuarioActivity : AppCompatActivity() {
         val btnVolver = findViewById<ImageButton>(R.id.btnVolver)
 
         btnVolver.setOnClickListener {
-            val intent = Intent(this, VerUsuariosActivity::class.java)
+            val intent = Intent(this, UsuariosActivity::class.java)
             startActivity(intent)
         }
 

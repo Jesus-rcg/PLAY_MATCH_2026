@@ -42,7 +42,7 @@ class MenuActivity : AppCompatActivity() {
     }
 
     private fun abrirUsuarios(modulo: String){
-        val intent = Intent(this, VerUsuariosActivity::class.java)
+        val intent = Intent(this, UsuariosActivity::class.java)
         intent.putExtra("MODULO", modulo)
         startActivity(intent)
     }
