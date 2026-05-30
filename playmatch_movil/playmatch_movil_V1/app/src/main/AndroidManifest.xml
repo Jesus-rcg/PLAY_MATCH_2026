@@ -23,7 +23,7 @@
                   android:exported="true"/>
 
         <activity
-                android:name=".VerUsuariosActivity"
+                android:name=".UsuariosActivity"
                 android:exported="true"/>
 
         <activity android:name=".JugadoresActivity"
@@ -38,6 +38,8 @@
                 android:exported="true"/>
 
         <activity android:name=".EditarJugadorActivity"/>
+        <activity android:name=".EditarUsuarioActivity"
+                  android:exported="true"/>
 
         <activity
                 android:name=".loginActivity.LoginActivity2"

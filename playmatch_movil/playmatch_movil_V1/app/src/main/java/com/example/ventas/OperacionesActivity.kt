@@ -84,7 +84,7 @@ class OperacionesActivity : AppCompatActivity() {
                     intent.putExtra("MODO", "vertodos")
                     startActivity(intent)
                 }
-                "Usuarios" -> startActivity(Intent(this, VerUsuariosActivity::class.java))
+                "Usuarios" -> startActivity(Intent(this, UsuariosActivity::class.java))
                 else -> Toast.makeText(this, "Lista no disponible", Toast.LENGTH_SHORT).show()
             }
         }

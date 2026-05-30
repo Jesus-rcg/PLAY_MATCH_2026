@@ -102,7 +102,7 @@
             android:layout_height="match_parent">
 
         <Button
-                android:id="@+id/button"
+                android:id="@+id/btnEditar"
                 android:text="Editar"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
@@ -111,11 +111,11 @@
                 android:backgroundTint="#2196F3"
                 android:layout_marginRight="20dp"/>
         <Button
+                android:id="@+id/btnEliminar"
                 android:text="Eliminar"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:drawableLeft="@drawable/boton_eliminar"
-                android:id="@+id/button2"
                 android:backgroundTint="#F33446"
                 android:layout_weight="1"/>
     </LinearLayout>

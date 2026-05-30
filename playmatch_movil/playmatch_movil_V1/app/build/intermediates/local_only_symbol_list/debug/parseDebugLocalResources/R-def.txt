@@ -6,18 +6,21 @@ drawable bg_busqueda
 drawable boton_agregar
 drawable boton_editar
 drawable boton_eliminar
+drawable btn_volver_background
 drawable card_background
 drawable circulo_morado
 drawable circulo_rojo
 drawable circulo_verde
 drawable input_background
 drawable rectangulo
+drawable rectangulo_ambar
 drawable rectangulo_gris
 drawable rectangulo_morado
 drawable spinner_background
 id btnActualizar
 id btnAgregar
 id btnBuscarJugadores
+id btnEditar
 id btnEditarApellido
 id btnEditarDocumento
 id btnEditarEstado
@@ -37,13 +40,12 @@ id btnTorneo
 id btnUser
 id btnVersus
 id btnVolver
-id button
-id button2
 id cardJugador
 id cardResultadoJugador
 id dotEstado
 id edtBuscar
 id etApellido
+id etBuscar
 id etDocumento
 id etEmail
 id etEntrenador
@@ -56,6 +58,7 @@ id etPassword
 id main
 id message
 id progressBar
+id recyclerBuscar
 id recyclerEquipos
 id recyclerUsuarios
 id seleccionEstado
@@ -86,6 +89,7 @@ id tvMessage
 id tvNombreEquipo
 id tvNombreJugador
 id tvNumeroJugador
+id tvSubtitulo
 id txtApellido
 id txtAvatar
 id txtContador
@@ -101,6 +105,7 @@ id txtNombre
 id txtNumeroCamiseta
 id txtRol
 id txtTituloModulo
+layout activity_buscar_equipo
 layout activity_buscar_jugador
 layout activity_crear_jugador
 layout activity_crear_torneo
@@ -108,6 +113,7 @@ layout activity_crear_usuario
 layout activity_editar_equipo
 layout activity_editar_jugador
 layout activity_editar_torneo
+layout activity_editar_usuario
 layout activity_eliminar_jugador
 layout activity_eliminar_torneo
 layout activity_equipo
@@ -119,7 +125,7 @@ layout activity_login
 layout activity_login2
 layout activity_main
 layout activity_torneos
-layout activity_ver_usuarios
+layout activity_usuarios
 layout item_equipo
 layout item_usuario
 layout main_menu
