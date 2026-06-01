@@ -39,6 +39,9 @@
             android:name="com.example.ventas.UsuariosActivity"
             android:exported="true" />
         <activity
+            android:name="com.example.ventas.PosicionesActivity"
+            android:exported="true" />
+        <activity
             android:name="com.example.ventas.JugadoresActivity"
             android:exported="true" />
         <activity
@@ -48,9 +51,15 @@
         <activity
             android:name="com.example.ventas.CrearUsuarioActivity"
             android:exported="true" />
+        <activity
+            android:name="com.example.ventas.CrearPosicionActivity"
+            android:exported="true" />
         <activity android:name="com.example.ventas.EditarJugadorActivity" />
         <activity
             android:name="com.example.ventas.EditarUsuarioActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.ventas.EditarPosicionActivity"
             android:exported="true" />
         <activity
             android:name="com.example.ventas.loginActivity.LoginActivity2"

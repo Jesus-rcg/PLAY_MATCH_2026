@@ -14,8 +14,13 @@ export const getPosiciones = (req, res) => {
       p.perdidos, 
       p.gf, 
       p.gc, 
+      (p.gf - p.gc) AS dg,
       p.puntos, 
-      p.actualizado 
+      p.actualizado,
+      RANK() OVER (
+        PARTITION BY p.id_torneo 
+        ORDER BY p.puntos DESC, (p.gf - p.gc) DESC, p.gf DESC
+      ) AS posicion_real
      FROM posiciones p
      JOIN torneos t ON p.id_torneo = t.id_torneo
      JOIN equipos e ON p.id_equipo = e.id_equipo`;
@@ -45,11 +50,11 @@ export const agregarPosiciones = (req, res) => {
   const puntos = ganados * 3 + empatados * 1;
 
   const sql = `
-    INSERT INTO posiciones (id_torneo, id_equipo, jugados, ganados, perdidos, gf, gc, puntos) 
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?)`;
+    INSERT INTO posiciones (id_torneo, id_equipo, jugados, ganados, empatados, perdidos, gf, gc, puntos) 
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`;
   db.query(
     sql,
-    [id_torneo, id_equipo, jugados, ganados, perdidos, gf, gc, puntos],
+    [id_torneo, id_equipo, jugados, ganados, empatados, perdidos, gf, gc, puntos],
     (err, results) => {
       if (err) {
         console.log(err);

@@ -72,6 +72,7 @@ function PosicionesTabla() {
       <table>
         <thead>
           <tr>
+            <th>Posición</th>
             <th>ID</th>
             <th>Torneo</th>
             <th>Equipo</th>
@@ -81,6 +82,7 @@ function PosicionesTabla() {
             <th>PP</th>
             <th>GF</th>
             <th>GC</th>
+            <th>DG</th>
             <th>PTS</th>
             <th>Actualizado</th>
             <th>Acciones</th>
@@ -91,6 +93,7 @@ function PosicionesTabla() {
           {posicionesPagina.length > 0 ? (
             posicionesPagina.map((p) => (
               <tr key={p.id_posicion}>
+                <td>{p.posicion_real}</td>
                 <td>{p.id_posicion}</td>
                 <td>{p.torneo}</td>
                 <td>{p.equipo}</td>
@@ -100,6 +103,9 @@ function PosicionesTabla() {
                 <td>{p.perdidos}</td>
                 <td>{p.gf}</td>
                 <td>{p.gc}</td>
+                <td style={{ color: p.dg > 0 ? "green" : p.dg < 0 ? "red" : "inherit" }}>
+                  {p.dg}
+                </td>
                 <td>{p.puntos}</td>
                 <td>{p.actualizado}</td>
                 <td>

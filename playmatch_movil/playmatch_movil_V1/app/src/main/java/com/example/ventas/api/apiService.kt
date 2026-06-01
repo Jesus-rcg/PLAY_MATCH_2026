@@ -1,4 +1,4 @@
-package com.example.ventas.api
+    package com.example.ventas.api
 
 import com.example.ventas.model.Usuario
 import com.example.ventas.model.Jugador
@@ -8,8 +8,11 @@ import com.example.ventas.model.Equipo
 import com.example.ventas.model.Torneo
 import retrofit2.http.Query
 import com.example.ventas.api.ApiClient
+import com.example.ventas.model.Posicion
+import com.example.ventas.model.PosicionRequest
 
 import retrofit2.Call
+import retrofit2.Response
 import retrofit2.http.Body
 import retrofit2.http.POST
 import retrofit2.http.GET
@@ -232,4 +235,68 @@ interface ApiService {
     fun getTorneos(
         @Header("Authorization") token: String
     ): Call<List<Torneo>>
+
+
+    //POSICIONES.
+
+
+    @POST("posiciones")
+    fun createPosicion(
+
+        @Header("Authorization")
+        token: String,
+
+        @Body
+        posicion: PosicionRequest
+
+    ): Call<Posicion>
+
+
+    @GET("posiciones")
+    fun getPosiciones(
+
+        @Header("Authorization")
+        token: String
+
+    ): Call<List<Posicion>>
+
+
+    @GET("posiciones/{id}")
+    fun getPosicion(
+
+        @Header("Authorization")
+        token: String,
+
+        @Path("id")
+        id: Int
+
+    ): Call<Posicion>
+
+
+    @PUT("posiciones/{id}")
+    fun updatePosicion(
+
+        @Header("Authorization")
+        token: String,
+
+        @Path("id")
+        id: Int,
+
+        @Body
+        posicion: PosicionRequest
+
+    ): Call<Void>
+
+
+    @DELETE("posiciones/{id}")
+    fun deletePosicion(
+
+        @Header("Authorization")
+        token: String,
+
+        @Path("id")
+        id: Int
+
+    ): Call<Void>
+
 }
