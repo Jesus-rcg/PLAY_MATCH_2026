@@ -26,6 +26,10 @@
                 android:name=".UsuariosActivity"
                 android:exported="true"/>
 
+        <activity
+                android:name=".PosicionesActivity"
+                android:exported="true"/>
+
         <activity android:name=".JugadoresActivity"
                   android:exported="true"/>
         <activity
@@ -37,8 +41,17 @@
                 android:name=".CrearUsuarioActivity"
                 android:exported="true"/>
 
+        <activity
+                android:name=".CrearPosicionActivity"
+                android:exported="true"/>
+
+
         <activity android:name=".EditarJugadorActivity"/>
+
         <activity android:name=".EditarUsuarioActivity"
+                  android:exported="true"/>
+
+        <activity android:name=".EditarPosicionActivity"
                   android:exported="true"/>
 
         <activity
