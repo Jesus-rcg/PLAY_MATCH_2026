@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 06-05-2026 a las 22:42:27
--- Versión del servidor: 10.4.32-MariaDB
--- Versión de PHP: 8.2.12
+-- Host: 127.0.0.1
+-- Generation Time: Jun 02, 2026 at 09:43 PM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.1.25
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,46 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `playmatch_nuevo`
+-- Database: `playmatch_nuevo`
 --
-
-DELIMITER $$
---
--- Procedimientos
---
-CREATE DEFINER=`root`@`localhost` PROCEDURE `actualizar_posiciones` ()   BEGIN
-    DELETE FROM posiciones;
-    
-    INSERT INTO posiciones (id_equipo, equipo, torneo, jugados, ganados, empatados, perdidos, gf, gc, puntos)
-    SELECT 
-        e.id_equipo,
-        e.nombre AS equipo,
-        t.nombre AS torneo,
-        COUNT(DISTINCT ec.id_encuentro) AS jugados,
-        SUM(CASE WHEN (ec.id_equipo_local = e.id_equipo AND r.goles_local > r.goles_visitante) OR
-                     (ec.id_equipo_visitante = e.id_equipo AND r.goles_visitante > r.goles_local) THEN 1 ELSE 0 END) AS ganados,
-        SUM(CASE WHEN r.goles_local = r.goles_visitante THEN 1 ELSE 0 END) AS empatados,
-        SUM(CASE WHEN (ec.id_equipo_local = e.id_equipo AND r.goles_local < r.goles_visitante) OR
-                     (ec.id_equipo_visitante = e.id_equipo AND r.goles_visitante < r.goles_local) THEN 1 ELSE 0 END) AS perdidos,
-        SUM(CASE WHEN ec.id_equipo_local = e.id_equipo THEN r.goles_local ELSE r.goles_visitante END) AS gf,
-        SUM(CASE WHEN ec.id_equipo_local = e.id_equipo THEN r.goles_visitante ELSE r.goles_local END) AS gc,
-        SUM(CASE WHEN (ec.id_equipo_local = e.id_equipo AND r.goles_local > r.goles_visitante) OR
-                     (ec.id_equipo_visitante = e.id_equipo AND r.goles_visitante > r.goles_local) THEN 3
-                WHEN r.goles_local = r.goles_visitante THEN 1 ELSE 0 END) AS puntos
-    FROM equipos e
-    JOIN torneos t ON e.id_torneo = t.id_torneo
-    LEFT JOIN encuentros ec ON (ec.id_equipo_local = e.id_equipo OR ec.id_equipo_visitante = e.id_equipo) 
-        AND ec.estado = 'jugado'
-    LEFT JOIN resultados r ON ec.id_encuentro = r.id_encuentro
-    GROUP BY e.id_equipo, e.nombre, t.nombre;
-END$$
-
-DELIMITER ;
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `encuentros`
+-- Table structure for table `encuentros`
 --
 
 CREATE TABLE `encuentros` (
@@ -73,7 +40,7 @@ CREATE TABLE `encuentros` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Volcado de datos para la tabla `encuentros`
+-- Dumping data for table `encuentros`
 --
 
 INSERT INTO `encuentros` (`id_encuentro`, `id_torneo`, `id_equipo_local`, `id_equipo_visitante`, `fecha`, `lugar`, `jornada`, `id_arbitro`, `estado`) VALUES
@@ -86,7 +53,7 @@ INSERT INTO `encuentros` (`id_encuentro`, `id_torneo`, `id_equipo_local`, `id_eq
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `equipos`
+-- Table structure for table `equipos`
 --
 
 CREATE TABLE `equipos` (
@@ -97,7 +64,7 @@ CREATE TABLE `equipos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Volcado de datos para la tabla `equipos`
+-- Dumping data for table `equipos`
 --
 
 INSERT INTO `equipos` (`id_equipo`, `id_torneo`, `nombre`, `entrenador`) VALUES
@@ -108,7 +75,7 @@ INSERT INTO `equipos` (`id_equipo`, `id_torneo`, `nombre`, `entrenador`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `jugadores`
+-- Table structure for table `jugadores`
 --
 
 CREATE TABLE `jugadores` (
@@ -122,7 +89,7 @@ CREATE TABLE `jugadores` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Volcado de datos para la tabla `jugadores`
+-- Dumping data for table `jugadores`
 --
 
 INSERT INTO `jugadores` (`id_jugador`, `id_equipo`, `nombre`, `apellido`, `documento`, `numero_camiseta`, `estado`) VALUES
@@ -133,7 +100,7 @@ INSERT INTO `jugadores` (`id_jugador`, `id_equipo`, `nombre`, `apellido`, `docum
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `posiciones`
+-- Table structure for table `posiciones`
 --
 
 CREATE TABLE `posiciones` (
@@ -151,18 +118,19 @@ CREATE TABLE `posiciones` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Volcado de datos para la tabla `posiciones`
+-- Dumping data for table `posiciones`
 --
 
 INSERT INTO `posiciones` (`id_posicion`, `id_torneo`, `id_equipo`, `jugados`, `ganados`, `empatados`, `perdidos`, `gf`, `gc`, `puntos`, `actualizado`) VALUES
 (4, 0, 1, 1, 1, 0, 0, 2, 1, 3, '2026-03-22 17:03:32'),
 (5, 0, 2, 1, 0, 0, 1, 1, 2, 0, '2026-03-22 17:03:32'),
-(11, 1, 2, 3, 1, 1, 1, 4, 1, 4, '2026-03-24 21:46:05');
+(38, 1, 4, 6, 5, 1, 0, 5, 2, 16, '2026-06-01 20:50:58'),
+(43, 3, 1, 10, 5, 5, 0, 10, 3, 20, '2026-06-01 20:41:26');
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `resultados`
+-- Table structure for table `resultados`
 --
 
 CREATE TABLE `resultados` (
@@ -180,7 +148,7 @@ CREATE TABLE `resultados` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Volcado de datos para la tabla `resultados`
+-- Dumping data for table `resultados`
 --
 
 INSERT INTO `resultados` (`id_resultado`, `id_encuentro`, `goles_local`, `goles_visitante`, `faltas_local`, `faltas_visitante`, `tarjetas_amarillas`, `tarjetas_rojas`, `observaciones`, `id_creador`, `fecha_creacion`) VALUES
@@ -192,7 +160,7 @@ INSERT INTO `resultados` (`id_resultado`, `id_encuentro`, `goles_local`, `goles_
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `torneos`
+-- Table structure for table `torneos`
 --
 
 CREATE TABLE `torneos` (
@@ -205,7 +173,7 @@ CREATE TABLE `torneos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Volcado de datos para la tabla `torneos`
+-- Dumping data for table `torneos`
 --
 
 INSERT INTO `torneos` (`id_torneo`, `nombre`, `descripcion`, `fecha_inicio`, `fecha_fin`, `estado`) VALUES
@@ -216,7 +184,7 @@ INSERT INTO `torneos` (`id_torneo`, `nombre`, `descripcion`, `fecha_inicio`, `fe
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `usuarios`
+-- Table structure for table `usuarios`
 --
 
 CREATE TABLE `usuarios` (
@@ -230,24 +198,55 @@ CREATE TABLE `usuarios` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Volcado de datos para la tabla `usuarios`
+-- Dumping data for table `usuarios`
 --
 
 INSERT INTO `usuarios` (`id_usuario`, `nombre`, `email`, `password`, `rol`, `estado`, `fecha_actualizado`) VALUES
-(1, 'Admin Sistema', 'admin@torneo.com', '$2b$10$Nqe3vdVxpzkQsy4lji8zMePL9Hs./gqBOnLZocUEhultSSqbzp60K', 'admin', 'Activo', '2026-05-06 20:12:28'),
+(1, 'Admin Sistema de Prueba', 'adminsistemaprueba@torneo.com', '$2b$10$Z8RupAvM6rbmYfyZowSXPOufcc/.yHKtXu5nNfXHxNLg8dTH4fHQW', 'arbitro', 'Inactivo', '2026-05-30 01:11:23'),
 (2, 'Carlos Arbitro', 'arbitro@torneo.com', 'cf1b33af348aa06eeff41427e7830b207bd2256d8685b825633dd3cbb46ed0a6', 'arbitro', 'Activo', '2026-03-22 17:03:32'),
 (3, 'Maria Entrenador', 'entrenador@torneo.com', 'defbe44d30454a18fbbd862cfe5e59818d18dafd8feba4d71a797c20c265b672', 'entrenador', 'Activo', '2026-03-22 17:03:32'),
 (4, 'Camilo', 'camilo123@torneo.com', '$2b$10$JIz60cMgiVsCdPuul.rTb.4LGRdJT/8sbNxfWOG00zBBrMTD8GPLG', 'admin', 'Activo', '2026-05-05 21:49:25'),
 (12, 'Prueba', 'prueba@gmail.com', '$2b$10$Gbwd2lHF4v1.VrBFIBBZpuaJnN0Bzv1eJ/vTr18Mswgv.T8ecWrhu', 'admin', 'Activo', '2026-05-05 22:45:34'),
 (13, 'Sebastian', 'sebastian1234@gmail.com', '$2b$10$3u7nc9GF8ejOIIXwVACcfezHQwWJLAKMTQZuh66fhte.cmnpMLeYK', 'admin', 'Activo', '2026-05-06 20:12:51'),
-(14, 'prueba', 'prueba98@gmail.com', '$2b$10$h9cIgGcI7VV7eSM89nBNvemXPqDgKciLmC/oGXzMwUXjfHLYQVOZi', 'arbitro', 'Inactivo', '2026-05-06 20:13:35');
+(14, 'prueba', 'prueba98@gmail.com', '$2b$10$h9cIgGcI7VV7eSM89nBNvemXPqDgKciLmC/oGXzMwUXjfHLYQVOZi', 'arbitro', 'Inactivo', '2026-05-06 20:13:35'),
+(15, 'Sebastian Prueba', 'prueba123@torneo.com', '$2b$10$xKGbsLB6TP0EjuYkgOHd2u644ET.YjE3ZgmganImGekmM0dc.EWI2', 'admin', 'Activo', '2026-05-22 19:49:08');
+
+-- --------------------------------------------------------
 
 --
--- Índices para tablas volcadas
+-- Stand-in structure for view `vista_posiciones`
+-- (See below for the actual view)
+--
+CREATE TABLE `vista_posiciones` (
+`id_posicion` int(11)
+,`id_torneo` int(11)
+,`id_equipo` int(11)
+,`jugados` int(11)
+,`ganados` int(11)
+,`empatados` int(11)
+,`perdidos` int(11)
+,`gf` int(11)
+,`gc` int(11)
+,`puntos` int(11)
+,`actualizado` timestamp
+,`posicion_real` bigint(21)
+);
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `vista_posiciones`
+--
+DROP TABLE IF EXISTS `vista_posiciones`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `vista_posiciones`  AS SELECT `p`.`id_posicion` AS `id_posicion`, `p`.`id_torneo` AS `id_torneo`, `p`.`id_equipo` AS `id_equipo`, `p`.`jugados` AS `jugados`, `p`.`ganados` AS `ganados`, `p`.`empatados` AS `empatados`, `p`.`perdidos` AS `perdidos`, `p`.`gf` AS `gf`, `p`.`gc` AS `gc`, `p`.`puntos` AS `puntos`, `p`.`actualizado` AS `actualizado`, rank() over ( partition by `p`.`id_torneo` order by `p`.`puntos` desc,`p`.`gf` desc) AS `posicion_real` FROM `posiciones` AS `p` ;
+
+--
+-- Indexes for dumped tables
 --
 
 --
--- Indices de la tabla `encuentros`
+-- Indexes for table `encuentros`
 --
 ALTER TABLE `encuentros`
   ADD PRIMARY KEY (`id_encuentro`),
@@ -257,21 +256,21 @@ ALTER TABLE `encuentros`
   ADD KEY `id_arbitro` (`id_arbitro`);
 
 --
--- Indices de la tabla `equipos`
+-- Indexes for table `equipos`
 --
 ALTER TABLE `equipos`
   ADD PRIMARY KEY (`id_equipo`),
   ADD KEY `id_torneo` (`id_torneo`);
 
 --
--- Indices de la tabla `jugadores`
+-- Indexes for table `jugadores`
 --
 ALTER TABLE `jugadores`
   ADD PRIMARY KEY (`id_jugador`),
   ADD KEY `id_equipo` (`id_equipo`);
 
 --
--- Indices de la tabla `posiciones`
+-- Indexes for table `posiciones`
 --
 ALTER TABLE `posiciones`
   ADD PRIMARY KEY (`id_posicion`),
@@ -279,7 +278,7 @@ ALTER TABLE `posiciones`
   ADD KEY `fk_posiciones_torneo` (`id_torneo`);
 
 --
--- Indices de la tabla `resultados`
+-- Indexes for table `resultados`
 --
 ALTER TABLE `resultados`
   ADD PRIMARY KEY (`id_resultado`),
@@ -287,70 +286,70 @@ ALTER TABLE `resultados`
   ADD KEY `id_created_by` (`id_creador`);
 
 --
--- Indices de la tabla `torneos`
+-- Indexes for table `torneos`
 --
 ALTER TABLE `torneos`
   ADD PRIMARY KEY (`id_torneo`);
 
 --
--- Indices de la tabla `usuarios`
+-- Indexes for table `usuarios`
 --
 ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`id_usuario`),
   ADD UNIQUE KEY `email` (`email`);
 
 --
--- AUTO_INCREMENT de las tablas volcadas
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT de la tabla `encuentros`
+-- AUTO_INCREMENT for table `encuentros`
 --
 ALTER TABLE `encuentros`
   MODIFY `id_encuentro` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT de la tabla `equipos`
+-- AUTO_INCREMENT for table `equipos`
 --
 ALTER TABLE `equipos`
   MODIFY `id_equipo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT de la tabla `jugadores`
+-- AUTO_INCREMENT for table `jugadores`
 --
 ALTER TABLE `jugadores`
   MODIFY `id_jugador` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
--- AUTO_INCREMENT de la tabla `posiciones`
+-- AUTO_INCREMENT for table `posiciones`
 --
 ALTER TABLE `posiciones`
-  MODIFY `id_posicion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+  MODIFY `id_posicion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 
 --
--- AUTO_INCREMENT de la tabla `resultados`
+-- AUTO_INCREMENT for table `resultados`
 --
 ALTER TABLE `resultados`
   MODIFY `id_resultado` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
--- AUTO_INCREMENT de la tabla `torneos`
+-- AUTO_INCREMENT for table `torneos`
 --
 ALTER TABLE `torneos`
   MODIFY `id_torneo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT de la tabla `usuarios`
+-- AUTO_INCREMENT for table `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
--- Restricciones para tablas volcadas
+-- Constraints for dumped tables
 --
 
 --
--- Filtros para la tabla `encuentros`
+-- Constraints for table `encuentros`
 --
 ALTER TABLE `encuentros`
   ADD CONSTRAINT `encuentros_ibfk_1` FOREIGN KEY (`id_torneo`) REFERENCES `torneos` (`id_torneo`) ON DELETE CASCADE,
@@ -359,13 +358,13 @@ ALTER TABLE `encuentros`
   ADD CONSTRAINT `encuentros_ibfk_4` FOREIGN KEY (`id_arbitro`) REFERENCES `usuarios` (`id_usuario`) ON DELETE SET NULL;
 
 --
--- Filtros para la tabla `equipos`
+-- Constraints for table `equipos`
 --
 ALTER TABLE `equipos`
   ADD CONSTRAINT `equipos_ibfk_1` FOREIGN KEY (`id_torneo`) REFERENCES `torneos` (`id_torneo`) ON DELETE CASCADE;
 
 --
--- Filtros para la tabla `jugadores`
+-- Constraints for table `jugadores`
 --
 ALTER TABLE `jugadores`
   ADD CONSTRAINT `jugadores_ibfk_1` FOREIGN KEY (`id_equipo`) REFERENCES `equipos` (`id_equipo`) ON DELETE CASCADE;
