@@ -3189,6 +3189,8 @@ id btnTorneo
 id btnUser
 id btnVersus
 id btnVolver
+id btnVolverJ
+id btnVolverJugador
 id buttonPanel
 id cache_measures
 id callMeasure

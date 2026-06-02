@@ -157,7 +157,7 @@ class EditarJugadorActivity : AppCompatActivity() {
         // ================= TOKEN =================
 
         val sharedPreferences = getSharedPreferences(
-            "login",
+            "app ",
             Context.MODE_PRIVATE
         )
 
@@ -206,57 +206,33 @@ class EditarJugadorActivity : AppCompatActivity() {
 
         // ================= PETICION =================
 
-        ApiClient.instance.actualizarJugadores(
+        ApiClient.instance.actualizarJugadores("Bearer $token", idJugador, jugador)
+            .enqueue(object : Callback<Void>{
 
-            "Bearer $token",
-
-            idJugador,
-
-            jugador
-
-        ).enqueue(object : Callback<Void> {
-
-            override fun onResponse(
-                call: Call<Void>,
-                response: Response<Void>
-            ) {
-
-                if (response.isSuccessful) {
-
-                    Toast.makeText(
-                        this@EditarJugadorActivity,
-                        "Jugador actualizado correctamente",
-                        Toast.LENGTH_SHORT
-                    ).show()
-
-                    finish()
-
-                } else {
-
-                    Toast.makeText(
-                        this@EditarJugadorActivity,
-                        "Error: ${response.code()}",
-                        Toast.LENGTH_LONG
-                    ).show()
-
-                    Log.e(
-                        "UPDATE_ERROR",
-                        response.errorBody()?.string() ?: "Sin error body"
-                    )
+                override fun onResponse(call: Call<Void?>, response: Response<Void?>) {
+                    if (response.isSuccessful){
+                        Toast.makeText(
+                            this@EditarJugadorActivity,
+                            "Jugador editado correctamente",
+                            Toast.LENGTH_LONG
+                        ).show()
+                        setResult(RESULT_OK) //Acá avisamos a la página de Usuarios que se recargue.
+                        finish()
+                    } else {
+                        Toast.makeText(
+                            this@EditarJugadorActivity,
+                            "Error ${response.code()}",
+                            Toast.LENGTH_LONG
+                        ).show()
+                        Log.e("API_ERROR", response.errorBody()?.string() ?: "")
+                    }
                 }
-            }
 
-            override fun onFailure(
-                call: Call<Void>,
-                t: Throwable
-            ) {
+                override fun onFailure(call: Call<Void?>, t: Throwable) {
+                    Toast.makeText(this@EditarJugadorActivity, t.message, Toast.LENGTH_LONG).show()
+                    Log.e("API ERROR", t.message.toString())
+                }
 
-                Toast.makeText(
-                    this@EditarJugadorActivity,
-                    "Error: ${t.message}",
-                    Toast.LENGTH_LONG
-                ).show()
-            }
         })
     }
 }

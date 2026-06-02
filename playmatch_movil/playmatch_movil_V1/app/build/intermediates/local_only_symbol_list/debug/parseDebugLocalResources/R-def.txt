@@ -46,6 +46,8 @@ id btnTorneo
 id btnUser
 id btnVersus
 id btnVolver
+id btnVolverJ
+id btnVolverJugador
 id cardJugador
 id cardResultadoJugador
 id dotEstado

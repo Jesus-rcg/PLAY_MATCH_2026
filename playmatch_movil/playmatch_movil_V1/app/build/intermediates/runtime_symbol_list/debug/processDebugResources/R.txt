@@ -3188,6 +3188,8 @@ int id btnTorneo 0x7f080075
 int id btnUser 0x7f080076
 int id btnVersus 0x7f080077
 int id btnVolver 0x7f080078
+int id btnVolverJ 0x7f080246
+int id btnVolverJugador 0x7f080245
 int id buttonPanel 0x7f080079
 int id cache_measures 0x7f08007a
 int id callMeasure 0x7f08007b

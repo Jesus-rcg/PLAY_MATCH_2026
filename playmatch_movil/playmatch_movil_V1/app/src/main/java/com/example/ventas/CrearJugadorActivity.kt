@@ -32,7 +32,7 @@ class CrearJugadorActivity : AppCompatActivity() {
 
         // BOTON VOLVER
 
-        findViewById<ImageButton>(R.id.btnVolver).setOnClickListener {
+        findViewById<ImageButton>(R.id.btnVolverJ).setOnClickListener {
             finish()
         }
 
