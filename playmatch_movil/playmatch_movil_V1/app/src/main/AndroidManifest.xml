@@ -64,6 +64,19 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".EncuentrosMenuActivity"/>
+        <activity android:name=".CrearEncuentroActivity"/>
+        <activity android:name=".BuscarEncuentroActivity"/>
+        <activity android:name=".EditarEncuentroActivity"/>
+        <activity android:name=".EliminarEncuentroActivity"/>
+        <activity android:name=".ListaEncuentrosActivity"/>
+
+        <activity android:name=".CrearResultadoActivity"/>
+        <activity android:name=".BuscarResultadoActivity"/>
+        <activity android:name=".EditarResultadoActivity"/>
+        <activity android:name=".EliminarResultadoActivity"/>
+        <activity android:name=".ListaResultadosActivity"/>
+
         <activity android:name=".ui.EquipoActivity"/>
         <activity android:name=".ui.ListaEquiposActivity"/>
         <activity android:name=".ui.EditarEquipoActivity"/>

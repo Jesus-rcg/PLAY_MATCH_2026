@@ -6,6 +6,8 @@ import com.example.ventas.model.LoginRequest
 import com.example.ventas.model.LoginResponse
 import com.example.ventas.model.Equipo
 import com.example.ventas.model.Torneo
+import com.example.ventas.model.Encuentro
+import com.example.ventas.model.Resultado
 import retrofit2.http.Query
 import com.example.ventas.api.ApiClient
 import com.example.ventas.model.Posicion
@@ -20,6 +22,7 @@ import retrofit2.http.Header
 import retrofit2.http.Path
 import retrofit2.http.PUT
 import retrofit2.http.DELETE
+
 
 interface ApiService {
 
@@ -299,4 +302,68 @@ interface ApiService {
 
     ): Call<Void>
 
+    // ================= ENCUENTROS =================
+
+    @POST("encuentros")
+    fun createEncuentro(
+        @Header("Authorization") token: String,
+        @Body encuentro: Encuentro
+    ): Call<Encuentro>
+
+    @GET("encuentros")
+    fun getEncuentros(
+        @Header("Authorization") token: String
+    ): Call<List<Encuentro>>
+
+    @GET("encuentros/{id}")
+    fun getEncuentro(
+        @Header("Authorization") token: String,
+        @Path("id") id: Int
+    ): Call<Encuentro>
+
+    @PUT("encuentros/{id}")
+    fun updateEncuentro(
+        @Header("Authorization") token: String,
+        @Path("id") id: Int,
+        @Body encuentro: Encuentro
+    ): Call<Void>
+
+    @DELETE("encuentros/{id}")
+    fun deleteEncuentro(
+        @Header("Authorization") token: String,
+        @Path("id") id: Int
+    ): Call<Void>
+
+
+    // ================= RESULTADOS =================
+
+    @POST("resultados")
+    fun createResultado(
+        @Header("Authorization") token: String,
+        @Body resultado: Resultado
+    ): Call<Resultado>
+
+    @GET("resultados")
+    fun getResultados(
+        @Header("Authorization") token: String
+    ): Call<List<Resultado>>
+
+    @GET("resultados/{id}")
+    fun getResultado(
+        @Header("Authorization") token: String,
+        @Path("id") id: Int
+    ): Call<Resultado>
+
+    @PUT("resultados/{id}")
+    fun updateResultado(
+        @Header("Authorization") token: String,
+        @Path("id") id: Int,
+        @Body resultado: Resultado
+    ): Call<Void>
+
+    @DELETE("resultados/{id}")
+    fun deleteResultado(
+        @Header("Authorization") token: String,
+        @Path("id") id: Int
+    ): Call<Void>
 }
